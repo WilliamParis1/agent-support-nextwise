@@ -21,7 +21,7 @@ function speakAnimation() {
     if (animationPaused || document.hidden || chatInteracting) return;
     speech.textContent = phrase.slice(0, ++cursor);
     if (cursor < phrase.length) speechTimer = setTimeout(type, 44);
-    else { scene.classList.remove('is-speaking'); speechTimer = setTimeout(speakAnimation, 4200); }
+    else { scene.classList.remove('is-speaking');  }
   };
   type();
 }
@@ -143,7 +143,7 @@ for (const button of document.querySelectorAll('[data-reply]')) {
     const report = editions['today-edition'];
     let answer;
     if (button.dataset.reply === 'explain') {
-      answer = report ? `${report.summary || report.text} Les actifs sont sélectionnés pour leurs variations les plus marquées : c’est un échantillon, pas un indice de marché.` : 'Le point du jour n’est pas encore disponible. Je préfère attendre des données vérifiées avant de commenter les marchés.';
+      answer = report ? `${report.summary || report.text} Les actifs sont choisis parmi les secteurs associés au thème et leurs variations marquées : c’est un échantillon, pas un indice de marché.` : 'Le point du jour n’est pas encore disponible. Je préfère attendre des données vérifiées avant de commenter les marchés.';
     } else if (button.dataset.reply === 'pdf') {
       answer = 'Commencez par le résumé et le graphique des trois actifs. La seconde page approfondit une information sourcée : mécanisme possible, points à vérifier et limites. Les variations ne prouvent pas que cette information les a causées.';
     } else if (button.dataset.reply === 'assets') {
@@ -151,7 +151,7 @@ for (const button of document.querySelectorAll('[data-reply]')) {
       document.querySelector('#asset-search').focus({ preventScroll: true });
       document.querySelector('#universe').scrollIntoView({ behavior: reduceMotion.matches ? 'instant' : 'smooth', block: 'start' });
     } else {
-      answer = report?.analysis ? report.analysis.watch + ' ' + report.analysis.limits : 'Vérifiez la date du point, les sources et la disponibilité des cours. Une variation entre deux clôtures n’est pas une cotation en direct. Un lien entre une annonce et un prix reste une hypothèse à vérifier.';
+      answer = report?.analysis?.theme ? report.analysis.theme.confirm + ' ' + report.analysis.theme.challenge : 'Vérifiez la date du point, les sources et la disponibilité des cours. Une variation entre deux clôtures n’est pas une cotation en direct. Un lien entre une annonce et un prix reste une hypothèse à vérifier.';
     }
     speech.textContent = 'Regardons cela ensemble.';
     document.querySelector('#camembert-answer').textContent = answer;
