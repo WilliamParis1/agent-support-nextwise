@@ -2,6 +2,14 @@
 
 La home met Mr Camembert au premier plan dans un décor de jeu cosy. Les deux éditions et leurs boutons PDF/Copier restent compacts à gauche (sous le personnage sur mobile). Aucun slogan, menu latéral, tableau d’actifs, champ de saisie ni réponses proposées. Le personnage s’exprime uniquement dans sa bulle. Les animations sont brèves et respectent la préférence de réduction des mouvements.
 
+## Sommeil et réveil
+
+Le bouton sous la scène affiche **Bonne nuit** quand Mr Camembert est debout et **Bonjour** quand il est au lit. Le coucher enchaîne sa pose de dos (1,5 s), puis le lit dans une ambiance de nuit. Le réveil utilise sa pose de face (1,3 s), puis retrouve l’image d’origine avec la canne pointée vers le contenu. Les paroles restent dans sa bulle.
+
+`character.js` gère les états et bloque les clics pendant les transitions. L’état stable est conservé localement dans le navigateur. Avec la préférence de réduction des mouvements, le changement de pose est immédiat. Un changement de préférence ou le passage de l’onglet en arrière-plan termine la transition en cours. Si le fichier de poses ne charge pas, le portrait d’origine reste visible.
+
+`assets/camembert-poses.png` est une planche transparente préparée à partir des illustrations fournies (face, dos, lit), utilisée par positions CSS sans bibliothèque d’animation. Le portrait pointant d’origine reste dans `assets/professor.png`.
+
 ## Lancer et publier
 
 ```sh
@@ -44,16 +52,16 @@ Le générateur prépare les deux éditions si elles manquent. Les historiques s
 
 ```sh
 python3 -m pip install -r automation/requirements.txt
-python3 -m automation.daily                # éditions du jour et de la veille
+python3 -m automation.daily --quick        # éditions rapides du jour et de la veille
 python3 -m automation.daily --days 1       # seulement l’édition du jour
 python3 -m automation.daily --scheduled   # respecte le créneau de Paris
 ```
 
-Activer GitHub Actions avec permission d’écriture sur la branche par défaut. Les changements de données ou du générateur sur `main` déclenchent aussi le workflow. Une exécution manuelle est possible dans Actions. Les protections de branche peuvent empêcher le push du bot. Vercel doit suivre la branche et accepter ces commits ; vérifier le déploiement après la première génération. Les fichiers publiés sont publics avec le site.
+Activer GitHub Actions avec permission d’écriture sur la branche par défaut. Les changements de données ou du générateur sur `main` déclenchent aussi le workflow. Une nouvelle exécution remplace une génération en cours obsolète. Le mode rapide accepte au moins 75 % de cotations reconnues et publie la couverture exacte ; aucun cours manquant n’est inventé. GitHub Actions sur ce dépôt public et les endpoints publics évitent une clé ou un abonnement IA, sans garantie de disponibilité des fournisseurs. Une exécution manuelle est possible dans Actions. Les protections de branche peuvent empêcher le push du bot. Vercel doit suivre la branche et accepter ces commits ; vérifier le déploiement après la première génération. Les fichiers publiés sont publics avec le site.
 
 ## Univers et collecte
 
-Le CSV fourni a été importé dans `data/universe.csv` et `data/universe.json` : **3 382 actifs**, **7 places européennes**, dont 22 marqués Interested. La collecte examine **tous les actifs**, conformément au choix du club. Quelques exemples seulement sont retenus pour le texte et le graphique, selon le thème et les variations observées. Le CSV reste la référence du générateur, sans tableau d’actifs sur la home.
+Le CSV fourni a été importé dans `data/universe.csv` et `data/universe.json` : **3 382 actifs**, **7 places européennes**, dont 22 marqués Interested. Le workflow quotidien utilise désormais `--quick` : huit actifs liquides du CSV (ASML, Thales, Leonardo, Air Liquide, BNP Paribas, L’Oréal, TotalEnergies, Sanofi), pour produire rapidement un texte et un PDF sans clé payante. Une collecte manuelle sans `--quick` conserve le périmètre complet. Quelques exemples seulement sont retenus pour le texte et le graphique, selon le thème et les variations observées. Le CSV reste la référence du générateur, sans tableau d’actifs sur la home.
 
 Aucun appel Google Sheets n’est nécessaire. Les noms de membres et pourcentages d’origine sont exclus de l’import public ; ils ne sont pas des preuves de positions détenues. Pour actualiser le CSV :
 
@@ -65,7 +73,7 @@ Commiter les deux fichiers générés ensemble. Les tickers locaux sont associé
 
 Quatre workers et deux requêtes par seconde : environ 30 minutes au minimum pour l’univers complet, dans une limite de job de 60 minutes. Au moins 90 % des symboles doivent être reconnus ; les absents sont comptabilisés. Un refus d’accès ou une limitation du fournisseur interrompt la génération. Yahoo Finance est un endpoint public sans garantie de service ; un fournisseur contractuel peut être nécessaire à cette échelle.
 
-Sources macro : RSS BCE, Federal Reserve et BBC Business (filtre macro pour BBC). Seuls les titres et résumés publiés pendant la journée analysée, heure de Paris, sont retenus. Les flux ne sont ni exhaustifs ni des archives : le rattrapage dépend des éléments encore présents. Un flux inaccessible provoque une erreur ; une journée sans information ni séance ne produit pas de publication. Les variations sont calculées entre clôtures brutes datées de la place, non ajustées des dividendes ou splits. Aucune ancienne séance n’est réétiquetée comme récente.
+Sources macro : RSS BCE, Federal Reserve et BBC Business (filtre macro pour BBC). Seuls les titres et résumés publiés pendant la journée analysée, heure de Paris, sont retenus. Les flux ne sont ni exhaustifs ni des archives : le rattrapage dépend des éléments encore présents. Un flux inaccessible est signalé dans `feed_errors` ; les autres sources restent utilisables. Tous les flux indisponibles font échouer la génération ; une journée sans information ni séance ne produit pas de publication. Les variations sont calculées entre clôtures brutes datées de la place, non ajustées des dividendes ou splits. Aucune ancienne séance n’est réétiquetée comme récente.
 
 ## Vérification et limites actuelles
 

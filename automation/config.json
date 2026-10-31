@@ -22,5 +22,15 @@
   "symbol_overrides": {},
   "quote_workers": 4,
   "quote_requests_per_second": 2,
-  "min_quote_coverage": 0.9
+  "min_quote_coverage": 0.9,
+  "quick_symbols": [
+    "ASML.AS",
+    "HO.PA",
+    "LDO.MI",
+    "AI.PA",
+    "BNP.PA",
+    "OR.PA",
+    "TTE.PA",
+    "SAN.PA"
+  ]
 }

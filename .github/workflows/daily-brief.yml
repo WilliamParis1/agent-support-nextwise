@@ -14,11 +14,11 @@ permissions:
   contents: write
 concurrency:
   group: synapse-daily-brief
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -33,9 +33,9 @@ jobs:
           EVENT_NAME: ${{ github.event_name }}
         run: |
           if [ "$EVENT_NAME" = "schedule" ]; then
-            python -m automation.daily --scheduled
+            python -m automation.daily --quick --scheduled
           else
-            python -m automation.daily
+            python -m automation.daily --quick
           fi
       - uses: actions/upload-artifact@v4
         with:
@@ -49,5 +49,6 @@ jobs:
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
             git commit -m 'Préparer le point qualitatif quotidien'
+            git pull --rebase origin main
             git push
           fi

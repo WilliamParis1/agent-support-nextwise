@@ -253,6 +253,7 @@ def persist_report(report, root=ROOT):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--scheduled', action='store_true')
+    parser.add_argument('--quick', action='store_true', help='Échantillon de huit actifs liquides, sans clé payante')
     parser.add_argument('--days', type=int, default=2, choices=[1, 2])
     args = parser.parse_args()
     now = datetime.now(UTC)
@@ -271,13 +272,27 @@ def main():
         return
     config = json.loads((ROOT / 'automation/config.json').read_text())
     universe, selected = load_universe(config)
+    if args.quick:
+        symbols = set(config['quick_symbols'])
+        selected = [asset for asset in selected if asset['yahoo_symbol'] in symbols]
+        if len(selected) != len(symbols):
+            raise ValueError('Un actif du périmètre rapide manque dans le CSV.')
+        config = {**config, 'daily_scope': 'quick', 'min_quote_coverage': 0.75}
     news_by_day = {day: [] for _, day in pending}
+    feed_errors = []
     for feed in config['feeds']:
-        raw = get(feed['url'])
+        try:
+            raw = get(feed['url'])
+        except Exception as error:
+            feed_errors.append({'source': feed['name'], 'error': type(error).__name__})
+            print(f"Flux indisponible : {feed['name']} ({type(error).__name__})", flush=True)
+            continue
         for day in news_by_day:
             news_by_day[day].extend(parse_news(raw, feed['name'], day, feed['macro_only']))
     for day, news in news_by_day.items():
         news_by_day[day] = sorted({n['url']: n for n in news}.values(), key=lambda n: n['published_at'], reverse=True)
+    if len(feed_errors) == len(config['feeds']):
+        raise RuntimeError('Tous les flux macro sont indisponibles ; aucun rapport non sourcé produit.')
     prices_by_day = collect_price_days(selected, list(news_by_day), config)
     for publication, day in pending:
         news, prices = news_by_day[day], prices_by_day[day]
@@ -289,7 +304,7 @@ def main():
         report = {'schema_version': 2, 'publication_date': publication.isoformat(), 'date': day.isoformat(),
                   'generated_at': now.isoformat(), 'timezone': 'Europe/Paris', 'status': 'draft',
                   'universe': {'source': config['universe_csv'], 'total': len(universe), 'tracked': len(selected), 'scope': config['daily_scope']},
-                  'news': news, 'prices': prices, **editorial}
+                  'news': news, 'prices': prices, 'feed_errors': feed_errors, **editorial}
         persist_report(report)
         print(f"Édition du {publication} : {report['word_count']} mots, PDF de deux pages ; données du {day}.")
 
