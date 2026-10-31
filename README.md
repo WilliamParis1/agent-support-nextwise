@@ -1,6 +1,6 @@
 # Synapse Capital — Le carnet de Mr Camembert
 
-Toutes les activités restent sur la home : menu d’actions à gauche, publications d’aujourd’hui et de la veille directement visibles, univers des actifs dessous, et Mr Camembert à droite avec des réponses à cliquer. Les échanges guidés utilisent les publications et le CSV disponibles, sans clé IA. Pas de barre de saisie ni de lecture vocale. Les animations durent moins de cinq secondes et respectent la préférence de réduction des mouvements.
+Toutes les activités restent sur la home : publications d’aujourd’hui et de la veille directement visibles, sans slogan ni menu latéral, univers des actifs dessous, et Mr Camembert à droite avec des réponses à cliquer. Les échanges guidés utilisent les publications et le CSV disponibles, sans clé IA. Pas de barre de saisie ni de lecture vocale. Les animations durent moins de cinq secondes et respectent la préférence de réduction des mouvements.
 
 ## Lancer et publier
 
