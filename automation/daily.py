@@ -13,7 +13,7 @@ import unicodedata
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -216,65 +216,157 @@ def compose(day, news, prices):
     return '\n\n'.join(line for line in lines if line)
 
 
+def summarize(day, prices):
+    """Under 50 whitespace-delimited words, based only on observed closes."""
+    moves = sorted((p for p in prices if p['status'] == 'available'), key=lambda p: abs(p['change_pct']), reverse=True)[:3]
+    if not moves:
+        return (f"Au {day:%d/%m/%Y}, aucune séance exploitable dans les données reçues pour les actifs Nextwise. "
+                "Aucune tendance de marché ne peut être établie ; aucun cours ancien n’est présenté comme celui d’hier.")
+    positive = sum(p['change_pct'] > 0 for p in moves)
+    negative = sum(p['change_pct'] < 0 for p in moves)
+    tone = 'contrastés' if positive and negative else 'en hausse' if positive else 'en baisse' if negative else 'stables'
+    values = ', '.join(f"{p['symbol']} ({p['change_pct']:+.2f} %)" for p in moves)
+    return (f"Au {day:%d/%m/%Y}, les actifs Nextwise retenus sont {tone} : {values}. "
+            "Variations entre clôtures de séances consécutives. Cet échantillon ne représente ni tout le marché ni les positions du club.")
+
+
+def analyze(news, prices):
+    """A conditional reading of a sourced headline, never an invented article summary."""
+    if not news:
+        return None
+    source = news[0]
+    title = normalize(source['title'])
+    if re.search(r'inflat|rate|taux|monetary|monetaire', title):
+        mechanism = ("Un changement de perspective sur les taux peut modifier le taux d’actualisation des bénéfices futurs et le coût du financement. "
+                     "Une hausse des taux attendus pèserait, toutes choses égales par ailleurs, sur les valorisations ; une baisse pourrait les soutenir. "
+                     "L’effet sur une banque dépend aussi de sa marge d’intérêt, du coût des dépôts et du risque de crédit.")
+        watch = "Vérifier le niveau des taux et les anticipations, puis l’endettement et les prochaines publications des entreprises concernées."
+    elif re.search(r'oil|energy|petrol|energie', title):
+        mechanism = ("Une hausse durable du coût de l’énergie peut soutenir les revenus des producteurs et réduire les marges des entreprises consommatrices. "
+                     "L’effet dépend des couvertures, des devises et de la capacité à répercuter les coûts ; ces paramètres ne sont pas documentés ici.")
+        watch = "Vérifier le prix de l’énergie, les couvertures et les commentaires de marge avant d’appliquer cette lecture à un actif."
+    elif re.search(r'growth|gdp|econom|emploi|employment|trade|croissance', title):
+        mechanism = ("Une évolution de l’activité peut modifier les perspectives de demande, les bénéfices attendus et le risque de crédit. "
+                     "Les entreprises cycliques pourraient être plus sensibles, mais leurs expositions géographiques et leurs carnets de commandes doivent être vérifiés.")
+        watch = "Comparer la publication complète aux attentes, puis examiner les expositions sectorielles et géographiques des entreprises."
+    else:
+        mechanism = ("Le titre seul ne permet pas d’établir un canal de transmission précis aux actifs. "
+                     "Il faut lire la publication complète, identifier ce qui change par rapport aux attentes et vérifier quelles entreprises sont effectivement exposées.")
+        watch = "Lire la source primaire et vérifier les chiffres, les dates et les hypothèses avant toute conclusion."
+    moves = sorted((p for p in prices if p['status'] == 'available'), key=lambda p: abs(p['change_pct']), reverse=True)[:3]
+    return {'title': source['title'], 'source': source, 'mechanism': mechanism, 'watch': watch,
+            'assets': moves,
+            'limits': "L’information disponible est le titre d’un flux RSS, pas une lecture intégrale de l’article. Les clôtures sont brutes, non ajustées. La simultanéité d’une annonce et d’une variation ne démontre pas de causalité. Aucun conseil d’investissement ni position détenue n’est déduit."}
+
+
 def write_pdf(path, report):
+    """Two-page analysis: observed moves, then conditional interpretation and sources."""
     from reportlab.lib import colors
     from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
-    from reportlab.lib.enums import TA_LEFT
     from reportlab.lib.pagesizes import A4
-    from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, KeepInFrame, Flowable
+    from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, KeepInFrame, PageBreak
+    from reportlab.graphics.shapes import Drawing, Rect, Line, String, Polygon
     from xml.sax.saxutils import escape
+    from reportlab.pdfbase import pdfmetrics
+    from reportlab.pdfbase.ttfonts import TTFont
+    import reportlab
+    font_dir = Path(reportlab.__file__).parent / 'fonts'
+    pdfmetrics.registerFont(TTFont('BriefSans', str(font_dir / 'Vera.ttf')))
+    pdfmetrics.registerFont(TTFont('BriefSansBold', str(font_dir / 'VeraBd.ttf')))
+    ink = colors.HexColor('#0b2541')
+    muted = colors.HexColor('#687582')
     styles = getSampleStyleSheet()
-    styles.add(ParagraphStyle(name='SmallBrief', fontName='Helvetica', fontSize=8, leading=11, textColor=colors.HexColor('#203b33'), alignment=TA_LEFT))
-    style = styles['SmallBrief']
-    def p(text):
-        return Paragraph(escape(text), style)
-    class Brand(Flowable):
-        width = 465
-        height = 60
-        def draw(self):
-            canvas = self.canv
-            canvas.setFillColor(colors.HexColor('#08223f'))
-            canvas.setFont('Helvetica', 31)
-            canvas.drawString(0, 30, 'Synapse')
-            canvas.drawString(31, 0, 'Capital')
-            canvas.setStrokeColor(colors.HexColor('#a9afb5'))
-            canvas.setLineWidth(2)
-            curve = canvas.beginPath()
-            curve.moveTo(45, 23)
-            curve.curveTo(70, 38, 101, 27, 128, 39)
-            canvas.drawPath(curve)
-    story = [Brand(), Spacer(1, 8), p('FICHE QUALITATIVE · ' + report['date'] + ' · À RELIRE AVANT PUBLICATION'), Spacer(1, 14)]
+    styles.add(ParagraphStyle(name='BodyAnalysis', fontName='BriefSans', fontSize=10, leading=15, textColor=ink, spaceAfter=8))
+    styles.add(ParagraphStyle(name='SectionAnalysis', fontName='BriefSansBold', fontSize=13, leading=18, textColor=ink, spaceBefore=12, spaceAfter=10))
+    styles.add(ParagraphStyle(name='TitleAnalysis', fontName='BriefSans', fontSize=26, leading=30, textColor=ink, spaceAfter=14))
+    def p(text, style='BodyAnalysis'):
+        return Paragraph(escape(str(text)), styles[style])
+    moves = sorted((x for x in report['prices'] if x['status'] == 'available'), key=lambda x: abs(x['change_pct']), reverse=True)[:3]
+    summary = report.get('summary') or summarize(date.fromisoformat(report['date']), report['prices'])
+    analysis = report.get('analysis') or analyze(report['news'], report['prices'])
+    first = [p('Synapse Capital', 'TitleAnalysis'), p('Le point de marché · ' + report['date']),
+             p('01 / Comprendre les mouvements', 'SectionAnalysis'), p(summary)]
     if report.get('universe'):
-        universe = report['universe']
-        story += [p(f"Périmètre : {universe['tracked']} actifs suivis sur {universe['total']} autorisés ; sélection : {universe['scope']}."), Spacer(1, 6)]
-    for line in report['text'].split('\n\n'):
-        story += [p(line), Spacer(1, 8)]
-    moves = sorted((x for x in report['prices'] if x['status'] == 'available'), key=lambda x: abs(x['change_pct']), reverse=True)
+        u = report['universe']
+        first += [p(f"Périmètre : {u['tracked']} actifs examinés sur {u['total']} autorisés. Les trois mouvements les plus marqués sont retenus pour la synthèse.")]
     if moves:
-        rows = [['Actif', 'Clôture', 'Variation', 'Séance précédente']]
-        rows += [[x['symbol'], f'{x["close"]:.2f} {x["currency"]}', f'{x["change_pct"]:+.2f} %', x['previous_date']] for x in moves[:8]]
-        table = Table(rows, colWidths=[100, 125, 80, 160])
-        table.setStyle(TableStyle([('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#eaf0df')), ('FONTSIZE', (0, 0), (-1, -1), 8), ('BOTTOMPADDING', (0, 0), (-1, -1), 7)]))
-        story += [table, Spacer(1, 10)]
-    missing = [x['symbol'] for x in report['prices'] if x['status'] == 'no_session']
-    if missing:
-        story += [p(f'Sans séance ce jour : {len(missing)} actifs. Liste dans le rapport JSON.'), Spacer(1, 8)]
-    story.append(p('Sources macro (titres publiés pendant la journée civile, heure de Paris) :'))
-    for item in report['news'][:3]:
-        story += [p(item['source'] + ' · ' + item['published_at'] + ' · ' + item['url'])]
-    story += [Spacer(1, 6), p('Cours : Yahoo Finance, clôtures brutes non ajustées, dates de séance locales. Une opération sur titre peut affecter la variation. Détail et liens de chaque actif dans le rapport JSON téléchargeable. Flux macro suivis : BCE, Federal Reserve, BBC Business ; couverture non exhaustive, titres uniquement. Univers CSV ; aucune position détenue n’est inférée.')]
-    SimpleDocTemplate(str(path), pagesize=A4, leftMargin=36, rightMargin=36, topMargin=30, bottomMargin=30).build([KeepInFrame(A4[0] - 84, A4[1] - 72, story, mode='shrink')])
+        chart = Drawing(465, 155)
+        center, scale = 240, 155 / max(1, max(abs(m['change_pct']) for m in moves))
+        chart.add(String(0, 140, 'Variations entre deux clôtures (%)', fontName='BriefSansBold', fontSize=10, fillColor=ink))
+        chart.add(Line(center, 15, center, 125, strokeColor=muted, strokeWidth=.6))
+        for i, m in enumerate(moves):
+            y = 105 - i * 36
+            change = m['change_pct']
+            width = abs(change) * scale
+            chart.add(String(0, y, m['symbol'], fontSize=10, fillColor=ink))
+            chart.add(Rect(center if change >= 0 else center - width, y - 5, max(width, 1), 18,
+                           fillColor=colors.HexColor('#345f75' if change >= 0 else '#a67856'), strokeColor=None))
+            chart.add(String(412, y, f'{change:+.2f} %', fontSize=9, fillColor=ink))
+        first += [Spacer(1, 12), chart]
+        rows = [[p('Actif'), p('Clôture'), p('Séance précédente')]]
+        rows += [[p(m['symbol']), p(f"{m['close']:.2f} {m['currency']}"), p(m['previous_date'])] for m in moves]
+        table = Table(rows, colWidths=[135, 150, 180])
+        table.setStyle(TableStyle([('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#edf1f3')), ('VALIGN', (0, 0), (-1, -1), 'TOP'), ('BOTTOMPADDING', (0, 0), (-1, -1), 5)]))
+        first += [table, p('Lecture du graphique', 'SectionAnalysis')]
+        gains = sum(m['change_pct'] > 0 for m in moves)
+        losses = sum(m['change_pct'] < 0 for m in moves)
+        first += [p(f"Sur ces {len(moves)} actifs, {gains} progressent et {losses} reculent. Un écart de variation montre une dispersion, pas sa cause. La sélection par amplitude privilégie les extrêmes et ne mesure pas la tendance de l’ensemble du marché.")]
+        for m in moves:
+            first += [p(f"{m.get('name', m['symbol'])} ({m['symbol']}) : {m['change_pct']:+.2f} % ; secteur : {m.get('sector', 'non renseigné')}. Vérifier les résultats, annonces propres à l’entreprise et opérations sur titres avant d’attribuer ce mouvement à la conjoncture.")]
+    else:
+        first += [p('Aucune séance exploitable : aucun graphique de cours ni variation historique ne sont présentés comme des données de cette journée.')]
+    first += [p('Méthode et couverture', 'SectionAnalysis'),
+              p('Clôtures brutes de la journée analysée comparées à la séance précédente, en dates locales de cotation. Les jours sans séance et les données indisponibles sont exclus. Splits et dividendes peuvent influencer les écarts. Les actifs autorisés ne sont pas des positions détenues.')]
+    second = [p('02 / Aller au-delà du résumé', 'TitleAnalysis')]
+    if analysis:
+        source = analysis['source']
+        second += [p('Une information à mettre en perspective', 'SectionAnalysis'), p(analysis['title']),
+                   p(f"Source : {source['source']} · {source['published_at']}. Fait rapporté : le titre du flux, sans lecture intégrale de l’article."),
+                   p('Canal de transmission possible', 'SectionAnalysis'), p(analysis['mechanism'])]
+    else:
+        second += [p('Aucune actualité sourcée pour cette journée. Sans information vérifiée, aucun événement n’est inventé pour expliquer les cours.')]
+    diagram = Drawing(465, 85)
+    labels = ['Information', 'Anticipations', 'Valorisations']
+    for i, label in enumerate(labels):
+        x = i * 160
+        diagram.add(Rect(x, 24, 140, 36, fillColor=colors.HexColor('#edf1f3'), strokeColor=None, rx=4, ry=4))
+        diagram.add(String(x + 70, 38, label, textAnchor='middle', fontSize=10, fillColor=ink))
+        if i < 2:
+            diagram.add(Line(x + 143, 42, x + 157, 42, strokeColor=ink))
+            diagram.add(Polygon([x + 157, 42, x + 152, 45, x + 152, 39], fillColor=ink, strokeColor=None))
+    diagram.add(String(0, 5, 'Schéma conceptuel : une hypothèse de transmission, pas une causalité démontrée.', fontSize=8, fillColor=muted))
+    second += [diagram]
+    if analysis:
+        second += [p('Ce que cela change dans la lecture des trois actifs', 'SectionAnalysis'),
+                   p('Les actifs de la première page illustrent la réaction observée des prix. Pour relier cette information à chacun, vérifier son exposition économique, la chronologie de l’annonce et ce que le marché anticipait déjà. Un secteur ou une variation ne suffisent pas à établir ce lien.'),
+                   p('Points de vigilance', 'SectionAnalysis'), p(analysis['watch']), p(analysis['limits']),
+                   p('Source de l’information', 'SectionAnalysis'), p(source['url'])]
+    second += [p('Sources des cotations', 'SectionAnalysis')]
+    for m in moves:
+        second += [p(m['symbol'] + ' · ' + m.get('source_url', 'Lien indisponible ; consulter le rapport JSON.'))]
+    second += [p('Yahoo Finance · clôtures brutes, non ajustées. Détail, couverture et indisponibilités dans le rapport JSON. Analyse conditionnelle, sans conseil d’investissement. À relire avant publication.')]
+    def footer(canvas, doc):
+        canvas.setFont('BriefSans', 8)
+        canvas.setFillColor(muted)
+        canvas.drawString(42, 22, 'Synapse Capital · ' + report['date'] + ' · Brouillon sourcé')
+        canvas.drawRightString(A4[0] - 42, 22, f'{doc.page} / 2')
+    doc = SimpleDocTemplate(str(path), pagesize=A4, leftMargin=42, rightMargin=42, topMargin=34, bottomMargin=40)
+    doc.build([KeepInFrame(A4[0] - 96, A4[1] - 86, first, mode='shrink'), PageBreak(),
+               KeepInFrame(A4[0] - 96, A4[1] - 86, second, mode='shrink')], onFirstPage=footer, onLaterPages=footer)
 
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--scheduled', action='store_true')
+    parser.add_argument('--date', type=date.fromisoformat, help='Journée analysée YYYY-MM-DD, antérieure à aujourd’hui à Paris')
     args = parser.parse_args()
     now = datetime.now(UTC)
     if args.scheduled and not due(now):
         print('Hors créneau Paris : aucune génération.')
         return
-    day = previous_day(now)
+    day = args.date or previous_day(now)
+    if day > previous_day(now):
+        parser.error('La journée analysée doit être terminée en heure de Paris.')
     target = ROOT / 'reports' / day.isoformat()
     if (target / 'report.json').exists():
         print('Rapport déjà généré : aucune duplication.')
@@ -289,7 +381,8 @@ def main():
     news.sort(key=lambda n: n['published_at'], reverse=True)
     prices = collect_prices(selected, day, config)
     report = {'date': day.isoformat(), 'generated_at': now.isoformat(), 'timezone': 'Europe/Paris',
-              'status': 'draft', 'universe': {'source': config['universe_csv'], 'total': len(universe), 'tracked': len(selected), 'scope': config['daily_scope']}, 'news': news, 'prices': prices, 'text': compose(day, news, prices)}
+              'status': 'draft', 'universe': {'source': config['universe_csv'], 'total': len(universe), 'tracked': len(selected), 'scope': config['daily_scope']}, 'news': news, 'prices': prices, 'text': summarize(day, prices),
+              'summary': summarize(day, prices), 'analysis': analyze(news, prices)}
     # Stage complete outputs before making the report discoverable.
     import tempfile
     import shutil
@@ -300,7 +393,10 @@ def main():
         write_pdf(staging / 'fiche.pdf', report)
         target.parent.mkdir(exist_ok=True)
         shutil.copytree(staging, target, dirs_exist_ok=True)
-    (ROOT / 'reports/latest.json').write_text(json.dumps({'date': day.isoformat(), 'path': f'reports/{day.isoformat()}', 'generated_at': now.isoformat()}, indent=2))
+    latest_path = ROOT / 'reports/latest.json'
+    latest = json.loads(latest_path.read_text()) if latest_path.exists() else {}
+    if not latest.get('date') or latest['date'] <= day.isoformat():
+        latest_path.write_text(json.dumps({'date': day.isoformat(), 'path': f'reports/{day.isoformat()}', 'generated_at': now.isoformat()}, indent=2))
     print(f'Brouillon généré pour {day} : {len(news)} actualités, {len(prices)} actifs.')
 
 

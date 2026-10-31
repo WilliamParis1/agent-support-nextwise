@@ -35,7 +35,7 @@ if __name__ == '__main__':
     unittest.main()
 
 class PDFTests(unittest.TestCase):
-    def test_single_page_pdf_with_long_inputs(self):
+    def test_two_page_pdf_with_long_inputs(self):
         from automation.daily import write_pdf
         from tempfile import TemporaryDirectory
         from pathlib import Path
@@ -46,4 +46,45 @@ class PDFTests(unittest.TestCase):
         with TemporaryDirectory() as directory:
             path = Path(directory) / 'brief.pdf'
             write_pdf(path, report)
-            self.assertEqual(len(PdfReader(path).pages), 1)
+            self.assertEqual(len(PdfReader(path).pages), 2)
+
+class EditionTests(unittest.TestCase):
+    def test_summary_under_50_words_and_only_available_assets(self):
+        from automation.daily import summarize
+        prices = [{'symbol': 'AI.PA', 'status': 'available', 'change_pct': 2},
+                  {'symbol': 'BNP.PA', 'status': 'available', 'change_pct': -1},
+                  {'symbol': 'OR.PA', 'status': 'available', 'change_pct': 0.5},
+                  {'symbol': 'MISSING', 'status': 'unavailable'}]
+        text = summarize(date(2026, 10, 30), prices)
+        self.assertLess(len(text.split()), 50)
+        self.assertIn('contrastés', text)
+        for symbol in ['AI.PA', 'BNP.PA', 'OR.PA']:
+            self.assertIn(symbol, text)
+        self.assertNotIn('MISSING', text)
+        self.assertLess(len(summarize(date(2026, 10, 30), []).split()), 50)
+
+    def test_analysis_and_pdf_preserve_source_and_conditional_reading(self):
+        from automation.daily import analyze, summarize, write_pdf
+        from pathlib import Path
+        from tempfile import TemporaryDirectory
+        from pypdf import PdfReader
+        news = [{'title': 'Interest rate decision', 'source': 'BCE',
+                 'published_at': '2026-10-30T12:00:00+00:00', 'url': 'https://example.org/decision'}]
+        prices = [{'symbol': 'AI.PA', 'status': 'available', 'close': 102,
+                   'currency': 'EUR', 'change_pct': 2, 'previous_date': '2026-10-29',
+                   'source_url': 'https://finance.yahoo.com/quote/AI.PA/history/'}]
+        analysis = analyze(news, prices)
+        self.assertEqual(analysis['source'], news[0])
+        self.assertIn('actualisation', analysis['mechanism'])
+        self.assertIn('pas une lecture intégrale', analysis['limits'])
+        self.assertIsNone(analyze([], prices))
+        report = {'date': '2026-10-30', 'news': news, 'prices': prices,
+                  'summary': summarize(date(2026, 10, 30), prices), 'analysis': analysis}
+        with TemporaryDirectory() as directory:
+            path = Path(directory) / 'analysis.pdf'
+            write_pdf(path, report)
+            pdf = PdfReader(path)
+            self.assertEqual(len(pdf.pages), 2)
+            text = '\n'.join(page.extract_text() for page in pdf.pages)
+            for expected in ['https://example.org/decision', 'AI.PA', 'actualisation', 'Points de vigilance', 'Anticipations', 'Variations entre deux clôtures (%)']:
+                self.assertIn(expected, text)

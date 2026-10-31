@@ -1,6 +1,6 @@
 # Synapse Capital — Mr Camembert
 
-Une home minimaliste : le personnage en pixel art, une bulle animée, une voix française activable et un bouton pour ouvrir le contenu qualitatif du jour. L’univers des actifs est consultable dans une fenêtre séparée. Le personnage est une adaptation transparente de la référence fournie ; la signature bleu nuit et argent est redessinée en SVG.
+La page d’accueil regroupe toutes les activités : menu d’actions à gauche, éditions du jour et de la veille, analyse PDF, réponses guidées à Mr Camembert et recherche dans l’univers Nextwise. Aucune fenêtre modale ni fonction « Écouter ». Le menu devient une liste compacte sur mobile.
 
 ## Lancer le site
 
@@ -8,9 +8,25 @@ Une home minimaliste : le personnage en pixel art, une bulle animée, une voix f
 python3 -m http.server 3000
 ```
 
-Site statique, sans build. La conversation utilise une clé IA côté serveur. `vercel.json` configure Vercel (preset Other, racine du dépôt). L’animation de parole est simulée ; « Écouter » déclenche la synthèse vocale du navigateur après un clic, avec une voix française si disponible. Aucun son ne démarre automatiquement. La pause et la préférence système de réduction des animations sont respectées.
+Site statique, sans build. La conversation utilise une clé IA côté serveur ; le serveur Python ne lance pas l’API. `vercel.json` configure Vercel (preset Other, racine du dépôt). La préférence système de réduction des animations est respectée. Aucun contrôle manuel d’animation ni champ de conversation sur l’accueil. Les réponses proposées fonctionnent localement à partir du rapport disponible ; aucun appel IA n’est nécessaire pour ces interactions.
 
-## Conversation avec Mr Camembert
+## Deux éditions sur l’accueil
+
+L’édition d’aujourd’hui analyse la journée civile d’hier ; celle de la veille analyse la journée d’avant-hier, en heure de Paris. La page charge directement `reports/AAAA-MM-JJ/report.json` pour ces deux journées, sans substituer un ancien rapport. Les éditions absentes ou incorrectement datées sont signalées.
+
+Le générateur produit `summary` (également dans `text` et `publication.txt`) : **moins de 50 mots**, à partir d’au plus trois actifs Nextwise dont les variations disponibles sont les plus marquées. Les variations comparent deux clôtures de séances consécutives ; cet échantillon ne représente pas tout le marché. Sans séance exploitable, la synthèse le dit explicitement.
+
+`analysis` approfondit le titre de l’actualité la plus récente de la journée : source et date, mécanismes conditionnels, points à vérifier, limites, puis trois actifs à observer. Il ne prétend pas résumer l’article intégral ni prouver un lien avec les variations. `fiche.pdf` approfondit la synthèse sur deux pages : graphique des variations des mêmes actifs et méthode de lecture, puis mécanismes conditionnels, schéma de transmission et liens des sources. Sans actualité sourcée, le PDF indique cette limite et ne fabrique aucune explication d’actualité. Les deux éditions ont chacune un bouton de téléchargement et un bouton Copier ; ils restent désactivés quand les fichiers correspondants manquent. Le bouton de copie porte sur la synthèse courte.
+
+Pour rattraper une édition manquante (réseau fournisseurs requis, collecte complète potentiellement longue) :
+
+```sh
+python3 automation/daily.py --date 2026-10-29
+```
+
+`--date` désigne la journée analysée, obligatoirement terminée. Une génération historique ne recule pas `reports/latest.json`. Les rapports existants ne sont pas écrasés automatiquement. Les anciens rapports sans synthèse courte doivent être régénérés séparément pour ce nouvel affichage.
+
+## API de conversation (conservée pour intégration)
 
 La route serveur Vercel `/api/chat` utilise `gpt-4.1-mini`. Ajouter **OPENAI_API_KEY** dans les variables du projet Vercel, puis redéployer. Une clé **AI_GATEWAY_API_KEY** est aussi acceptée via Vercel AI Gateway (prioritaire si les deux sont définies). Aucune clé n’est incluse dans le navigateur, le dépôt ou les logs. `.env.example` ne contient que les noms.
 
@@ -49,7 +65,7 @@ La collecte utilise quatre workers, un débit global de deux requêtes par secon
 Après une exécution réussie :
 
 - `reports/AAAA-MM-JJ/publication.txt` : texte du brouillon ;
-- `reports/AAAA-MM-JJ/fiche.pdf` : pièce jointe A4 d’une page avec identité du club ;
+- `reports/AAAA-MM-JJ/fiche.pdf` : pièce jointe A4 de deux pages avec identité du club ;
 - `reports/AAAA-MM-JJ/report.json` : couverture, métadonnées, cotations et sources ;
 - `reports/latest.json` : dernier rapport disponible, affiché sur le site.
 
@@ -60,7 +76,7 @@ Le workflow pousse les rapports sur la branche par défaut. Vercel doit suivre c
 - Journée analysée : veille civile, **Europe/Paris uniquement**. Pas de nouvelles plus anciennes réutilisées.
 - Macro : titres des RSS BCE, Federal Reserve et BBC Business (filtre de mots-clés macro pour BBC). Couverture non exhaustive, sans lecture intégrale des articles ; certains titres peuvent rester en anglais. Un flux indisponible fait échouer le rapport, une journée sans publication est signalée.
 - Marchés : variations entre la clôture brute de la journée analysée et la précédente clôture de séance, dates locales des places. Aucun ancien cours n’est réétiqueté « hier » les jours sans séance. Splits et dividendes peuvent affecter ces cours non ajustés.
-- Trame déterministe fondée sur les données, sans modèle IA. Le texte cite jusqu’à trois nouvelles et quatre mouvements ; le PDF affiche jusqu’à huit mouvements. Toutes les données disponibles restent dans le JSON.
+- Trame déterministe fondée sur les données, sans modèle IA. La synthèse cite jusqu’à trois mouvements ; le PDF approfondit une information et présente jusqu’à trois actifs. Toutes les données disponibles restent dans le JSON.
 - Les liens entre nouvelles macro et prix sont des pistes de lecture, pas des causalités prouvées. Aucune position ou opération du club n’est inventée à partir de la liste autorisée. Relire et adapter avant publication ; les points dépendent des règles Nextwise.
 - Aucun envoi ni publication automatique sur le compte club : un membre copie le texte et télécharge la fiche.
 
@@ -73,4 +89,4 @@ node --check script.js
 python3 automation/daily.py  # nécessite l’accès aux flux et aux cours réels
 ```
 
-Les tests valident l’univers réel de 3 382 actifs, l’import, les places, la collecte complète avec réponses simulées, le seuil de couverture, les dates, les changements d’heure et le PDF d’une page. Ils ne valident pas l’accès réel aux fournisseurs, encore bloqué par la politique réseau du cloud au moment de l’intégration. Les domaines requis sont `www.ecb.europa.eu`, `www.federalreserve.gov`, `feeds.bbci.co.uk`, `query1.finance.yahoo.com`. Le runner GitHub utilise son propre réseau ; un premier lancement manuel dans Actions permet de diagnostiquer les accès réels.
+Les tests valident l’univers réel de 3 382 actifs, l’import, les places, la collecte complète avec réponses simulées, le seuil de couverture, les dates, les changements d’heure et le PDF de deux pages. Ils ne valident pas l’accès réel aux fournisseurs, encore bloqué par la politique réseau du cloud au moment de l’intégration. Les domaines requis sont `www.ecb.europa.eu`, `www.federalreserve.gov`, `feeds.bbci.co.uk`, `query1.finance.yahoo.com`. Le runner GitHub utilise son propre réseau ; un premier lancement manuel dans Actions permet de diagnostiquer les accès réels.

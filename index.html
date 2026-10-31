@@ -14,43 +14,68 @@
     <a href="./" aria-label="Synapse Capital, accueil"><img class="logo" src="assets/synapse-capital.svg" width="142" height="71" alt="Synapse Capital"></a>
 
   </header>
+  <div class="workspace-layout">
+  <aside class="sidebar" aria-label="Actions">
+    <p class="eyebrow">VOTRE ESPACE NEXTWISE</p>
+    <nav aria-label="Navigation de la page">
+      <a href="#daily-content">Le point du jour <span aria-hidden="true">↗</span></a>
+      <a href="#previous-edition">Le point de la veille <span aria-hidden="true">↗</span></a>
+      <a href="#daily-analysis">L’analyse en PDF <span aria-hidden="true">↓</span></a>
+      <a href="#conversation">Parler à Mr Camembert <span aria-hidden="true">↗</span></a>
+      <a href="#universe">Explorer les actifs <span aria-hidden="true">↗</span></a>
+    </nav>
+    <p class="sidebar-note">Un regard sur les marchés.<br>Deux éditions à portée de main.</p>
+  </aside>
   <main class="home">
-    <h1 class="sr-only">Mr Camembert — votre contenu qualitatif du jour</h1>
-    <div class="professor-scene" id="professor-scene">
-      <div class="speech-bubble"><p id="professor-speech">Bonjour ! Moi, c’est Mr Camembert.</p><span class="speech-cursor" aria-hidden="true"></span></div>
-      <div class="professor-floor" aria-hidden="true"></div>
-      <img id="professor" class="professor" src="assets/professor.png" width="320" height="320" alt="Mr Camembert, personnage en pixel art avec des lunettes, une moustache et une baguette de professeur.">
-    </div>
-    <section class="chat" aria-label="Conversation avec Mr Camembert"><div class="chat-messages" id="chat-messages" role="log" aria-live="polite" aria-relevant="additions"></div><form id="chat-form"><label class="sr-only" for="chat-input">Votre message à Mr Camembert</label><div class="chat-input-row"><input id="chat-input" name="message" placeholder="Parlez à Mr Camembert…" maxlength="4000" autocomplete="off" required><button id="send-message" type="submit" aria-label="Envoyer le message"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m5 12 7-7 7 7M12 5v15"/></svg></button></div></form><p class="chat-status" id="chat-status" role="status"></p><p class="chat-privacy" id="chat-privacy" hidden>Vos messages sont transmis au service IA pour répondre. Aucun historique n’est enregistré par le site ; il disparaît au rechargement.</p></section>
-    <div class="home-actions">
-      <button class="primary-button" type="button" data-open="brief-dialog">Le contenu du jour <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button>
-      <button id="voice-toggle" class="voice-button" type="button" aria-pressed="false" aria-label="Écouter Mr Camembert"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5ZM15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></svg><span id="voice-label">Écouter</span></button>
-    </div>
-  </main>
-  <footer><button class="nav-link" type="button" data-open="universe-dialog">L’univers des actifs</button><span id="universe-summary" class="sr-only">L’univers Nextwise</span><button id="animation-toggle" type="button" aria-pressed="false">Mettre l’animation en pause</button></footer>
+    <section class="daily-section" id="daily-content" aria-labelledby="daily-heading">
+      <p class="eyebrow">LE CARNET DE MR CAMEMBERT</p>
+      <h1 id="daily-heading">Le marché, en quelques mots.</h1>
+      <p class="section-intro">Moins de 50 mots pour faire le point. Une analyse pour aller plus loin.</p>
+      <div class="edition-grid">
+        <article class="edition today" id="today-edition" aria-labelledby="today-heading">
+          <div class="edition-header"><h2 id="today-heading">Aujourd’hui</h2><span class="edition-tag">LE POINT DU JOUR</span></div>
+          <p class="report-date" data-date></p><p class="edition-status" data-status role="status">Chargement du point…</p>
+          <p class="report-text" data-text hidden></p>
+          <div class="brief-actions" data-actions><a class="primary-button" data-pdf aria-disabled="true">Télécharger le PDF</a><button class="copy-button" data-copy type="button" disabled aria-label="Copier le texte" title="Copier le texte">Copier</button><a class="text-link" data-evidence download hidden>Sources</a></div>
+          <div class="analysis-link" id="daily-analysis"><p class="eyebrow">POUR ALLER PLUS LOIN</p><h3 data-analysis-title>Une information, un éclairage.</h3><p data-analysis-status>Le PDF sourcé sera disponible avec le point du jour.</p></div>
+        </article>
+        <article class="edition" id="previous-edition" aria-labelledby="previous-heading">
+          <div class="edition-header"><h2 id="previous-heading">La veille</h2><span class="edition-tag">À REVOIR</span></div>
+          <p class="report-date" data-date></p><p class="edition-status" data-status role="status">Chargement du point…</p>
+          <p class="report-text" data-text hidden></p>
+          <div class="brief-actions" data-actions><a class="primary-button" data-pdf aria-disabled="true">Télécharger le PDF</a><button class="copy-button" data-copy type="button" disabled aria-label="Copier le texte" title="Copier le texte">Copier</button><a class="text-link" data-evidence download hidden>Sources</a></div>
+          <div class="analysis-link"><h3 data-analysis-title>L’analyse de la veille</h3><p data-analysis-status>Le PDF sourcé sera disponible avec cette édition.</p></div>
+        </article>
+      </div>
+      <p class="fine-print">Éditions datées en heure de Paris, fondées sur la journée précédente. Clôtures comparées à la séance antérieure. Brouillons à relire avant publication ; les actifs autorisés ne sont pas des positions détenues.</p>
+    </section>
+    <div class="below-editions">
+    <section class="universe-section" id="universe" aria-labelledby="universe-heading">
 
-  <dialog id="brief-dialog" aria-labelledby="brief-heading">
-    <div class="dialog-header"><span class="eyebrow">LE CARNET DE MR CAMEMBERT</span><button class="close-button" type="button" data-close aria-label="Fermer le point du jour">×</button></div>
-    <h2 id="brief-heading">Le point du jour.</h2>
-    <p class="dialog-intro">Un texte à relire, une fiche d’une page à partager.</p>
-    <p id="brief-status" role="status">Chargement du dernier brouillon…</p>
-    <div id="brief-content" hidden>
-      <p class="report-date" id="brief-date"></p>
-      <p id="brief-text" class="report-text"></p>
-      <div class="brief-actions"><button class="primary-button" id="copy-brief" type="button">Copier le texte</button><a class="secondary-button" id="download-pdf" download>Télécharger le PDF</a><a class="text-link" id="download-evidence" download>Données et sources ↗</a></div>
-    </div>
-    <p class="fine-print">Préparation quotidienne à 2 h, heure de Paris. Le temps de collecte peut retarder sa disponibilité. Univers autorisé, sans positions détenues. Publication manuelle par un membre du club.</p>
-  </dialog>
-
-  <dialog id="universe-dialog" aria-labelledby="universe-heading">
-    <div class="dialog-header"><span class="eyebrow">LA COMPÉTITION NEXTWISE</span><button class="close-button" type="button" data-close aria-label="Fermer l’univers">×</button></div>
-    <h2 id="universe-heading">Notre terrain de jeu.</h2>
+    <div class="dialog-header"><span class="eyebrow">LA COMPÉTITION NEXTWISE</span></div>
+    <h2 id="universe-heading">L’univers des actifs.</h2>
     <p class="dialog-intro" id="universe-count">Chargement de l’univers…</p>
     <div class="filters"><label class="search-label" for="asset-search">Rechercher un actif<input id="asset-search" type="search" placeholder="Nom, ticker ou secteur…" autocomplete="off"></label><label for="market-filter">Place de cotation<select id="market-filter"><option value="">Toutes les places</option></select></label></div>
     <p class="results-status" id="results-status" role="status"></p>
     <div class="table-wrap"><table><thead><tr><th scope="col">Actif</th><th scope="col">Ticker</th><th scope="col">Place</th><th scope="col">Type</th></tr></thead><tbody id="assets-body"></tbody></table></div>
     <button class="secondary-button load-more" type="button" id="load-more" hidden>Afficher la suite</button>
     <p class="fine-print">Source : le CSV fourni par le club. Liste d’actifs autorisés, sans indication de détention. <a class="text-link" href="data/universe.csv" download>Télécharger l’univers CSV</a></p>
-  </dialog>
+    </section>
+    <section class="conversation-section" id="conversation" aria-labelledby="conversation-heading"><div class="conversation-intro"><p class="eyebrow">UN PEU DE RECUL</p><h2 id="conversation-heading">On en parle ?</h2><p class="section-intro">Choisissez une réponse pour continuer avec Mr Camembert.</p></div><div class="conversation-panel">
+
+    <div class="professor-scene" id="professor-scene">
+      <div class="speech-bubble"><p id="professor-speech">Bonjour ! Moi, c’est Mr Camembert.</p><span class="speech-cursor" aria-hidden="true"></span></div>
+      <div class="professor-floor" aria-hidden="true"></div>
+      <img id="professor" class="professor" src="assets/professor.png" width="320" height="320" alt="Mr Camembert, personnage en pixel art avec des lunettes, une moustache et une baguette de professeur.">
+    </div>
+    <section class="guided-chat" aria-label="Échanger avec Mr Camembert">
+      <div id="camembert-answer" class="camembert-answer" role="status" aria-live="polite">Je vous aide à lire le point du jour. Par quoi commence-t-on ?</div>
+      <div class="reply-options" aria-label="Vos réponses possibles"><button type="button" data-reply="explain">Expliquez-moi le point</button><button type="button" data-reply="pdf">Que regarder dans le PDF ?</button><button type="button" data-reply="assets">Montrez-moi les actifs</button><button type="button" data-reply="limits">Et les points de vigilance ?</button></div>
+    </section>
+    </div></section>
+    </div>
+  </main>
+  </div>
+  <footer><span id="universe-summary">L’univers Nextwise</span><span>Synapse Capital · Mr Camembert</span></footer>
 </body>
 </html>
