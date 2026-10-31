@@ -106,7 +106,7 @@ def write_pdf(path, report):
         canvas.line(44, 42, A4[0] - 44, 42)
         canvas.setFont('Helvetica', 8)
         canvas.setFillColor(MUTED)
-        canvas.drawString(44, 28, 'SYNAPSE CAPITAL  /  LE CARNET DE MR CAMEMBERT')
+        canvas.drawString(44, 28, 'SYNAPSE CAPITAL  /  LE CARNET DE MR SYNAPSE')
         canvas.drawRightString(A4[0] - 44, 28, f'{doc.page} / 2')
 
     publication = report.get('publication_date', report['date'])

@@ -6,7 +6,7 @@
   const pose = document.querySelector('#professor-pose');
   const toggle = document.querySelector('#character-toggle');
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const storageKey = 'camembert-sleeping';
+  const storageKey = 'synapse-sleeping';
   let state = 'awake';
   let transitionTimer;
   let speechTimer;
@@ -33,10 +33,10 @@
     pointing.hidden = next !== 'awake';
     pose.hidden = next === 'awake';
     pose.setAttribute('aria-label', {
-      walking: 'Mr Camembert marche de dos vers son lit.',
-      asleep: 'Mr Camembert dort dans son lit, sous sa couverture bleue.',
-      waking: 'Mr Camembert se réveille et revient de face avec sa canne.'
-    }[next] || 'Mr Camembert');
+      walking: 'Mr Synapse marche de dos vers son lit.',
+      asleep: 'Mr Synapse dort dans son lit, sous sa couverture bleue.',
+      waking: 'Mr Synapse se réveille et revient de face avec sa canne.'
+    }[next] || 'Mr Synapse');
     toggle.textContent = {
       awake: 'Bonne nuit', walking: 'Bonne nuit…', asleep: 'Bonjour', waking: 'Bonjour…'
     }[next];
@@ -47,7 +47,7 @@
     target = undefined;
     setState(next);
     try { localStorage.setItem(storageKey, String(next === 'asleep')); } catch { /* Storage may be disabled. */ }
-    say(next === 'asleep' ? 'Zzz…' : greet ? 'Bonjour ! Le point du jour est juste à côté.' : 'Bonjour ! Moi, c’est Mr Camembert.', next === 'awake');
+    say(next === 'asleep' ? 'Zzz…' : greet ? 'Bonjour ! Le point du jour est juste à côté.' : 'Bonjour ! Moi, c’est Mr Synapse.', next === 'awake');
   }
 
   toggle.addEventListener('click', () => {
@@ -77,7 +77,7 @@
   });
 
   const sprites = new Image();
-  sprites.src = 'assets/camembert-poses.png';
+  sprites.src = 'assets/synapse-poses.png';
   sprites.decode().then(() => {
     assetsReady = true;
     let asleep = false;

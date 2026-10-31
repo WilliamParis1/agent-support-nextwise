@@ -1,12 +1,21 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const handler = require('../api/chat.js');
+const fs = require('node:fs');
+const path = require('node:path');
+function withoutReport(t) {
+  const readFile = fs.readFileSync;
+  t.mock.method(fs, 'readFileSync', (file, ...args) => file === path.join(process.cwd(), 'reports/latest.json')
+    ? JSON.stringify({ date: null, path: null })
+    : readFile(file, ...args));
+}
 function response() {
   return { headers: {}, setHeader(k, v) { this.headers[k] = v; }, status(code) { this.code = code; return this; }, json(data) { this.data = data; return this; } };
 }
 const request = body => ({ method: 'POST', headers: { 'x-forwarded-for': 'test' }, body });
 
-test('universe context is grounded in uploaded CSV without claiming holdings', () => {
+test('universe context is grounded in uploaded CSV when no report is available', t => {
+  withoutReport(t);
   const context = handler.contextFor('Compare Thales et Leonardo');
   assert.equal(context.universe.total, 3382);
   assert.ok(context.universe.matched_assets.some(a => a.name === 'THALES'));
@@ -27,13 +36,14 @@ test('system messages and malformed messages are rejected', async () => {
     }
   } finally { if (old) process.env.OPENAI_API_KEY = old; else delete process.env.OPENAI_API_KEY; }
 });
-test('conversation sends grounded context and returns the actual provider reply', async () => {
+test('conversation sends grounded context and returns the actual provider reply', async t => {
+  withoutReport(t);
   const old = [process.env.OPENAI_API_KEY, process.env.AI_GATEWAY_API_KEY, global.fetch];
   process.env.OPENAI_API_KEY = 'test-only'; delete process.env.AI_GATEWAY_API_KEY;
   global.fetch = async (url, options) => {
     assert.equal(url, 'https://api.openai.com/v1/chat/completions');
     const input = JSON.parse(options.body);
-    assert.match(input.messages[0].content, /Mr Camembert/);
+    assert.match(input.messages[0].content, /Mr Synapse/);
     assert.match(input.messages[0].content, /"total":3382/);
     assert.match(input.messages[0].content, /"report":null/);
     assert.equal(input.messages.at(-1).content, 'Parlons de Thales');

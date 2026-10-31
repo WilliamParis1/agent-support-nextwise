@@ -1,14 +1,14 @@
-# Synapse Capital — Le carnet de Mr Camembert
+# Synapse Capital — Le carnet de Mr Synapse
 
-La home met Mr Camembert au premier plan dans un décor de jeu cosy. Les deux éditions et leurs boutons PDF/Copier restent compacts à gauche (sous le personnage sur mobile). Aucun slogan, menu latéral, tableau d’actifs, champ de saisie ni réponses proposées. Le personnage s’exprime uniquement dans sa bulle. Les animations sont brèves et respectent la préférence de réduction des mouvements.
+La home met Mr Synapse au premier plan dans un décor de jeu cosy. Les deux éditions et leurs boutons PDF/Copier restent compacts à gauche (sous le personnage sur mobile). Aucun slogan, menu latéral, tableau d’actifs, champ de saisie ni réponses proposées. Le personnage s’exprime uniquement dans sa bulle. Les animations sont brèves et respectent la préférence de réduction des mouvements.
 
 ## Sommeil et réveil
 
-Le bouton sous la scène affiche **Bonne nuit** quand Mr Camembert est debout et **Bonjour** quand il est au lit. Le coucher enchaîne sa pose de dos (1,5 s), puis le lit dans une ambiance de nuit. Le réveil utilise sa pose de face (1,3 s), puis retrouve l’image d’origine avec la canne pointée vers le contenu. Les paroles restent dans sa bulle.
+Le bouton sous la scène affiche **Bonne nuit** quand Mr Synapse est debout et **Bonjour** quand il est au lit. Le coucher enchaîne sa pose de dos (1,5 s), puis le lit dans une ambiance de nuit. Le réveil utilise sa pose de face (1,3 s), puis retrouve l’image d’origine avec la canne pointée vers le contenu. Les paroles restent dans sa bulle.
 
 `character.js` gère les états et bloque les clics pendant les transitions. L’état stable est conservé localement dans le navigateur. Avec la préférence de réduction des mouvements, le changement de pose est immédiat. Un changement de préférence ou le passage de l’onglet en arrière-plan termine la transition en cours. Si le fichier de poses ne charge pas, le portrait d’origine reste visible.
 
-`assets/camembert-poses.png` est une planche transparente préparée à partir des illustrations fournies (face, dos, lit), utilisée par positions CSS sans bibliothèque d’animation. Le portrait pointant d’origine reste dans `assets/professor.png`.
+`assets/synapse-poses.png` est une planche transparente préparée à partir des illustrations fournies (face, dos, lit), utilisée par positions CSS sans bibliothèque d’animation. Le portrait pointant d’origine reste dans `assets/professor.png`.
 
 ## Lancer et publier
 
