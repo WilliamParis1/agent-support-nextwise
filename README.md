@@ -1,6 +1,6 @@
 # Synapse Capital — Le carnet de Mr Camembert
 
-Toutes les activités restent sur la home : publications d’aujourd’hui et de la veille directement visibles, sans slogan ni menu latéral, univers des actifs dessous, et Mr Camembert à droite avec des réponses à cliquer. Les échanges guidés utilisent les publications et le CSV disponibles, sans clé IA. Pas de barre de saisie ni de lecture vocale. Les animations durent moins de cinq secondes et respectent la préférence de réduction des mouvements.
+La home met Mr Camembert au premier plan dans un décor de jeu cosy. Les deux éditions et leurs boutons PDF/Copier restent compacts à gauche (sous le personnage sur mobile). Aucun slogan, menu latéral, tableau d’actifs, champ de saisie ni réponses proposées. Le personnage s’exprime uniquement dans sa bulle. Les animations sont brèves et respectent la préférence de réduction des mouvements.
 
 ## Lancer et publier
 
@@ -53,7 +53,7 @@ Activer GitHub Actions avec permission d’écriture sur la branche par défaut.
 
 ## Univers et collecte
 
-Le CSV fourni a été importé dans `data/universe.csv` et `data/universe.json` : **3 382 actifs**, **7 places européennes**, dont 22 marqués Interested. La collecte examine **tous les actifs**, conformément au choix du club. Quelques exemples seulement sont retenus pour le texte et le graphique, selon le thème et les variations observées. Les filtres de la home ne changent pas ce périmètre.
+Le CSV fourni a été importé dans `data/universe.csv` et `data/universe.json` : **3 382 actifs**, **7 places européennes**, dont 22 marqués Interested. La collecte examine **tous les actifs**, conformément au choix du club. Quelques exemples seulement sont retenus pour le texte et le graphique, selon le thème et les variations observées. Le CSV reste la référence du générateur, sans tableau d’actifs sur la home.
 
 Aucun appel Google Sheets n’est nécessaire. Les noms de membres et pourcentages d’origine sont exclus de l’import public ; ils ne sont pas des preuves de positions détenues. Pour actualiser le CSV :
 
