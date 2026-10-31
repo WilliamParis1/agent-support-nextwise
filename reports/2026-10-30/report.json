@@ -1,0 +1,232 @@
+{
+  "schema_version": 2,
+  "publication_date": "2026-10-31",
+  "date": "2026-10-30",
+  "generated_at": "2026-10-31T18:02:23.306285+00:00",
+  "timezone": "Europe/Paris",
+  "status": "draft",
+  "universe": {
+    "source": "data/universe.csv",
+    "total": 3382,
+    "tracked": 8,
+    "scope": "quick"
+  },
+  "news": [
+    {
+      "title": "Philip R. Lane: AI adoption in Europe",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261030~08d9d540f0.en.html",
+      "source": "BCE",
+      "published_at": "2026-10-30T17:10:00+01:00",
+      "summary": ""
+    },
+    {
+      "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
+      "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261030~e40f864093.en.html",
+      "source": "BCE",
+      "published_at": "2026-10-30T15:00:00+01:00",
+      "summary": ""
+    },
+    {
+      "title": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
+      "source": "BCE",
+      "published_at": "2026-10-30T10:00:00+01:00",
+      "summary": ""
+    }
+  ],
+  "prices": [
+    {
+      "symbol": "ASML.AS",
+      "status": "available",
+      "date": "2026-10-30",
+      "close": 1412.800049,
+      "currency": "EUR",
+      "previous_date": "2026-10-29",
+      "previous_close": 1504.800049,
+      "change_pct": -6.11,
+      "source_url": "https://finance.yahoo.com/quote/ASML.AS/history/",
+      "name": "ASML HOLDING",
+      "ticker": "ASML",
+      "market": "Amsterdam",
+      "asset_class": "Action",
+      "sector": "Tech"
+    },
+    {
+      "symbol": "LDO.MI",
+      "status": "available",
+      "date": "2026-10-30",
+      "close": 51.759998,
+      "currency": "EUR",
+      "previous_date": "2026-10-29",
+      "previous_close": 51.810001,
+      "change_pct": -0.1,
+      "source_url": "https://finance.yahoo.com/quote/LDO.MI/history/",
+      "name": "LEONARDO",
+      "ticker": "LDO",
+      "market": "Milan",
+      "asset_class": "Action",
+      "sector": "Ind"
+    },
+    {
+      "symbol": "AI.PA",
+      "status": "available",
+      "date": "2026-10-30",
+      "close": 180.899994,
+      "currency": "EUR",
+      "previous_date": "2026-10-29",
+      "previous_close": 177.380005,
+      "change_pct": 1.98,
+      "source_url": "https://finance.yahoo.com/quote/AI.PA/history/",
+      "name": "AIR LIQUIDE",
+      "ticker": "AI",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Ind"
+    },
+    {
+      "symbol": "BNP.PA",
+      "status": "available",
+      "date": "2026-10-30",
+      "close": 85.650002,
+      "currency": "EUR",
+      "previous_date": "2026-10-29",
+      "previous_close": 87.650002,
+      "change_pct": -2.28,
+      "source_url": "https://finance.yahoo.com/quote/BNP.PA/history/",
+      "name": "BNP PARIBAS ACT.A",
+      "ticker": "BNP",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Finance"
+    },
+    {
+      "symbol": "HO.PA",
+      "status": "available",
+      "date": "2026-10-30",
+      "close": 235.699997,
+      "currency": "EUR",
+      "previous_date": "2026-10-29",
+      "previous_close": 238.399994,
+      "change_pct": -1.13,
+      "source_url": "https://finance.yahoo.com/quote/HO.PA/history/",
+      "name": "THALES",
+      "ticker": "HO",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Ind"
+    },
+    {
+      "symbol": "OR.PA",
+      "status": "available",
+      "date": "2026-10-30",
+      "close": 436.950012,
+      "currency": "EUR",
+      "previous_date": "2026-10-29",
+      "previous_close": 424.5,
+      "change_pct": 2.93,
+      "source_url": "https://finance.yahoo.com/quote/OR.PA/history/",
+      "name": "L'OREAL",
+      "ticker": "OR",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Conso"
+    },
+    {
+      "symbol": "SAN.PA",
+      "status": "available",
+      "date": "2026-10-30",
+      "close": 79.739998,
+      "currency": "EUR",
+      "previous_date": "2026-10-29",
+      "previous_close": 76.150002,
+      "change_pct": 4.71,
+      "source_url": "https://finance.yahoo.com/quote/SAN.PA/history/",
+      "name": "SANOFI",
+      "ticker": "SAN",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Santé"
+    },
+    {
+      "symbol": "TTE.PA",
+      "status": "available",
+      "date": "2026-10-30",
+      "close": 85.43,
+      "currency": "EUR",
+      "previous_date": "2026-10-29",
+      "previous_close": 84.599998,
+      "change_pct": 0.98,
+      "source_url": "https://finance.yahoo.com/quote/TTE.PA/history/",
+      "name": "TOTALENERGIES",
+      "ticker": "TTE",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Ener"
+    }
+  ],
+  "feed_errors": [],
+  "text": "Le 30/10, « Decisions taken by the Governing Council of the… » retient notre attention [1]. Variations : ASML (-6,11%) ; BNP (-2,28%). Vigilance sur le coût du financement. Le lien avec l’annonce reste une hypothèse.",
+  "word_count": 36,
+  "analysis": {
+    "theme": {
+      "key": "rates",
+      "label": "les taux et l’inflation",
+      "sectors": [
+        "Tech",
+        "Finance"
+      ],
+      "watch": "le coût du financement",
+      "channel": [
+        "Publication macro",
+        "Anticipations de taux",
+        "Coût du capital",
+        "Valorisation des actifs"
+      ],
+      "hypothesis": "Une évolution des anticipations de taux peut modifier le coût de financement et la valeur actualisée des bénéfices futurs. La sensibilité dépend de la dette, de la durée des flux et du pouvoir de fixation des prix. La réaction des banques peut différer de celle des valeurs de croissance.",
+      "confirm": "Une réaction cohérente des rendements obligataires et de plusieurs valeurs sensibles aux taux renforcerait cette piste. Comparer la direction du mouvement à la surprise contenue dans la publication.",
+      "challenge": "Une nouvelle propre à une entreprise, un mouvement de devise ou une hausse déjà anticipée peut expliquer les cours sans lien direct avec la publication macro."
+    },
+    "focus": {
+      "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
+      "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261030~e40f864093.en.html",
+      "source": "BCE",
+      "published_at": "2026-10-30T15:00:00+01:00",
+      "summary": ""
+    },
+    "featured": [
+      {
+        "symbol": "ASML.AS",
+        "status": "available",
+        "date": "2026-10-30",
+        "close": 1412.800049,
+        "currency": "EUR",
+        "previous_date": "2026-10-29",
+        "previous_close": 1504.800049,
+        "change_pct": -6.11,
+        "source_url": "https://finance.yahoo.com/quote/ASML.AS/history/",
+        "name": "ASML HOLDING",
+        "ticker": "ASML",
+        "market": "Amsterdam",
+        "asset_class": "Action",
+        "sector": "Tech"
+      },
+      {
+        "symbol": "BNP.PA",
+        "status": "available",
+        "date": "2026-10-30",
+        "close": 85.650002,
+        "currency": "EUR",
+        "previous_date": "2026-10-29",
+        "previous_close": 87.650002,
+        "change_pct": -2.28,
+        "source_url": "https://finance.yahoo.com/quote/BNP.PA/history/",
+        "name": "BNP PARIBAS ACT.A",
+        "ticker": "BNP",
+        "market": "Paris",
+        "asset_class": "Action",
+        "sector": "Finance"
+      }
+    ],
+    "selection": "Exemples de variations marquées dans les secteurs associés au thème, sans pondération de portefeuille."
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "schema_version": 2,
+  "publication_date": "2026-10-30",
+  "date": "2026-10-29",
+  "generated_at": "2026-10-31T18:02:23.306285+00:00",
+  "timezone": "Europe/Paris",
+  "status": "draft",
+  "universe": {
+    "source": "data/universe.csv",
+    "total": 3382,
+    "tracked": 8,
+    "scope": "quick"
+  },
+  "news": [
+    {
+      "title": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261029a.htm",
+      "source": "Federal Reserve",
+      "published_at": "2026-10-29T20:30:00+00:00",
+      "summary": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia"
+    },
+    {
+      "title": "The South West reacts to Budget announcements",
+      "url": "https://www.bbc.co.uk/news/articles/cm62yle1g2wyo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
+      "published_at": "2026-10-29T18:07:26+00:00",
+      "summary": "Tourism and business leaders have been reacting to John Healey's first Budget as chancellor."
+    },
+    {
+      "title": "US interest rates held steady and economy grows - what it means for you",
+      "url": "https://www.bbc.co.uk/news/articles/cr15jxzv4w24o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
+      "published_at": "2026-10-29T17:15:05+00:00",
+      "summary": "The Federal Reserve's interest rate decisions affect everything from mortgages to car loans"
+    },
+    {
+      "title": "Piero Cipollone: Next-day securities settlement, tokenisation and the transformation of Europe’s financial infrastructure",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261029~e9b57c3495.en.html",
+      "source": "BCE",
+      "published_at": "2026-10-29T16:50:00+01:00",
+      "summary": ""
+    },
+    {
+      "title": "Faisal Islam: This Budget was micro and that was deliberate",
+      "url": "https://www.bbc.co.uk/news/articles/cwx283zynnv3o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
+      "published_at": "2026-10-29T15:48:44+00:00",
+      "summary": "Chancellor John Healey's plans fall short of radical action to create a promised new economic model."
+    },
+    {
+      "title": "Your pay, energy bills and savings: How the Budget affects you",
+      "url": "https://www.bbc.co.uk/news/articles/cr0j05vxlwjzo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
+      "published_at": "2026-10-29T15:11:35+00:00",
+      "summary": "Changes announced by Chancellor John Healey in his first Budget will affect your finances directly. Here's how."
+    },
+    {
+      "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
+      "url": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
+      "source": "BCE",
+      "published_at": "2026-10-29T15:00:00+01:00",
+      "summary": ""
+    },
+    {
+      "title": "Monetary policy decisions",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
+      "source": "BCE",
+      "published_at": "2026-10-29T14:15:00+01:00",
+      "summary": ""
+    },
+    {
+      "title": "I earn £30,000. I'm angry there was no fuel duty cut in the Budget",
+      "url": "https://www.bbc.co.uk/news/articles/cmx235r9wr3yo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
+      "published_at": "2026-10-29T11:52:55+00:00",
+      "summary": "People on a range of incomes from £4,062 to £150,000 a year tell the BBC what they made of this year's Budget."
+    },
+    {
+      "title": "ECB President Lagarde to step down on 7 February 2027",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html",
+      "source": "BCE",
+      "published_at": "2026-10-29T11:00:00+01:00",
+      "summary": ""
+    }
+  ],
+  "prices": [
+    {
+      "symbol": "ASML.AS",
+      "status": "available",
+      "date": "2026-10-29",
+      "close": 1504.800049,
+      "currency": "EUR",
+      "previous_date": "2026-10-28",
+      "previous_close": 1489.599976,
+      "change_pct": 1.02,
+      "source_url": "https://finance.yahoo.com/quote/ASML.AS/history/",
+      "name": "ASML HOLDING",
+      "ticker": "ASML",
+      "market": "Amsterdam",
+      "asset_class": "Action",
+      "sector": "Tech"
+    },
+    {
+      "symbol": "LDO.MI",
+      "status": "available",
+      "date": "2026-10-29",
+      "close": 51.810001,
+      "currency": "EUR",
+      "previous_date": "2026-10-28",
+      "previous_close": 49.855,
+      "change_pct": 3.92,
+      "source_url": "https://finance.yahoo.com/quote/LDO.MI/history/",
+      "name": "LEONARDO",
+      "ticker": "LDO",
+      "market": "Milan",
+      "asset_class": "Action",
+      "sector": "Ind"
+    },
+    {
+      "symbol": "AI.PA",
+      "status": "available",
+      "date": "2026-10-29",
+      "close": 177.380005,
+      "currency": "EUR",
+      "previous_date": "2026-10-28",
+      "previous_close": 174.240005,
+      "change_pct": 1.8,
+      "source_url": "https://finance.yahoo.com/quote/AI.PA/history/",
+      "name": "AIR LIQUIDE",
+      "ticker": "AI",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Ind"
+    },
+    {
+      "symbol": "BNP.PA",
+      "status": "available",
+      "date": "2026-10-29",
+      "close": 87.650002,
+      "currency": "EUR",
+      "previous_date": "2026-10-28",
+      "previous_close": 87.199997,
+      "change_pct": 0.52,
+      "source_url": "https://finance.yahoo.com/quote/BNP.PA/history/",
+      "name": "BNP PARIBAS ACT.A",
+      "ticker": "BNP",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Finance"
+    },
+    {
+      "symbol": "HO.PA",
+      "status": "available",
+      "date": "2026-10-29",
+      "close": 238.399994,
+      "currency": "EUR",
+      "previous_date": "2026-10-28",
+      "previous_close": 233.899994,
+      "change_pct": 1.92,
+      "source_url": "https://finance.yahoo.com/quote/HO.PA/history/",
+      "name": "THALES",
+      "ticker": "HO",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Ind"
+    },
+    {
+      "symbol": "OR.PA",
+      "status": "available",
+      "date": "2026-10-29",
+      "close": 424.5,
+      "currency": "EUR",
+      "previous_date": "2026-10-28",
+      "previous_close": 423.649994,
+      "change_pct": 0.2,
+      "source_url": "https://finance.yahoo.com/quote/OR.PA/history/",
+      "name": "L'OREAL",
+      "ticker": "OR",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Conso"
+    },
+    {
+      "symbol": "SAN.PA",
+      "status": "available",
+      "date": "2026-10-29",
+      "close": 76.150002,
+      "currency": "EUR",
+      "previous_date": "2026-10-28",
+      "previous_close": 75.510002,
+      "change_pct": 0.85,
+      "source_url": "https://finance.yahoo.com/quote/SAN.PA/history/",
+      "name": "SANOFI",
+      "ticker": "SAN",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Santé"
+    },
+    {
+      "symbol": "TTE.PA",
+      "status": "available",
+      "date": "2026-10-29",
+      "close": 84.599998,
+      "currency": "EUR",
+      "previous_date": "2026-10-28",
+      "previous_close": 83.599998,
+      "change_pct": 1.2,
+      "source_url": "https://finance.yahoo.com/quote/TTE.PA/history/",
+      "name": "TOTALENERGIES",
+      "ticker": "TTE",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Ener"
+    }
+  ],
+  "feed_errors": [],
+  "text": "Le 29/10, « US interest rates held steady and economy grows… » retient notre attention [1]. Variations : ASML (+1,02%) ; BNP (+0,52%). Vigilance sur le coût du financement. Le lien avec l’annonce reste une hypothèse.",
+  "word_count": 36,
+  "analysis": {
+    "theme": {
+      "key": "rates",
+      "label": "les taux et l’inflation",
+      "sectors": [
+        "Tech",
+        "Finance"
+      ],
+      "watch": "le coût du financement",
+      "channel": [
+        "Publication macro",
+        "Anticipations de taux",
+        "Coût du capital",
+        "Valorisation des actifs"
+      ],
+      "hypothesis": "Une évolution des anticipations de taux peut modifier le coût de financement et la valeur actualisée des bénéfices futurs. La sensibilité dépend de la dette, de la durée des flux et du pouvoir de fixation des prix. La réaction des banques peut différer de celle des valeurs de croissance.",
+      "confirm": "Une réaction cohérente des rendements obligataires et de plusieurs valeurs sensibles aux taux renforcerait cette piste. Comparer la direction du mouvement à la surprise contenue dans la publication.",
+      "challenge": "Une nouvelle propre à une entreprise, un mouvement de devise ou une hausse déjà anticipée peut expliquer les cours sans lien direct avec la publication macro."
+    },
+    "focus": {
+      "title": "US interest rates held steady and economy grows - what it means for you",
+      "url": "https://www.bbc.co.uk/news/articles/cr15jxzv4w24o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
+      "published_at": "2026-10-29T17:15:05+00:00",
+      "summary": "The Federal Reserve's interest rate decisions affect everything from mortgages to car loans"
+    },
+    "featured": [
+      {
+        "symbol": "ASML.AS",
+        "status": "available",
+        "date": "2026-10-29",
+        "close": 1504.800049,
+        "currency": "EUR",
+        "previous_date": "2026-10-28",
+        "previous_close": 1489.599976,
+        "change_pct": 1.02,
+        "source_url": "https://finance.yahoo.com/quote/ASML.AS/history/",
+        "name": "ASML HOLDING",
+        "ticker": "ASML",
+        "market": "Amsterdam",
+        "asset_class": "Action",
+        "sector": "Tech"
+      },
+      {
+        "symbol": "BNP.PA",
+        "status": "available",
+        "date": "2026-10-29",
+        "close": 87.650002,
+        "currency": "EUR",
+        "previous_date": "2026-10-28",
+        "previous_close": 87.199997,
+        "change_pct": 0.52,
+        "source_url": "https://finance.yahoo.com/quote/BNP.PA/history/",
+        "name": "BNP PARIBAS ACT.A",
+        "ticker": "BNP",
+        "market": "Paris",
+        "asset_class": "Action",
+        "sector": "Finance"
+      }
+    ],
+    "selection": "Exemples de variations marquées dans les secteurs associés au thème, sans pondération de portefeuille."
+  }
+}
