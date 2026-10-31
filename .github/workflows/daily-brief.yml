@@ -1,0 +1,48 @@
+name: Point qualitatif quotidien
+on:
+  schedule:
+    # GitHub uses UTC. The script selects 02:00 Europe/Paris (DST included).
+    - cron: '0 0,1 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: synapse-daily-brief
+  cancel-in-progress: false
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: automation/requirements.txt
+      - run: pip install -r automation/requirements.txt
+      - run: python -m unittest discover -s tests -v
+      - name: Générer le brouillon de la veille
+        env:
+          SHEET_CSV_URL: ${{ secrets.SHEET_CSV_URL }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          if [ "$EVENT_NAME" = "schedule" ]; then
+            python automation/daily.py --scheduled
+          else
+            python automation/daily.py
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: publications-qualitatives
+          path: reports/
+          if-no-files-found: ignore
+      - name: Mettre les brouillons à disposition sur le site
+        run: |
+          git add reports/
+          if ! git diff --cached --quiet; then
+            git config user.name 'synapse-brief[bot]'
+            git config user.email 'synapse-brief[bot]@users.noreply.github.com'
+            git commit -m 'Préparer le point qualitatif quotidien'
+            git push
+          fi
