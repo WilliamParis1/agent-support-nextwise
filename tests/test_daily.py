@@ -68,6 +68,13 @@ class DailyTests(unittest.TestCase):
         self.assertIn('Aucune séance', text)
         self.assertLess(len(text.split()), 50)
 
+    def test_closed_market_day_can_publish_only_with_provider_evidence(self):
+        prices = [{'symbol': 'AI.PA', 'date': '2026-10-31', 'status': 'no_session',
+                   'last_session_date': '2026-10-30', 'source_url': 'https://finance.yahoo.com/quote/AI.PA/history/'}]
+        editorial = make_editorial(date(2026, 10, 31), [], prices)
+        self.assertIn('Aucune séance', editorial['text'])
+        self.assertLess(editorial['word_count'], 50)
+
     def test_two_page_pdf_extends_same_summary_and_contains_sources_and_diagrams(self):
         report = fixture(long=True)
         with TemporaryDirectory() as directory:

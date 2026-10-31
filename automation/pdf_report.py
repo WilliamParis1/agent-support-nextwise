@@ -139,6 +139,11 @@ def write_pdf(path, report):
         story += [link(f"[1] {focus['source']} — publication d’origine", focus['url'])]
     for i, item in enumerate(featured, 2):
         story += [link(f"[{i}] {item.get('name', item['symbol'])} ({item['symbol']}) — historique des cours", item['source_url'])]
+    if report.get('feed_errors'):
+        story += [p('Flux non disponibles lors de la collecte : ' + ', '.join(item['source'] for item in report['feed_errors']) + '. Ces sources ne sont pas remplacées par des informations anciennes.', small)]
+    if not featured:
+        for item in [p for p in report['prices'] if p.get('last_session_date')][:3]:
+            story += [link(item['symbol'] + ' — aucune séance ce jour ; dernière séance reçue : ' + item['last_session_date'], item['source_url'])]
     total = len(report['prices'])
     covered = sum(item['status'] != 'unavailable' for item in report['prices'])
     story += [p(f"Couverture : {covered}/{total} symboles reconnus. Variations calculées entre deux clôtures brutes, dates de séance locales. Dividendes et opérations sur titres peuvent affecter ces valeurs. Titres et résumés RSS uniquement, couverture macro non exhaustive. Les exemples ne représentent pas une performance du club. À relire avant publication.", small)]

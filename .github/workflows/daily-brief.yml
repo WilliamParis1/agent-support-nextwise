@@ -3,6 +3,8 @@ on:
   schedule:
     # GitHub uses UTC. The script selects 02:00 Europe/Paris (DST included).
     - cron: '0 0,1 * * *'
+    # Morning retry if the overnight sources were unavailable.
+    - cron: '17 6 * * *'
   workflow_dispatch:
   push:
     branches: [main]
@@ -31,8 +33,9 @@ jobs:
       - name: Générer les éditions du jour et de la veille
         env:
           EVENT_NAME: ${{ github.event_name }}
+          EVENT_SCHEDULE: ${{ github.event.schedule }}
         run: |
-          if [ "$EVENT_NAME" = "schedule" ]; then
+          if [ "$EVENT_NAME" = "schedule" ] && [ "$EVENT_SCHEDULE" != "17 6 * * *" ]; then
             python -m automation.daily --quick --scheduled
           else
             python -m automation.daily --quick

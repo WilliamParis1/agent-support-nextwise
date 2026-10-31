@@ -150,7 +150,9 @@ def parse_prices(data, symbol, day):
     bars.sort()
     matching = [i for i, (date, _) in enumerate(bars) if date == day]
     if not matching:
-        return {'symbol': symbol, 'status': 'no_session', 'date': day.isoformat()}
+        return {'symbol': symbol, 'status': 'no_session', 'date': day.isoformat(),
+                'last_session_date': bars[-1][0].isoformat() if bars else None,
+                'source_url': f'https://finance.yahoo.com/quote/{urllib.parse.quote(symbol, safe="")}/history/'}
     index = matching[-1]
     if index == 0 or bars[index - 1][1] <= 0:
         raise ValueError(f'Clôture précédente absente pour {symbol}')

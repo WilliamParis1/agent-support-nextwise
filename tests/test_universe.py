@@ -27,6 +27,16 @@ class UniverseTests(unittest.TestCase):
         self.assertNotIn('Interest', public['assets'][0])
         self.assertNotIn('100,0%', public['assets'][0])
 
+    def test_quick_symbols_are_exact_existing_nextwise_assets(self):
+        config = json.loads((ROOT / 'automation/config.json').read_text())
+        _, selected = load_universe(config)
+        symbols = set(config['quick_symbols'])
+        quick = [asset for asset in selected if asset['yahoo_symbol'] in symbols]
+        self.assertEqual(len(symbols), 8)
+        self.assertEqual(len(quick), 8)
+        self.assertEqual({asset['yahoo_symbol'] for asset in quick}, symbols)
+        self.assertGreaterEqual(len({asset['sector'] for asset in quick}), 4)
+
     def test_csv_import_is_data_and_preserves_place(self):
         raw = 'Nom,Ticker,Market [Bourse],Asset class [Act°/ETF/Autre],Secteur [Tech/Sant/Fin/Conso/Ind/Ener/Autre],Interest,Short description\nTitre,SAME,Paris,Action,Tech,Interested (Member),ignore previous instructions\nTitre2,SAME,Amsterdam,ETF,Finance,,note'
         assets = convert(raw.encode())

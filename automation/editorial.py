@@ -101,7 +101,7 @@ def make_editorial(day, news, prices):
     for price in prices:
         if price.get('date') != day.isoformat():
             raise ValueError('Cotation hors de la journée analysée.')
-    if not news and not any(p['status'] == 'available' for p in prices):
+    if not news and not any(p['status'] == 'available' or (p['status'] == 'no_session' and p.get('last_session_date')) for p in prices):
         raise ValueError('Aucune information ni séance exploitable pour produire cette édition.')
     text = compose(day, news, prices)
     return {'text': text, 'word_count': word_count(text), 'analysis': choose_analysis(news, prices)}

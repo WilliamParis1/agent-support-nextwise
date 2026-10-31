@@ -46,7 +46,7 @@ Le schéma de rapport version 2 contient `date`, `publication_date`, `text`, `wo
 
 ## Génération quotidienne
 
-`.github/workflows/daily-brief.yml` démarre à **02:00 Europe/Paris** grâce à deux horaires UTC filtrés. Au passage à l’heure d’été, 02:00 n’existe pas : départ à 03:00. Au passage à l’heure d’hiver, seule la première occurrence est retenue. GitHub Actions peut retarder ou omettre une exécution ; l’heure de disponibilité n’est pas garantie.
+`.github/workflows/daily-brief.yml` démarre à **02:00 Europe/Paris** grâce à deux horaires UTC filtrés. Au passage à l’heure d’été, 02:00 n’existe pas : départ à 03:00. Au passage à l’heure d’hiver, seule la première occurrence est retenue. Une seconde tentative est planifiée à 06:17 UTC si le point manque encore. GitHub Actions peut retarder ou omettre une exécution ; l’heure de disponibilité n’est pas garantie.
 
 Le générateur prépare les deux éditions si elles manquent. Les historiques sont téléchargés **une seule fois par actif**, même pour deux dates. Les rapports valides existants sont conservés, les anciennes versions de format sont régénérées, et un rattrapage ne remplace jamais le manifeste du dernier rapport par un plus ancien.
 
@@ -73,7 +73,7 @@ Commiter les deux fichiers générés ensemble. Les tickers locaux sont associé
 
 Quatre workers et deux requêtes par seconde : environ 30 minutes au minimum pour l’univers complet, dans une limite de job de 60 minutes. Au moins 90 % des symboles doivent être reconnus ; les absents sont comptabilisés. Un refus d’accès ou une limitation du fournisseur interrompt la génération. Yahoo Finance est un endpoint public sans garantie de service ; un fournisseur contractuel peut être nécessaire à cette échelle.
 
-Sources macro : RSS BCE, Federal Reserve et BBC Business (filtre macro pour BBC). Seuls les titres et résumés publiés pendant la journée analysée, heure de Paris, sont retenus. Les flux ne sont ni exhaustifs ni des archives : le rattrapage dépend des éléments encore présents. Un flux inaccessible est signalé dans `feed_errors` ; les autres sources restent utilisables. Tous les flux indisponibles font échouer la génération ; une journée sans information ni séance ne produit pas de publication. Les variations sont calculées entre clôtures brutes datées de la place, non ajustées des dividendes ou splits. Aucune ancienne séance n’est réétiquetée comme récente.
+Sources macro : RSS BCE, Federal Reserve et BBC Business (filtre macro pour BBC). Seuls les titres et résumés publiés pendant la journée analysée, heure de Paris, sont retenus. Les flux ne sont ni exhaustifs ni des archives : le rattrapage dépend des éléments encore présents. Un flux inaccessible est signalé dans `feed_errors` ; les autres sources restent utilisables. Tous les flux indisponibles font échouer la génération ; les jours sans séance peuvent produire une édition explicitement sans nouveau cours si le fournisseur confirme une dernière séance datée. Sans aucune preuve exploitable, aucune édition n’est fabriquée. Les variations sont calculées entre clôtures brutes datées de la place, non ajustées des dividendes ou splits. Aucune ancienne séance n’est réétiquetée comme récente.
 
 ## Vérification et limites actuelles
 
@@ -86,3 +86,5 @@ node --check script.js
 Les tests vérifient le CSV réel, les deux dates de publication (y compris les changements d’heure), la contrainte de mots, la mutualisation des requêtes, la conservation des archives et le PDF de deux pages avec liens et graphiques. Les contrôles navigateur couvrent les deux cartes, copie, téléchargement, navigation sur la home, filtres, réponses guidées et mobile.
 
 **L’accès réel aux flux reste bloqué dans l’environnement cloud (HTTP 403).** Les cartes restent indisponibles tant que la collecte n’a pas réussi ; les données de test servent uniquement aux vérifications locales. Domaines nécessaires : `www.ecb.europa.eu`, `www.federalreserve.gov`, `feeds.bbci.co.uk`, `query1.finance.yahoo.com`. Le runner GitHub a son propre réseau : son exécution reste à vérifier. Le site n’effectue aucune publication automatique sur le compte Nextwise ; un membre relit puis publie le texte et le PDF.
+
+Première validation réelle : les éditions du 30 et du 31 octobre 2026 ont été produites par GitHub Actions, chacune avec 36 mots, huit cotations reconnues sur huit et un PDF sourcé de deux pages. Les boutons Copier et les deux téléchargements ont été vérifiés avec ces fichiers réels.
