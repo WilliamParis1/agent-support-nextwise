@@ -1,232 +1,111 @@
 {
   "schema_version": 2,
+  "origin": "chatgpt",
+  "input_sha256": "dc3976655e2b86c12edf9d1b6875fe42cc67ebbf67aa000156c11d81ec58f316",
+  "ingest_version": 1,
   "publication_date": "2026-10-31",
   "date": "2026-10-30",
-  "generated_at": "2026-10-31T18:02:23.306285+00:00",
+  "generated_at": "2026-10-31T19:03:49.645490+00:00",
   "timezone": "Europe/Paris",
   "status": "draft",
-  "universe": {
-    "source": "data/universe.csv",
-    "total": 3382,
-    "tracked": 8,
-    "scope": "quick"
-  },
+  "text": "Capgemini relève ses prévisions de croissance après un troisième trimestre solide. SCOR annonce 206 millions d’euros de bénéfice trimestriel et une solvabilité estimée à 221 %. À surveiller : la concrétisation des objectifs de Capgemini et le prochain plan stratégique de SCOR.",
+  "word_count": 42,
   "news": [
     {
-      "title": "Philip R. Lane: AI adoption in Europe",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261030~08d9d540f0.en.html",
-      "source": "BCE",
-      "published_at": "2026-10-30T17:10:00+01:00",
-      "summary": ""
+      "id": "s1",
+      "title": "Q3 2026 revenues",
+      "source": "Capgemini",
+      "url": "https://investors.capgemini.com/en/publication/q3-2026-revenues/",
+      "published_at": "2026-10-30T07:00:00+01:00"
     },
     {
-      "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
-      "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261030~e40f864093.en.html",
-      "source": "BCE",
-      "published_at": "2026-10-30T15:00:00+01:00",
-      "summary": ""
-    },
-    {
-      "title": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
-      "source": "BCE",
-      "published_at": "2026-10-30T10:00:00+01:00",
-      "summary": ""
+      "id": "s2",
+      "title": "Third quarter 2026 results",
+      "source": "SCOR",
+      "url": "https://www.scor.com/en/press-release/third-quarter-2026-results",
+      "published_at": "2026-10-30T07:00:00+01:00"
     }
   ],
   "prices": [
     {
-      "symbol": "ASML.AS",
-      "status": "available",
-      "date": "2026-10-30",
-      "close": 1412.800049,
-      "currency": "EUR",
-      "previous_date": "2026-10-29",
-      "previous_close": 1504.800049,
-      "change_pct": -6.11,
-      "source_url": "https://finance.yahoo.com/quote/ASML.AS/history/",
-      "name": "ASML HOLDING",
-      "ticker": "ASML",
-      "market": "Amsterdam",
-      "asset_class": "Action",
-      "sector": "Tech"
-    },
-    {
-      "symbol": "LDO.MI",
-      "status": "available",
-      "date": "2026-10-30",
-      "close": 51.759998,
-      "currency": "EUR",
-      "previous_date": "2026-10-29",
-      "previous_close": 51.810001,
-      "change_pct": -0.1,
-      "source_url": "https://finance.yahoo.com/quote/LDO.MI/history/",
-      "name": "LEONARDO",
-      "ticker": "LDO",
-      "market": "Milan",
-      "asset_class": "Action",
-      "sector": "Ind"
-    },
-    {
-      "symbol": "AI.PA",
-      "status": "available",
-      "date": "2026-10-30",
-      "close": 180.899994,
-      "currency": "EUR",
-      "previous_date": "2026-10-29",
-      "previous_close": 177.380005,
-      "change_pct": 1.98,
-      "source_url": "https://finance.yahoo.com/quote/AI.PA/history/",
-      "name": "AIR LIQUIDE",
-      "ticker": "AI",
+      "name": "CAPGEMINI",
+      "ticker": "CAP",
       "market": "Paris",
       "asset_class": "Action",
-      "sector": "Ind"
+      "sector": "Tech",
+      "symbol": "CAP.PA",
+      "date": "2026-10-30",
+      "status": "unavailable",
+      "reason": "not_provided"
     },
     {
-      "symbol": "BNP.PA",
-      "status": "available",
-      "date": "2026-10-30",
-      "close": 85.650002,
-      "currency": "EUR",
-      "previous_date": "2026-10-29",
-      "previous_close": 87.650002,
-      "change_pct": -2.28,
-      "source_url": "https://finance.yahoo.com/quote/BNP.PA/history/",
-      "name": "BNP PARIBAS ACT.A",
-      "ticker": "BNP",
+      "name": "SCOR SE",
+      "ticker": "SCR",
       "market": "Paris",
       "asset_class": "Action",
-      "sector": "Finance"
-    },
-    {
-      "symbol": "HO.PA",
-      "status": "available",
+      "sector": "Finance",
+      "symbol": "SCR.PA",
       "date": "2026-10-30",
-      "close": 235.699997,
-      "currency": "EUR",
-      "previous_date": "2026-10-29",
-      "previous_close": 238.399994,
-      "change_pct": -1.13,
-      "source_url": "https://finance.yahoo.com/quote/HO.PA/history/",
-      "name": "THALES",
-      "ticker": "HO",
-      "market": "Paris",
-      "asset_class": "Action",
-      "sector": "Ind"
-    },
-    {
-      "symbol": "OR.PA",
-      "status": "available",
-      "date": "2026-10-30",
-      "close": 436.950012,
-      "currency": "EUR",
-      "previous_date": "2026-10-29",
-      "previous_close": 424.5,
-      "change_pct": 2.93,
-      "source_url": "https://finance.yahoo.com/quote/OR.PA/history/",
-      "name": "L'OREAL",
-      "ticker": "OR",
-      "market": "Paris",
-      "asset_class": "Action",
-      "sector": "Conso"
-    },
-    {
-      "symbol": "SAN.PA",
-      "status": "available",
-      "date": "2026-10-30",
-      "close": 79.739998,
-      "currency": "EUR",
-      "previous_date": "2026-10-29",
-      "previous_close": 76.150002,
-      "change_pct": 4.71,
-      "source_url": "https://finance.yahoo.com/quote/SAN.PA/history/",
-      "name": "SANOFI",
-      "ticker": "SAN",
-      "market": "Paris",
-      "asset_class": "Action",
-      "sector": "Santé"
-    },
-    {
-      "symbol": "TTE.PA",
-      "status": "available",
-      "date": "2026-10-30",
-      "close": 85.43,
-      "currency": "EUR",
-      "previous_date": "2026-10-29",
-      "previous_close": 84.599998,
-      "change_pct": 0.98,
-      "source_url": "https://finance.yahoo.com/quote/TTE.PA/history/",
-      "name": "TOTALENERGIES",
-      "ticker": "TTE",
-      "market": "Paris",
-      "asset_class": "Action",
-      "sector": "Ener"
+      "status": "unavailable",
+      "reason": "not_provided"
     }
   ],
-  "feed_errors": [],
-  "text": "Le 30/10, « Decisions taken by the Governing Council of the… » retient notre attention [1]. Variations : ASML (-6,11%) ; BNP (-2,28%). Vigilance sur le coût du financement. Le lien avec l’annonce reste une hypothèse.",
-  "word_count": 36,
-  "analysis": {
-    "theme": {
-      "key": "rates",
-      "label": "les taux et l’inflation",
-      "sectors": [
-        "Tech",
-        "Finance"
-      ],
-      "watch": "le coût du financement",
-      "channel": [
-        "Publication macro",
-        "Anticipations de taux",
-        "Coût du capital",
-        "Valorisation des actifs"
-      ],
-      "hypothesis": "Une évolution des anticipations de taux peut modifier le coût de financement et la valeur actualisée des bénéfices futurs. La sensibilité dépend de la dette, de la durée des flux et du pouvoir de fixation des prix. La réaction des banques peut différer de celle des valeurs de croissance.",
-      "confirm": "Une réaction cohérente des rendements obligataires et de plusieurs valeurs sensibles aux taux renforcerait cette piste. Comparer la direction du mouvement à la surprise contenue dans la publication.",
-      "challenge": "Une nouvelle propre à une entreprise, un mouvement de devise ou une hausse déjà anticipée peut expliquer les cours sans lien direct avec la publication macro."
-    },
-    "focus": {
-      "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
-      "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261030~e40f864093.en.html",
-      "source": "BCE",
-      "published_at": "2026-10-30T15:00:00+01:00",
-      "summary": ""
-    },
-    "featured": [
+  "analysis": null,
+  "universe": {
+    "source": "data/universe.csv",
+    "total": 3382,
+    "tracked": 2,
+    "scope": "news-selected"
+  },
+  "authored_analysis": {
+    "title": "Capgemini relève ses perspectives, SCOR affiche une solvabilité renforcée",
+    "sections": [
       {
-        "symbol": "ASML.AS",
-        "status": "available",
-        "date": "2026-10-30",
-        "close": 1412.800049,
-        "currency": "EUR",
-        "previous_date": "2026-10-29",
-        "previous_close": 1504.800049,
-        "change_pct": -6.11,
-        "source_url": "https://finance.yahoo.com/quote/ASML.AS/history/",
-        "name": "ASML HOLDING",
-        "ticker": "ASML",
-        "market": "Amsterdam",
-        "asset_class": "Action",
-        "sector": "Tech"
+        "title": "Les faits",
+        "text": "Capgemini a enregistré 6,073 milliards d’euros de chiffre d’affaires au troisième trimestre, en hausse de 11,7 % à taux de change constants. Les prises de commandes atteignent 5,401 milliards, en progression de 3,4 % à taux constants. Le groupe relève sa cible de croissance annuelle à 9-9,5 %, contre environ 8,5-9 % auparavant, et maintient ses objectifs de marge opérationnelle et de génération de trésorerie. SCOR publie 206 millions d’euros de résultat net trimestriel. Son ratio combiné en dommages atteint 84,1 %, et son ratio de solvabilité estimé 221 % à fin septembre.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
       },
       {
-        "symbol": "BNP.PA",
-        "status": "available",
-        "date": "2026-10-30",
-        "close": 85.650002,
-        "currency": "EUR",
-        "previous_date": "2026-10-29",
-        "previous_close": 87.650002,
-        "change_pct": -2.28,
-        "source_url": "https://finance.yahoo.com/quote/BNP.PA/history/",
-        "name": "BNP PARIBAS ACT.A",
-        "ticker": "BNP",
-        "market": "Paris",
-        "asset_class": "Action",
-        "sector": "Finance"
+        "title": "Les mécanismes économiques",
+        "text": "Chez Capgemini, une demande durable de modernisation informatique et de déploiement de l’intelligence artificielle pourrait soutenir les revenus. La valeur créée pour les actionnaires dépendra aussi des prix, des coûts de personnel et de la capacité à transformer la croissance en trésorerie. Chez SCOR, un ratio combiné inférieur à 100 % signifie que primes et autres revenus techniques couvrent les sinistres et frais inclus dans cet indicateur. Une souscription rentable et un portefeuille d’investissement rémunérateur peuvent soutenir les bénéfices et les fonds propres. Ces transmissions sont des hypothèses, non des prévisions certaines.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "title": "Ce qui renforcerait cette lecture",
+        "text": "Pour Capgemini, une croissance des commandes soutenue, une marge conforme aux objectifs et la réalisation de la fourchette de trésorerie renforceraient l’idée que la croissance se traduit en rentabilité. Pour SCOR, un ratio combiné durablement bas, des résultats vie et santé stables et une solvabilité robuste malgré les sinistres appuieraient la thèse d’une performance diversifiée.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "title": "Ce qui pourrait la contredire",
+        "text": "Les acquisitions WNS et Cloud4C contribuent à la croissance de Capgemini : la croissance publiée ne mesure donc pas à elle seule la progression organique. Un ralentissement des commandes, des dépenses d’intégration ou des pressions salariales pourraient peser sur les marges. Pour SCOR, des catastrophes naturelles plus coûteuses, une dégradation des hypothèses de sinistralité ou des marchés financiers défavorables pourraient réduire les résultats. Le ratio de solvabilité est une estimation, sensible notamment aux risques et aux hypothèses retenues.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "title": "Les prochaines échéances",
+        "text": "Suivre chez Capgemini le chiffre d’affaires du quatrième trimestre, la croissance à périmètre comparable, les commandes, la marge et la trésorerie annuelle. Le groupe vise une croissance à taux constants de 3 à 4 % au quatrième trimestre. Pour SCOR, surveiller l’évolution des sinistres et du capital ainsi que la présentation de son nouveau plan stratégique annoncée pour le 3 décembre 2026. Les cours ne sont pas inclus faute de vérification indépendante des clôtures.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
       }
     ],
-    "selection": "Exemples de variations marquées dans les secteurs associés au thème, sans pondération de portefeuille."
+    "diagram": [
+      "Annonces trimestrielles",
+      "Demande et risques assurés",
+      "Revenus, marges et capital",
+      "Résultats futurs à vérifier"
+    ]
   }
 }
