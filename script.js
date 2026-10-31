@@ -42,7 +42,9 @@ async function loadEdition(id, offset) {
       const pdf = await fetch(`${path}/fiche.pdf`, { method: 'HEAD' });
       if (pdf.ok) {
         const link = card.querySelector('[data-pdf]'); link.href = `${path}/fiche.pdf`; link.removeAttribute('aria-disabled'); link.setAttribute('download', '');
-        card.querySelector('[data-analysis-status]').textContent = 'Deux pages : graphique des actifs, analyse, schéma et sources.';
+        card.querySelector('[data-analysis-status]').textContent = report.origin === 'chatgpt'
+          ? 'Deux pages : analyse de l’auteur, visuel et sources.'
+          : 'Deux pages : graphique des actifs, analyse, schéma et sources.';
       } else card.querySelector('[data-analysis-status]').textContent = 'Le PDF est momentanément indisponible.';
     } catch { card.querySelector('[data-analysis-status]').textContent = 'Le PDF est momentanément indisponible.'; }
 

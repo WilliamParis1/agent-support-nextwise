@@ -15,14 +15,16 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: synapse-daily-brief
-  cancel-in-progress: true
+  group: mr-synapse-reports
+  cancel-in-progress: false
 jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -30,6 +32,8 @@ jobs:
           cache-dependency-path: automation/requirements.txt
       - run: pip install -r automation/requirements.txt
       - run: python -m unittest discover -s tests -v
+      - name: Intégrer en priorité les analyses ChatGPT reçues
+        run: python -m automation.ingest
       - name: Générer les éditions du jour et de la veille
         env:
           EVENT_NAME: ${{ github.event_name }}

@@ -21,10 +21,11 @@ WIDTH = A4[0] - 88
 class ChangesChart(Flowable):
     width = WIDTH
     height = 146
-    def __init__(self, prices):
+    def __init__(self, prices, source_label=None):
         Flowable.__init__(self)
         self.width, self.height = WIDTH, 146
         self.prices = prices[:3]
+        self.source_label = source_label or 'Source : Yahoo Finance. Exemples sélectionnés ; ce graphique ne représente pas un indice.'
     def draw(self):
         c = self.canv
         c.setFillColor(PALE)
@@ -53,7 +54,7 @@ class ChangesChart(Flowable):
             c.drawRightString(self.width - 14, y, f'{value:+.2f} %'.replace('.', ','))
         c.setFont('Helvetica', 7)
         c.setFillColor(MUTED)
-        c.drawString(14, 13, 'Source : Yahoo Finance. Exemples sélectionnés ; ce graphique ne représente pas un indice.')
+        c.drawString(14, 13, self.source_label)
 
 
 class ChannelDiagram(Flowable):
@@ -70,12 +71,10 @@ class ChannelDiagram(Flowable):
             x = i * (WIDTH / 4)
             c.setFillColor(PALE)
             c.roundRect(x, 13, box, 54, 6, stroke=0, fill=1)
-            c.setFillColor(INK)
-            c.setFont('Helvetica', 8)
-            words = label.split()
-            midpoint = max(1, len(words) // 2)
-            c.drawCentredString(x + box / 2, 44, ' '.join(words[:midpoint]))
-            c.drawCentredString(x + box / 2, 31, ' '.join(words[midpoint:]))
+            label_style = ParagraphStyle('diagram-label', fontName='Helvetica', fontSize=8, leading=10, textColor=INK, alignment=1)
+            paragraph = Paragraph(escape(label), label_style)
+            _, height = paragraph.wrap(box - 12, 46)
+            paragraph.drawOn(c, x + 6, 40 - height / 2)
             if i < len(self.labels) - 1:
                 c.setStrokeColor(MUTED)
                 end = x + WIDTH / 4 - 3

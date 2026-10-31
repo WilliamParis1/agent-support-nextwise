@@ -18,6 +18,14 @@ python3 -m http.server 3000
 
 Site statique, sans compilation. Vercel utilise le preset Other et la racine du dépôt (`vercel.json`). Le dépôt lié à Vercel reçoit les changements sur `main`. L’ancienne route facultative `/api/chat` reste disponible côté serveur, mais la home ne l’appelle plus ; ses variables `OPENAI_API_KEY` / `AI_GATEWAY_API_KEY` ne sont pas nécessaires aux interactions guidées.
 
+## Rapports rédigés par la tâche ChatGPT
+
+La tâche dépose uniquement `content/inbox/AAAA-MM-JJ.json` sur `main`, selon [le contrat de réception](content/README.md) et [l’exemple de format](content/report.example.json). La date du fichier est celle de publication, la journée analysée est la veille. Aucun PDF ni lancement manuel de workflow ne sont demandés à la tâche.
+
+Le build Vercel (`sh scripts/build.sh`) installe les dépendances Python hors du répertoire public et transforme ces JSON en textes et PDF avant la mise en ligne. Le workflow `ingest-chatgpt.yml` versionne ensuite les fichiers générés. Le moteur conserve intégralement les paragraphes de l’auteur et ses références, sans les remplacer par le texte déterministe. Les cotations restent facultatives. Les fichiers invalides font échouer la nouvelle publication ; le dernier déploiement réussi reste en ligne.
+
+La génération quotidienne précédente reste un secours : elle importe d’abord les JSON reçus et ne remplace pas les analyses ChatGPT déjà disponibles. Les deux workflows partagent le même groupe de concurrence pour éviter des écritures simultanées.
+
 ## Deux publications, deux dates de séance
 
 L’édition publiée le jour J analyse uniquement la journée J−1, heure de Paris. L’édition de la veille (J−1) analyse J−2. Exemple : la carte du 31 octobre reprend la séance du 30 ; celle du 30 reprend la séance du 29. Les dates figurent sur chaque carte et dans chaque PDF. Un rapport plus ancien n’est jamais présenté à la place d’une de ces deux éditions.

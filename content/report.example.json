@@ -1,0 +1,25 @@
+{
+  "publication_date": "AAAA-MM-JJ",
+  "date": "DATE_DE_LA_VEILLE",
+  "title": "REMPLACER : titre précis sur les annonces et les actifs retenus",
+  "text": "REMPLACER par une synthèse française de moins de 50 mots, fondée sur les sources et les actifs ci-dessous.",
+  "assets": ["CAP.PA", "SCR.PA"],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "REMPLACER par le titre de la publication primaire",
+      "publisher": "REMPLACER par l’entreprise ou l’organisme",
+      "url": "https://exemple-a-remplacer.invalid/publication",
+      "published_at": "AAAA-MM-JJTHH:MM:SS+01:00"
+    }
+  ],
+  "sections": [
+    {"title": "Les faits", "text": "REMPLACER par les faits vérifiés et les chiffres utiles.", "source_ids": ["s1"]},
+    {"title": "Le mécanisme économique", "text": "REMPLACER par l’analyse des conséquences possibles, en distinguant faits et hypothèses.", "source_ids": ["s1"]},
+    {"title": "Ce qui renforcerait cette lecture", "text": "REMPLACER par les éléments de confirmation à rechercher.", "source_ids": ["s1"]},
+    {"title": "Ce qui pourrait la contredire", "text": "REMPLACER par les explications alternatives, risques et limites.", "source_ids": ["s1"]},
+    {"title": "Les prochaines échéances", "text": "REMPLACER par les annonces à surveiller. Les cinq sections doivent totaliser entre 250 et 700 mots.", "source_ids": ["s1"]}
+  ],
+  "diagram": ["Annonce vérifiée", "Attentes", "Activité et marges", "Hypothèse à vérifier"],
+  "quotes": []
+}
