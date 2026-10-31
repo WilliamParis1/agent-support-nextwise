@@ -28,14 +28,14 @@ jobs:
           cache-dependency-path: automation/requirements.txt
       - run: pip install -r automation/requirements.txt
       - run: python -m unittest discover -s tests -v
-      - name: Générer le brouillon de la veille
+      - name: Générer les éditions du jour et de la veille
         env:
           EVENT_NAME: ${{ github.event_name }}
         run: |
           if [ "$EVENT_NAME" = "schedule" ]; then
-            python automation/daily.py --scheduled
+            python -m automation.daily --scheduled
           else
-            python automation/daily.py
+            python -m automation.daily
           fi
       - uses: actions/upload-artifact@v4
         with:

@@ -2,7 +2,6 @@
 import argparse
 import csv
 import email.utils
-import io
 import json
 import re
 import time
@@ -13,7 +12,8 @@ import unicodedata
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta, timezone
+from html.parser import HTMLParser
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -123,7 +123,16 @@ def parse_news(data, source, day, macro_only=False):
             continue
         if not title or not link.startswith('https://') or (macro_only and not MACRO.search(title)):
             continue
-        output.append({'title': title, 'url': link, 'source': source, 'published_at': stamp.isoformat()})
+        class TextOnly(HTMLParser):
+            def __init__(self):
+                super().__init__()
+                self.parts = []
+            def handle_data(self, text):
+                self.parts.append(text)
+        summary = TextOnly()
+        summary.feed(item.findtext('description') or '')
+        output.append({'title': title, 'url': link, 'source': source, 'published_at': stamp.isoformat(),
+                       'summary': ' '.join(' '.join(summary.parts).split())[:1200]})
     return output
 
 
@@ -154,154 +163,135 @@ def parse_prices(data, symbol, day):
             'source_url': f'https://finance.yahoo.com/quote/{urllib.parse.quote(symbol, safe="")}/history/'}
 
 
-def collect_prices(assets, day, config, fetch=get):
+def collect_price_days(assets, days, config, fetch=get):
+    """One provider request per asset, even for today's and yesterday's editions."""
     global QUOTE_INTERVAL
     QUOTE_STOP.clear()
     QUOTE_INTERVAL = 1 / max(0.1, min(config.get('quote_requests_per_second', 2), 4))
-    start = datetime.combine(day - timedelta(days=15), datetime.min.time(), UTC)
-    end = datetime.combine(day + timedelta(days=1), datetime.min.time(), UTC)
+    start = datetime.combine(min(days) - timedelta(days=15), datetime.min.time(), UTC)
+    end = datetime.combine(max(days) + timedelta(days=1), datetime.min.time(), UTC)
 
     def collect(asset):
         symbol = asset['yahoo_symbol']
         url = f'https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(symbol, safe="")}?period1={int(start.timestamp())}&period2={int(end.timestamp())}&interval=1d'
+        data, failure = None, None
         try:
-            price = parse_prices(fetch(url), symbol, day)
+            data = fetch(url)
         except Exception as error:
-            # Do not leak response bodies or URLs into public reports.
-            price = {'symbol': symbol, 'date': day.isoformat(), 'status': 'unavailable',
-                     'reason': 'symbol_not_found' if isinstance(error, HTTPError) and error.code == 404 else 'provider_error'}
-        price.update({k: asset[k] for k in ['name', 'ticker', 'market', 'asset_class', 'sector']})
-        return price
+            failure = 'symbol_not_found' if isinstance(error, HTTPError) and error.code == 404 else 'provider_error'
+        values = {}
+        for day in days:
+            try:
+                if failure:
+                    raise ValueError(failure)
+                price = parse_prices(data, symbol, day)
+            except Exception:
+                price = {'symbol': symbol, 'date': day.isoformat(), 'status': 'unavailable', 'reason': failure or 'invalid_quote'}
+            price.update({k: asset[k] for k in ['name', 'ticker', 'market', 'asset_class', 'sector']})
+            values[day] = price
+        return values
 
-    prices = []
+    prices_by_day = {day: [] for day in days}
+    completed = 0
     with ThreadPoolExecutor(max_workers=max(1, min(config.get('quote_workers', 4), 8))) as executor:
         futures = [executor.submit(collect, asset) for asset in assets]
         for future in as_completed(futures):
-            prices.append(future.result())
+            result = future.result()
             if QUOTE_STOP.is_set():
                 for pending in futures:
                     pending.cancel()
-                raise RuntimeError('Fournisseur de cours bloqué ou limité : aucun brouillon publié. Réessayer après résolution ou changer de fournisseur.')
-            if len(prices) % 100 == 0:
-                print(f'Cotations traitées : {len(prices)}/{len(assets)}', flush=True)
-    prices.sort(key=lambda p: (p['market'], p['ticker']))
-    covered = sum(p['status'] != 'unavailable' for p in prices)
-    if covered / len(assets) < config.get('min_quote_coverage', 0.9):
-        raise RuntimeError(f'Couverture insuffisante : {covered}/{len(assets)} symboles reconnus. Vérifier les correspondances et symbol_overrides. Aucun brouillon publié.')
-    return prices
+                raise RuntimeError('Fournisseur de cours bloqué ou limité : aucun brouillon publié.')
+            for day, price in result.items():
+                prices_by_day[day].append(price)
+            completed += 1
+            if completed % 100 == 0:
+                print(f'Actifs examinés : {completed}/{len(assets)} pour {len(days)} séance(s)', flush=True)
+    for day, prices in prices_by_day.items():
+        prices.sort(key=lambda p: (p['market'], p['ticker']))
+        covered = sum(p['status'] != 'unavailable' for p in prices)
+        if covered / len(assets) < config.get('min_quote_coverage', 0.9):
+            raise RuntimeError(f'Couverture insuffisante au {day} : {covered}/{len(assets)} symboles reconnus. Vérifier symbol_overrides. Aucun brouillon publié.')
+    return prices_by_day
 
 
-def compose(day, news, prices):
-    french_date = day.strftime('%d/%m/%Y')
-    lines = [f'Synapse Capital | Le point marché du {french_date}', '']
-    covered = sum(p['status'] != 'unavailable' for p in prices)
-    lines.append(f'Univers : {len(prices)} actifs examinés ; {covered} symboles reconnus par le fournisseur. Les mouvements ci-dessous concernent les cotations disponibles, sans pondération de portefeuille.')
-    unavailable = len(prices) - covered
-    if unavailable:
-        lines.append(f'{unavailable} actifs sans donnée exploitable : ils sont exclus du classement et détaillés dans les données jointes.')
-    if news:
-        headlines = news[:3]
-        lines.append('Macro de la veille : ' + ' ; '.join(f'{n["title"]} ({n["source"]})' for n in headlines) + '.')
-    else:
-        lines.append('Aucune actualité macro datée de cette journée dans les flux suivis. Nous ne reprenons pas de nouvelle plus ancienne.')
-    moves = sorted((p for p in prices if p['status'] == 'available'), key=lambda p: abs(p['change_pct']), reverse=True)
-    if moves:
-        lines.append('Parmi les actifs suivis de notre univers Nextwise, les variations les plus marquées à la clôture sont : ' + ', '.join(f'{p["symbol"]} ({p["change_pct"]:+.2f} %)' for p in moves[:4]) + '. Les variations comparent la clôture du jour à celle de la séance précédente.')
-    else:
-        lines.append('Aucune séance datée de cette journée dans les cotations reçues : aucun mouvement antérieur n’est présenté comme celui d’hier.')
-    if news and moves:
-        lines.append('Notre grille de lecture : confronter ces annonces aux écarts entre actifs pour distinguer un mouvement général d’un facteur propre à une valeur. Leur concomitance ne suffit pas à établir un lien de causalité.')
-    lines.append('Pour naviguer le marché, notre point de vigilance est la sensibilité des actifs aux taux, à la croissance et aux devises. Cette lecture propose des axes de surveillance ; elle ne décrit ni nos positions ni des arbitrages réalisés.')
-    lines.append('Sources et détail dans la fiche jointe. Données de la veille uniquement ; analyse à relire par le club avant publication.')
-    return '\n\n'.join(line for line in lines if line)
+def collect_prices(assets, day, config, fetch=get):
+    return collect_price_days(assets, [day], config, fetch)[day]
 
 
-def write_pdf(path, report):
-    from reportlab.lib import colors
-    from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
-    from reportlab.lib.enums import TA_LEFT
-    from reportlab.lib.pagesizes import A4
-    from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, KeepInFrame, Flowable
-    from xml.sax.saxutils import escape
-    styles = getSampleStyleSheet()
-    styles.add(ParagraphStyle(name='SmallBrief', fontName='Helvetica', fontSize=8, leading=11, textColor=colors.HexColor('#203b33'), alignment=TA_LEFT))
-    style = styles['SmallBrief']
-    def p(text):
-        return Paragraph(escape(text), style)
-    class Brand(Flowable):
-        width = 465
-        height = 60
-        def draw(self):
-            canvas = self.canv
-            canvas.setFillColor(colors.HexColor('#08223f'))
-            canvas.setFont('Helvetica', 31)
-            canvas.drawString(0, 30, 'Synapse')
-            canvas.drawString(31, 0, 'Capital')
-            canvas.setStrokeColor(colors.HexColor('#a9afb5'))
-            canvas.setLineWidth(2)
-            curve = canvas.beginPath()
-            curve.moveTo(45, 23)
-            curve.curveTo(70, 38, 101, 27, 128, 39)
-            canvas.drawPath(curve)
-    story = [Brand(), Spacer(1, 8), p('FICHE QUALITATIVE · ' + report['date'] + ' · À RELIRE AVANT PUBLICATION'), Spacer(1, 14)]
-    if report.get('universe'):
-        universe = report['universe']
-        story += [p(f"Périmètre : {universe['tracked']} actifs suivis sur {universe['total']} autorisés ; sélection : {universe['scope']}."), Spacer(1, 6)]
-    for line in report['text'].split('\n\n'):
-        story += [p(line), Spacer(1, 8)]
-    moves = sorted((x for x in report['prices'] if x['status'] == 'available'), key=lambda x: abs(x['change_pct']), reverse=True)
-    if moves:
-        rows = [['Actif', 'Clôture', 'Variation', 'Séance précédente']]
-        rows += [[x['symbol'], f'{x["close"]:.2f} {x["currency"]}', f'{x["change_pct"]:+.2f} %', x['previous_date']] for x in moves[:8]]
-        table = Table(rows, colWidths=[100, 125, 80, 160])
-        table.setStyle(TableStyle([('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#eaf0df')), ('FONTSIZE', (0, 0), (-1, -1), 8), ('BOTTOMPADDING', (0, 0), (-1, -1), 7)]))
-        story += [table, Spacer(1, 10)]
-    missing = [x['symbol'] for x in report['prices'] if x['status'] == 'no_session']
-    if missing:
-        story += [p(f'Sans séance ce jour : {len(missing)} actifs. Liste dans le rapport JSON.'), Spacer(1, 8)]
-    story.append(p('Sources macro (titres publiés pendant la journée civile, heure de Paris) :'))
-    for item in report['news'][:3]:
-        story += [p(item['source'] + ' · ' + item['published_at'] + ' · ' + item['url'])]
-    story += [Spacer(1, 6), p('Cours : Yahoo Finance, clôtures brutes non ajustées, dates de séance locales. Une opération sur titre peut affecter la variation. Détail et liens de chaque actif dans le rapport JSON téléchargeable. Flux macro suivis : BCE, Federal Reserve, BBC Business ; couverture non exhaustive, titres uniquement. Univers CSV ; aucune position détenue n’est inférée.')]
-    SimpleDocTemplate(str(path), pagesize=A4, leftMargin=36, rightMargin=36, topMargin=30, bottomMargin=30).build([KeepInFrame(A4[0] - 84, A4[1] - 72, story, mode='shrink')])
+from automation.editorial import compose, make_editorial
+from automation.pdf_report import write_pdf
+
+
+def publication_dates(now, count=2):
+    today = now.astimezone(PARIS).date()
+    return [(today - timedelta(days=offset), today - timedelta(days=offset + 1)) for offset in range(count)]
+
+
+def persist_report(report, root=ROOT):
+    import tempfile
+    import shutil
+    target = root / 'reports' / report['date']
+    # Commit complete files together; never advance the manifest before the PDF exists.
+    with tempfile.TemporaryDirectory() as directory:
+        staging = Path(directory)
+        (staging / 'report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
+        (staging / 'publication.txt').write_text(report['text'], encoding='utf-8')
+        write_pdf(staging / 'fiche.pdf', report)
+        target.parent.mkdir(exist_ok=True)
+        shutil.copytree(staging, target, dirs_exist_ok=True)
+    editions = []
+    for report_path in (root / 'reports').glob('????-??-??/report.json'):
+        data = json.loads(report_path.read_text(encoding='utf-8'))
+        if data.get('schema_version') == 2 and (report_path.parent / 'fiche.pdf').exists():
+            editions.append({'publication_date': data['publication_date'], 'date': data['date'],
+                             'path': f"reports/{data['date']}", 'generated_at': data['generated_at']})
+    editions.sort(key=lambda item: item['publication_date'], reverse=True)
+    (root / 'reports/index.json').write_text(json.dumps({'editions': editions}, indent=2), encoding='utf-8')
+    (root / 'reports/latest.json').write_text(json.dumps(editions[0], indent=2), encoding='utf-8')
 
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--scheduled', action='store_true')
+    parser.add_argument('--days', type=int, default=2, choices=[1, 2])
     args = parser.parse_args()
     now = datetime.now(UTC)
     if args.scheduled and not due(now):
         print('Hors créneau Paris : aucune génération.')
         return
-    day = previous_day(now)
-    target = ROOT / 'reports' / day.isoformat()
-    if (target / 'report.json').exists():
-        print('Rapport déjà généré : aucune duplication.')
+    pending = []
+    for publication, day in publication_dates(now, args.days):
+        target = ROOT / 'reports' / day.isoformat()
+        existing = json.loads((target / 'report.json').read_text()) if (target / 'report.json').exists() else {}
+        if existing.get('schema_version') == 2 and (target / 'fiche.pdf').exists():
+            continue
+        pending.append((publication, day))
+    if not pending:
+        print('Les éditions du jour et de la veille sont déjà disponibles.')
         return
     config = json.loads((ROOT / 'automation/config.json').read_text())
     universe, selected = load_universe(config)
-    news = []
-    # Any failed provider fails the run. An empty day is distinct from a failed request.
+    news_by_day = {day: [] for _, day in pending}
     for feed in config['feeds']:
-        news.extend(parse_news(get(feed['url']), feed['name'], day, feed['macro_only']))
-    news = list({n['url']: n for n in news}.values())
-    news.sort(key=lambda n: n['published_at'], reverse=True)
-    prices = collect_prices(selected, day, config)
-    report = {'date': day.isoformat(), 'generated_at': now.isoformat(), 'timezone': 'Europe/Paris',
-              'status': 'draft', 'universe': {'source': config['universe_csv'], 'total': len(universe), 'tracked': len(selected), 'scope': config['daily_scope']}, 'news': news, 'prices': prices, 'text': compose(day, news, prices)}
-    # Stage complete outputs before making the report discoverable.
-    import tempfile
-    import shutil
-    with tempfile.TemporaryDirectory() as directory:
-        staging = Path(directory)
-        (staging / 'report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2))
-        (staging / 'publication.txt').write_text(report['text'])
-        write_pdf(staging / 'fiche.pdf', report)
-        target.parent.mkdir(exist_ok=True)
-        shutil.copytree(staging, target, dirs_exist_ok=True)
-    (ROOT / 'reports/latest.json').write_text(json.dumps({'date': day.isoformat(), 'path': f'reports/{day.isoformat()}', 'generated_at': now.isoformat()}, indent=2))
-    print(f'Brouillon généré pour {day} : {len(news)} actualités, {len(prices)} actifs.')
+        raw = get(feed['url'])
+        for day in news_by_day:
+            news_by_day[day].extend(parse_news(raw, feed['name'], day, feed['macro_only']))
+    for day, news in news_by_day.items():
+        news_by_day[day] = sorted({n['url']: n for n in news}.values(), key=lambda n: n['published_at'], reverse=True)
+    prices_by_day = collect_price_days(selected, list(news_by_day), config)
+    for publication, day in pending:
+        news, prices = news_by_day[day], prices_by_day[day]
+        try:
+            editorial = make_editorial(day, news, prices)
+        except ValueError as error:
+            print(f'Édition du {publication} indisponible : {error}')
+            continue
+        report = {'schema_version': 2, 'publication_date': publication.isoformat(), 'date': day.isoformat(),
+                  'generated_at': now.isoformat(), 'timezone': 'Europe/Paris', 'status': 'draft',
+                  'universe': {'source': config['universe_csv'], 'total': len(universe), 'tracked': len(selected), 'scope': config['daily_scope']},
+                  'news': news, 'prices': prices, **editorial}
+        persist_report(report)
+        print(f"Édition du {publication} : {report['word_count']} mots, PDF de deux pages ; données du {day}.")
 
 
 if __name__ == '__main__':

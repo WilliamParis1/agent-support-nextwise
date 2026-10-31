@@ -23,7 +23,7 @@ function contextFor(query) {
     const latest = readJSON('reports/latest.json');
     if (/^\d{4}-\d{2}-\d{2}$/.test(latest.date) && latest.path === `reports/${latest.date}`) {
       const data = readJSON(`${latest.path}/report.json`);
-      if (data.date === latest.date) report = { date: data.date, generated_at: data.generated_at, text: data.text,
+      if (data.date === latest.date) report = { date: data.date, publication_date: data.publication_date, analysis: data.analysis, generated_at: data.generated_at, text: data.text,
         universe: data.universe, news: data.news?.slice(0, 6),
         prices: data.prices?.filter(price => price.status === 'available').sort((a, b) => Math.abs(b.change_pct) - Math.abs(a.change_pct)).slice(0, 12) };
     }

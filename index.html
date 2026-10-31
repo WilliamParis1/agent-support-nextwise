@@ -3,54 +3,89 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#fafaf8">
-  <meta name="description" content="Mr Camembert : le point quotidien du club sur les marchés et les actifs de la compétition Nextwise.">
-  <title>Synapse Capital — Mr Camembert</title>
+  <meta name="theme-color" content="#f8f9fb">
+  <meta name="description" content="Le carnet Synapse Capital : deux publications qualitatives, leurs analyses sourcées et l’univers Nextwise, avec Mr Camembert.">
+  <title>Synapse Capital — Le carnet de Mr Camembert</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="header">
-    <a href="./" aria-label="Synapse Capital, accueil"><img class="logo" src="assets/synapse-capital.svg" width="142" height="71" alt="Synapse Capital"></a>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="icon-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V3H3v13h5"/></symbol>
+    <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></symbol>
+  </defs></svg>
+  <div class="app-layout">
+    <aside class="sidebar" aria-label="Actions de la page">
+      <a class="brand" href="#publications" aria-label="Synapse Capital, le carnet"><img src="assets/synapse-capital.svg" width="145" height="72" alt="Synapse Capital"></a>
+      <p class="nav-caption">VOTRE ESPACE</p>
+      <nav aria-label="Actions possibles">
+        <button class="nav-action active" data-target="today-card" type="button"><span>01</span> Le qualitatif du jour</button>
+        <button class="nav-action" data-target="yesterday-card" type="button"><span>02</span> Celui de la veille</button>
+        <button class="nav-action" data-target="universe" type="button"><span>03</span> L’univers des actifs</button>
+        <button class="nav-action" data-target="sources" type="button"><span>04</span> Consulter les sources</button>
+      </nav>
+      <div class="sidebar-note"><span class="status-dot"></span><p>Le rendez-vous du club<br><strong>Chaque jour, à partir de 2 h.</strong></p></div>
+    </aside>
 
-  </header>
-  <main class="home">
-    <h1 class="sr-only">Mr Camembert — votre contenu qualitatif du jour</h1>
-    <div class="professor-scene" id="professor-scene">
-      <div class="speech-bubble"><p id="professor-speech">Bonjour ! Moi, c’est Mr Camembert.</p><span class="speech-cursor" aria-hidden="true"></span></div>
-      <div class="professor-floor" aria-hidden="true"></div>
-      <img id="professor" class="professor" src="assets/professor.png" width="320" height="320" alt="Mr Camembert, personnage en pixel art avec des lunettes, une moustache et une baguette de professeur.">
-    </div>
-    <section class="chat" aria-label="Conversation avec Mr Camembert"><div class="chat-messages" id="chat-messages" role="log" aria-live="polite" aria-relevant="additions"></div><form id="chat-form"><label class="sr-only" for="chat-input">Votre message à Mr Camembert</label><div class="chat-input-row"><input id="chat-input" name="message" placeholder="Parlez à Mr Camembert…" maxlength="4000" autocomplete="off" required><button id="send-message" type="submit" aria-label="Envoyer le message"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m5 12 7-7 7 7M12 5v15"/></svg></button></div></form><p class="chat-status" id="chat-status" role="status"></p><p class="chat-privacy" id="chat-privacy" hidden>Vos messages sont transmis au service IA pour répondre. Aucun historique n’est enregistré par le site ; il disparaît au rechargement.</p></section>
-    <div class="home-actions">
-      <button class="primary-button" type="button" data-open="brief-dialog">Le contenu du jour <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button>
-      <button id="voice-toggle" class="voice-button" type="button" aria-pressed="false" aria-label="Écouter Mr Camembert"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5ZM15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></svg><span id="voice-label">Écouter</span></button>
-    </div>
-  </main>
-  <footer><button class="nav-link" type="button" data-open="universe-dialog">L’univers des actifs</button><span id="universe-summary" class="sr-only">L’univers Nextwise</span><button id="animation-toggle" type="button" aria-pressed="false">Mettre l’animation en pause</button></footer>
+    <main class="workspace">
+      <header class="page-header"><div><p class="eyebrow">SYNAPSE CAPITAL × NEXTWISE</p><h1>Un regard sur le marché.</h1></div><p id="current-date" class="current-date"></p></header>
+      <div class="workspace-grid">
+        <div class="content-column">
+          <section id="publications" aria-labelledby="publications-heading">
+            <div class="section-heading"><h2 id="publications-heading">Le qualitatif du club</h2><span>À relire, puis à partager.</span></div>
+            <div class="publication-grid">
+              <article id="today-card" class="publication-card current" tabindex="-1" aria-labelledby="today-heading">
+                <div class="edition-top"><span class="edition-tag">AUJOURD’HUI</span><span class="edition-date" id="today-date"></span></div>
+                <h3 id="today-heading">Le point du jour</h3>
+                <p class="session-date" id="today-session"></p>
+                <p class="publication-text" id="today-text">Chargement de la publication…</p>
+                <p class="publication-status" id="today-status" role="status"></p>
+                <div class="publication-actions"><a class="pdf-button" id="today-pdf" aria-disabled="true" download><svg><use href="#icon-download"/></svg>PDF · 2 pages</a><button class="copy-button" id="today-copy" type="button" disabled aria-label="Copier le texte d’aujourd’hui"><svg><use href="#icon-copy"/></svg><span>Copier</span></button></div>
+              </article>
+              <article id="yesterday-card" class="publication-card" tabindex="-1" aria-labelledby="yesterday-heading">
+                <div class="edition-top"><span class="edition-tag">LA VEILLE</span><span class="edition-date" id="yesterday-date"></span></div>
+                <h3 id="yesterday-heading">Le point précédent</h3>
+                <p class="session-date" id="yesterday-session"></p>
+                <p class="publication-text" id="yesterday-text">Chargement de la publication…</p>
+                <p class="publication-status" id="yesterday-status" role="status"></p>
+                <div class="publication-actions"><a class="pdf-button" id="yesterday-pdf" aria-disabled="true" download><svg><use href="#icon-download"/></svg>PDF · 2 pages</a><button class="copy-button" id="yesterday-copy" type="button" disabled aria-label="Copier le texte de la veille"><svg><use href="#icon-copy"/></svg><span>Copier</span></button></div>
+              </article>
+            </div>
+            <p class="section-note">Chaque édition analyse la séance précédente. Moins de 50 mots ici ; le raisonnement, les graphiques et les sources dans le PDF.</p>
+          </section>
 
-  <dialog id="brief-dialog" aria-labelledby="brief-heading">
-    <div class="dialog-header"><span class="eyebrow">LE CARNET DE MR CAMEMBERT</span><button class="close-button" type="button" data-close aria-label="Fermer le point du jour">×</button></div>
-    <h2 id="brief-heading">Le point du jour.</h2>
-    <p class="dialog-intro">Un texte à relire, une fiche d’une page à partager.</p>
-    <p id="brief-status" role="status">Chargement du dernier brouillon…</p>
-    <div id="brief-content" hidden>
-      <p class="report-date" id="brief-date"></p>
-      <p id="brief-text" class="report-text"></p>
-      <div class="brief-actions"><button class="primary-button" id="copy-brief" type="button">Copier le texte</button><a class="secondary-button" id="download-pdf" download>Télécharger le PDF</a><a class="text-link" id="download-evidence" download>Données et sources ↗</a></div>
-    </div>
-    <p class="fine-print">Préparation quotidienne à 2 h, heure de Paris. Le temps de collecte peut retarder sa disponibilité. Univers autorisé, sans positions détenues. Publication manuelle par un membre du club.</p>
-  </dialog>
+          <section id="universe" class="universe-section" aria-labelledby="universe-heading" tabindex="-1">
+            <div class="section-heading"><h2 id="universe-heading">L’univers des actifs</h2><span id="universe-count">Chargement…</span></div>
+            <div class="universe-panel">
+              <div class="filters"><label class="search-label" for="asset-search"><span class="sr-only">Rechercher un actif</span><svg><use href="#icon-search"/></svg><input id="asset-search" type="search" placeholder="Nom, ticker, secteur…" autocomplete="off"></label><label for="market-filter" class="market-label"><span class="sr-only">Place de cotation</span><select id="market-filter"><option value="">Toutes les places</option></select></label></div>
+              <div class="asset-types" role="group" aria-label="Type d’actifs"><button class="filter-chip selected" type="button" data-class="" aria-pressed="true">Tous</button><button class="filter-chip" type="button" data-class="Action" aria-pressed="false">Actions</button><button class="filter-chip" type="button" data-class="ETF" aria-pressed="false">ETF</button><span id="results-status" role="status"></span></div>
+              <div class="table-wrap"><table><thead><tr><th scope="col">Actif</th><th scope="col">Ticker</th><th scope="col">Place</th><th scope="col">Type</th></tr></thead><tbody id="assets-body"></tbody></table></div>
+              <p id="universe-error" role="status" hidden></p>
+              <div class="table-footer"><span id="shown-assets"></span><button class="more-button" type="button" id="load-more" hidden>Voir plus d’actifs <svg><use href="#icon-arrow"/></svg></button></div>
+            </div>
+            <p class="section-note">Les actifs autorisés par la compétition. Cette liste ne représente pas les positions du club.</p>
+          </section>
 
-  <dialog id="universe-dialog" aria-labelledby="universe-heading">
-    <div class="dialog-header"><span class="eyebrow">LA COMPÉTITION NEXTWISE</span><button class="close-button" type="button" data-close aria-label="Fermer l’univers">×</button></div>
-    <h2 id="universe-heading">Notre terrain de jeu.</h2>
-    <p class="dialog-intro" id="universe-count">Chargement de l’univers…</p>
-    <div class="filters"><label class="search-label" for="asset-search">Rechercher un actif<input id="asset-search" type="search" placeholder="Nom, ticker ou secteur…" autocomplete="off"></label><label for="market-filter">Place de cotation<select id="market-filter"><option value="">Toutes les places</option></select></label></div>
-    <p class="results-status" id="results-status" role="status"></p>
-    <div class="table-wrap"><table><thead><tr><th scope="col">Actif</th><th scope="col">Ticker</th><th scope="col">Place</th><th scope="col">Type</th></tr></thead><tbody id="assets-body"></tbody></table></div>
-    <button class="secondary-button load-more" type="button" id="load-more" hidden>Afficher la suite</button>
-    <p class="fine-print">Source : le CSV fourni par le club. Liste d’actifs autorisés, sans indication de détention. <a class="text-link" href="data/universe.csv" download>Télécharger l’univers CSV</a></p>
-  </dialog>
+          <details id="sources" class="sources-section"><summary>Les sources derrière nos publications <span>Consulter</span></summary><div id="source-list"><p>Les références apparaîtront avec chaque publication disponible.</p></div></details>
+        </div>
+
+        <aside class="camembert-panel" aria-labelledby="camembert-heading">
+          <div class="camembert-title"><span class="status-dot"></span><h2 id="camembert-heading">Mr Camembert</h2><span>À vos côtés.</span></div>
+          <div class="speech-bubble"><p id="professor-speech" aria-live="polite">Bonjour ! On prend un peu de recul sur les marchés ? Choisissez ce que vous voulez explorer.</p></div>
+          <div class="professor-scene" id="professor-scene"><div class="professor-floor" aria-hidden="true"></div><img id="professor" src="assets/professor.png" width="320" height="320" alt="Mr Camembert, votre professeur en pixel art."></div>
+          <p class="reply-label">RÉPONDRE À MR CAMEMBERT</p>
+          <div class="reply-options" id="reply-options">
+            <button type="button" data-reply="explain">Expliquez-moi le point du jour.<svg><use href="#icon-arrow"/></svg></button>
+            <button type="button" data-reply="previous">Et celui de la veille ?<svg><use href="#icon-arrow"/></svg></button>
+            <button type="button" data-reply="risk">Quel risque faut-il surveiller ?<svg><use href="#icon-arrow"/></svg></button>
+            <button type="button" data-reply="assets">Quels actifs sont concernés ?<svg><use href="#icon-arrow"/></svg></button>
+          </div>
+          <p id="interaction-note" class="interaction-note"></p>
+        </aside>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
