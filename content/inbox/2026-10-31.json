@@ -1,0 +1,75 @@
+{
+  "publication_date": "2026-10-31",
+  "date": "2026-10-30",
+  "title": "Capgemini relève ses perspectives, SCOR affiche une solvabilité renforcée",
+  "text": "Capgemini relève ses prévisions de croissance après un troisième trimestre solide. SCOR annonce 206 millions d’euros de bénéfice trimestriel et une solvabilité estimée à 221 %. À surveiller : la concrétisation des objectifs de Capgemini et le prochain plan stratégique de SCOR.",
+  "assets": [
+    "CAP.PA",
+    "SCR.PA"
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Q3 2026 revenues",
+      "publisher": "Capgemini",
+      "url": "https://investors.capgemini.com/en/publication/q3-2026-revenues/",
+      "published_at": "2026-10-30T07:00:00+01:00"
+    },
+    {
+      "id": "s2",
+      "title": "Third quarter 2026 results",
+      "publisher": "SCOR",
+      "url": "https://www.scor.com/en/press-release/third-quarter-2026-results",
+      "published_at": "2026-10-30T07:00:00+01:00"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Les faits",
+      "text": "Capgemini a enregistré 6,073 milliards d’euros de chiffre d’affaires au troisième trimestre, en hausse de 11,7 % à taux de change constants. Les prises de commandes atteignent 5,401 milliards, en progression de 3,4 % à taux constants. Le groupe relève sa cible de croissance annuelle à 9-9,5 %, contre environ 8,5-9 % auparavant, et maintient ses objectifs de marge opérationnelle et de génération de trésorerie. SCOR publie 206 millions d’euros de résultat net trimestriel. Son ratio combiné en dommages atteint 84,1 %, et son ratio de solvabilité estimé 221 % à fin septembre.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Les mécanismes économiques",
+      "text": "Chez Capgemini, une demande durable de modernisation informatique et de déploiement de l’intelligence artificielle pourrait soutenir les revenus. La valeur créée pour les actionnaires dépendra aussi des prix, des coûts de personnel et de la capacité à transformer la croissance en trésorerie. Chez SCOR, un ratio combiné inférieur à 100 % signifie que primes et autres revenus techniques couvrent les sinistres et frais inclus dans cet indicateur. Une souscription rentable et un portefeuille d’investissement rémunérateur peuvent soutenir les bénéfices et les fonds propres. Ces transmissions sont des hypothèses, non des prévisions certaines.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Ce qui renforcerait cette lecture",
+      "text": "Pour Capgemini, une croissance des commandes soutenue, une marge conforme aux objectifs et la réalisation de la fourchette de trésorerie renforceraient l’idée que la croissance se traduit en rentabilité. Pour SCOR, un ratio combiné durablement bas, des résultats vie et santé stables et une solvabilité robuste malgré les sinistres appuieraient la thèse d’une performance diversifiée.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Ce qui pourrait la contredire",
+      "text": "Les acquisitions WNS et Cloud4C contribuent à la croissance de Capgemini : la croissance publiée ne mesure donc pas à elle seule la progression organique. Un ralentissement des commandes, des dépenses d’intégration ou des pressions salariales pourraient peser sur les marges. Pour SCOR, des catastrophes naturelles plus coûteuses, une dégradation des hypothèses de sinistralité ou des marchés financiers défavorables pourraient réduire les résultats. Le ratio de solvabilité est une estimation, sensible notamment aux risques et aux hypothèses retenues.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Les prochaines échéances",
+      "text": "Suivre chez Capgemini le chiffre d’affaires du quatrième trimestre, la croissance à périmètre comparable, les commandes, la marge et la trésorerie annuelle. Le groupe vise une croissance à taux constants de 3 à 4 % au quatrième trimestre. Pour SCOR, surveiller l’évolution des sinistres et du capital ainsi que la présentation de son nouveau plan stratégique annoncée pour le 3 décembre 2026. Les cours ne sont pas inclus faute de vérification indépendante des clôtures.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "diagram": [
+    "Annonces trimestrielles",
+    "Demande et risques assurés",
+    "Revenus, marges et capital",
+    "Résultats futurs à vérifier"
+  ],
+  "quotes": []
+}
