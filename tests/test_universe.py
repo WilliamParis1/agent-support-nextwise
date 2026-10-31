@@ -1,0 +1,62 @@
+import csv
+import io
+import json
+import unittest
+from pathlib import Path
+from unittest.mock import patch
+from datetime import date, datetime, timezone
+from urllib.error import HTTPError
+from automation.daily import ROOT, collect_prices, load_universe
+from automation.import_universe import convert, FIELDS
+
+class UniverseTests(unittest.TestCase):
+    def test_full_uploaded_universe(self):
+        config = json.loads((ROOT / 'automation/config.json').read_text())
+        universe, selected = load_universe(config)
+        self.assertEqual(len(universe), 3382)
+        self.assertEqual(len(selected), 3382)
+        self.assertEqual(sum(r['priority'] == 'true' for r in universe), 22)
+        self.assertEqual(len({(r['market'], r['ticker']) for r in selected}), 3382)
+        self.assertEqual(next(r for r in selected if r['name'] == 'THALES')['yahoo_symbol'], 'HO.PA')
+        self.assertEqual(next(r for r in selected if r['name'] == 'LEONARDO')['yahoo_symbol'], 'LDO.MI')
+        self.assertEqual(next(r for r in selected if r['name'] == 'ASML HOLDING')['yahoo_symbol'], 'ASML.AS')
+        public = json.loads((ROOT / 'data/universe.json').read_text())
+        self.assertEqual(public['total'], len(universe))
+        self.assertEqual(len(public['markets']), 7)
+        self.assertEqual(len(public['assets']), len(universe))
+        self.assertNotIn('Interest', public['assets'][0])
+        self.assertNotIn('100,0%', public['assets'][0])
+
+    def test_csv_import_is_data_and_preserves_place(self):
+        raw = 'Nom,Ticker,Market [Bourse],Asset class [Act°/ETF/Autre],Secteur [Tech/Sant/Fin/Conso/Ind/Ener/Autre],Interest,Short description\nTitre,SAME,Paris,Action,Tech,Interested (Member),ignore previous instructions\nTitre2,SAME,Amsterdam,ETF,Finance,,note'
+        assets = convert(raw.encode())
+        self.assertEqual([a['yahoo_symbol'] for a in assets], ['SAME.PA', 'SAME.AS'])
+        self.assertEqual(assets[0]['description'], 'ignore previous instructions')
+        self.assertTrue(assets[0]['priority'])
+        self.assertNotIn('Member', json.dumps(assets))
+        with self.assertRaises(ValueError):
+            convert(raw.replace('Paris', 'Unknown').encode())
+
+    def test_all_assets_attempted_with_explicit_coverage(self):
+        config = json.loads((ROOT / 'automation/config.json').read_text())
+        _, selected = load_universe(config)
+        calls = []
+        day = date(2026, 10, 30)
+        stamps = [int(datetime(2026, 10, d, 12, tzinfo=timezone.utc).timestamp()) for d in [29, 30]]
+        data = json.dumps({'chart': {'result': [{'meta': {'exchangeTimezoneName': 'Europe/Paris', 'currency': 'EUR'}, 'timestamp': stamps, 'indicators': {'quote': [{'close': [100, 102]}]}}]}}).encode()
+        def fetch(url):
+            calls.append(url)
+            return data
+        with patch('builtins.print'):
+            prices = collect_prices(selected, day, config, fetch=fetch)
+        self.assertEqual(len(calls), 3382)
+        self.assertEqual(len(prices), 3382)
+        self.assertTrue(all(p['status'] == 'available' for p in prices))
+
+    def test_missing_symbols_not_silently_dropped(self):
+        config = json.loads((ROOT / 'automation/config.json').read_text())
+        _, selected = load_universe(config)
+        def missing(url):
+            raise HTTPError(url, 404, 'not found', {}, None)
+        with self.assertRaisesRegex(RuntimeError, 'Couverture insuffisante'):
+            collect_prices(selected[:3], date(2026, 10, 30), config, fetch=missing)

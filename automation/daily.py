@@ -4,9 +4,11 @@ import csv
 import email.utils
 import io
 import json
-import os
 import re
 import time
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from urllib.error import HTTPError
 import unicodedata
 import urllib.parse
 import urllib.request
@@ -21,18 +23,44 @@ UTC = timezone.utc
 MACRO = re.compile(r'inflat|interest rate|central bank|econom|tariff|trade war|gdp|employment|unemployment|monetary|oil price|growth|federal reserve|bank of england|borrowing|budget|fiscal', re.I)
 
 
+QUOTE_LOCK = threading.Lock()
+QUOTE_NEXT_REQUEST = 0.0
+QUOTE_INTERVAL = 0.5
+QUOTE_STOP = threading.Event()
+
+
+def quote_rate_limit():
+    global QUOTE_NEXT_REQUEST
+    with QUOTE_LOCK:
+        delay = max(0, QUOTE_NEXT_REQUEST - time.monotonic())
+        if delay:
+            time.sleep(delay)
+        QUOTE_NEXT_REQUEST = time.monotonic() + QUOTE_INTERVAL
+
+
 def get(url):
     # TLS and platform proxy configuration are preserved.
     request = urllib.request.Request(url, headers={'User-Agent': 'SynapseCapitalDailyBrief/1.0'})
     for attempt in range(3):
         try:
-            with urllib.request.urlopen(request, timeout=35) as response:
+            if 'query1.finance.yahoo.com/' in url:
+                if QUOTE_STOP.is_set():
+                    raise RuntimeError('Fournisseur de cours temporairement indisponible')
+                quote_rate_limit()
+            with urllib.request.urlopen(request, timeout=25) as response:
                 data = response.read(5_000_001)
                 if len(data) > 5_000_000:
                     raise ValueError('Réponse trop volumineuse')
                 return data
+        except HTTPError as error:
+            if error.code in (401, 403, 429) and 'query1.finance.yahoo.com/' in url:
+                QUOTE_STOP.set()
+                raise RuntimeError(f'Accès fournisseur de cours refusé ou limité (HTTP {error.code})') from None
+            if error.code == 404 or attempt == 2:
+                raise
+            time.sleep(2 ** attempt)
         except Exception:
-            if attempt == 2:
+            if attempt == 2 or QUOTE_STOP.is_set():
                 raise
             time.sleep(2 ** attempt)
 
@@ -53,33 +81,29 @@ def normalize(value):
     return ''.join(c for c in unicodedata.normalize('NFKD', value.lower().strip()) if not unicodedata.combining(c))
 
 
-def parse_assets(data, column='', max_assets=100):
-    text = data.decode('utf-8-sig')
-    if text.lstrip().startswith('<'):
-        raise ValueError('Le Sheet ne renvoie pas de CSV. Vérifier le partage ou SHEET_CSV_URL.')
-    rows = csv.DictReader(io.StringIO(text))
-    fields = rows.fieldnames or []
-    aliases = {'ticker yahoo', 'yahoo ticker', 'yahoo symbol', 'symbole yahoo', 'ticker', 'symbol', 'symbole'}
-    matches = [f for f in fields if normalize(f) in aliases]
-    if column:
-        matches = [f for f in fields if f == column]
-    else:
-        preferred = [f for f in matches if 'yahoo' in normalize(f)]
-        matches = preferred or matches
-    if len(matches) != 1:
-        raise ValueError('Définir ticker_column dans automation/config.json : une colonne de symboles Yahoo Finance est requise (ex. AIR.PA, AAPL, BTC-USD).')
-    symbols = []
-    for row in rows:
-        symbol = (row.get(matches[0]) or '').strip()
-        if not symbol:
-            continue
-        if not re.fullmatch(r'[A-Za-z0-9^][A-Za-z0-9.^=\-]{0,29}', symbol):
-            raise ValueError('Symbole invalide : utiliser une colonne de tickers Yahoo, pas des noms ni des ISIN.')
-        if symbol not in symbols:
-            symbols.append(symbol)
-    if not symbols or len(symbols) > max_assets:
-        raise ValueError(f'Nombre de symboles invalide : {len(symbols)} (limite {max_assets}).')
-    return symbols
+def load_universe(config):
+    source = (ROOT / config['universe_csv']).resolve()
+    if not source.is_relative_to(ROOT / 'data') or source.suffix != '.csv':
+        raise ValueError('Le CSV doit être conservé dans data/.')
+    with source.open(encoding='utf-8-sig', newline='') as stream:
+        rows = list(csv.DictReader(stream))
+    required = {'name', 'ticker', 'market', 'yahoo_symbol', 'priority', 'asset_class', 'sector'}
+    if not rows or not required.issubset(rows[0]):
+        raise ValueError('CSV normalisé invalide ; utiliser automation.import_universe.')
+    if config['daily_scope'] not in ('priority', 'all'):
+        raise ValueError('daily_scope doit valoir priority ou all.')
+    selected = rows if config['daily_scope'] == 'all' else [r for r in rows if r['priority'] == 'true']
+    if not selected or len(selected) > config['max_assets']:
+        raise ValueError(f"Périmètre quotidien : {len(selected)} actifs, limite {config['max_assets']}. Adapter explicitement la configuration.")
+    seen = set()
+    for asset in selected:
+        key = f"{asset['market']}:{asset['ticker']}"
+        asset['yahoo_symbol'] = config.get('symbol_overrides', {}).get(key, asset['yahoo_symbol'])
+        symbol = asset['yahoo_symbol']
+        if not re.fullmatch(r'[A-Za-z0-9^][A-Za-z0-9.^=\-]{0,29}', symbol) or symbol in seen:
+            raise ValueError(f'Correspondance Yahoo invalide ou ambiguë : {key}')
+        seen.add(symbol)
+    return rows, selected
 
 
 def parse_news(data, source, day, macro_only=False):
@@ -130,9 +154,51 @@ def parse_prices(data, symbol, day):
             'source_url': f'https://finance.yahoo.com/quote/{urllib.parse.quote(symbol, safe="")}/history/'}
 
 
+def collect_prices(assets, day, config, fetch=get):
+    global QUOTE_INTERVAL
+    QUOTE_STOP.clear()
+    QUOTE_INTERVAL = 1 / max(0.1, min(config.get('quote_requests_per_second', 2), 4))
+    start = datetime.combine(day - timedelta(days=15), datetime.min.time(), UTC)
+    end = datetime.combine(day + timedelta(days=1), datetime.min.time(), UTC)
+
+    def collect(asset):
+        symbol = asset['yahoo_symbol']
+        url = f'https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(symbol, safe="")}?period1={int(start.timestamp())}&period2={int(end.timestamp())}&interval=1d'
+        try:
+            price = parse_prices(fetch(url), symbol, day)
+        except Exception as error:
+            # Do not leak response bodies or URLs into public reports.
+            price = {'symbol': symbol, 'date': day.isoformat(), 'status': 'unavailable',
+                     'reason': 'symbol_not_found' if isinstance(error, HTTPError) and error.code == 404 else 'provider_error'}
+        price.update({k: asset[k] for k in ['name', 'ticker', 'market', 'asset_class', 'sector']})
+        return price
+
+    prices = []
+    with ThreadPoolExecutor(max_workers=max(1, min(config.get('quote_workers', 4), 8))) as executor:
+        futures = [executor.submit(collect, asset) for asset in assets]
+        for future in as_completed(futures):
+            prices.append(future.result())
+            if QUOTE_STOP.is_set():
+                for pending in futures:
+                    pending.cancel()
+                raise RuntimeError('Fournisseur de cours bloqué ou limité : aucun brouillon publié. Réessayer après résolution ou changer de fournisseur.')
+            if len(prices) % 100 == 0:
+                print(f'Cotations traitées : {len(prices)}/{len(assets)}', flush=True)
+    prices.sort(key=lambda p: (p['market'], p['ticker']))
+    covered = sum(p['status'] != 'unavailable' for p in prices)
+    if covered / len(assets) < config.get('min_quote_coverage', 0.9):
+        raise RuntimeError(f'Couverture insuffisante : {covered}/{len(assets)} symboles reconnus. Vérifier les correspondances et symbol_overrides. Aucun brouillon publié.')
+    return prices
+
+
 def compose(day, news, prices):
     french_date = day.strftime('%d/%m/%Y')
     lines = [f'Synapse Capital | Le point marché du {french_date}', '']
+    covered = sum(p['status'] != 'unavailable' for p in prices)
+    lines.append(f'Univers : {len(prices)} actifs examinés ; {covered} symboles reconnus par le fournisseur. Les mouvements ci-dessous concernent les cotations disponibles, sans pondération de portefeuille.')
+    unavailable = len(prices) - covered
+    if unavailable:
+        lines.append(f'{unavailable} actifs sans donnée exploitable : ils sont exclus du classement et détaillés dans les données jointes.')
     if news:
         headlines = news[:3]
         lines.append('Macro de la veille : ' + ' ; '.join(f'{n["title"]} ({n["source"]})' for n in headlines) + '.')
@@ -140,7 +206,7 @@ def compose(day, news, prices):
         lines.append('Aucune actualité macro datée de cette journée dans les flux suivis. Nous ne reprenons pas de nouvelle plus ancienne.')
     moves = sorted((p for p in prices if p['status'] == 'available'), key=lambda p: abs(p['change_pct']), reverse=True)
     if moves:
-        lines.append('Sur les actifs de notre univers Nextwise, les variations les plus marquées à la clôture sont : ' + ', '.join(f'{p["symbol"]} ({p["change_pct"]:+.2f} %)' for p in moves[:4]) + '. Les variations comparent la clôture du jour à celle de la séance précédente.')
+        lines.append('Parmi les actifs suivis de notre univers Nextwise, les variations les plus marquées à la clôture sont : ' + ', '.join(f'{p["symbol"]} ({p["change_pct"]:+.2f} %)' for p in moves[:4]) + '. Les variations comparent la clôture du jour à celle de la séance précédente.')
     else:
         lines.append('Aucune séance datée de cette journée dans les cotations reçues : aucun mouvement antérieur n’est présenté comme celui d’hier.')
     if news and moves:
@@ -155,14 +221,32 @@ def write_pdf(path, report):
     from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
     from reportlab.lib.enums import TA_LEFT
     from reportlab.lib.pagesizes import A4
-    from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, KeepInFrame
+    from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, KeepInFrame, Flowable
     from xml.sax.saxutils import escape
     styles = getSampleStyleSheet()
     styles.add(ParagraphStyle(name='SmallBrief', fontName='Helvetica', fontSize=8, leading=11, textColor=colors.HexColor('#203b33'), alignment=TA_LEFT))
     style = styles['SmallBrief']
     def p(text):
         return Paragraph(escape(text), style)
-    story = [Paragraph('SYNAPSE CAPITAL', styles['Title']), p('FICHE QUALITATIVE · ' + report['date'] + ' · À RELIRE AVANT PUBLICATION'), Spacer(1, 14)]
+    class Brand(Flowable):
+        width = 465
+        height = 60
+        def draw(self):
+            canvas = self.canv
+            canvas.setFillColor(colors.HexColor('#08223f'))
+            canvas.setFont('Helvetica', 31)
+            canvas.drawString(0, 30, 'Synapse')
+            canvas.drawString(31, 0, 'Capital')
+            canvas.setStrokeColor(colors.HexColor('#a9afb5'))
+            canvas.setLineWidth(2)
+            curve = canvas.beginPath()
+            curve.moveTo(45, 23)
+            curve.curveTo(70, 38, 101, 27, 128, 39)
+            canvas.drawPath(curve)
+    story = [Brand(), Spacer(1, 8), p('FICHE QUALITATIVE · ' + report['date'] + ' · À RELIRE AVANT PUBLICATION'), Spacer(1, 14)]
+    if report.get('universe'):
+        universe = report['universe']
+        story += [p(f"Périmètre : {universe['tracked']} actifs suivis sur {universe['total']} autorisés ; sélection : {universe['scope']}."), Spacer(1, 6)]
     for line in report['text'].split('\n\n'):
         story += [p(line), Spacer(1, 8)]
     moves = sorted((x for x in report['prices'] if x['status'] == 'available'), key=lambda x: abs(x['change_pct']), reverse=True)
@@ -174,11 +258,11 @@ def write_pdf(path, report):
         story += [table, Spacer(1, 10)]
     missing = [x['symbol'] for x in report['prices'] if x['status'] == 'no_session']
     if missing:
-        story += [p('Sans séance ce jour : ' + ', '.join(missing)), Spacer(1, 8)]
+        story += [p(f'Sans séance ce jour : {len(missing)} actifs. Liste dans le rapport JSON.'), Spacer(1, 8)]
     story.append(p('Sources macro (titres publiés pendant la journée civile, heure de Paris) :'))
     for item in report['news'][:3]:
         story += [p(item['source'] + ' · ' + item['published_at'] + ' · ' + item['url'])]
-    story += [Spacer(1, 6), p('Cours : Yahoo Finance, clôtures brutes non ajustées, dates de séance locales. Une opération sur titre peut affecter la variation. Détail et liens de chaque actif dans le rapport JSON téléchargeable. Flux macro suivis : BCE, Federal Reserve, BBC Business ; couverture non exhaustive, titres uniquement. Aucun portefeuille n’est inféré du Sheet.')]
+    story += [Spacer(1, 6), p('Cours : Yahoo Finance, clôtures brutes non ajustées, dates de séance locales. Une opération sur titre peut affecter la variation. Détail et liens de chaque actif dans le rapport JSON téléchargeable. Flux macro suivis : BCE, Federal Reserve, BBC Business ; couverture non exhaustive, titres uniquement. Univers CSV ; aucune position détenue n’est inférée.')]
     SimpleDocTemplate(str(path), pagesize=A4, leftMargin=36, rightMargin=36, topMargin=30, bottomMargin=30).build([KeepInFrame(A4[0] - 84, A4[1] - 72, story, mode='shrink')])
 
 
@@ -196,25 +280,16 @@ def main():
         print('Rapport déjà généré : aucune duplication.')
         return
     config = json.loads((ROOT / 'automation/config.json').read_text())
-    sheet_url = os.environ.get('SHEET_CSV_URL') or f'https://docs.google.com/spreadsheets/d/{config["sheet_id"]}/export?format=csv&gid={config["sheet_gid"]}'
-    if not sheet_url.startswith('https://'):
-        raise ValueError('SHEET_CSV_URL doit utiliser HTTPS')
-    assets = parse_assets(get(sheet_url), config['ticker_column'], config['max_assets'])
+    universe, selected = load_universe(config)
     news = []
     # Any failed provider fails the run. An empty day is distinct from a failed request.
     for feed in config['feeds']:
         news.extend(parse_news(get(feed['url']), feed['name'], day, feed['macro_only']))
     news = list({n['url']: n for n in news}.values())
     news.sort(key=lambda n: n['published_at'], reverse=True)
-    start = datetime.combine(day - timedelta(days=15), datetime.min.time(), UTC)
-    end = datetime.combine(day + timedelta(days=1), datetime.min.time(), UTC)
-    prices = []
-    for symbol in assets:
-        url = f'https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(symbol, safe="")}?period1={int(start.timestamp())}&period2={int(end.timestamp())}&interval=1d'
-        prices.append(parse_prices(get(url), symbol, day))
-        time.sleep(.3)
+    prices = collect_prices(selected, day, config)
     report = {'date': day.isoformat(), 'generated_at': now.isoformat(), 'timezone': 'Europe/Paris',
-              'status': 'draft', 'news': news, 'prices': prices, 'text': compose(day, news, prices)}
+              'status': 'draft', 'universe': {'source': config['universe_csv'], 'total': len(universe), 'tracked': len(selected), 'scope': config['daily_scope']}, 'news': news, 'prices': prices, 'text': compose(day, news, prices)}
     # Stage complete outputs before making the report discoverable.
     import tempfile
     import shutil

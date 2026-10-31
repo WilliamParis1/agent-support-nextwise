@@ -1,11 +1,26 @@
 {
-  "sheet_id": "1tMo5nPpTDDTHFwdljjsZsSuz7_cQUC1a9PYPsak8-IU",
-  "sheet_gid": "0",
-  "ticker_column": "",
-  "max_assets": 100,
+  "max_assets": 4000,
   "feeds": [
-    {"name": "BCE", "url": "https://www.ecb.europa.eu/rss/press.html", "macro_only": false},
-    {"name": "Federal Reserve", "url": "https://www.federalreserve.gov/feeds/press_all.xml", "macro_only": false},
-    {"name": "BBC Business", "url": "https://feeds.bbci.co.uk/news/business/rss.xml", "macro_only": true}
-  ]
+    {
+      "name": "BCE",
+      "url": "https://www.ecb.europa.eu/rss/press.html",
+      "macro_only": false
+    },
+    {
+      "name": "Federal Reserve",
+      "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+      "macro_only": false
+    },
+    {
+      "name": "BBC Business",
+      "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "macro_only": true
+    }
+  ],
+  "universe_csv": "data/universe.csv",
+  "daily_scope": "all",
+  "symbol_overrides": {},
+  "quote_workers": 4,
+  "quote_requests_per_second": 2,
+  "min_quote_coverage": 0.9
 }

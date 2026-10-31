@@ -1,7 +1,7 @@
 import json
 import unittest
 from datetime import date, datetime, timezone
-from automation.daily import compose, due, parse_assets, parse_news, parse_prices, previous_day
+from automation.daily import compose, due, parse_news, parse_prices, previous_day
 
 class DailyTests(unittest.TestCase):
     def test_schedule_and_dst(self):
@@ -9,11 +9,6 @@ class DailyTests(unittest.TestCase):
             self.assertTrue(due(datetime.fromisoformat(instant)), instant)
         self.assertFalse(due(datetime.fromisoformat('2026-10-25T01:00:00+00:00')))
         self.assertEqual(previous_day(datetime.fromisoformat('2026-07-01T23:30:00+00:00')), date(2026, 7, 1))
-
-    def test_sheet_requires_unambiguous_tickers(self):
-        self.assertEqual(parse_assets(b'Ticker Yahoo,Nom\nAIR.PA,Airbus\nAAPL,Apple\nAIR.PA,Airbus'), ['AIR.PA', 'AAPL'])
-        for raw in [b'Nom\nAirbus', b'<html>Sign in</html>', b'Ticker,Symbol\nAAPL,AAPL', b'Ticker\nFR0000120073 invalid']:
-            with self.assertRaises(ValueError): parse_assets(raw)
 
     def test_only_yesterday_in_paris(self):
         feed = b'''<rss><channel>

@@ -1,0 +1,3383 @@
+name,ticker,market,yahoo_symbol,asset_class,sector,description,priority
+iS Agri bus Acc,ISAE,Amsterdam,ISAE.AS,ETF,Finance,"Agribusiness ETF | Farm inputs, equipment and food supply-chain companies worldwide.",true
+SPDR MSCI W C STAP,WCOS,Amsterdam,WCOS.AS,ETF,Autre,"Consumer staples ETF | Global food, beverage and household-goods businesses; defensive exposure.",true
+MSCI Wld Hlth US A,WHCA,Amsterdam,WHCA.AS,ETF,Finance,"Healthcare ETF | Global pharma, biotech and medical-device companies.",true
+VANETFMVNUCLXPAR,NUCL,Paris,NUCL.PA,ETF,Finance,"Nuclear ETF | Uranium miners, nuclear technology and the nuclear-power supply chain.",true
+FRAETFFOHWIVXPAR,FOHW,Paris,FOHW.PA,ETF,Autre,"Healthcare ETF | Global exposure to health, wellness and medical innovation.",true
+L&G Battery Value,BATT,Amsterdam,BATT.AS,ETF,Finance,"Battery ETF | Battery materials, manufacturers and energy-storage value chain.",true
+ISHARES TAIWAN,ITWN,Amsterdam,ITWN.AS,ETF,Finance,Taiwan ETF | Broad Taiwanese equities with significant semiconductor exposure.,true
+LEONARDO,LDO,Milan,LDO.MI,Action,Ind,"Defence & aerospace | Helicopters, defence electronics and military aircraft systems.",true
+SPIE,SPIE,Paris,SPIE.PA,Action,Ind,"Infrastructure services | Electrical grids, building systems and energy-efficiency projects.",true
+THALES,HO,Paris,HO.PA,Action,Ind,"Defence technology | Radar, avionics, cybersecurity and secure communications.",true
+ADYEN,ADYEN,Amsterdam,ADYEN.AS,Action,Ind,Fintech | Global payments platform for merchants; digital and omnichannel commerce.,true
+ASML HOLDING,ASML,Amsterdam,ASML.AS,Action,Tech,"Semiconductors | Leading lithography systems, including EUV, for cutting-edge chips.",true
+TECHNIP ENERGIES,TE,Paris,TE.PA,Action,Ener,"Energy engineering | LNG facilities, low-carbon projects and complex industrial infrastructure.",true
+LEGRAND,LR,Paris,LR.PA,Action,Ind,"Electrical infrastructure | Wiring systems, power distribution and data-centre equipment.",true
+NEXANS,NEX,Paris,NEX.PA,Action,Ind,Electrification | High-voltage cables and grid links powering energy networks.,true
+CAREL INDUSTRIES,CRL,Milan,CRL.MI,Action,Ind,"HVAC | Smart cooling, humidification and refrigeration controls; monitor working capital.",true
+PRYSMIAN,PRY,Milan,PRY.MI,Action,Ind,"Electrification | Power and telecom cables for grids, offshore wind and data centres.",true
+GLANBIA PLC,GL9,Dublin,GL9.IR,Action,Conso,Nutrition | Sports nutrition brands and protein ingredients serving health-conscious consumers.,true
+DASSAULT AVIATION,AM,Paris,AM.PA,Action,Ind,Defence & aerospace | Rafale fighter jets and Falcon business aircraft.,true
+SCHNEIDER ELECTRIC,SU,Paris,SU.PA,Action,Ind,"Energy management | Automation and electrical systems for buildings, grids and data centres.",true
+ERAMET,ERA,Paris,ERA.PA,Action,Ind,"Mining | Manganese, nickel and lithium exposure; sensitive to commodity cycles.",true
+ASM INTERNATIONAL,ASM,Amsterdam,ASM.AS,Action,Tech,Semiconductors | Atomic-layer deposition equipment enabling advanced chip manufacturing.,true
+LS 3X APPLE,3AAP,Amsterdam,3AAP.AS,ETF,Autre,Leveraged ETP | 3x daily Apple exposure; daily reset and elevated loss risk.,false
+-1X SHORT DIS,SDIS,Amsterdam,SDIS.AS,ETF,Autre,Produit financier inverse (short) pariant sur la baisse de l'action Walt Disney (DIS) avec un levier de -1x.,false
+-1X SHORT PLTR,SPLR,Amsterdam,SPLR.AS,ETF,Autre,Produit financier inverse (-1x) pariant sur la baisse de l'action Palantir Technologies (PLTR),false
+-3X ARK INNOVATION,SARKK,Amsterdam,SARKK.AS,ETF,Autre,,false
+-3X SHORT TSLA,TSLQ,Amsterdam,TSLQ.AS,ETF,Autre,,false
+-3x Short TSM,STSM,Amsterdam,STSM.AS,ETF,Autre,,false
+-5x Short QQQ,SQQQ,Amsterdam,SQQQ.AS,ETF,Autre,,false
+-5x Short SPY,SSPY,Amsterdam,SSPY.AS,ETF,Autre,,false
+$Asia IG Corp US A,ASIG,Amsterdam,ASIG.AS,ETF,Finance,,false
+1X AMZN,AMZN,Amsterdam,AMZN.AS,ETF,Autre,,false
+1X COIN,COIB,Amsterdam,COIB.AS,ETF,Autre,,false
+1X GOOG,GOOG,Amsterdam,GOOG.AS,ETF,Autre,,false
+1X MSFT,MSFT,Amsterdam,MSFT.AS,ETF,Autre,,false
+1X TSLA,TSLA,Amsterdam,TSLA.AS,ETF,Autre,,false
+2020 BULKERS,2020,Oslo,2020.OL,Action,Ind,,false
+21S AADA,AADA,Paris,AADA.PA,ETF,Autre,,false
+21S AADA,AADA,Amsterdam,AADA.AS,ETF,Autre,,false
+21S AARB,AARB,Paris,AARB.PA,ETF,Autre,,false
+21S AARB,AARB,Amsterdam,AARB.AS,ETF,Autre,,false
+21S AAVE,AAVE,Paris,AAVE.PA,ETF,Autre,,false
+21S AAVE,AAVE,Amsterdam,AAVE.AS,ETF,Autre,,false
+21S ALGO,ALGO,Paris,ALGO.PA,ETF,Autre,The 21Shares Algorand ETP (21S ALGO / ticker ALGO on Euronext Paris) is a 100% physically backed exchange-traded product that tracks the performance of the Algorand (ALGO) native cryptocurrency.,false
+21S ALGO,ALGO,Amsterdam,ALGO.AS,ETF,Autre,,false
+21S ALTS,ALTS,Paris,ALTS.PA,ETF,Autre,,false
+21S ALTS,ALTS,Amsterdam,ALTS.AS,ETF,Autre,,false
+21S AOPT,AOPT,Paris,AOPT.PA,ETF,Autre,,false
+21S AOPT,AOPT,Amsterdam,AOPT.AS,ETF,Autre,,false
+21S ASTX,ASTX,Paris,ASTX.PA,ETF,Autre,,false
+21S ASTX,ASTX,Amsterdam,ASTX.AS,ETF,Autre,,false
+21S ATIA,ATIA,Paris,ATIA.PA,ETF,Autre,,false
+21S ATIA,ATIA,Amsterdam,ATIA.AS,ETF,Autre,,false
+21S AUNI,AUNI,Paris,AUNI.PA,ETF,Autre,,false
+21S AUNI,AUNI,Amsterdam,AUNI.AS,ETF,Autre,,false
+21S Binance Coin,BNBA,Paris,BNBA.PA,ETF,Autre,,false
+21S Binance Coin,BNBA,Amsterdam,BNBA.AS,ETF,Autre,,false
+21S Bitcoin Cash,ABCH,Paris,ABCH.PA,ETF,Autre,,false
+21S Bitcoin Cash,ABCH,Amsterdam,ABCH.AS,ETF,Autre,,false
+21S BOLD,BOLD,Paris,BOLD.PA,ETF,Autre,,false
+21S BOLD,BOLD,Amsterdam,BOLD.AS,ETF,Autre,,false
+21S CBTC,CBTC,Paris,CBTC.PA,ETF,Autre,,false
+21S CBTC,CBTC,Amsterdam,CBTC.AS,ETF,Autre,,false
+21S CETH,ETHC,Paris,ETHC.PA,ETF,Autre,,false
+21S CETH,ETHC,Amsterdam,ETHC.AS,ETF,Autre,,false
+21S GRAM,GRAM,Paris,GRAM.PA,ETF,Autre,,false
+21S GRAM,GRAM,Amsterdam,GRAM.AS,ETF,Autre,,false
+21S HODL,HODL,Paris,HODL.PA,ETF,Autre,,false
+21S HODL,HODL,Amsterdam,HODL.AS,ETF,Autre,"""21S HODL"" typically refers to the 21Shares Crypto Basket Index ETP (Ticker: HODL), a physically-backed exchange-traded product issued by 21Shares that tracks the performance of the top five digital assets by market capitalization.",false
+21S HODLV,HODLV,Paris,HODLV.PA,ETF,Autre,,false
+21S HODLV,HODLV,Amsterdam,HODLV.AS,ETF,Autre,,false
+21S HODLX,HODLX,Paris,HODLX.PA,ETF,Autre,,false
+21S HODLX,HODLX,Amsterdam,HODLX.AS,ETF,Autre,,false
+21S LIDO,LIDO,Paris,LIDO.PA,ETF,Autre,,false
+21S LIDO,LIDO,Amsterdam,LIDO.AS,ETF,Autre,,false
+21S LINK,ALINK,Paris,ALINK.PA,ETF,Autre,,false
+21S LINK,ALINK,Amsterdam,ALINK.AS,ETF,Autre,,false
+21S Polkadot,ADOT,Paris,ADOT.PA,ETF,Autre,,false
+21S Polkadot,ADOT,Amsterdam,ADOT.AS,ETF,Autre,,false
+21S Polygon,POLY,Paris,POLY.PA,ETF,Autre,,false
+21S Polygon,POLY,Amsterdam,POLY.AS,ETF,Autre,,false
+21S Solana,ASOL,Paris,ASOL.PA,ETF,Autre,,false
+21S Solana,ASOL,Amsterdam,ASOL.AS,ETF,Autre,,false
+21S Stellar,AXLM,Paris,AXLM.PA,ETF,Autre,,false
+21S Stellar,AXLM,Amsterdam,AXLM.AS,ETF,Autre,,false
+21S Tezos,AXTZ,Paris,AXTZ.PA,ETF,Autre,,false
+21S Tezos,AXTZ,Amsterdam,AXTZ.AS,ETF,Autre,,false
+21S XRP,AXRP,Paris,AXRP.PA,ETF,Autre,,false
+21S XRP,AXRP,Amsterdam,AXRP.AS,ETF,Autre,,false
+21SETN21FOCXAMS,FUTR,Amsterdam,FUTR.AS,ETF,Autre,,false
+21SETN21FOCXPAR,FUTR,Paris,FUTR.PA,ETF,Autre,,false
+21SETNCCAPTXAMS,APTOS,Amsterdam,APTOS.AS,ETF,Autre,,false
+21SETNCCAPTXPAR,APTOS,Paris,APTOS.PA,ETF,Autre,,false
+21SETNCCCROXAMS,CRON,Amsterdam,CRON.AS,ETF,Autre,,false
+21SETNCCCROXPAR,CRON,Paris,CRON.PA,ETF,Autre,,false
+21SETNCCHBARXAMS,HDRA,Amsterdam,HDRA.AS,ETF,Autre,,false
+21SETNCCHBARXPAR,HDRA,Paris,HDRA.PA,ETF,Autre,,false
+21SETNCCNEARXAMS,NEAR,Amsterdam,NEAR.AS,ETF,Autre,,false
+21SETNCCNEARXPAR,NEAR,Paris,NEAR.PA,ETF,Autre,,false
+21SETNCCONDOXAMS,ONDO,Amsterdam,ONDO.AS,ETF,Autre,,false
+21SETNCCONDOXPAR,ONDO,Paris,ONDO.PA,ETF,Autre,,false
+21SETNCCPYTHXAMS,PYTH,Amsterdam,PYTH.AS,ETF,Autre,,false
+21SETNCCPYTHXPAR,PYTH,Paris,PYTH.PA,ETF,Autre,,false
+21SETNCCRNDRXAMS,RNDR,Amsterdam,RNDR.AS,ETF,Autre,,false
+21SETNCCRNDRXPAR,RNDR,Paris,RNDR.PA,ETF,Autre,,false
+21SETNCCXDCXAMS,XDCN,Amsterdam,XDCN.AS,ETF,Autre,,false
+21SETNCCXDCXPAR,XDCN,Paris,XDCN.PA,ETF,Autre,,false
+21SETNCFETEXAMS,AFET,Amsterdam,AFET.AS,ETF,Autre,,false
+21SETNCFETEXPAR,AFET,Paris,AFET.PA,ETF,Autre,,false
+21SETNCJITRXAMC,JSOL,Amsterdam,JSOL.AS,ETF,Autre,,false
+21SETNCJITRXPAR,JSOL,Paris,JSOL.PA,ETF,Autre,,false
+21SETNCMOREXAMC,MORPH,Amsterdam,MORPH.AS,ETF,Autre,,false
+21SETNCMOREXPAR,MORPH,Paris,MORPH.PA,ETF,Autre,,false
+21SETNCSYRUPXAMS,SYRUP,Amsterdam,SYRUP.AS,ETF,Autre,,false
+21SETNCSYRUPXPAR,SYRUP,Paris,SYRUP.PA,ETF,Autre,,false
+21SETNCTAOE XAMS,ATAO,Amsterdam,ATAO.AS,ETF,Autre,,false
+21SETNCTAOE XPAR,ATAO,Paris,ATAO.PA,ETF,Autre,,false
+21SETNINJXAMS,AINJ,Amsterdam,AINJ.AS,ETF,Autre,,false
+21SETNINJXPAR,AINJ,Paris,AINJ.PA,ETF,Autre,,false
+21SETNKKCCXAMC,CANTN,Amsterdam,CANTN.AS,ETF,Autre,,false
+21SETNKKCCXPAR,CANTN,Paris,CANTN.PA,ETF,Autre,,false
+21SETNKRETHFXAMC,ETHFI,Amsterdam,ETHFI.AS,ETF,Autre,,false
+21SETNKRETHFXPAR,ETHFI,Paris,ETHFI.PA,ETF,Autre,,false
+21SETNKRZECLXAMC,ZCASH,Amsterdam,ZCASH.AS,ETF,Autre,,false
+21SETNKRZECLXPAR,ZCASH,Paris,ZCASH.PA,ETF,Autre,,false
+21SETNSTRCXAMC,STRC,Amsterdam,STRC.AS,ETF,Autre,,false
+21SETNSTRCXPAR,STRC,Paris,STRC.PA,ETF,Autre,,false
+21SETNSUIXAMS,ASUI,Amsterdam,ASUI.AS,ETF,Autre,,false
+21SETNSUIXPAR,ASUI,Paris,ASUI.PA,ETF,Autre,,false
+21Shares Avalanche,AVAX,Paris,AVAX.PA,ETF,Autre,,false
+21Shares Avalanche,AVAX,Amsterdam,AVAX.AS,ETF,Autre,,false
+21Shares Bitcoin,ABTC,Amsterdam,ABTC.AS,ETF,Autre,,false
+21Shares BTC ETP,ABTC,Paris,ABTC.PA,ETF,Autre,,false
+21Shares Ethereum,AETH,Paris,AETH.PA,ETF,Autre,,false
+21Shares Ethereum,AETH,Amsterdam,AETH.AS,ETF,Autre,,false
+2CRSI,AL2SI,Paris,AL2SI.PA,Action,Tech,,false
+2x Long Berkshire,2BRK,Amsterdam,2BRK.AS,ETF,Autre,,false
+3030 DVD,DVD,Oslo,DVD.OL,Action,Ener,,false
+3X AMD,3AMD,Amsterdam,3AMD.AS,ETF,Autre,,false
+3X BABA,3BAB,Amsterdam,3BAB.AS,ETF,Autre,,false
+3x China Tech,3KWE,Amsterdam,3KWE.AS,ETF,Autre,,false
+3X DIS,3DIS,Amsterdam,3DIS.AS,ETF,Autre,,false
+3x Gold Miners,3GDX,Amsterdam,3GDX.AS,ETF,Autre,,false
+3X JD,3JD,Amsterdam,3JD.AS,ETF,Autre,,false
+3x Long ARKK,3ARKK,Amsterdam,3ARKK.AS,ETF,Autre,,false
+3x Long Coinbase,3CON,Amsterdam,3CON.AS,ETF,Autre,,false
+3x Long NIO,3NIO,Amsterdam,3NIO.AS,ETF,Autre,,false
+3x Long TSM,3TSM,Amsterdam,3TSM.AS,ETF,Autre,,false
+3X PLTR,3PLT,Amsterdam,3PLT.AS,ETF,Autre,,false
+3x Semiconduct,3SMH,Amsterdam,3SMH.AS,ETF,Autre,,false
+5TH PLANET GAMES,5PG,Oslo,5PG.OL,Action,Conso,,false
+5x Long QQQ,5QQQ,Amsterdam,5QQQ.AS,ETF,Autre,,false
+5x Long SPY,5SPY,Amsterdam,5SPY.AS,ETF,Autre,,false
+74SOFTWARE,74SW,Paris,74SW.PA,Action,Tech,,false
+A.B.P. NOCIVELLI,ABP,Milan,ABP.MI,Action,Ind,,false
+A2A,A2A,Milan,A2A.MI,Action,Ener,,false
+AALBERTS NV,AALB,Amsterdam,AALB.AS,Action,Ind,,false
+AASEN SPAREBANK,AASB,Oslo,AASB.OL,Action,Finance,,false
+AATECH,AAT,Milan,AAT.MI,Action,Tech,,false
+AB INBEV,ABI,Brussels,ABI.BR,Action,Conso,,false
+AB SCIENCE,AB,Paris,AB.PA,Action,Santé,,false
+ABC ARBITRAGE,ABCA,Paris,ABCA.PA,Action,Finance,,false
+ABC COMPANY,ABC,Milan,ABC.MI,Action,Ind,,false
+ABEO,ABEO,Paris,ABEO.PA,Action,Conso,,false
+ABG SUNDAL COLLIER,ABG,Oslo,ABG.OL,Action,Finance,,false
+ABIONYX PHARMA,ABNX,Paris,ABNX.PA,Action,Santé,,false
+ABITARE IN,ABT,Milan,ABT.MI,Action,Conso,,false
+ABIVAX,ABVX,Paris,ABVX.PA,Action,Santé,,false
+ABL Diagnostics,ABLD,Paris,ABLD.PA,Action,Santé,,false
+ABN AMRO BANK N.V.,ABN,Amsterdam,ABN.AS,Action,Finance,,false
+ABO GROUP,ABO,Brussels,ABO.BR,Action,Ind,,false
+ACANTHE DEV.,ACAN,Paris,ACAN.PA,Action,Finance,,false
+ACCENTIS,ACCB,Brussels,ACCB.BR,Action,Finance,,false
+ACCOR,AC,Paris,AC.PA,Action,Conso,,false
+ACCSYS,AXS,Amsterdam,AXS.AS,Action,Ind,,false
+ACE DIGITAL,ACED,Oslo,ACED.OL,Action,Finance,,false
+ACEA,ACE,Milan,ACE.MI,Action,Ener,,false
+ACHETER-LOUER.FR,ALALO,Paris,ALALO.PA,Action,Tech,,false
+ACINQUE,AC5,Milan,AC5.MI,Action,Ener,,false
+ACKERMANS V.HAAREN,ACKB,Brussels,ACKB.BR,Action,Ind,,false
+ACOMO,ACOMO,Amsterdam,ACOMO.AS,Action,Conso,,false
+ACTEOS,EOS,Paris,EOS.PA,Action,Tech,,false
+ACTIA GROUP,ALATI,Paris,ALATI.PA,Action,Ind,,false
+ACTIVIUM GROUP,MLACT,Paris,MLACT.PA,Action,Tech,,false
+ADC SIIC,ALDV,Paris,ALDV.PA,Action,Finance,,false
+ADEUNIS,ALARF,Paris,ALARF.PA,Action,Ind,,false
+ADOCIA,ADOC,Paris,ADOC.PA,Action,Santé,,false
+ADOCIA BSA,ADOBS,Paris,ADOBS.PA,Action,Santé,,false
+ADOMOS,ALADO,Paris,ALADO.PA,Action,Finance,,false
+ADP,ADP,Paris,ADP.PA,Action,Ind,,false
+ADS MARITIME HOLD,ADS,Oslo,ADS.OL,Action,Ind,,false
+ADUX,ALDUX,Paris,ALDUX.PA,Action,Conso,,false
+ADVENTURE,ADV,Milan,ADV.MI,Action,Tech,,false
+ADVICENNE,ALDVI,Paris,ALDVI.PA,Action,Santé,,false
+ADVINI,ALAVI,Paris,ALAVI.PA,Action,Conso,,false
+AEDES,AEDES,Milan,AEDES.MI,Action,Finance,,false
+AEDIFICA,AED,Brussels,AED.BR,Action,Finance,,false
+AEFFE,AEF,Milan,AEF.MI,Action,Conso,,false
+AEGON,AGN,Amsterdam,AGN.AS,Action,Finance,,false
+AELIS FARMA,AELIS,Paris,AELIS.PA,Action,Santé,,false
+AEROPORTO G. M. BO,ADB,Milan,ADB.MI,Action,Ind,,false
+AF GRUPPEN,AFG,Oslo,AFG.OL,Action,Ind,,false
+AFYREN,ALAFY,Paris,ALAFY.PA,Action,Ind,,false
+AGEAS,AGS,Brussels,AGS.BR,Action,Finance,,false
+Ageing Pop Acc,AGED,Amsterdam,AGED.AS,ETF,Finance,,false
+AGENCE AUTO,MLAA,Paris,MLAA.PA,Action,Conso,,false
+AGFA-GEVAERT,AGFB,Brussels,AGFB.BR,Action,Santé,,false
+Agility Capital H,AGIL,Amsterdam,AGIL.AS,Action,Conso,,false
+AGILYX,AGLX,Oslo,AGLX.OL,Action,Ener,,false
+AGRIPOWER,ALAGP,Paris,ALAGP.PA,Action,Ener,,false
+AGROGENERATION,ALAGR,Paris,ALAGR.PA,Action,Conso,,false
+AHOLD DEL,AD,Amsterdam,AD.AS,Action,Conso,,false
+AIB GROUP PLC,A5G,Dublin,A5G.IR,Action,Finance,,false
+AILETFBCMCTGXAMC,DXDC,Amsterdam,DXDC.AS,ETF,Autre,,false
+AIR FRANCE -KLM,AF,Paris,AF.PA,Action,Conso,,false
+AIR LIQUIDE,AI,Paris,AI.PA,Action,Ind,,false
+AIRBUS,AIR,Paris,AIR.PA,Action,Ind,,false
+AIRWELL,ALAIR,Paris,ALAIR.PA,Action,Conso,,false
+AJAX,AJAX,Amsterdam,AJAX.AS,Action,Conso,,false
+AKASTOR,AKAST,Oslo,AKAST.OL,Action,Ener,,false
+AKER,AKER,Oslo,AKER.OL,Action,Finance,,false
+AKER BIOMARINE,AKBM,Oslo,AKBM.OL,Action,Conso,,false
+AKER BP,AKRBP,Oslo,AKRBP.OL,Action,Ener,,false
+AKER SOLUTIONS,AKSO,Oslo,AKSO.OL,Action,Ener,,false
+AKOBO MINERALS,AKOBO,Oslo,AKOBO.OL,Action,Ind,,false
+AKVA GROUP,AKVA,Oslo,AKVA.OL,Action,Ind,,false
+AKWEL,AKW,Paris,AKW.PA,Action,Conso,,false
+AKZO NOBEL,AKZA,Amsterdam,AKZA.AS,Action,Ind,,false
+ALAN ALLMAN,AAA,Paris,AAA.PA,Action,Finance,,false
+ALERION,ARN,Milan,ARN.MI,Action,Ener,,false
+ALFEN,ALFEN,Amsterdam,ALFEN.AS,Action,Ind,,false
+ALFIO BARDOLLA,ABTG,Milan,ABTG.MI,Action,Conso,,false
+ALFONSINO,ALFO,Milan,ALFO.MI,Action,Conso,,false
+ALIA MENTIS,ALMS,Milan,ALMS.MI,Action,Ind,,false
+ALLCORE,CORE,Milan,CORE.MI,Action,Ind,,false
+ALLFUNDS GROUP,ALLFG,Amsterdam,ALLFG.AS,Action,Finance,,false
+ALMUNDA PRO NV,AMUND,Amsterdam,AMUND.AS,Action,Ind,,false
+ALNG,ALNG,Oslo,ALNG.OL,Action,Ind,,false
+ALPES (COMPAGNIE),CDA,Paris,CDA.PA,Action,Conso,,false
+ALSTOM,ALO,Paris,ALO.PA,Action,Ind,,false
+ALTAMIR,LTA,Paris,LTA.PA,Action,Finance,,false
+ALTAREA,ALTA,Paris,ALTA.PA,Action,Finance,,false
+ALTAREIT,AREIT,Paris,AREIT.PA,Action,Finance,,false
+ALTEA GREEN POWER,AGP,Milan,AGP.MI,Action,Ener,,false
+ALTEN,ATE,Paris,ATE.PA,Action,Tech,,false
+ALTHEORA,ALORA,Paris,ALORA.PA,Action,Ind,,false
+ALTRI SGPS,ALTR,Lisbonne,ALTR.LS,Action,Ind,,false
+ALUMEXX N.V.,ALX,Amsterdam,ALX.AS,Action,Ind,,false
+AM ASIP EXJ PEA,PAEJ,Paris,PAEJ.PA,ETF,Finance,,false
+AM EMU ESG LEAD D,CMUD,Paris,CMUD.PA,ETF,Autre,,false
+AM EMU ESG LEAD EU,CMU,Paris,CMU.PA,ETF,Autre,,false
+AM EUR CLIM CTB,LWCE,Paris,LWCE.PA,ETF,Autre,,false
+AM EUR CORP SRI DR,ECRP,Paris,ECRP.PA,ETF,Autre,,false
+AM IMMO EUR PEA,PMEH,Paris,PMEH.PA,ETF,Finance,,false
+AM MSCI UK IM SRIG,FTSE,Paris,FTSE.PA,ETF,Autre,,false
+AM MSCI UK IMI SRI,C1U,Paris,C1U.PA,ETF,Autre,,false
+Am MSCI W SRI PAB,WESE,Paris,WESE.PA,ETF,Autre,,false
+AM NSDQ 100 PEA,PUST,Paris,PUST.PA,ETF,Finance,,false
+AM PAC XJP SRI EUR,CP9,Paris,CP9.PA,ETF,Autre,,false
+AM PAC XJP SRI USD,CP9U,Paris,CP9U.PA,ETF,Autre,,false
+AM PEA SP5H EUR,PSPH,Paris,PSPH.PA,ETF,Finance,,false
+Am PEA US ConsStpl,COSE,Paris,COSE.PA,ETF,Finance,,false
+AM PEA USA Value,USVE,Paris,USVE.PA,ETF,Finance,,false
+Am Wrld Cli Net 0,WSRI,Paris,WSRI.PA,ETF,Autre,,false
+Am Wrld Cli Net 0,WSRI,Amsterdam,WSRI.AS,ETF,Autre,,false
+AMA CORPORATION,ALAMA,Paris,ALAMA.PA,Action,Ind,,false
+AMATHEON AGRI,MLAAH,Paris,MLAAH.PA,Action,Conso,,false
+AMBROMOBILIARE,AMB,Milan,AMB.MI,Action,Finance,,false
+AMG,AMG,Amsterdam,AMG.AS,Action,Ind,,false
+AMINAX ETP,AMINA,Paris,AMINA.PA,ETF,Autre,,false
+AMINAX ETP,AMINA,Amsterdam,AMINA.AS,ETF,Autre,,false
+AmMSCIWorld ESG,CLWD,Paris,CLWD.PA,ETF,Autre,,false
+AMOEBA,ALMIB,Paris,ALMIB.PA,Action,Ind,,false
+AMOEBA DS,MIBDS,Paris,MIBDS.PA,Action,Ind,,false
+AMPLIFON,AMP,Milan,AMP.MI,Action,Santé,,false
+AmSP500 NetZero,PABU,Paris,PABU.PA,ETF,Autre,,false
+AmSP500 NetZH,PABH,Paris,PABH.PA,ETF,Autre,,false
+AMUACTISCHXPAR,ISCH,Paris,ISCH.PA,ETF,Finance,,false
+AMUACTISJHXPAR,ISJH,Paris,ISJH.PA,ETF,Finance,,false
+AMUACTISRAXPAR,ISRA,Paris,ISRA.PA,ETF,Finance,,false
+AMUACTISRCXPAR,ISRC,Paris,ISRC.PA,ETF,Finance,,false
+AMUACTISRDXPAR,ISRD,Paris,ISRD.PA,ETF,Finance,,false
+AMUACTISRJXPAR,ISRJ,Paris,ISRJ.PA,ETF,Finance,,false
+AMUACTISRMXPAR,ISRM,Paris,ISRM.PA,ETF,Finance,,false
+AMUACTISRUXPAR,ISRU,Paris,ISRU.PA,ETF,Finance,,false
+AMUACTISUHXPAR,ISUH,Paris,ISUH.PA,ETF,Finance,,false
+AMUETFASRIIMXPAR,GASR,Paris,GASR.PA,ETF,Autre,,false
+AMUETFCFIIEBXPAR,FM26,Paris,FM26.PA,ETF,Autre,,false
+AMUETFCFIIEBXPAR,FM27,Paris,FM27.PA,ETF,Autre,,false
+AMUETFCFIIEBXPAR,FM28,Paris,FM28.PA,ETF,Autre,,false
+AMUETFCFIIEBXPAR,FM29,Paris,FM29.PA,ETF,Autre,,false
+AMUETFCFIIEBXPAR,FM30,Paris,FM30.PA,ETF,Autre,,false
+AMUETFCFIILCXPAR,LC30,Paris,LC30.PA,ETF,Autre,,false
+AMUETFCFIILCXPAR,LC33,Paris,LC33.PA,ETF,Autre,,false
+AMUETFCFIILCXPAR,LC36,Paris,LC36.PA,ETF,Autre,,false
+AMUETFCFIILCXPAR,LC39,Paris,LC39.PA,ETF,Autre,,false
+AMUETFECR1IMXPAR,ECR1,Paris,ECR1.PA,ETF,Autre,,false
+AMUETFFJAPIMXPAR,PRAJ,Paris,PRAJ.PA,ETF,Autre,,false
+AMUETFGEASIMXPAR,ISRG,Paris,ISRG.PA,ETF,Finance,,false
+AMUETFGLAEIMXPAR,GAGH,Paris,GAGH.PA,ETF,Autre,,false
+AMUETFGLUXIMXPAR,MLUX,Paris,MLUX.PA,ETF,Finance,,false
+AMUETFH37162XPAR,EBBU,Paris,EBBU.PA,ETF,Autre,,false
+AMUETFHE7322XPAR,USAL,Paris,USAL.PA,ETF,Autre,,false
+AMUETFHYCIMXPAR,HYCC,Paris,HYCC.PA,ETF,Autre,,false
+AMUETFMSDEWIXPAR,DCAM,Paris,DCAM.PA,ETF,Finance,,false
+AMUETFMXEECCXPAR,PEMS,Paris,PEMS.PA,ETF,Finance,,false
+AMUETFMXEFEGXPAR,EMXU,Paris,EMXU.PA,ETF,Autre,,false
+AMUETFMXEUSCXPAR,EUSC,Paris,EUSC.PA,ETF,Autre,,false
+AMUETFMXJPSXXPAR,JPHD,Paris,JPHD.PA,ETF,Autre,,false
+AMUETFMXUSSCXPAR,USAS,Paris,USAS.PA,ETF,Autre,,false
+AMUETFMXWEL5XPAR,MWOS,Paris,MWOS.PA,ETF,Autre,,false
+AMUETFMXWOSCXPAR,WLSC,Paris,WLSC.PA,ETF,Autre,,false
+AMUETFNDEEWNXPAR,GPEA,Paris,GPEA.PA,ETF,Finance,,false
+AMUETFNDXTIIXPAR,NSDT,Paris,NSDT.PA,ETF,Autre,,false
+AMUETFNSDQXPAR,PNAS,Paris,PNAS.PA,ETF,Finance,,false
+AMUETFSOLGDCXPAR,DATAC,Paris,DATAC.PA,ETF,Autre,,false
+AMUETFSPDSEFXPAR,GLFI,Paris,GLFI.PA,ETF,Autre,,false
+AMUETFSPDSEHXPAR,GLHL,Paris,GLHL.PA,ETF,Autre,,false
+AMUETFSPDSETXPAR,GLIT,Paris,GLIT.PA,ETF,Autre,,false
+AMUETFSPXESAXPAR,PSPS,Paris,PSPS.PA,ETF,Finance,,false
+AMUETFSPXXEHXPAR,MWOQ,Paris,MWOQ.PA,ETF,Autre,,false
+AMUETFSXCCTIXPAR,MSET,Paris,MSET.PA,ETF,Autre,,false
+AMUETFSXDCRXPAR,DEFS,Paris,DEFS.PA,ETF,Autre,,false
+AMUETFSXXTXPAR,AEXX,Paris,AEXX.PA,ETF,Autre,,false
+AMUETFXBLCIMXPAR,PRAC,Paris,PRAC.PA,ETF,Autre,,false
+AMUNDI,AMUN,Paris,AMUN.PA,Action,Finance,,false
+AMUNDI 10YINFBRKEV,INFU,Paris,INFU.PA,ETF,Finance,,false
+AMUNDI 210INFBRKEV,INFL,Paris,INFL.PA,ETF,Finance,,false
+AMUNDI ALL CNTYWLD,ACWI,Paris,ACWI.PA,ETF,Finance,,false
+AMUNDI ASI PA EXJP,AEJ,Paris,AEJ.PA,ETF,Finance,,false
+AMUNDI ASIA EX JPN,APX,Paris,APX.PA,ETF,Finance,,false
+AMUNDI BBG Eql wgt,COMO,Paris,COMO.PA,ETF,Finance,,false
+AMUNDI BUND DDS,DSB,Paris,DSB.PA,ETF,Finance,,false
+AMUNDI CAC40 ACC,CACC,Paris,CACC.PA,ETF,Finance,,false
+AMUNDI CHINA ENTP,ASI,Paris,ASI.PA,ETF,Finance,,false
+AMUNDI Chine PEA,PASI,Paris,PASI.PA,ETF,Finance,,false
+AMUNDI COR STOX300,MFED,Paris,MFED.PA,ETF,Autre,,false
+AMUNDI COR STOX600,MEUD,Paris,MEUD.PA,ETF,Autre,,false
+AMUNDI Core EMU,MFE,Paris,MFE.PA,ETF,Finance,,false
+AMUNDI Core EMUACC,MFEC,Paris,MFEC.PA,ETF,Finance,,false
+AMUNDI Core UK Gov,GILS,Paris,GILS.PA,ETF,Finance,,false
+AMUNDI Corp GreenB,PLAN,Paris,PLAN.PA,ETF,Finance,,false
+AMUNDI DIG ECO,EBUY,Paris,EBUY.PA,ETF,Finance,,false
+AMUNDI DISRUP TECH,UNIC,Paris,UNIC.PA,ETF,Finance,,false
+AMUNDI DJIA PEA,PDJE,Paris,PDJE.PA,ETF,Finance,,false
+AMUNDI EESG ETF,EESG,Paris,EESG.PA,ETF,Autre,,false
+AMUNDI EMTS BD 13Y,MA13,Paris,MA13.PA,ETF,Finance,,false
+AMUNDI EMTS BD 35Y,MA35,Paris,MA35.PA,ETF,Finance,,false
+AMUNDI EMTS HR MWG,MAA,Paris,MAA.PA,ETF,Finance,,false
+AMUNDI EMU GROWTH,GWT,Paris,GWT.PA,ETF,Autre,,false
+AMUNDI EMU VALUE,VAL,Paris,VAL.PA,ETF,Finance,,false
+AMUNDI EPRA DR,EPRA,Paris,EPRA.PA,ETF,Autre,,false
+AMUNDI EPRA DR U,EPRU,Amsterdam,EPRU.AS,ETF,Autre,,false
+AMUNDI EPRA EUROPE,EPRE,Paris,EPRE.PA,ETF,Autre,,false
+AMUNDI EPRA G DEV,MWO,Paris,MWO.PA,ETF,Autre,,false
+AMUNDI ES50 USD,C50U,Paris,C50U.PA,ETF,Autre,,false
+AMUNDI ESG CRPEXFN,CNB,Paris,CNB.PA,ETF,Finance,,false
+AMUNDI ESG EUR CRP,CRP,Paris,CRP.PA,ETF,Finance,,false
+AMUNDI ESG USD CRP,USIH,Paris,USIH.PA,ETF,Autre,,false
+AMUNDI ESTOXX50,MSE,Paris,MSE.PA,ETF,Finance,,false
+AMUNDI ETF AAA,AM3A,Paris,AM3A.PA,ETF,Autre,,false
+AMUNDI ETF BEL 20,BEL,Brussels,BEL.BR,ETF,Finance,,false
+AMUNDI ETF BX4,BX4,Paris,BX4.PA,ETF,Finance,,false
+AMUNDI ETF CAC 40,C40,Paris,C40.PA,ETF,Autre,,false
+AMUNDI ETF CAC 40,CAC,Paris,CAC.PA,ETF,Finance,,false
+AMUNDI ETF CAC FRA,CF1,Paris,CF1.PA,ETF,Finance,,false
+AMUNDI ETF CHINA-B,CC1U,Paris,CC1U.PA,ETF,Autre,,false
+AMUNDI ETF DAX,DAX,Paris,DAX.PA,ETF,Finance,,false
+AMUNDI ETF DAX DR,CG1,Paris,CG1.PA,ETF,Finance,,false
+AMUNDI ETF DAX DS2,DSD,Paris,DSD.PA,ETF,Finance,,false
+AMUNDI ETF DIV EUR,EDIV,Paris,EDIV.PA,ETF,Finance,,false
+AMUNDI ETF DIV EUR,EUDIV,Paris,EUDIV.PA,ETF,Finance,,false
+AMUNDI ETF DJIA,DJE,Paris,DJE.PA,ETF,Finance,,false
+AMUNDI ETF EASTERN,CEC,Paris,CEC.PA,ETF,Finance,,false
+AMUNDI ETF EM AS U,AASU,Paris,AASU.PA,ETF,Autre,,false
+AMUNDI ETF EM ASIA,AASI,Paris,AASI.PA,ETF,Autre,,false
+AMUNDI ETF EM LA U,ALAU,Paris,ALAU.PA,ETF,Autre,,false
+AMUNDI ETF EM LATA,ALAT,Paris,ALAT.PA,ETF,Autre,,false
+AMUNDI ETF EMU HDV,CD8,Paris,CD8.PA,ETF,Finance,,false
+AMUNDI ETF ES50 C,C50,Paris,C50.PA,ETF,Autre,,false
+AMUNDI ETF ES50 D,CD5,Paris,CD5.PA,ETF,Autre,,false
+AMUNDI ETF EU GROW,CG9,Paris,CG9.PA,ETF,Autre,,false
+AMUNDI ETF EU HDVD,CD9,Paris,CD9.PA,ETF,Autre,,false
+AMUNDI ETF EU VALU,CV9,Paris,CV9.PA,ETF,Autre,,false
+AMUNDI ETF EU X EM,CU9,Paris,CU9.PA,ETF,Finance,,false
+AMUNDI ETF EU X SW,CS9,Paris,CS9.PA,ETF,Autre,,false
+AMUNDI ETF EUR CRP,CC4,Paris,CC4.PA,ETF,Autre,,false
+AMUNDI ETF EUR MID,CEM,Paris,CEM.PA,ETF,Autre,,false
+AMUNDI ETF EX AAA,X1G,Paris,X1G.PA,ETF,Autre,,false
+AMUNDI ETF FRN 1 3,AFRN,Paris,AFRN.PA,ETF,Autre,,false
+AMUNDI ETF GOVT EM,AGEB,Paris,AGEB.PA,ETF,Autre,,false
+AMUNDI ETF GV 0-6M,C3M,Paris,C3M.PA,ETF,Finance,,false
+AMUNDI ETF IG ALL,CB3,Paris,CB3.PA,ETF,Autre,,false
+AMUNDI ETF INDIA,INR,Paris,INR.PA,ETF,Finance,,false
+AMUNDI ETF INDIA-B,CI2U,Paris,CI2U.PA,ETF,Autre,,false
+AMUNDI ETF LEV CAC,LVC,Paris,LVC.PA,ETF,Finance,,false
+AMUNDI ETF LEV USA,CL2,Paris,CL2.PA,ETF,Finance,,false
+AMUNDI ETF LEVDAX,LVD,Paris,LVD.PA,ETF,Finance,,false
+AMUNDI ETF MIB,FMI,Paris,FMI.PA,ETF,Autre,,false
+AMUNDI ETF MS CHN,CC1,Paris,CC1.PA,ETF,Autre,,false
+AMUNDI ETF MS E EN,ANRJ,Paris,ANRJ.PA,ETF,Finance,,false
+AMUNDI ETF MS EM B,AUEM,Paris,AUEM.PA,ETF,Autre,,false
+AMUNDI ETF MS IND,CI2,Paris,CI2.PA,ETF,Autre,,false
+AMUNDI ETF MS NOR,CN1,Paris,CN1.PA,ETF,Autre,,false
+AMUNDI ETF MS SPA,CS1,Paris,CS1.PA,ETF,Finance,,false
+AMUNDI ETF MS SWI,CSW,Paris,CSW.PA,ETF,Autre,,false
+AMUNDI ETF MSC WHC,HLTW,Paris,HLTW.PA,ETF,Finance,,false
+AMUNDI ETF MSCI EM,LEM,Paris,LEM.PA,ETF,Finance,,false
+AMUNDI ETF MSCI EM,AEEM,Paris,AEEM.PA,ETF,Autre,,false
+AMUNDI ETF MSCI US,CU2,Paris,CU2.PA,ETF,Autre,,false
+AMUNDI ETF MSCI WR,CW8,Paris,CW8.PA,ETF,Autre,,false
+AMUNDI ETF MSCIIND,INDO,Paris,INDO.PA,ETF,Finance,,false
+AMUNDI ETF NDX 100,ANX,Paris,ANX.PA,ETF,Autre,,false
+AMUNDI ETF NDX-B,ANXU,Paris,ANXU.PA,ETF,Autre,,false
+AMUNDI ETF SGQIEUR,SGQI,Paris,SGQI.PA,ETF,Finance,,false
+AMUNDI ETF SHT CAC,SHC,Paris,SHC.PA,ETF,Finance,,false
+AMUNDI ETF SP 500,500,Paris,500.PA,ETF,Autre,,false
+AMUNDI ETF SP5 DH,SP5H,Paris,SP5H.PA,ETF,Finance,,false
+AMUNDI ETF SP500,SP5,Paris,SP5.PA,ETF,Finance,,false
+AMUNDI ETF SP500,500E,Amsterdam,500E.AS,ETF,Autre,,false
+AMUNDI ETF SP500 B,500U,Paris,500U.PA,ETF,Autre,,false
+AMUNDI ETF STOX600,C6E,Paris,C6E.PA,ETF,Autre,,false
+AMUNDI ETF STOXX50,C5E,Paris,C5E.PA,ETF,Finance,,false
+AMUNDI ETF SX50 DL,LVE,Paris,LVE.PA,ETF,Finance,,false
+AMUNDI ETF SX50 DS,BSX,Paris,BSX.PA,ETF,Finance,,false
+AMUNDI ETF TOPIX,JPN,Paris,JPN.PA,ETF,Finance,,false
+AMUNDI ETF USA-B,CU2U,Paris,CU2U.PA,ETF,Finance,,false
+AMUNDI ETF VIX EUR,LVO,Amsterdam,LVO.AS,ETF,Finance,,false
+AMUNDI ETF W EX EU,CE8,Paris,CE8.PA,ETF,Autre,,false
+AMUNDI ETF W WATER,WAT,Paris,WAT.PA,ETF,Finance,,false
+AMUNDI ETF W X EMU,CM9,Paris,CM9.PA,ETF,Finance,,false
+AMUNDI ETF WLD NRJ,CWE,Paris,CWE.PA,ETF,Autre,,false
+AMUNDI ETF WORLD-B,CW8U,Paris,CW8U.PA,ETF,Autre,,false
+AMUNDI EU CRP3 SRI,ECRP3,Paris,ECRP3.PA,ETF,Autre,,false
+AMUNDI EUR AGGSRI,EGRI,Paris,EGRI.PA,ETF,Autre,,false
+AMUNDI EUR CASH,CSH,Paris,CSH.PA,ETF,Finance,,false
+AMUNDI EUR ESGLEAD,ESGE,Paris,ESGE.PA,ETF,Finance,,false
+AMUNDI EUR GOV 57,MTC,Paris,MTC.PA,ETF,Finance,,false
+AMUNDI EUR GOV 710,MTD,Paris,MTD.PA,ETF,Finance,,false
+AMUNDI EUR GOV DR,EGOV,Paris,EGOV.PA,ETF,Autre,,false
+AMUNDI Eur Gov Inf,MTI,Paris,MTI.PA,ETF,Finance,,false
+AMUNDI EUR GOV1015,MTE,Paris,MTE.PA,ETF,Finance,,false
+AMUNDI EUR GVTB57D,C53D,Paris,C53D.PA,ETF,Finance,,false
+AMUNDI EUR H YIELD,YIEL,Paris,YIEL.PA,ETF,Autre,,false
+AMUNDI EUR STXBNK,BNKE,Paris,BNKE.PA,ETF,Finance,,false
+AMUNDI EURCORP BBB,EBBB,Paris,EBBB.PA,ETF,Autre,,false
+AMUNDI Euro GovGrn,ERTH,Paris,ERTH.PA,ETF,Finance,,false
+AMUNDI EUROGOV 13Y,MTA,Paris,MTA.PA,ETF,Finance,,false
+AMUNDI EUROGOV 35Y,MTB,Paris,MTB.PA,ETF,Finance,,false
+AMUNDI EUROMTS15PY,MTF,Paris,MTF.PA,ETF,Finance,,false
+AMUNDI EUROZONEPAB,EPAB,Paris,EPAB.PA,ETF,Finance,,false
+AMUNDI EURZ CLIMPA,PABZ,Paris,PABZ.PA,ETF,Autre,,false
+AMUNDI FRN 1 3 GBP,AFRHG,Paris,AFRHG.PA,ETF,Autre,,false
+AMUNDI FRN 1 3 USD,AFRHU,Paris,AFRHU.PA,ETF,Autre,,false
+AMUNDI FRN US HEU,AFLE,Paris,AFLE.PA,ETF,Autre,,false
+AMUNDI FRN USD,AFLT,Paris,AFLT.PA,ETF,Autre,,false
+AMUNDI FTSE 100,L100,Paris,L100.PA,ETF,Finance,,false
+AMUNDI FTSE 100 MH,100H,Paris,100H.PA,ETF,Finance,,false
+Amundi FTSE Epra,MEH,Paris,MEH.PA,ETF,Autre,,false
+AMUNDI FTSE MIB,MIB,Paris,MIB.PA,ETF,Finance,,false
+AMUNDI FUTUR MOB,ELCR,Paris,ELCR.PA,ETF,Finance,,false
+AMUNDI G AG500 UH,GAHU,Paris,GAHU.PA,ETF,Autre,,false
+AMUNDI G AGG500 DR,GAGG,Paris,GAGG.PA,ETF,Autre,,false
+AMUNDI G LUX USD,LUXU,Paris,LUXU.PA,ETF,Autre,,false
+AMUNDI GAGU 500 DR,GAGU,Amsterdam,GAGU.AS,ETF,Autre,,false
+AMUNDI GENDER EQUA,ELLE,Paris,ELLE.PA,ETF,Finance,,false
+AMUNDI GLOBAL LUX,GLUX,Paris,GLUX.PA,ETF,Autre,,false
+AMUNDI GREEN BOND,CLIM,Paris,CLIM.PA,ETF,Finance,,false
+AMUNDI HI YIELD EU,AHYE,Paris,AHYE.PA,ETF,Autre,,false
+AMUNDI HIGH YLD BB,HYBB,Paris,HYBB.PA,ETF,Autre,,false
+AMUNDI INDIA PEA,PINR,Paris,PINR.PA,ETF,Finance,,false
+AMUNDI JPM GBI DR,GGOV,Paris,GGOV.PA,ETF,Autre,,false
+AMUNDI JPM GBI H E,GOVH,Paris,GOVH.PA,ETF,Autre,,false
+AMUNDI JPMGBI DR U,GGOU,Amsterdam,GGOU.AS,ETF,Autre,,false
+AMUNDI JPNK CHF HD,JPHC,Paris,JPHC.PA,ETF,Autre,,false
+AMUNDI JPNK EUR HD,JPHE,Paris,JPHE.PA,ETF,Autre,,false
+AMUNDI JPNK GBP HD,JPHG,Paris,JPHG.PA,ETF,Autre,,false
+AMUNDI JPNK USD HD,JPHU,Paris,JPHU.PA,ETF,Autre,,false
+AMUNDI JPX4 ETF,JPX4,Paris,JPX4.PA,ETF,Autre,,false
+AMUNDI JPX4 ETF,JPXY,Amsterdam,JPXY.AS,ETF,Autre,,false
+AMUNDI JPXH ETF,JPXH,Paris,JPXH.PA,ETF,Autre,,false
+AMUNDI JPXNK 400,JPNK,Paris,JPNK.PA,ETF,Autre,,false
+AMUNDI JPXNK 400,JPNY,Paris,JPNY.PA,ETF,Autre,,false
+AMUNDI LESE ETF,LESE,Amsterdam,LESE.AS,ETF,Autre,,false
+AMUNDI LOW RAT 1-3,X13G,Paris,X13G.PA,ETF,Autre,,false
+AMUNDI LW RATED D,X1GD,Paris,X1GD.PA,ETF,Autre,,false
+AMUNDI LY DURA 25Y,MTH,Paris,MTH.PA,ETF,Autre,,false
+AMUNDI MILLENNIALS,MILL,Paris,MILL.PA,ETF,Finance,,false
+AMUNDI MSC WTEC,TNOW,Paris,TNOW.PA,ETF,Finance,,false
+AMUNDI MSCI BRAZIL,RIO,Paris,RIO.PA,ETF,Finance,,false
+Amundi MSCI CHINA,CNEG,Paris,CNEG.PA,ETF,Autre,,false
+AMUNDI MSCI EM DR,AEME,Paris,AEME.PA,ETF,Autre,,false
+AMUNDI MSCI EM DR,AEME,Amsterdam,AEME.AS,ETF,Autre,,false
+AMUNDI MSCI EM PEA,PLEM,Paris,PLEM.PA,ETF,Finance,,false
+AMUNDI MSCI EM SRI,EMSRI,Paris,EMSRI.PA,ETF,Autre,,false
+Amundi MSCI Energy,NRJC,Paris,NRJC.PA,ETF,Finance,,false
+AMUNDI MSCI EU ESG,ESGH,Paris,ESGH.PA,ETF,Finance,,false
+AMUNDI MSCI EU SRI,EUSRI,Paris,EUSRI.PA,ETF,Autre,,false
+AMUNDI MSCI EUR,MEU,Paris,MEU.PA,ETF,Finance,,false
+AMUNDI MSCI EUR DR,CEU2,Paris,CEU2.PA,ETF,Autre,,false
+AMUNDI MSCI EUR DR,CEU2,Amsterdam,CEU2.AS,ETF,Autre,,false
+AMUNDI MSCI EURMOM,MCEU,Paris,MCEU.PA,ETF,Autre,,false
+AMUNDI MSCI EUROPE,CEU,Paris,CEU.PA,ETF,Autre,,false
+AMUNDI MSCI EUROPE,UCEU,Amsterdam,UCEU.AS,ETF,Autre,,false
+AMUNDI MSCI EURQUA,QCEU,Paris,QCEU.PA,ETF,Autre,,false
+AMUNDI MSCI GREECE,GRE,Paris,GRE.PA,ETF,Finance,,false
+AMUNDI MSCI JAP E,CJ1,Paris,CJ1.PA,ETF,Autre,,false
+AMUNDI MSCI Korea,KRW,Paris,KRW.PA,ETF,Finance,,false
+AMUNDI MSCI SEMICO,CHIP,Paris,CHIP.PA,ETF,Finance,,false
+AMUNDI MSCI SWITZ,CSWC,Paris,CSWC.PA,ETF,Autre,,false
+AMUNDI MSCI TURKEY,TUR,Paris,TUR.PA,ETF,Finance,,false
+Amundi MSCI W Dist,EWLD,Paris,EWLD.PA,ETF,Autre,,false
+Amundi MSCI W II,WLDC,Paris,WLDC.PA,ETF,Finance,,false
+Amundi MSCI Water,WATC,Paris,WATC.PA,ETF,Finance,,false
+AMUNDI MSCI WDH,WLDH,Paris,WLDH.PA,ETF,Finance,,false
+AMUNDI MSCI WOR,WLD,Paris,WLD.PA,ETF,Finance,,false
+Amundi MSCI World,MWRD,Paris,MWRD.PA,ETF,Autre,,false
+Amundi MSCI World,WRDU,Amsterdam,WRDU.AS,ETF,Autre,,false
+Amundi MSCIEmBroad,CLEM,Paris,CLEM.PA,ETF,Autre,,false
+Amundi MSCINorthAm,NAMU,Amsterdam,NAMU.AS,ETF,Autre,,false
+Amundi MSCINorthAm,NRAM,Paris,NRAM.PA,ETF,Autre,,false
+Amundi MSCIUSAESG,SADU,Paris,SADU.PA,ETF,Autre,,false
+AMUNDI MSCIW FINAN,FINSW,Paris,FINSW.PA,ETF,Finance,,false
+AMUNDI MSCIWL ENYU,CWEU,Paris,CWEU.PA,ETF,Autre,,false
+AMUNDI NASDAQ 100,UST,Paris,UST.PA,ETF,Finance,,false
+AMUNDI NDXH EUR HD,NDXH,Paris,NDXH.PA,ETF,Autre,,false
+AMUNDI NEW ENER,NRJ,Paris,NRJ.PA,ETF,Finance,,false
+Amundi NSDQ LEV,LQQ,Paris,LQQ.PA,ETF,Finance,,false
+Amundi NYSE Arca G,GLDM,Paris,GLDM.PA,ETF,Autre,,false
+Amundi NYSE Arca G,GLDU,Amsterdam,GLDU.AS,ETF,Autre,,false
+AMUNDI PEA EM ALAT,PALAT,Paris,PALAT.PA,ETF,Finance,,false
+AMUNDI PEA EM ASIA,PAASI,Paris,PAASI.PA,ETF,Finance,,false
+AMUNDI PEA EUROPE,PCEU,Paris,PCEU.PA,ETF,Finance,,false
+AMUNDI PEA MSCI EM,PAEEM,Paris,PAEEM.PA,ETF,Finance,,false
+AMUNDI PEA NASDAQ,PANX,Paris,PANX.PA,ETF,Finance,,false
+AMUNDI PEA OBLI,OBLI,Paris,OBLI.PA,ETF,Finance,,false
+AMUNDI PEA SP500,PE500,Paris,PE500.PA,ETF,Finance,,false
+AMUNDI PEA SP500 H,P500H,Paris,P500H.PA,ETF,Finance,,false
+AMUNDI PEA TOPIX,PTPXE,Paris,PTPXE.PA,ETF,Finance,,false
+AMUNDI PEA TOPIX H,PTPXH,Paris,PTPXH.PA,ETF,Finance,,false
+AMUNDI PHYS GOLD,GOLD,Paris,GOLD.PA,ETF,Autre,,false
+AMUNDI PHYS GOLD,GOLD,Amsterdam,GOLD.AS,ETF,Autre,,false
+AMUNDI PR1R ETF,PR1R,Amsterdam,PR1R.AS,ETF,Autre,,false
+AMUNDI RUSSEL 2000,RS2U,Paris,RS2U.PA,ETF,Autre,,false
+AMUNDI RUSSEL 2K,RS2K,Paris,RS2K.PA,ETF,Autre,,false
+AMUNDI S&P BBck EU,BYBE,Paris,BYBE.PA,ETF,Autre,,false
+AMUNDI S&P BBck US,BYBU,Paris,BYBU.PA,ETF,Autre,,false
+Amundi S&P Co Disc,CODW,Paris,CODW.PA,ETF,Autre,,false
+Amundi S&P Co Serv,TELW,Paris,TELW.PA,ETF,Autre,,false
+Amundi S&P Co Stap,COSW,Paris,COSW.PA,ETF,Autre,,false
+Amundi S&P Enrgy,NRGW,Paris,NRGW.PA,ETF,Autre,,false
+Amundi S&P Indust,INDW,Paris,INDW.PA,ETF,Autre,,false
+Amundi S&P Mat,MATW,Paris,MATW.PA,ETF,Autre,,false
+Amundi S&P500 ETF,S500,Paris,S500.PA,ETF,Autre,,false
+Amundi S&P500 Hdg,S500H,Paris,S500H.PA,ETF,Autre,,false
+AMUNDI SMALL CAP,MMS,Paris,MMS.PA,ETF,Autre,,false
+AMUNDI SMART CITY,SCITY,Paris,SCITY.PA,ETF,Autre,,false
+AMUNDI SP500 C,SP5C,Paris,SP5C.PA,ETF,Finance,,false
+AMUNDI SP500 H EUR,500H,Paris,500H.PA,ETF,Autre,,false
+AMUNDI SP500 PEA,PSP5,Paris,PSP5.PA,ETF,Finance,,false
+AMUNDI ST EU BA RE,BRES,Paris,BRES.PA,ETF,Finance,,false
+AMUNDI ST EU ENERG,ENRG,Paris,ENRG.PA,ETF,Finance,,false
+AMUNDI ST EU HLTHC,HLT,Paris,HLT.PA,ETF,Finance,,false
+AMUNDI ST EU UTILI,UTI,Paris,UTI.PA,ETF,Finance,,false
+AMUNDI STOXX GL AI,GOAI,Paris,GOAI.PA,ETF,Autre,,false
+AMUNDI STX 600 INS,INS,Paris,INS.PA,ETF,Finance,,false
+AMUNDI STX EU BANK,BNK,Paris,BNK.PA,ETF,Finance,,false
+AMUNDI STX EU SDIV,SEL,Paris,SEL.PA,ETF,Autre,,false
+AMUNDI STX EU TECH,TNO,Paris,TNO.PA,ETF,Finance,,false
+AMUNDI STX EU TELE,TELE,Paris,TELE.PA,ETF,Finance,,false
+AMUNDI STX600 BMAT,CHM,Paris,CHM.PA,ETF,Finance,,false
+AMUNDI STX600 CONS,FOO,Paris,FOO.PA,ETF,Finance,,false
+AMUNDI STX600 INDU,IND,Paris,IND.PA,ETF,Finance,,false
+AMUNDI STX600 TRAV,TRV,Paris,TRV.PA,ETF,Finance,,false
+AMUNDI SX50 DDS,BXX,Paris,BXX.PA,ETF,Finance,,false
+AMUNDI TOPIX DH,JPNH,Paris,JPNH.PA,ETF,Finance,,false
+AMUNDI TOPIX EUR,TPXE,Paris,TPXE.PA,ETF,Autre,,false
+AMUNDI TOPIX HDG,TPXH,Paris,TPXH.PA,ETF,Autre,,false
+AMUNDI TOPIX JPY,TPXY,Paris,TPXY.PA,ETF,Autre,,false
+AMUNDI TPX CHF DH,TPHC,Paris,TPHC.PA,ETF,Autre,,false
+AMUNDI TPX GBP HD,TPHG,Paris,TPHG.PA,ETF,Autre,,false
+AMUNDI TPX USD HD,TPHU,Paris,TPHU.PA,ETF,Autre,,false
+AMUNDI UK Gov Infl,GILI,Paris,GILI.PA,ETF,Finance,,false
+AMUNDI US CORP SRI,UCRP,Paris,UCRP.PA,ETF,Autre,,false
+AMUNDI US MIN VO,MIVU,Paris,MIVU.PA,ETF,Autre,,false
+AMUNDI US MIN VO,MIVU,Amsterdam,MIVU.AS,ETF,Autre,,false
+AMUNDI US STEEPEN,STPU,Paris,STPU.PA,ETF,Finance,,false
+AMUNDI US-T 10Y+,U10HK,Paris,U10HK.PA,ETF,Finance,,false
+Amundi USASRI,USRI,Paris,USRI.PA,ETF,Autre,,false
+Amundi USASRI,USRI,Amsterdam,USRI.AS,ETF,Autre,,false
+AMUNDI USCORP BBB,UBBB,Paris,UBBB.PA,ETF,Autre,,false
+AMUNDI UST 10+,US10,Paris,US10.PA,ETF,Finance,,false
+AMUNDI W WATER PEA,AWAT,Paris,AWAT.PA,ETF,Finance,,false
+AMUNDIETF CAC40(D),C4D,Paris,C4D.PA,ETF,Autre,,false
+AmUSA Climate,USA,Paris,USA.PA,ETF,Autre,,false
+AmUSA Climate,USAC,Paris,USAC.PA,ETF,Autre,,false
+ANDFJORD SALMON GR,ANDF,Oslo,ANDF.OL,Action,Conso,,false
+ANIMA HOLDING,ANIM,Milan,ANIM.MI,Action,Finance,,false
+ANTIN INFRA PARTN,ANTIN,Paris,ANTIN.PA,Action,Finance,,false
+APERAM,APAM,Amsterdam,APAM.AS,Action,Ind,,false
+APEX CRITICAL,MLAPX,Paris,MLAPX.PA,Action,Ind,,false
+APPEAR,APR,Oslo,APR.OL,Action,Tech,,false
+AQUA BIO TECHNO,ABTEC,Oslo,ABTEC.OL,Action,Conso,,false
+AQUAFIL,ECNL,Milan,ECNL.MI,Action,Ind,,false
+AQUALIS,AQUA,Oslo,AQUA.OL,Action,Ener,,false
+AQUILA,ALAQU,Paris,ALAQU.PA,Action,Ind,,false
+ARAMIS GROUP,ARAMI,Paris,ARAMI.PA,Action,Conso,,false
+ARCADIS,ARCAD,Amsterdam,ARCAD.AS,Action,Ind,,false
+ARCELORMITTAL SA,MT,Amsterdam,MT.AS,Action,Ind,,false
+ARCHER,ARCH,Oslo,ARCH.OL,Action,Ener,,false
+ARCHOS,ALJXR,Paris,ALJXR.PA,Action,Tech,,false
+ARCHOS BSA,JXRBS,Paris,JXRBS.PA,Action,Tech,,false
+ARCTIC BIOSCIENCE,ABS,Oslo,ABS.OL,Action,Conso,,false
+ARCTIC FISH HOLDIN,AFISH,Oslo,AFISH.OL,Action,Conso,,false
+ARCTICZYMES TECHNO,AZT,Oslo,AZT.OL,Action,Santé,,false
+ARCURE,ALCUR,Paris,ALCUR.PA,Action,Ind,,false
+ARENDALS FOSSEKOMP,AFK,Oslo,AFK.OL,Action,Finance,,false
+ARGAN,ARG,Paris,ARG.PA,Action,Finance,,false
+ARGENX SE,ARGX,Brussels,ARGX.BR,Action,Santé,,false
+ARISTON HOLDING,ARIS,Milan,ARIS.MI,Action,Ind,,false
+ARK GENOMIC 1X,1ARKG,Amsterdam,1ARKG.AS,ETF,Autre,,false
+ARK INNOVATION 1X,1ARKK,Amsterdam,1ARKK.AS,ETF,Autre,,false
+ARK INTERNET 1X,1ARKW,Amsterdam,1ARKW.AS,ETF,Autre,,false
+ARKEMA,AKE,Paris,AKE.PA,Action,Ind,,false
+ARRIBATEC GROUP,ARR,Oslo,ARR.OL,Action,Tech,,false
+ARTEA,ARTE,Paris,ARTE.PA,Action,Finance,,false
+ARTERRA BIOSCIENCE,ARBS,Milan,ARBS.MI,Action,Santé,,false
+ARTMARKET COM,PRC,Paris,PRC.PA,Action,Conso,,false
+ARTOIS NOM.,ARTO,Paris,ARTO.PA,Action,Finance,,false
+ARVERNE GROUP,ARVEN,Paris,ARVEN.PA,Action,Ener,,false
+ASCENCIO,ASCE,Brussels,ASCE.BR,Action,Finance,,false
+ASCOPIAVE,ASC,Milan,ASC.MI,Action,Ener,,false
+ASR NEDERLAND,ASRNL,Amsterdam,ASRNL.AS,Action,Finance,,false
+ASSYSTEM,ASY,Paris,ASY.PA,Action,Ind,,false
+ATARI,ALATA,Paris,ALATA.PA,Action,Conso,,false
+ATEA,ATEA,Oslo,ATEA.OL,Action,Tech,,false
+ATEME,ATEME,Paris,ATEME.PA,Action,Tech,,false
+ATENOR,ATEB,Brussels,ATEB.BR,Action,Finance,,false
+ATLAND,ATLD,Paris,ATLD.PA,Action,Finance,,false
+ATLANTIC SAPPHI TR,ASAS,Oslo,ASAS.OL,Action,Conso,,false
+ATLANTIC SAPPHIRE,ASA,Oslo,ASA.OL,Action,Conso,,false
+ATON,ALTAO,Paris,ALTAO.PA,Action,Santé,,false
+ATON GREEN STORAGE,ATON,Milan,ATON.MI,Action,Ener,,false
+ATOS GROUP,ATO,Paris,ATO.PA,Action,Tech,,false
+AUBAY,AUB,Paris,AUB.PA,Action,Tech,,false
+AUDACIA,ALAUD,Paris,ALAUD.PA,Action,Finance,,false
+AUGROS COSMETIC,AUGR,Paris,AUGR.PA,Action,Ind,,false
+AUREA,AURE,Paris,AURE.PA,Action,Ener,,false
+AURSKOG SPAREBANK,AURG,Oslo,AURG.OL,Action,Finance,,false
+AUSTEVOLL SEAFOOD,AUSS,Oslo,AUSS.OL,Action,Conso,,false
+AUTOSTORE HOLDINGS,AUTO,Oslo,AUTO.OL,Action,Ind,,false
+AUTOSTRADE MERID,AUTME,Milan,AUTME.MI,Action,Ind,,false
+AVANTIUM,AVTX,Amsterdam,AVTX.AS,Action,Ind,,false
+AVENIR TELECOM,AVT,Paris,AVT.PA,Action,Tech,,false
+AVIO,AVIO,Milan,AVIO.MI,Action,Ind,,false
+AXA,CS,Paris,CS.PA,Action,Finance,,false
+AXA EUR IG ACC,AIPE,Paris,AIPE.PA,ETF,Autre,,false
+AXA US HY ACC,AHYU,Paris,AHYU.PA,ETF,Autre,,false
+AXA USD IG ACC,AIPU,Paris,AIPU.PA,ETF,Autre,,false
+AXACTOR,ACR,Oslo,ACR.OL,Action,Finance,,false
+AXAETFNNDXXPAR,ANAU,Paris,ANAU.PA,ETF,Autre,,false
+AYFIE INTERNATIONA,AIX,Oslo,AIX.OL,Action,Ind,,false
+AYVENS,AYV,Paris,AYV.PA,Action,Conso,,false
+AZELIS GROUP,AZE,Brussels,AZE.BR,Action,Ind,,false
+AZERION,AZRN,Amsterdam,AZRN.AS,Action,Conso,,false
+AZIMUT,AZM,Milan,AZM.MI,Action,Finance,,false
+AZOREAN TECH,MLAAT,Paris,MLAAT.PA,Action,Conso,,false
+B.COM.PORTUGUES,BCP,Lisbonne,BCP.LS,Action,Finance,,false
+B.F.,BFG,Milan,BFG.MI,Action,Conso,,false
+B&C SPEAKERS,BEC,Milan,BEC.MI,Action,Conso,,false
+B2 Impact,B2I,Oslo,B2I.OL,Action,Finance,,false
+BAIKOWSKI,ALBKK,Paris,ALBKK.PA,Action,Ind,,false
+BAINS MER MONACO,BAIN,Paris,BAIN.PA,Action,Conso,,false
+BAKKAFROST,BAKKA,Oslo,BAKKA.OL,Action,Conso,,false
+BALTIC SEA PROP,BALT,Oslo,BALT.OL,Action,Finance,,false
+BAM GROEP KON,BAMNB,Amsterdam,BAMNB.AS,Action,Ind,,false
+BANCA GENERALI,BGN,Milan,BGN.MI,Action,Finance,,false
+BANCA IFIS,IF,Milan,IF.MI,Action,Finance,,false
+BANCA MEDIOLANUM,BMED,Milan,BMED.MI,Action,Finance,,false
+BANCA MPS,BMPS,Milan,BMPS.MI,Action,Finance,,false
+BANCA SISTEMA,BST,Milan,BST.MI,Action,Finance,,false
+BANCO BPM,BAMI,Milan,BAMI.MI,Action,Finance,,false
+BANIJAY GROUP,BNJ,Amsterdam,BNJ.AS,Action,Conso,,false
+BANIMMO A,BANI,Brussels,BANI.BR,Action,Finance,,false
+BANK OF IRELAND GP,BIRG,Dublin,BIRG.IR,Action,Finance,,false
+BANQUP GROUP,BANQ,Brussels,BANQ.BR,Action,Tech,,false
+BARBARA BUI,BUI,Paris,BUI.PA,Action,Conso,,false
+BARCO,BAR,Brussels,BAR.BR,Action,Tech,,false
+BARRAMUNDI GROUP,BARRA,Oslo,BARRA.OL,Action,Conso,,false
+BASIC-FIT,BFIT,Amsterdam,BFIT.AS,Action,Conso,,false
+BASICNET,BAN,Milan,BAN.MI,Action,Conso,,false
+BASSAC,BASS,Paris,BASS.PA,Action,Finance,,false
+BASTIDE LE CONFORT,BLC,Paris,BLC.PA,Action,Santé,,false
+BASTOGI SPA,B,Milan,B.MI,Action,Conso,,false
+BCA PROFILO,PRO,Milan,PRO.MI,Action,Finance,,false
+BCO DESIO BRIANZA,BDB,Milan,BDB.MI,Action,Finance,,false
+BE SEMICONDUCTOR,BESI,Amsterdam,BESI.AS,Action,Tech,,false
+BEEWIZE,BWZ,Milan,BWZ.MI,Action,Tech,,false
+BEKAERT,BEKB,Brussels,BEKB.BR,Action,Ind,,false
+BELLINI NAUTICA,BELL,Milan,BELL.MI,Action,Conso,,false
+BELYSSE GROUP,BELYS,Brussels,BELYS.BR,Action,Conso,,false
+BENETEAU,BEN,Paris,BEN.PA,Action,Conso,,false
+BENFICA,SLBEN,Lisbonne,SLBEN.LS,Action,Conso,,false
+BERGEN CARBON SOL,BCS,Oslo,BCS.OL,Action,Ind,,false
+BERNARD LOISEAU,ALDBL,Paris,ALDBL.PA,Action,Conso,,false
+BEVER HOLDING,BEVER,Amsterdam,BEVER.AS,Action,Finance,,false
+BEVEST,BINT,Oslo,BINT.OL,Action,Ind,,false
+BEWI,BEWI,Oslo,BEWI.OL,Action,Ind,,false
+BFF BANK,BFF,Milan,BFF.MI,Action,Finance,,false
+BIC,BB,Paris,BB.PA,Action,Conso,,false
+BIEN SPAREBANK,BIEN,Oslo,BIEN.OL,Action,Finance,,false
+BIESSE,BSS,Milan,BSS.MI,Action,Ind,,false
+BIGBEN INTERACTIVE,BIG,Paris,BIG.PA,Action,Conso,,false
+BILENDI,ALBLD,Paris,ALBLD.PA,Action,Conso,,false
+BIO-UV GROUP,ALTUV,Paris,ALTUV.PA,Action,Ind,,false
+BIOMERIEUX,BIM,Paris,BIM.PA,Action,Santé,,false
+BIOPHYTIS,ALBPS,Paris,ALBPS.PA,Action,Santé,,false
+BIOPHYTIS BSA,BPBS,Paris,BPBS.PA,Action,Santé,,false
+BIOPHYTIS BSA,BPYBS,Paris,BPYBS.PA,Action,Santé,,false
+BIOPHYTIS BSA4,BIBS4,Paris,BIBS4.PA,Action,Santé,,false
+BIOSYNEX,ALBIO,Paris,ALBIO.PA,Action,Santé,,false
+BIOTALYS,BTLS,Brussels,BTLS.BR,Action,Ind,,false
+BITCOIN ETF EUR,BTC,Paris,BTC.PA,ETF,Autre,,false
+BITCOIN ETF EUR,BTC,Amsterdam,BTC.AS,ETF,Autre,,false
+BITETCBTCGXAMS,BTCG,Amsterdam,BTCG.AS,ETF,Autre,,false
+BITETCBTCGXPAR,BTCG,Paris,BTCG.PA,ETF,Autre,,false
+BITETNBRRXAMS,BTC2,Amsterdam,BTC2.AS,ETF,Autre,,false
+BITETNBRRXPAR,BTC1,Paris,BTC1.PA,ETF,Autre,,false
+BITETNETHTR9XPAR,ET32,Paris,ET32.PA,ETF,Autre,,false
+BITETNKBSTIAXPAR,TIAB,Paris,TIAB.PA,ETF,Autre,,false
+BITETNSOLTRMXPAR,BSOL,Paris,BSOL.PA,ETF,Autre,,false
+BITETNXETCFIXAMS,BTCE,Amsterdam,BTCE.AS,ETF,Autre,,false
+BITETNXETCFIXPAR,BTCE,Paris,BTCE.PA,ETF,Autre,,false
+BITETNXRPUSDXPAR,GXRP,Paris,GXRP.PA,ETF,Autre,,false
+BLACK SEA PROPERTY,BSP,Oslo,BSP.OL,Action,Conso,,false
+BLEECKER,BLEE,Paris,BLEE.PA,Action,Finance,,false
+BLUE SHARK POWER,MLBSP,Paris,MLBSP.PA,Action,Ener,,false
+BLUELINEA,ALBLU,Paris,ALBLU.PA,Action,Santé,,false
+BLUENORD,BNOR,Oslo,BNOR.OL,Action,Ener,,false
+BLUETFFGLOIMXAMC,BSWC,Amsterdam,BSWC.AS,ETF,Autre,,false
+BLUETFFGLOIMXAMC,BSWH,Amsterdam,BSWH.AS,ETF,Autre,,false
+BLUETFFGLOIMXAMS,BSWE,Amsterdam,BSWE.AS,ETF,Autre,,false
+BLUETFTFEUIMXAMC,BEEC,Amsterdam,BEEC.AS,ETF,Autre,,false
+BLUETFTFEUIMXAMC,BEEH,Amsterdam,BEEH.AS,ETF,Autre,,false
+BLUETFTFEUIMXAMS,BSEU,Amsterdam,BSEU.AS,ETF,Autre,,false
+BLUETFUS500NXAMC,BSUC,Amsterdam,BSUC.AS,ETF,Autre,,false
+BLUETFUS500NXAMC,BSUH,Amsterdam,BSUH.AS,ETF,Autre,,false
+BLUETFUS500NXAMS,BSUE,Amsterdam,BSUE.AS,ETF,Autre,,false
+BLUETFUST100XAMC,BSTC,Amsterdam,BSTC.AS,ETF,Autre,,false
+BLUETFUST100XAMC,BSTH,Amsterdam,BSTH.AS,ETF,Autre,,false
+BLUETFUST100XAMS,BSTE,Amsterdam,BSTE.AS,ETF,Autre,,false
+BNP ACWI SRI ETF,PAACE,Paris,PAACE.PA,ETF,Autre,,false
+BNP ACWI SRI ETF,PAACU,Paris,PAACU.PA,ETF,Autre,,false
+BNP ASust EU Corp,ACES,Paris,ACES.PA,ETF,Finance,,false
+BNP ASust EU CorpD,ACESD,Paris,ACESD.PA,ETF,Finance,,false
+BNP ASust EU Gov,AGES,Paris,AGES.PA,ETF,Finance,,false
+BNP ASust EU GovD,AGESD,Paris,AGESD.PA,ETF,Finance,,false
+BNP BB EURO AGG EC,JBEM,Paris,JBEM.PA,ETF,Finance,,false
+BNP EM SRI EC ESG,EMIS,Paris,EMIS.PA,ETF,Finance,,false
+BNP EM SRI PAB ED,EISR,Paris,EISR.PA,ETF,Finance,,false
+BNP EM SRI PAB UC,EMSR,Paris,EMSR.PA,ETF,Finance,,false
+BNP EU SRI PAB EC,SRIEC,Paris,SRIEC.PA,ETF,Finance,,false
+BNP EU SRI PAB ED,SRIE,Paris,SRIE.PA,ETF,Finance,,false
+BNP EUR Ushr SRI C,SRIUC,Paris,SRIUC.PA,ETF,Finance,,false
+BNP EUR Ushr SRI D,SRIUD,Paris,SRIUD.PA,ETF,Finance,,false
+BNP JP ESG USD ETF,EJAPU,Paris,EJAPU.PA,ETF,Finance,,false
+BNP JP SRI PAB EC,SRIJC,Paris,SRIJC.PA,ETF,Finance,,false
+BNP JP SRI PAB ED,SRIJ,Paris,SRIJ.PA,ETF,Finance,,false
+BNP LCEU PAB D ETF,LCEUD,Paris,LCEUD.PA,ETF,Finance,,false
+BNP PARIBAS ACT.A,BNP,Paris,BNP.PA,Action,Finance,,false
+BNP US SRI PAB EC,EKLDC,Paris,EKLDC.PA,ETF,Finance,,false
+BNP US SRI PAB ED,EKUS,Paris,EKUS.PA,ETF,Finance,,false
+BNP US SRI PAB UC,EKLD,Paris,EKLD.PA,ETF,Finance,,false
+BNP USD Corp SRI C,USCBC,Paris,USCBC.PA,ETF,Finance,,false
+BNP USD Corp SRI D,USCBD,Paris,USCBD.PA,ETF,Finance,,false
+BNP WD SRI PAB EC,EMWE,Paris,EMWE.PA,ETF,Finance,,false
+BNP WD SRI PAB UC,EWRD,Paris,EWRD.PA,ETF,Finance,,false
+BNPACTAEMUSXPAR,AEMUS,Paris,AEMUS.PA,ETF,Finance,,false
+BNPACTAEUSEXPAR,AEUSE,Paris,AEUSE.PA,ETF,Finance,,false
+BNPACTAJASEXPAR,AJASE,Paris,AJASE.PA,ETF,Autre,,false
+BNPACTAJASHXPAR,AJASH,Paris,AJASH.PA,ETF,Autre,,false
+BNPACTAJASRXPAR,AJASR,Paris,AJASR.PA,ETF,Autre,,false
+BNPACTAUSSDXPAR,AUSSD,Paris,AUSSD.PA,ETF,Autre,,false
+BNPACTAUSSEXPAR,AUSSE,Paris,AUSSE.PA,ETF,Autre,,false
+BNPACTAUSSHXPAR,AUSSH,Paris,AUSSH.PA,ETF,Autre,,false
+BNPACTAUSSRXPAR,AUSSR,Paris,AUSSR.PA,ETF,Autre,,false
+BNPACTAWDSEXPAR,AWDSE,Paris,AWDSE.PA,ETF,Autre,,false
+BNPActAWDSHXPAR,AWDSH,Paris,AWDSH.PA,ETF,Autre,,false
+BNPACTAWDSRXPAR,AWDSR,Paris,AWDSR.PA,ETF,Autre,,false
+BNPActBFRMXPAR,BFRM,Paris,BFRM.PA,ETF,Finance,,false
+BNPActFOLOWXPAR,FOLOW,Paris,FOLOW.PA,ETF,Finance,,false
+BNPActPRINTXPAR,PRINT,Paris,PRINT.PA,ETF,Finance,,false
+BNPACTQEIGXPAR,QEIG,Paris,QEIG.PA,ETF,Finance,,false
+BNPACTQEURXPAR,QEUR,Paris,QEUR.PA,ETF,Finance,,false
+BNPACTQGLOEXPAR,QGLOE,Paris,QGLOE.PA,ETF,Autre,,false
+BNPACTQUSAEXPAR,QUSAE,Paris,QUSAE.PA,ETF,Autre,,false
+BNPActSLEEKXPAR,SLEEK,Paris,SLEEK.PA,ETF,Finance,,false
+BNPETFACWIIMXPAR,ALLCE,Paris,ALLCE.PA,ETF,Finance,,false
+BNPETFBSHIELXPAR,GUARD,Paris,GUARD.PA,ETF,Finance,,false
+BNPETFBUSCXFXPAR,USCBH,Paris,USCBH.PA,ETF,Finance,,false
+BNPETFCSUSIMXPAR,BIGUS,Paris,BIGUS.PA,ETF,Autre,,false
+BNPETFEPRACTXPAR,GREAD,Paris,GREAD.PA,ETF,Finance,,false
+BNPETFGBEIGXPAR,GE110,Paris,GE110.PA,ETF,Finance,,false
+BNPETFGBIEIGXPAR,GE01,Paris,GE01.PA,ETF,Finance,,false
+BNPETFGBIEIGXPAR,GE710,Paris,GE710.PA,ETF,Finance,,false
+BNPETFGBIEIGXPAR,GEU7C,Paris,GEU7C.PA,ETF,Finance,,false
+BNPETFGDGRIMXPAR,GRCTB,Paris,GRCTB.PA,ETF,Autre,,false
+BNPETFGGOVIMXPAR,IGOV,Paris,IGOV.PA,ETF,Finance,,false
+BNPETFI34701XPAR,SRI3C,Paris,SRI3C.PA,ETF,Finance,,false
+BNPETFI38479XPAR,SRIC7,Paris,SRIC7.PA,ETF,Finance,,false
+BNPETFI38479XPAR,SRID7,Paris,SRID7.PA,ETF,Finance,,false
+BNPETFI38640XPAR,ACE29,Paris,ACE29.PA,ETF,Finance,,false
+BNPETFI38647XPAR,ACE32,Paris,ACE32.PA,ETF,Finance,,false
+BNPETFJPMGBXPAR,GOD10,Paris,GOD10.PA,ETF,Finance,,false
+BNPETFJPMGBXPAR,GOV10,Paris,GOV10.PA,ETF,Finance,,false
+BNPETFM1EFXPAR,BRIX,Paris,BRIX.PA,ETF,Finance,,false
+BNPETFM1WOUXPAR,NOUSA,Paris,NOUSA.PA,ETF,Finance,,false
+BNPETFM7EMXPAR,EUZON,Paris,EUZON.PA,ETF,Finance,,false
+BNPETFMSCIWMXPAR,WEMTH,Paris,WEMTH.PA,ETF,Autre,,false
+BNPETFMSDEJNXPAR,FUJI,Paris,FUJI.PA,ETF,Finance,,false
+BNPETFMSDEJNXPMC,FUJU,Paris,FUJU.PA,ETF,Finance,,false
+BNPETFMSDEJNXPMC,FUJY,Paris,FUJY.PA,ETF,Finance,,false
+BNPETFMSTRUSXPAR,GLOEU,Paris,GLOEU.PA,ETF,Finance,,false
+BNPETFMSTRUSXPAR,WETFE,Paris,WETFE.PA,ETF,Autre,,false
+BNPETFMXUEFMXPAR,ENAMH,Paris,ENAMH.PA,ETF,Finance,,false
+BNPETFMXUSFTXPAR,USSM,Paris,USSM.PA,ETF,Autre,,false
+BNPETFMXWMTEXPAR,WEXUS,Paris,WEXUS.PA,ETF,Finance,,false
+BNPETFNU7187XPAR,PANDA,Paris,PANDA.PA,ETF,Finance,,false
+BNPETFNU7600XPAR,WEWEU,Paris,WEWEU.PA,ETF,Autre,,false
+BNPETFSMEAIMXPAR,UEFA,Paris,UEFA.PA,ETF,Finance,,false
+BNPETFSMEAIMXPMC,UEFU,Paris,UEFU.PA,ETF,Finance,,false
+BNPETFSOESTRXPAR,OVNI,Paris,OVNI.PA,ETF,Finance,,false
+BNPETFSOESTRXPAR,CASHE,Paris,CASHE.PA,ETF,Finance,,false
+BNPETFSP500XPAR,SPTRE,Paris,SPTRE.PA,ETF,Finance,,false
+BNPETFSP500XPAR,SPTRH,Paris,SPTRH.PA,ETF,Finance,,false
+BNPP Agg BondSRI C,BSRIC,Paris,BSRIC.PA,ETF,Finance,,false
+BNPP Agg BondSRI D,BSRID,Paris,BSRID.PA,ETF,Finance,,false
+BNPP Blue ESG ETF,BLUSD,Paris,BLUSD.PA,ETF,Finance,,false
+BNPP BONDSRI ETF,SRICD,Paris,SRICD.PA,ETF,Finance,,false
+BNPP BONDSRI5 ETF,SRIC6,Paris,SRIC6.PA,ETF,Finance,,false
+BNPP CAC 40 ESG,E40,Paris,E40.PA,ETF,Autre,,false
+BNPP CE LEADER ETF,REUSE,Paris,REUSE.PA,ETF,Finance,,false
+BNPP China EUR ETF,CHINE,Paris,CHINE.PA,ETF,Finance,,false
+BNPP China$ ETF,CHINU,Paris,CHINU.PA,ETF,Finance,,false
+BNPP Circular ETF,REUSD,Paris,REUSD.PA,ETF,Finance,,false
+BNPP CORP 1 3 ETF,SRIC3,Paris,SRIC3.PA,ETF,Finance,,false
+BNPP CORP 3 5 ETF,SRIC5,Paris,SRIC5.PA,ETF,Finance,,false
+BNPP EASY JPH ESG,EJAH,Paris,EJAH.PA,ETF,Finance,,false
+BNPP EASY LOWCARB,ECN,Paris,ECN.PA,ETF,Finance,,false
+BNPP EHY SRI C ETF,HYSRI,Paris,HYSRI.PA,ETF,Finance,,false
+BNPP EHY SRI D ETF,HSRID,Paris,HSRID.PA,ETF,Finance,,false
+BNPP EMEHETF,EMEH,Paris,EMEH.PA,ETF,Finance,,false
+BNPP EmMk ESG ETF,EEMK,Paris,EEMK.PA,ETF,Finance,,false
+BNPP EMU ESG ETF,EEMU,Paris,EEMU.PA,ETF,Finance,,false
+BNPP EMU SRI PAB,MUSRI,Paris,MUSRI.PA,ETF,Finance,,false
+BNPP EQDEU ESG,EDEU,Paris,EDEU.PA,ETF,Finance,,false
+BNPP ESG BLUE ETF,BLUE,Paris,BLUE.PA,ETF,Finance,,false
+BNPP ESGEMU IG 3YC,GEU3C,Paris,GEU3C.PA,ETF,Finance,,false
+BNPP ESGEMU IG 3YD,GEU3D,Paris,GEU3D.PA,ETF,Finance,,false
+BNPP ESGEMU3-5 ETF,GEMU,Paris,GEMU.PA,ETF,Finance,,false
+BNPP ESGGrowth ETF,EGRO,Paris,EGRO.PA,ETF,Finance,,false
+BNPP EU ESG ETF,EEUE,Paris,EEUE.PA,ETF,Finance,,false
+BNPP EU GREEN ETF,GREAL,Paris,GREAL.PA,ETF,Finance,,false
+BNPP EUR BOND SRI,SRIC,Paris,SRIC.PA,ETF,Finance,,false
+BNPP EUROSTOXX50 C,ETDD,Paris,ETDD.PA,ETF,Autre,,false
+BNPP EURSTOX50 C/D,ETBB,Paris,ETBB.PA,ETF,Autre,,false
+BNPP FTSE EUR ETFC,EEA,Paris,EEA.PA,ETF,Finance,,false
+BNPP FTSE EUR ETFD,EEE,Paris,EEE.PA,ETF,Finance,,false
+BNPP Greenbond ETF,GSSBD,Paris,GSSBD.PA,ETF,Finance,,false
+BNPP GSCI ETF,GSCU,Paris,GSCU.PA,ETF,Finance,,false
+BNPP GSCI ETF EUR,GSCE,Amsterdam,GSCE.AS,ETF,Finance,,false
+BNPP Hydro ESG ETF,HYDUS,Paris,HYDUS.PA,ETF,Finance,,false
+BNPP Hydrogen ETF,HYDRO,Paris,HYDRO.PA,ETF,Finance,,false
+BNPP Infra ESG ETF,ENG,Paris,ENG.PA,ETF,Autre,,false
+BNPP Infra ESG ETF,ENGUS,Paris,ENGUS.PA,ETF,Autre,,false
+BNPP JP ESG ETF,EJAP,Paris,EJAP.PA,ETF,Finance,,false
+BNPP LC EU100D PAB,ECND,Paris,ECND.PA,ETF,Finance,,false
+BNPP LCWPAB ETF,LCWLD,Paris,LCWLD.PA,ETF,Finance,,false
+BNPP LowVol EU ESG,EVOE,Paris,EVOE.PA,ETF,Finance,,false
+BNPP LWVOLEU ESG,VLED,Paris,VLED.PA,ETF,Finance,,false
+BNPP N Am ESG ETF,ENAM,Paris,ENAM.PA,ETF,Finance,,false
+BNPP Pac xJP ESG,EPEJ,Paris,EPEJ.PA,ETF,Finance,,false
+BNPP Quali EU ESG,EQUA,Paris,EQUA.PA,ETF,Finance,,false
+BNPP QUALITYD ESG,QUED,Paris,QUED.PA,ETF,Finance,,false
+BNPP SC SRI PAB,EESM,Paris,EESM.PA,ETF,Finance,,false
+BNPP SP500 ESG EUH,SPEUH,Paris,SPEUH.PA,ETF,Finance,,false
+BNPP SP500 ESG EUR,SPEEU,Paris,SPEEU.PA,ETF,Autre,,false
+BNPP SP500 ESG USD,SPEUS,Paris,SPEUS.PA,ETF,Autre,,false
+BNPP SP500 EUR C,ESE,Paris,ESE.PA,ETF,Autre,,false
+BNPP SP500 EURH C,ESEH,Paris,ESEH.PA,ETF,Autre,,false
+BNPP SP500 USD C,ESD,Paris,ESD.PA,ETF,Autre,,false
+BNPP SP500 USD CD,ESDD,Paris,ESDD.PA,ETF,Autre,,false
+BNPP Stoxx 600C,ETZ,Paris,ETZ.PA,ETF,Autre,,false
+BNPP Stoxx 600CD,ETZD,Paris,ETZD.PA,ETF,Autre,,false
+BNPP Value EU ESG,EVAE,Paris,EVAE.PA,ETF,Finance,,false
+BNPP VALUED ESG,VALD,Paris,VALD.PA,ETF,Finance,,false
+BNPP WLD PAB ETF D,EMWD,Paris,EMWD.PA,ETF,Finance,,false
+BNPP World ESG ETF,WEMT2,Paris,WEMT2.PA,ETF,Autre,,false
+BNPP World ESG ETF,WEMTE,Paris,WEMTE.PA,ETF,Autre,,false
+BNPPGreenbondD ETF,GSSBO,Paris,GSSBO.PA,ETF,Finance,,false
+BNPPJPM ESG EM ETF,EMBI,Paris,EMBI.PA,ETF,Finance,,false
+BNPPJPM ESGEMH ETF,EMBH,Paris,EMBH.PA,ETF,Finance,,false
+BOA CONCEPT,ALBOA,Paris,ALBOA.PA,Action,Ind,,false
+BOHUS,BOHUS,Oslo,BOHUS.OL,Action,Conso,,false
+BOIRON,BOI,Paris,BOI.PA,Action,Santé,,false
+BOLLORE,BOL,Paris,BOL.PA,Action,Conso,,false
+BONDUELLE,BON,Paris,BON.PA,Action,Conso,,false
+BONHEUR,BONHR,Oslo,BONHR.OL,Action,Ind,,false
+BONYF,MLBON,Paris,MLBON.PA,Action,Santé,,false
+BOOSTHEAT,ALBOO,Paris,ALBOO.PA,Action,Ener,,false
+BORGESTAD,BOR,Oslo,BOR.OL,Action,Ind,,false
+BORGOSESIA,BO,Milan,BO.MI,Action,Ind,,false
+BORR DRILLING,BORR,Oslo,BORR.OL,Action,Ener,,false
+BORREGAARD,BRG,Oslo,BRG.OL,Action,Ind,,false
+BOURRELIER GROUP,ALBOU,Paris,ALBOU.PA,Action,Conso,,false
+BOURSE DIRECT,BSD,Paris,BSD.PA,Action,Finance,,false
+BOUVET,BOUV,Oslo,BOUV.OL,Action,Tech,,false
+BOUYGUES,EN,Paris,EN.PA,Action,Ind,,false
+BPER BANCA,BPE,Milan,BPE.MI,Action,Finance,,false
+BPOST,BPOST,Brussels,BPOST.BR,Action,Ind,,false
+BQUE NAT. BELGIQUE,BNB,Brussels,BNB.BR,Action,Finance,,false
+BREDERODE,BREB,Brussels,BREB.BR,Action,Finance,,false
+BREMBO,BRE,Milan,BRE.MI,Action,Conso,,false
+BRIOSCHI,BRI,Milan,BRI.MI,Action,Finance,,false
+BROADPEAK,ALBPK,Paris,ALBPK.PA,Action,Tech,,false
+BRUNEL INTERNAT,BRNL,Amsterdam,BRNL.AS,Action,Ind,,false
+BRUNELLO CUCINELLI,BC,Milan,BC.MI,Action,Conso,,false
+BRUTON,BRUT,Oslo,BRUT.OL,Action,Finance,,false
+BUREAU VERITAS,BVI,Paris,BVI.PA,Action,Ind,,false
+BURELLE,BUR,Paris,BUR.PA,Action,Conso,,false
+BUZZI,BZU,Milan,BZU.MI,Action,Ind,,false
+BW ENERGY LIMITED,BWE,Oslo,BWE.OL,Action,Ener,,false
+BW LPG,BWLPG,Oslo,BWLPG.OL,Action,Ener,,false
+BW OFFSHORE LTD,BWO,Oslo,BWO.OL,Action,Ener,,false
+BYGGMA,BMA,Oslo,BMA.OL,Action,Ind,,false
+C. LATTE D'ITALIA,CLI,Milan,CLI.MI,Action,Conso,,false
+CA TOULOUSE 31 CCI,CAT31,Paris,CAT31.PA,Action,Finance,,false
+CABKA,CABKA,Amsterdam,CABKA.AS,Action,Ind,,false
+CADELER,CADLR,Oslo,CADLR.OL,Action,Ind,,false
+CAFOM,ALCAF,Paris,ALCAF.PA,Action,Conso,,false
+CAIRN HOMES PLC,C5H,Dublin,C5H.IR,Action,Conso,,false
+CAIRO COMMUNICAT,CAI,Milan,CAI.MI,Action,Conso,,false
+CALEFFI,CLF,Milan,CLF.MI,Action,Conso,,false
+CALIBRE,ALIBR,Paris,ALIBR.PA,Action,Conso,,false
+CALTAGIRONE,CALT,Milan,CALT.MI,Action,Ind,,false
+CALTAGIRONE EDIT,CED,Milan,CED.MI,Action,Conso,,false
+CAMBI,CAMBI,Oslo,CAMBI.OL,Action,Ind,,false
+CAMBODGE NOM.,CBDG,Paris,CBDG.PA,Action,Finance,,false
+CAMPARI,CPR,Milan,CPR.MI,Action,Conso,,false
+CAMPINE,CAMB,Brussels,CAMB.BR,Action,Ind,,false
+CANDELA INVEST,CAND,Brussels,CAND.BR,Action,Finance,,false
+CAPGEMINI,CAP,Paris,CAP.PA,Action,Tech,,false
+CAPITAL B,ALCPB,Paris,ALCPB.PA,Action,Tech,,false
+CAPITAL TANKERS,CAPT,Oslo,CAPT.OL,Action,Ind,,false
+CAPSOL TECHNOLOGI,CAPSL,Oslo,CAPSL.OL,Action,Ind,,false
+CARBIOS,ALCRB,Paris,ALCRB.PA,Action,Ind,,false
+CARE PROPERTY INV.,CPINV,Brussels,CPINV.BR,Action,Finance,,false
+CARMILA,CARM,Paris,CARM.PA,Action,Finance,,false
+CARREFOUR,CA,Paris,CA.PA,Action,Conso,,false
+CARVOLIX,CVX,Paris,CVX.PA,Action,Santé,,false
+CASINO GUICHARD,CO,Paris,CO.PA,Action,Conso,,false
+CASTA DIVA GROUP,CDG,Milan,CDG.MI,Action,Conso,,false
+CATANA GROUP,ALCAT,Paris,ALCAT.PA,Action,Conso,,false
+CATERING INTL SCES,ALCIS,Paris,ALCIS.PA,Action,Ind,,false
+CAVENDISH HYDROGEN,CAVEN,Oslo,CAVEN.OL,Action,Ener,,false
+CBI,ALCBI,Paris,ALCBI.PA,Action,Conso,,false
+CBI BSA A,CBBSA,Paris,CBBSA.PA,Action,Conso,,false
+CBI BSA B,CBSAB,Paris,CBSAB.PA,Action,Conso,,false
+CBO TERRITORIA,CBOT,Paris,CBOT.PA,Action,Finance,,false
+CEGEDIM,ALCGM,Paris,ALCGM.PA,Action,Tech,,false
+CELLECTIS,ALCLS,Paris,ALCLS.PA,Action,Santé,,false
+CELLULARLINE,CELL,Milan,CELL.MI,Action,Conso,,false
+CELYAD ONCOLOGY,CYAD,Brussels,CYAD.BR,Action,Santé,,false
+CEMBRE,CMB,Milan,CMB.MI,Action,Ind,,false
+CEMENTIR HOLDING,CEM,Milan,CEM.MI,Action,Ind,,false
+CENERGY,CENER,Brussels,CENER.BR,Action,Ind,,false
+CFE,CFEB,Brussels,CFEB.BR,Action,Ind,,false
+CFI,CFI,Paris,CFI.PA,Action,Finance,,false
+CFM INDOSUEZWEALTH,MLCFM,Paris,MLCFM.PA,Action,Finance,,false
+CH.FER DEPARTEMENT,MLCFD,Paris,MLCFD.PA,Action,Ind,,false
+CHARWOOD ENERGY,ALCWE,Paris,ALCWE.PA,Action,Ener,,false
+CHAUSSERIA,CHSR,Paris,CHSR.PA,Action,Conso,,false
+CHEOPS TECHNOLOGY,MLCHE,Paris,MLCHE.PA,Action,Tech,,false
+China Lg Cap USD A,FXAC,Amsterdam,FXAC.AS,ETF,Finance,,false
+CHOICE,MLTV,Brussels,MLTV.BR,Action,Tech,,false
+CHRISTIAN DIOR,CDI,Paris,CDI.PA,Action,Conso,,false
+CIAGEST - SIGI S.A,MLCIA,Lisbonne,MLCIA.LS,Action,Finance,,false
+CIBOX INTER A CTIV,ALCBX,Paris,ALCBX.PA,Action,Tech,,false
+CIE BOIS SAUVAGE,COMB,Brussels,COMB.BR,Action,Finance,,false
+CIE DU MONT BLANC,MLCMB,Paris,MLCMB.PA,Action,Conso,,false
+CIECHARGEURSINVEST,CRI,Paris,CRI.PA,Action,Ind,,false
+CIR,CIR,Milan,CIR.MI,Action,Conso,,false
+CIRCIO HOLDING,CRNA,Oslo,CRNA.OL,Action,Santé,,false
+CIRCLE,CIRC,Milan,CIRC.MI,Action,Tech,,false
+CLARANOVA,ALCLA,Paris,ALCLA.PA,Action,Tech,,false
+CLARIANE,CLARI,Paris,CLARI.PA,Action,Santé,,false
+CLASS EDITORI,CLE,Milan,CLE.MI,Action,Conso,,false
+CLEANBNB,CBB,Milan,CBB.MI,Action,Finance,,false
+CLOUDBERRY CLEAN,CLOUD,Oslo,CLOUD.OL,Action,Ener,,false
+CM.COM,CMCOM,Amsterdam,CMCOM.AS,Action,Tech,,false
+CMAETFGEASIMXPAR,CMEM,Paris,CMEM.PA,ETF,Autre,,false
+CMAETFSP500XPAR,CMSP,Paris,CMSP.PA,ETF,Autre,,false
+CMAETFSX5TXPAR,CM5E,Paris,CM5E.PA,ETF,Autre,,false
+CMB.TECH,CMBT,Brussels,CMBT.BR,Action,Ind,,false
+CMB.TECH,CMBTO,Oslo,CMBTO.OL,Action,Ind,,false
+CMG CLEANTECH,MLCMG,Paris,MLCMG.PA,Action,Ind,,false
+CO.BR.HA,COBH,Brussels,COBH.BR,Action,Conso,,false
+Coca-ColaEuropacif,CCEP,Amsterdam,CCEP.AS,Action,Conso,,false
+CODELAB CAPITAL,CODE,Oslo,CODE.OL,Action,Santé,,false
+COFACE,COFA,Paris,COFA.PA,Action,Finance,,false
+COFIDUR,ALCOF,Paris,ALCOF.PA,Action,Ind,,false
+COFLE,CFL,Milan,CFL.MI,Action,Ind,,false
+COGEFEED,CGF,Milan,CGF.MI,Action,Ener,,false
+COGRA,ALCOG,Paris,ALCOG.PA,Action,Ind,,false
+COHERIS,COH,Paris,COH.PA,Action,Tech,,false
+COIETNCCRIADXPAR,CSDA,Paris,CSDA.PA,ETF,Autre,,false
+COIETNCCRISOXPAR,SLNC,Paris,SLNC.PA,ETF,Autre,,false
+COIETNCCRIUNXPAR,UNIS,Paris,UNIS.PA,ETF,Autre,,false
+COIETNCCRIXRXPAR,XRPL,Paris,XRPL.PA,ETF,Autre,,false
+COIETNCOINTEXPAR,CTEN,Paris,CTEN.PA,ETF,Autre,,false
+COIL,ALCOI,Paris,ALCOI.PA,Action,Ind,,false
+COLIPAYS,MLCLP,Paris,MLCLP.PA,Action,Ind,,false
+COLRUYT,COLR,Brussels,COLR.BR,Action,Conso,,false
+COLT,COLT,Amsterdam,COLT.AS,Action,Ind,,false
+COM.TEL,CMTL,Milan,CMTL.MI,Action,Tech,,false
+COMER INDUSTRIES,COM,Milan,COM.MI,Action,Ind,,false
+COMPAGNIE ODET,ODET,Paris,ODET.PA,Action,Ener,,false
+CONFINVEST ORO,CFV,Milan,CFV.MI,Action,Finance,,false
+CONSTELLATION OIL,COSH,Oslo,COSH.OL,Action,Ener,,false
+CONSTRUCTEURS BOIS,MLLCB,Paris,MLLCB.PA,Action,Ind,,false
+CONTEXTVISION,CONTX,Oslo,CONTX.OL,Action,Tech,,false
+CONVERGENZE,CVG,Milan,CVG.MI,Action,Ener,,false
+COPERNICO,COP,Milan,COP.MI,Action,Finance,,false
+CORBION,CRBN,Amsterdam,CRBN.AS,Action,Ind,,false
+Core DAX Acc,EXS1,Amsterdam,EXS1.AS,ETF,Finance,,false
+Core EU CoBd US Hd,IUAC,Amsterdam,IUAC.AS,ETF,Finance,,false
+CORTICEIRA AMORIM,COR,Lisbonne,COR.LS,Action,Ind,,false
+COTY,COTY,Paris,COTY.PA,Action,Conso,,false
+COURTOIS,COUR,Paris,COUR.PA,Action,Finance,,false
+COVIVIO,COV,Paris,COV.PA,Action,Finance,,false
+COVIVIO HOTELS,COVH,Paris,COVH.PA,Action,Finance,,false
+CRCAM ALP.PROV.CCI,CRAP,Paris,CRAP.PA,Action,Finance,,false
+CRCAM ATL.VEND.CCI,CRAV,Paris,CRAV.PA,Action,Finance,,false
+CRCAM BRIE PIC2CCI,CRBP2,Paris,CRBP2.PA,Action,Finance,,false
+CRCAM ILLE-VIL.CCI,CIV,Paris,CIV.PA,Action,Finance,,false
+CRCAM LANGUED CCI,CRLA,Paris,CRLA.PA,Action,Finance,,false
+CRCAM LOIRE HTE L.,CRLO,Paris,CRLO.PA,Action,Finance,,false
+CRCAM MORBIHAN CCI,CMO,Paris,CMO.PA,Action,Finance,,false
+CRCAM NORD CCI,CNDF,Paris,CNDF.PA,Action,Finance,,false
+CRCAM NORM.SEINE,CCN,Paris,CCN.PA,Action,Finance,,false
+CRCAM PARIS ET IDF,CAF,Paris,CAF.PA,Action,Finance,,false
+CRCAM SUD R.A.CCI,CRSU,Paris,CRSU.PA,Action,Finance,,false
+CRCAM TOURAINE CCI,CRTO,Paris,CRTO.PA,Action,Finance,,false
+CREDEM,CE,Milan,CE.MI,Action,Finance,,false
+CREDIT AGRICOLE,ACA,Paris,ACA.PA,Action,Finance,,false
+CROSSJECT,ALCJ,Paris,ALCJ.PA,Action,Santé,,false
+CROSSJECT BS27,CJBS,Paris,CJBS.PA,Action,Santé,,false
+CROSSWOOD,CROS,Paris,CROS.PA,Action,Finance,,false
+CSG,CSG,Amsterdam,CSG.AS,Action,Ind,,false
+CSP INT IND CALZE,CSP,Milan,CSP.MI,Action,Ind,,false
+CSPhysical Bitcoin,BITC,Paris,BITC.PA,ETF,Autre,,false
+CSPhysical Bitcoin,BITC,Amsterdam,BITC.AS,ETF,Autre,,false
+CSPhysical ETH,CETH,Paris,CETH.PA,ETF,Autre,,false
+CSPhysical ETH,CETH,Amsterdam,CETH.AS,ETF,Autre,,false
+CTAC,CTAC,Amsterdam,CTAC.AS,Action,Tech,,false
+CTP,CTPNV,Amsterdam,CTPNV.AS,Action,Finance,,false
+CTT CORREIOS PORT,CTT,Lisbonne,CTT.LS,Action,Ind,,false
+CUBE LABS,CUBE,Milan,CUBE.MI,Action,Finance,,false
+CUMULEX,CLEX,Brussels,CLEX.BR,Action,Conso,,false
+CVC CAPITAL,CVC,Amsterdam,CVC.AS,Action,Finance,,false
+CY4GATE,CY4,Milan,CY4.MI,Action,Tech,,false
+CYBEROO,CYB,Milan,CYB.MI,Action,Tech,,false
+CYVIZ,CYVIZ,Oslo,CYVIZ.OL,Action,Tech,,false
+D.A.T.E,ALDAT,Paris,ALDAT.PA,Action,Ind,,false
+D.L.S.I.,ALDLS,Paris,ALDLS.PA,Action,Ind,,false
+D'AMICO,DIS,Milan,DIS.MI,Action,Ind,,false
+D'IETEREN GROUP,DIE,Brussels,DIE.BR,Action,Conso,,false
+DAMARIS,MLDAM,Paris,MLDAM.PA,Action,Tech,,false
+DAMARTEX,ALDAR,Paris,ALDAR.PA,Action,Conso,,false
+DANIELI & C,DAN,Milan,DAN.MI,Action,Ind,,false
+DANIELI & C RISP,DANR,Milan,DANR.MI,Action,Ind,,false
+DANONE,BN,Paris,BN.PA,Action,Conso,,false
+DASSAULT SYSTEMES,DSY,Paris,DSY.PA,Action,Tech,,false
+DATRIX,DATA,Milan,DATA.MI,Action,Tech,,false
+DBA GROUP,DBA,Milan,DBA.MI,Action,Tech,,false
+DBT,ALDBT,Paris,ALDBT.PA,Action,Ind,,false
+DBV TECHNOLOGIES,DBV,Paris,DBV.PA,Action,Santé,,false
+DDA Ph Bitcoin ETP,XBTI,Paris,XBTI.PA,ETF,Autre,,false
+DDA Ph Bitcoin ETP,XBTI,Amsterdam,XBTI.AS,ETF,Autre,,false
+DDAETNDDAMACXPAR,BMAC,Paris,BMAC.PA,ETF,Autre,,false
+DDAETNKKSTAOXPAR,STAO,Paris,STAO.PA,ETF,Autre,,false
+DE'LONGHI,DLG,Milan,DLG.MI,Action,Conso,,false
+DECEUNINCK,DECB,Brussels,DECB.BR,Action,Ind,,false
+DEDEM,DDM,Milan,DDM.MI,Action,Conso,,false
+DEEZER,DEEZR,Paris,DEEZR.PA,Action,Tech,,false
+DEKUPLE,DKUPL,Paris,DKUPL.PA,Action,Conso,,false
+DELFINGEN,ALDEL,Paris,ALDEL.PA,Action,Conso,,false
+DELLIA GROUP,DELIA,Oslo,DELIA.OL,Action,Conso,,false
+DELTA PLUS GROUP,ALDLT,Paris,ALDLT.PA,Action,Conso,,false
+DEME GROUP,DEME,Brussels,DEME.BR,Action,Ind,,false
+DEODATO.GALLERY,ART,Milan,ART.MI,Action,Conso,,false
+DERICHEBOURG,DBG,Paris,DBG.PA,Action,Ener,,false
+DESERT CONTROL,DSRT,Oslo,DSRT.OL,Action,Ind,,false
+DESTINATION ITALIA,DIT,Milan,DIT.MI,Action,Conso,,false
+DEVERNOIS,ALDEV,Paris,ALDEV.PA,Action,Conso,,false
+DEXELANCE,DEX,Milan,DEX.MI,Action,Conso,,false
+Dgtlstn Acc,DGTL,Amsterdam,DGTL.AS,ETF,Finance,,false
+DHH,DHH,Milan,DHH.MI,Action,Tech,,false
+DIAGNOSTIC MEDICAL,ALDMS,Paris,ALDMS.PA,Action,Santé,,false
+DIASORIN,DIA,Milan,DIA.MI,Action,Santé,,false
+DIEGEM KENNEDYCERT,DIEG,Brussels,DIEG.BR,Action,Finance,,false
+DIGETNBRRXPAR,BTCA,Paris,BTCA.PA,ETF,Autre,,false
+DIGETNBRRXPMC,BTNA,Paris,BTNA.PA,ETF,Autre,,false
+DIGITAL BROS,DIB,Milan,DIB.MI,Action,Conso,,false
+Digital Sec Acc,LOCK,Amsterdam,LOCK.AS,ETF,Finance,,false
+DIGITOUCH,DGT,Milan,DGT.MI,Action,Conso,,false
+DIPIETRO GROUP,DPG,Milan,DPG.MI,Action,Ind,,false
+DIRECTA SIM,D,Milan,D.MI,Action,Finance,,false
+DIS ELET ADRIATICA,DEA,Milan,DEA.MI,Action,Ener,,false
+DISTRI-LAND CERT,DISL,Brussels,DISL.BR,Action,Finance,,false
+DIVERS COMMODITY,EXXY,Amsterdam,EXXY.AS,ETF,Finance,,false
+DNB BANK,DNB,Oslo,DNB.OL,Action,Finance,,false
+DNO,DNO,Oslo,DNO.OL,Action,Ener,,false
+DNXCORP,ALDNX,Paris,ALDNX.PA,Action,Tech,,false
+DOCK.PETR.AMBES AM,DPAM,Paris,DPAM.PA,Action,Ind,,false
+DOF GROUP,DOFG,Oslo,DOFG.OL,Action,Ind,,false
+DOLFINES,ALDOL,Paris,ALDOL.PA,Action,Ener,,false
+DOLPHIN DRILLING,DDRIL,Oslo,DDRIL.OL,Action,Ener,,false
+DONEGAL INVESTMENT,DQ7A,Dublin,DQ7A.IR,Action,Conso,,false
+DONTNOD,ALDNE,Paris,ALDNE.PA,Action,Conso,,false
+DOVALUE,DOV,Milan,DOV.MI,Action,Finance,,false
+DOXEE,DOX,Milan,DOX.MI,Action,Tech,,false
+DRONE VOLT,ALDRV,Paris,ALDRV.PA,Action,Ind,,false
+DRONE VOLT BS28,BNBS,Paris,BNBS.PA,Action,Ind,,false
+DSM FIRMENICH AG,DSFIR,Amsterdam,DSFIR.AS,Action,Conso,,false
+E PANGO,ALAGO,Paris,ALAGO.PA,Action,Ener,,false
+E-GLOBE,EGB,Milan,EGB.MI,Action,Ind,,false
+E.T.S.,ETS,Milan,ETS.MI,Action,Ind,,false
+EAGLEFOOTBALLGROUP,EFG,Paris,EFG.PA,Action,Conso,,false
+EAM SOLAR,EAM,Oslo,EAM.OL,Action,Finance,,false
+EASE2PAY NV,EAS2P,Amsterdam,EAS2P.AS,Action,Tech,,false
+EAUX DE ROYAN,MLEDR,Paris,MLEDR.PA,Action,Ener,,false
+EBUSCO HOLDING,EBUS,Amsterdam,EBUS.AS,Action,Ind,,false
+ECOMEMBRANE,ECMB,Milan,ECMB.MI,Action,Ener,,false
+ECOMIAM,ALECO,Paris,ALECO.PA,Action,Conso,,false
+ECONOCOM GROUP,ECONB,Brussels,ECONB.BR,Action,Tech,,false
+ECOSLOPS,ALESA,Paris,ALESA.PA,Action,Ener,,false
+ECOSUNTEK,ECK,Milan,ECK.MI,Action,Ener,,false
+EDENRED,EDEN,Paris,EDEN.PA,Action,Ind,,false
+EDGELAB,ELB,Milan,ELB.MI,Action,Ind,,false
+EDIL SAN FELICE,ESF,Milan,ESF.MI,Action,Ind,,false
+EDILIZIACROBATICA,EDAC,Milan,EDAC.MI,Action,Ind,,false
+EDILIZIACROBATICA,ALEAC,Paris,ALEAC.PA,Action,Ind,,false
+EDISON R,EDNR,Milan,EDNR.MI,Action,Ener,,false
+EDP,EDP,Lisbonne,EDP.LS,Action,Ener,,false
+EDP RENEWABLES,EDPR,Lisbonne,EDPR.LS,Action,Ener,,false
+EDR COPG COGLD,COGLD,Amsterdam,COGLD.AS,ETF,Autre,,false
+EDRETFCOGLDXOSL,COGLD,Oslo,COGLD.OL,ETF,Autre,,false
+EDUFORM ACTION,ALEFA,Paris,ALEFA.PA,Action,Ind,,false
+EGIDE,ALGID,Paris,ALGID.PA,Action,Ind,,false
+EHI,EHI,Milan,EHI.MI,Action,Finance,,false
+EIDESVIK OFFSHORE,EIOF,Oslo,EIOF.OL,Action,Ind,,false
+EIFFAGE,FGR,Paris,FGR.PA,Action,Ind,,false
+EKINOPS,EKI,Paris,EKI.PA,Action,Tech,,false
+EKOPAK,EKOP,Brussels,EKOP.BR,Action,Ener,,false
+El Vcls Drng Tch A,ECAR,Amsterdam,ECAR.AS,ETF,Finance,,false
+EL.EN.,ELN,Milan,ELN.MI,Action,Santé,,false
+ELEC.STRASBOURG,ELEC,Paris,ELEC.PA,Action,Ener,,false
+ELECT. MADAGASCAR,EEM,Paris,EEM.PA,Action,Finance,,false
+ELIA GROUP,ELI,Brussels,ELI.BR,Action,Ener,,false
+ELICA,ELC,Milan,ELC.MI,Action,Conso,,false
+ELIOR GROUP,ELIOR,Paris,ELIOR.PA,Action,Conso,,false
+ELIS,ELIS,Paris,ELIS.PA,Action,Ind,,false
+ELKEM,ELK,Oslo,ELK.OL,Action,Ind,,false
+ELLIPTIC LABORATOR,ELABS,Oslo,ELABS.OL,Action,Tech,,false
+ELMERA GROUP,ELMRA,Oslo,ELMRA.OL,Action,Ener,,false
+ELOPAK,ELO,Oslo,ELO.OL,Action,Ind,,false
+ELSA SOLUTIONS,ELSA,Milan,ELSA.MI,Action,Ind,,false
+EMAK,EM,Milan,EM.MI,Action,Conso,,false
+EMBENTION,ALUAV,Paris,ALUAV.PA,Action,Ind,,false
+EMEIS,EMEIS,Paris,EMEIS.PA,Action,Santé,,false
+EMMA VILLAS,EAV,Milan,EAV.MI,Action,Finance,,false
+EMOVA GROUP,ALEMV,Paris,ALEMV.PA,Action,Conso,,false
+EMQQ-INTRNTECOMM,EMQQ,Paris,EMQQ.PA,ETF,Autre,,false
+ENA,ENA,Milan,ENA.MI,Action,Finance,,false
+ENAV,ENAV,Milan,ENAV.MI,Action,Ind,,false
+ENCRES DUBUIT,ALDUB,Paris,ALDUB.PA,Action,Ind,,false
+ENDÚR,ENDUR,Oslo,ENDUR.OL,Action,Ind,,false
+ENEL,ENEL,Milan,ENEL.MI,Action,Ener,,false
+ENENSYS,ALNN6,Paris,ALNN6.PA,Action,Tech,,false
+ENERGEIA,ENERG,Oslo,ENERG.OL,Action,Ener,,false
+ENERGISME,ALNRG,Paris,ALNRG.PA,Action,Tech,,false
+ENERGY,ENY,Milan,ENY.MI,Action,Ind,,false
+ENERGY SOLAR,ALETC,Paris,ALETC.PA,Action,Ener,,false
+ENERGY TIME,ET,Milan,ET.MI,Action,Ener,,false
+ENERGYVISION,ENRGY,Brussels,ENRGY.BR,Action,Ener,,false
+ENERVIT,ENV,Milan,ENV.MI,Action,Conso,,false
+ENGIE,ENGI,Paris,ENGI.PA,Action,Ener,,false
+ENI,ENI,Milan,ENI.MI,Action,Ener,,false
+ENOGIA,ALENO,Paris,ALENO.PA,Action,Ind,,false
+ENSURGE MICROPOWER,ENSU,Oslo,ENSU.OL,Action,Ind,,false
+ENTECH,ALESE,Paris,ALESE.PA,Action,Ener,,false
+ENTERA,ENT,Milan,ENT.MI,Action,Finance,,false
+ENTRA,ENTRA,Oslo,ENTRA.OL,Action,Finance,,false
+ENVIPCO HOLDING,ENVI,Amsterdam,ENVI.AS,Action,Ind,,false
+ENVIPCO HOLDING,ENVIP,Oslo,ENVIP.OL,Action,Ind,,false
+EO2,ALEO2,Paris,ALEO2.PA,Action,Ener,,false
+EPH INVEST,EPH,Milan,EPH.MI,Action,Conso,,false
+EPRCOMUNICAZIONE,EPRB,Milan,EPRB.MI,Action,Ind,,false
+EQUASENS,EQS,Paris,EQS.PA,Action,Santé,,false
+EQUINOR,EQNR,Oslo,EQNR.OL,Action,Ener,,false
+EQUITA GROUP,EQUI,Milan,EQUI.MI,Action,Finance,,false
+EQVA,EQVA,Oslo,EQVA.OL,Action,Ind,,false
+ER Capital,ERC,Amsterdam,ERC.AS,Action,Tech,,false
+ERG,ERG,Milan,ERG.MI,Action,Ener,,false
+ERREDUE,RDUE,Milan,RDUE.MI,Action,Ind,,false
+ESAUTOMOTION,ESAU,Milan,ESAU.MI,Action,Ind,,false
+ESG M-Ast Cons US,MACU,Amsterdam,MACU.AS,ETF,Finance,,false
+ESG M-Ast Gwth US,MAGU,Amsterdam,MAGU.AS,ETF,Finance,,false
+ESG M-Ast Mod US,MODU,Amsterdam,MODU.AS,ETF,Finance,,false
+ESI,ESIGM,Milan,ESIGM.MI,Action,Ener,,false
+ESPE,ESPE,Milan,ESPE.MI,Action,Ener,,false
+ESPRINET,PRT,Milan,PRT.MI,Action,Tech,,false
+ESSILORLUXOTTICA,EL,Paris,EL.PA,Action,Santé,,false
+ESTORIL SOL N,ESON,Lisbonne,ESON.LS,Action,Conso,,false
+ESTRIMA,ESTM,Milan,ESTM.MI,Action,Conso,,false
+ESTX Bk 30-15 EU A,EXA1,Amsterdam,EXA1.AS,ETF,Finance,,false
+ESTX Div 30 EU A,IDVA,Amsterdam,IDVA.AS,ETF,Finance,,false
+ETC MSCI DA Sel20,DA20,Paris,DA20.PA,ETF,Autre,,false
+ETHERO,ALENT,Paris,ALENT.PA,Action,Tech,,false
+ETHetc EUR,ZETH,Paris,ZETH.PA,ETF,Autre,,false
+ETHetc EUR,ZETH,Amsterdam,ZETH.AS,ETF,Autre,,false
+ETI,ETI,Milan,ETI.MI,Action,Ener,,false
+EU CBd 1-5 US H Ac,IE1U,Amsterdam,IE1U.AS,ETF,Finance,,false
+EU CBd 1-5 US H Di,IE1C,Amsterdam,IE1C.AS,ETF,Finance,,false
+EU HgYd CoBd US H,HISD,Amsterdam,HISD.AS,ETF,Finance,,false
+EUKEDOS,EUK,Milan,EUK.MI,Action,Santé,,false
+EURASIA FONC INV,EFI,Paris,EFI.PA,Action,Finance,,false
+EURAZEO,RF,Paris,RF.PA,Action,Finance,,false
+EUROAPI,EAPI,Paris,EAPI.PA,Action,Santé,,false
+EUROBIO-SCIENTIFIC,ALERS,Paris,ALERS.PA,Action,Santé,,false
+EUROCASTLE INVEST.,ECT,Amsterdam,ECT.AS,Action,Finance,,false
+EUROCOMMERCIAL,ECMPA,Amsterdam,ECMPA.AS,Action,Finance,,false
+EUROCOMMERCIAL,ECMPM,Milan,ECMPM.MI,Action,Finance,,false
+EUROFINS CEREP,ALECR,Paris,ALECR.PA,Action,Santé,,false
+EUROFINS SCIENT.,ERF,Paris,ERF.PA,Action,Santé,,false
+EUROGROUP LAM,EGLA,Milan,EGLA.MI,Action,Ind,,false
+EUROLAND CORPORATE,ALERO,Paris,ALERO.PA,Action,Finance,,false
+EURONEXT,ENX,Paris,ENX.PA,Action,Finance,,false
+EUROPACORP,ALECP,Paris,ALECP.PA,Action,Conso,,false
+European Medical S,ALEMS,Brussels,ALEMS.BR,Action,Santé,,false
+EUROPLASMA,ALEUP,Paris,ALEUP.PA,Action,Ener,,false
+EUROPRIS,EPR,Oslo,EPR.OL,Action,Conso,,false
+EUROTECH,ETH,Milan,ETH.MI,Action,Tech,,false
+EUTELSAT COMMUNIC.,ETL,Paris,ETL.PA,Action,Tech,,false
+EVERGREEN,EGR,Paris,EGR.PA,Action,Tech,,false
+EVISO,EVISO,Milan,EVISO.MI,Action,Ener,,false
+EVS,EVS,Brussels,EVS.BR,Action,Tech,,false
+EXAActEXSEXPAR,EXSE,Paris,EXSE.PA,ETF,Autre,,false
+EXAActEXSXPAR,EXS,Paris,EXS.PA,ETF,Autre,,false
+EXACOMPTA CLAIREF.,ALEXA,Paris,ALEXA.PA,Action,Ind,,false
+EXACT THERAPEUTICS,EXTX,Oslo,EXTX.OL,Action,Santé,,false
+EXAIL TECHNOLOGIES,EXA,Paris,EXA.PA,Action,Ind,,false
+EXECUS,EXEC,Milan,EXEC.MI,Action,Ind,,false
+EXEL INDUSTRIES,EXE,Paris,EXE.PA,Action,Ind,,false
+EXMAR,EXM,Brussels,EXM.BR,Action,Ind,,false
+EXOR NV,EXO,Amsterdam,EXO.AS,Action,Finance,,false
+EXOSENS,EXENS,Paris,EXENS.PA,Action,Ind,,false
+EXPERT.AI,EXAI,Milan,EXAI.MI,Action,Tech,,false
+EXPLOSIFS PROD.CHI,EXPL,Paris,EXPL.PA,Action,Ind,,false
+FACEPHI,ALPHI,Paris,ALPHI.PA,Action,Tech,,false
+FAE TECHNOLOGY,FAE,Milan,FAE.MI,Action,Tech,,false
+FAGRON,FAGR,Brussels,FAGR.BR,Action,Santé,,false
+FARMACOSMO,COSMO,Milan,COSMO.MI,Action,Conso,,false
+FARMINVESTE,MLFMV,Lisbonne,MLFMV.LS,Action,Santé,,false
+FASTNED,FAST,Amsterdam,FAST.AS,Action,Ener,,false
+FBD HOLDINGS PLC,EG7,Dublin,EG7.IR,Action,Finance,,false
+FDJ UNITED,FDJU,Paris,FDJU.PA,Action,Conso,,false
+FERM.CAS.MUN.CANNE,FCMC,Paris,FCMC.PA,Action,Conso,,false
+FERMENTALG,ALGAE,Paris,ALGAE.PA,Action,Ind,,false
+FERRARI,RACE,Milan,RACE.MI,Action,Conso,,false
+FERRARI GROUP,FERGR,Amsterdam,FERGR.AS,Action,Ind,,false
+FERRETTI,YACHT,Milan,YACHT.MI,Action,Conso,,false
+FIDIA,FDA,Milan,FDA.MI,Action,Ind,,false
+FIDUCIAL OFF.SOL.,SACI,Paris,SACI.PA,Action,Conso,,false
+FIDUCIAL REAL EST.,ORIA,Paris,ORIA.PA,Action,Finance,,false
+FIERA MILANO,FM,Milan,FM.MI,Action,Ind,,false
+FIGEAC AERO,FGA,Paris,FGA.PA,Action,Ind,,false
+FILA,FILA,Milan,FILA.MI,Action,Conso,,false
+FILL UP MEDIA,ALFUM,Paris,ALFUM.PA,Action,Conso,,false
+FINANCIERE MARJOS,FINM,Paris,FINM.PA,Action,Conso,,false
+FINANZA.TECH,FTC,Milan,FTC.MI,Action,Finance,,false
+FINAXO,MLFXO,Paris,MLFXO.PA,Action,Ener,,false
+FINCANTIERI,FCT,Milan,FCT.MI,Action,Ind,,false
+FINE FOODS & PHARM,FF,Milan,FF.MI,Action,Santé,,false
+FINECOBANK,FBK,Milan,FBK.MI,Action,Finance,,false
+FIPP,FIPP,Paris,FIPP.PA,Action,Finance,,false
+FIRETFGHHONXAMS,H2O,Amsterdam,H2O.AS,ETF,Finance,,false
+FIRETFNQDVRIXAMS,RDVY,Amsterdam,RDVY.AS,ETF,Finance,,false
+FIRETFNQGIHEXAMS,GINC,Amsterdam,GINC.AS,ETF,Finance,,false
+FIRETFRBAAIRXAMS,AIRR,Amsterdam,AIRR.AS,ETF,Finance,,false
+FIRST CAPITAL,FIC,Milan,FIC.MI,Action,Finance,,false
+FIRST EUROALPHADEX,FEUZ,Amsterdam,FEUZ.AS,ETF,Finance,,false
+FIRST POINT,FPT,Milan,FPT.MI,Action,Tech,,false
+FIRST TRUST GLOBAL,FGBL,Paris,FGBL.PA,ETF,Finance,,false
+FIRST TRUST IPO,FPXU,Paris,FPXU.PA,ETF,Finance,,false
+FJORD DEFENCE GR,DFENS,Oslo,DFENS.OL,Action,Ind,,false
+FLEKKEFJORD SPAREB,FFSB,Oslo,FFSB.OL,Action,Finance,,false
+FLEURY MICHON,ALFLE,Paris,ALFLE.PA,Action,Conso,,false
+Flex Priv Equity,FLPE,Amsterdam,FLPE.AS,ETF,Autre,,false
+FLEXDEAL,FLEXD,Lisbonne,FLEXD.LS,Action,Finance,,false
+FLORENTAISE,ALFLO,Paris,ALFLO.PA,Action,Ind,,false
+FLORIDIENNE,FLOB,Brussels,FLOB.BR,Action,Ind,,false
+FLOW TRADERS,FLOW,Amsterdam,FLOW.AS,Action,Finance,,false
+FLOWSPARKS,FLSP,Brussels,FLSP.BR,Action,Ind,,false
+FLUXYS BELGIUM D,FLUX,Brussels,FLUX.BR,Action,Ener,,false
+FNAC DARTY,FNAC,Paris,FNAC.PA,Action,Conso,,false
+FNM,FNM,Milan,FNM.MI,Action,Ind,,false
+FONCIERE 7 INVEST,LEBL,Paris,LEBL.PA,Action,Ind,,false
+FONCIERE INEA,INEA,Paris,INEA.PA,Action,Finance,,false
+FONCIERE VINDI,MLVIN,Paris,MLVIN.PA,Action,Finance,,false
+FONCIERE VOLTA,SPEL,Paris,SPEL.PA,Action,Finance,,false
+FOPE,FPE,Milan,FPE.MI,Action,Conso,,false
+FORESTIERE EQUAT.,FORE,Paris,FORE.PA,Action,Finance,,false
+FORFARMERS,FFARM,Amsterdam,FFARM.AS,Action,Conso,,false
+FORSEE POWER,ALFOR,Paris,ALFOR.PA,Action,Ind,,false
+FORVIA,FRVIA,Paris,FRVIA.PA,Action,Conso,,false
+FOUNTAIN,FOU,Brussels,FOU.BR,Action,Conso,,false
+FOUNTAINE PAJOT,ALFPC,Paris,ALFPC.PA,Action,Conso,,false
+Fr STXX EU 600 Par,PARI,Amsterdam,PARI.AS,ETF,Autre,,false
+FRAActUSMIDXPAR,USMID,Paris,USMID.PA,ETF,Autre,,false
+FRAETFDWLDIVXPAR,WORLD,Paris,WORLD.PA,ETF,Autre,,false
+FRAETFEMGMIVXPAR,EMERG,Paris,EMERG.PA,ETF,Autre,,false
+FRAETFEXCNIVXPAR,EXCN,Paris,EXCN.PA,ETF,Autre,,false
+FRAETFFLQAIVXPAR,FLQA,Paris,FLQA.PA,ETF,Autre,,false
+FRAETFFLRAIVXPAR,METE,Paris,METE.PA,ETF,Autre,,false
+FRAETFFLXAIVXPAR,FAITH,Paris,FAITH.PA,ETF,Autre,,false
+FRAETFFLXDIMXPAR,DIVA,Paris,DIVA.PA,ETF,Autre,,false
+FRAETFFLXJIVXPAR,JAPAN,Paris,JAPAN.PA,ETF,Autre,,false
+FRAETFFLXSIVXPAR,SAUDI,Paris,SAUDI.PA,ETF,Autre,,false
+FRAETFFLXTIVXPAR,FLXT,Paris,FLXT.PA,ETF,Autre,,false
+FRAETFFLXUIVXPAR,FLXU,Paris,FLXU.PA,ETF,Autre,,false
+FRAETFFOFDIVXPAR,FOFD,Paris,FOFD.PA,ETF,Autre,,false
+FRAETFFVCHIVXPAR,FRCP,Paris,FRCP.PA,ETF,Autre,,false
+FRAETFFVEMIVXPAR,FREP,Paris,FREP.PA,ETF,Autre,,false
+FRAETFLT12TRXPAR,FLUSA,Paris,FLUSA.PA,ETF,Autre,,false
+FRAETFMSUDESXPAR,USDIV,Paris,USDIV.PA,ETF,Autre,,false
+FRAETFSP5XSGXPAR,US500,Paris,US500.PA,ETF,Autre,,false
+FRAETFSPWRSGXPAR,GLOBE,Paris,GLOBE.PA,ETF,Autre,,false
+FRAETFSUSM10XPAR,US100,Paris,US100.PA,ETF,Autre,,false
+FRAETFWIJPYJXAMS,FLXJ,Amsterdam,FLXJ.AS,ETF,Autre,,false
+FRANCAISE ENERGIE,FDE,Paris,FDE.PA,Action,Ener,,false
+FRANCE TOURISME,MLFTI,Paris,MLFTI.PA,Action,Finance,,false
+FRANCHETTI,FCH,Milan,FCH.MI,Action,Ind,,false
+FRANCHI UMB MARMI,FUM,Milan,FUM.MI,Action,Ind,,false
+FREELANCE.COM,ALFRE,Paris,ALFRE.PA,Action,Tech,,false
+FRENDY ENERGY,FRE,Milan,FRE.MI,Action,Ener,,false
+FREY,FREY,Paris,FREY.PA,Action,Finance,,false
+FRIENDS,AMI,Milan,AMI.MI,Action,Finance,,false
+Frk FTSE Brazil,FLXB,Amsterdam,FLXB.AS,ETF,Autre,,false
+Frk FTSE China,FLXC,Amsterdam,FLXC.AS,ETF,Autre,,false
+Frk FTSE India,FLXI,Amsterdam,FLXI.AS,ETF,Autre,,false
+Frk FTSE Korea,FLXK,Amsterdam,FLXK.AS,ETF,Autre,,false
+Frk Lib EUR Grn Bd,FLRG,Amsterdam,FLRG.AS,ETF,Autre,,false
+Frk S&P 500 Paris,USPA,Amsterdam,USPA.AS,ETF,Autre,,false
+FRONTLINE,FRO,Oslo,FRO.OL,Action,Ind,,false
+FSDV,FSDV,Paris,FSDV.PA,Action,Conso,,false
+FT CBR EUR HDG,CBEU,Amsterdam,CBEU.AS,ETF,Finance,,false
+FT CLN EDG GRN NRG,QCLN,Amsterdam,QCLN.AS,ETF,Finance,,false
+FT CLOUD COM,SKYE,Amsterdam,SKYE.AS,ETF,Finance,,false
+FT DJ Internet,FDNE,Amsterdam,FDNE.AS,ETF,Finance,,false
+FT FACTOR FX EUR,FXEU,Amsterdam,FXEU.AS,ETF,Finance,,false
+FT GCS ESG L,FCSG,Amsterdam,FCSG.AS,ETF,Finance,,false
+FT LDGG Bond,FSOV,Amsterdam,FSOV.AS,ETF,Finance,,false
+FUGRO,FUR,Amsterdam,FUR.AS,Action,Ind,,false
+FUT.CLUBE PORTO,FCP,Lisbonne,FCP.LS,Action,Conso,,false
+G.A.I.,MLGAI,Paris,MLGAI.PA,Action,Ind,,false
+G.M. LEATHER,GML,Milan,GML.MI,Action,Conso,,false
+GABETTI,GAB,Milan,GAB.MI,Action,Finance,,false
+GALEO,MLGAL,Paris,MLGAL.PA,Action,Conso,,false
+GALP ENERGIA-NOM,GALP,Lisbonne,GALP.LS,Action,Ener,,false
+GAMBERO ROSSO,GAMB,Milan,GAMB.MI,Action,Conso,,false
+GARETF1EUAITXAMS,GUS3,Amsterdam,GUS3.AS,ETF,Autre,,false
+GAROF HEALTH CARE,GHC,Milan,GHC.MI,Action,Santé,,false
+GAS PLUS,GSP,Milan,GSP.MI,Action,Ener,,false
+GASCOGNE,ALBI,Paris,ALBI.PA,Action,Ind,,false
+GAUMONT,GAM,Paris,GAM.PA,Action,Conso,,false
+GBL,GBLB,Brussels,GBLB.BR,Action,Finance,,false
+Gbl Cln Enrgy US A,INRA,Amsterdam,INRA.AS,ETF,Finance,,false
+Gbl Cln Enrgy US A,INRE,Paris,INRE.PA,ETF,Finance,,false
+Gbl Water USD A,H2OA,Amsterdam,H2OA.AS,ETF,Finance,,false
+GEA GRENOBL.ELECT.,GEA,Paris,GEA.PA,Action,Ind,,false
+GECI INTL,ALGEC,Paris,ALGEC.PA,Action,Tech,,false
+GECINA,GFC,Paris,GFC.PA,Action,Finance,,false
+GEFRAN,GE,Milan,GE.MI,Action,Ind,,false
+GEL,GEL,Milan,GEL.MI,Action,Ind,,false
+GENERAL OCEANS,GENO,Oslo,GENO.OL,Action,Ind,,false
+GENERALFINANCE,GF,Milan,GF.MI,Action,Finance,,false
+GENERALI,G,Milan,G.MI,Action,Finance,,false
+GENFIT,GNFT,Paris,GNFT.PA,Action,Santé,,false
+GENOWAY,ALGEN,Paris,ALGEN.PA,Action,Santé,,false
+GENS AUREA,OROX,Milan,OROX.MI,Action,Conso,,false
+GENSIGHT BIOLOGICS,SIGHT,Paris,SIGHT.PA,Action,Santé,,false
+GENTIAN DIAGNOSTIC,GENT,Oslo,GENT.OL,Action,Santé,,false
+GENTILI MOSCONI,GM,Milan,GM.MI,Action,Ind,,false
+GENTLEMENS EQUITY,MLGEQ,Paris,MLGEQ.PA,Action,Finance,,false
+GEOX,GEO,Milan,GEO.MI,Action,Conso,,false
+GETLINK SE,GET,Paris,GET.PA,Action,Ind,,false
+GEVELOT,ALGEV,Paris,ALGEV.PA,Action,Ind,,false
+GIGANTE SALMON,GIGA,Oslo,GIGA.OL,Action,Conso,,false
+GIGLIO.COM,GCOM,Milan,GCOM.MI,Action,Conso,,false
+GIMV,GIMB,Brussels,GIMB.BR,Action,Finance,,false
+GIOCAMONDO STUDY,GMS,Milan,GMS.MI,Action,Conso,,false
+GISMONDI 1754,GIS,Milan,GIS.MI,Action,Conso,,false
+GIUNTI,GPSY,Milan,GPSY.MI,Action,Ind,,false
+GJENSIDIGE FORSIKR,GJF,Oslo,GJF.OL,Action,Finance,,false
+GL EVENTS,GLO,Paris,GLO.PA,Action,Conso,,false
+Glb Agg Bd ESG D,AGGE,Amsterdam,AGGE.AS,ETF,Finance,,false
+GLENVEAGH PROP.PLC,GVR,Dublin,GVR.IR,Action,Conso,,false
+GLINTT,GLINT,Lisbonne,GLINT.LS,Action,Tech,,false
+GLOActBOOSTXPAR,BOOST,Paris,BOOST.PA,ETF,Autre,,false
+GLOActOFIEUXPAR,OFIEU,Paris,OFIEU.PA,ETF,Autre,,false
+GLOActOFIUSXPAR,OFIUS,Paris,OFIUS.PA,ETF,Autre,,false
+GOAI,GOAI,Amsterdam,GOAI.AS,ETF,Autre,,false
+GOLActGIGXXPAR,GIGX,Paris,GIGX.PA,ETF,Autre,,false
+GOLActGQEMXPAR,GQEM,Paris,GQEM.PA,ETF,Autre,,false
+GOLActGQEUXPAR,GQEU,Paris,GQEU.PA,ETF,Autre,,false
+GOLActGQJYXPAR,GQJY,Paris,GQJY.PA,ETF,Autre,,false
+GOLActGQUSXPAR,GQUS,Paris,GQUS.PA,ETF,Autre,,false
+GOLActGQWDXPAR,GQWD,Paris,GQWD.PA,ETF,Autre,,false
+GOLD BULLION SEC,GBS,Paris,GBS.PA,ETF,Finance,,false
+GOLD BY GOLD,ALGLD,Paris,ALGLD.PA,Action,Ind,,false
+GOLD BY GOLD DS,GLDDS,Paris,GLDDS.PA,Action,Ind,,false
+GOLD ROAD INTL,GOLDR,Oslo,GOLDR.OL,Action,Ind,,false
+GOLDEN ENERGY OFF,GEOS,Oslo,GEOS.OL,Action,Ener,,false
+GOLETFMXWOPEXPAR,GXPE,Paris,GXPE.PA,ETF,Autre,,false
+GOODTECH,GOD,Oslo,GOD.OL,Action,Ind,,false
+GPE GROUP PIZZORNO,GPE,Paris,GPE.PA,Action,Ener,,false
+GPI,GPI,Milan,GPI.MI,Action,Santé,,false
+GRAETNSOMAR3XAMS,MAR3,Amsterdam,MAR3.AS,ETF,Autre,,false
+GRAETNSOMAV3XAMS,MAV3,Amsterdam,MAV3.AS,ETF,Autre,,false
+GRAETNSOMU3LXAMS,MIC3,Amsterdam,MIC3.AS,ETF,Autre,,false
+GRAETNSOSAN2XAMS,SAN2,Amsterdam,SAN2.AS,ETF,Autre,,false
+GRAETNSOSAN2XAMS,SANS,Amsterdam,SANS.AS,ETF,Autre,,false
+GRAETNSOVRT3XAMS,VTV3,Amsterdam,VTV3.AS,ETF,Autre,,false
+GRAINES VOLTZ,GRVO,Paris,GRVO.PA,Action,Conso,,false
+GREEN EARTH GROUP,EARTH,Amsterdam,EARTH.AS,Action,Ind,,false
+GREEN MINERALS,GEM,Oslo,GEM.OL,Action,Ind,,false
+GREEN OLEO,GRN,Milan,GRN.MI,Action,Ind,,false
+GREENCOAT REN.,GRP,Dublin,GRP.IR,Action,Ener,,false
+GRIEG SEAFOOD,GSF,Oslo,GSF.OL,Action,Conso,,false
+GRIFAL,GRAL,Milan,GRAL.MI,Action,Ind,,false
+GROLLEAU,ALGRO,Paris,ALGRO.PA,Action,Ind,,false
+GRONG SPAREBANK,GRONG,Oslo,GRONG.OL,Action,Autre,,false
+GROUPE CARNIVOR,MLGRC,Paris,MLGRC.PA,Action,Conso,,false
+GROUPE CRIT,CEN,Paris,CEN.PA,Action,Ind,,false
+GROUPE GUILLIN,ALGIL,Paris,ALGIL.PA,Action,Ind,,false
+GROUPE JAJ,GJAJ,Paris,GJAJ.PA,Action,Conso,,false
+GROUPE LDLC,ALLDL,Paris,ALLDL.PA,Action,Tech,,false
+GROUPE OKWIND,ALOKW,Paris,ALOKW.PA,Action,Ener,,false
+GROUPE PARTOUCHE,PARP,Paris,PARP.PA,Action,Conso,,false
+GROUPE SFPI,SFPI,Paris,SFPI.PA,Action,Ind,,false
+GROUPE TERA,ALGTR,Paris,ALGTR.PA,Action,Ind,,false
+GROUPIMO,ALIMO,Paris,ALIMO.PA,Action,Finance,,false
+GROWENS,GROW,Milan,GROW.MI,Action,Tech,,false
+GTT,GTT,Paris,GTT.PA,Action,Ener,,false
+GUERBET,GBT,Paris,GBT.PA,Action,Santé,,false
+GUIDOTTI SHIPS,GDT,Milan,GDT.MI,Action,Ind,,false
+GUILLEMOT,GUI,Paris,GUI.PA,Action,Tech,,false
+GUINNESS SUST ENG,CLMA,Paris,CLMA.PA,ETF,Autre,,false
+GULF KEYSTONE PET,GKP,Oslo,GKP.OL,Action,Ener,,false
+GVS,GVS,Milan,GVS.MI,Action,Santé,,false
+GYLDENDAL,GYL,Oslo,GYL.OL,Action,Conso,,false
+H MSCI JP IS ESG,HIJS,Paris,HIJS.PA,ETF,Finance,,false
+H-FARM,FARM,Milan,FARM.MI,Action,Finance,,false
+HAFFNER ENERGY,ALHAF,Paris,ALHAF.PA,Action,Ener,,false
+HAFFNER ENERGY BSA,HAFBS,Paris,HAFBS.PA,Action,Ener,,false
+HAFNIA LIMITED,HAFNI,Oslo,HAFNI.OL,Action,Ind,,false
+HAIKI+,HIK,Milan,HIK.MI,Action,Ener,,false
+HAL TRUST,HAL,Amsterdam,HAL.AS,Action,Finance,,false
+HAMILTON GLOBAL OP,ALHGO,Paris,ALHGO.PA,Action,Finance,,false
+HAN HLTH EQL WT,WELL,Paris,WELL.PA,ETF,Autre,,false
+HAN MINING ETF,ESGO,Paris,ESGO.PA,ETF,Autre,,false
+HANActOBAAXPAR,OBAA,Paris,OBAA.PA,ETF,Autre,,false
+HANActOBBAXPAR,OBBA,Paris,OBBA.PA,ETF,Autre,,false
+HANActOBGEXPAR,OBGE,Paris,OBGE.PA,ETF,Autre,,false
+HANActOBUSXPAR,OBUS,Paris,OBUS.PA,ETF,Autre,,false
+HANActOCGPXPAR,OCGP,Paris,OCGP.PA,ETF,Autre,,false
+HANACTTRYPXPAR,TRYP,Paris,TRYP.PA,ETF,Autre,,false
+HANETCBTC1XPAR,EBTC,Paris,EBTC.PA,ETF,Autre,,false
+HANETCMSTYXPAR,MSTY,Paris,MSTY.PA,ETF,Autre,,false
+HANETCULTYXPAR,ULTE,Paris,ULTE.PA,ETF,Autre,,false
+HANETFARMYNXPAR,ARMY,Paris,ARMY.PA,ETF,Autre,,false
+HANETFIDGSMCXPAR,DRAM,Paris,DRAM.PA,ETF,Autre,,false
+HANETFSGIXEGXPAR,GR8,Paris,GR8.PA,ETF,Autre,,false
+HANETFSTCQEXPAR,TCQE,Paris,TCQE.PA,ETF,Autre,,false
+HAUGESUND SPB,HGSB,Oslo,HGSB.OL,Action,Finance,,false
+HAULOTTE GROUP,PIG,Paris,PIG.PA,Action,Ind,,false
+HAV GROUP,HAV,Oslo,HAV.OL,Action,Ind,,false
+HAVAS,HAVAS,Amsterdam,HAVAS.AS,Action,Conso,,false
+HAVILA KYSTRUTEN,HKY,Oslo,HKY.OL,Action,Ind,,false
+HAVILA SHIPPING,HAVI,Oslo,HAVI.OL,Action,Ener,,false
+HAWICK DATA NV,HWK,Amsterdam,HWK.AS,Action,Conso,,false
+HDF,HDF,Paris,HDF.PA,Action,Ener,,false
+HEIJMANS KON,HEIJM,Amsterdam,HEIJM.AS,Action,Ind,,false
+HEINEKEN,HEIA,Amsterdam,HEIA.AS,Action,Conso,,false
+HEINEKEN HOLDING,HEIO,Amsterdam,HEIO.AS,Action,Conso,,false
+HELYX INDUSTRIES,HLX,Milan,HLX.MI,Action,Santé,,false
+HERA,HER,Milan,HER.MI,Action,Ener,,false
+HERIGE,ALHRG,Paris,ALHRG.PA,Action,Ind,,false
+HERMANA HOLDING,HERMA,Oslo,HERMA.OL,Action,Ener,,false
+HERMES INTL,RMS,Paris,RMS.PA,Action,Conso,,false
+HEXAGON COMPOSITES,HEX,Oslo,HEX.OL,Action,Ind,,false
+HEXAGON PURUS,HPUR,Oslo,HPUR.OL,Action,Ind,,false
+HEXAOM,ALHEX,Paris,ALHEX.PA,Action,Conso,,false
+HF COMPANY,ALHF,Paris,ALHF.PA,Action,Tech,,false
+HIGH CO,HCO,Paris,HCO.PA,Action,Conso,,false
+HIGH QUALITY FOOD,HQF,Milan,HQF.MI,Action,Conso,,false
+HIMALAYA SHIPPING,HSHP,Oslo,HSHP.OL,Action,Ind,,false
+HIPAY GROUP,ALHYP,Paris,ALHYP.PA,Action,Ind,,false
+HITECHPROS,ALHIT,Paris,ALHIT.PA,Action,Tech,,false
+HK,MLHK,Paris,MLHK.PA,Action,Ind,,false
+HK INFBN ETF,INFBN,Amsterdam,INFBN.AS,ETF,Autre,,false
+Hlthcre Inn Acc,HEAL,Amsterdam,HEAL.AS,ETF,Finance,,false
+HOCHE BAINS L.BAIN,MLHBB,Paris,MLHBB.PA,Action,Finance,,false
+HÖEGH AUTOLINERS,HAUTO,Oslo,HAUTO.OL,Action,Ind,,false
+HOFFMANN,ALHGR,Paris,ALHGR.PA,Action,Ind,,false
+HOFSETH BIOCARE,HBC,Oslo,HBC.OL,Action,Conso,,false
+HØLAND OG SETSKOG,HSPG,Oslo,HSPG.OL,Action,Finance,,false
+HOLLAND COLOURS,HOLCO,Amsterdam,HOLCO.AS,Action,Ind,,false
+HOME INVEST BE.,HOMI,Brussels,HOMI.BR,Action,Finance,,false
+HOPENING,MLHPE,Paris,MLHPE.PA,Action,Ind,,false
+HOPIUM,ALHPI,Paris,ALHPI.PA,Action,Conso,,false
+HOPSCOTCH GROUPE,ALHOP,Paris,ALHOP.PA,Action,Conso,,false
+HORActINFEAXAMS,INFEA,Amsterdam,INFEA.AS,ETF,Autre,,false
+HORActINFUAXAMS,INFUA,Amsterdam,INFUA.AS,ETF,Autre,,false
+HOTELES BESTPRICE,MLHBP,Paris,MLHBP.PA,Action,Conso,,false
+HOTELIM,MLHOT,Paris,MLHOT.PA,Action,Conso,,false
+HOTELS DE PARIS,HDP,Paris,HDP.PA,Action,Conso,,false
+HOTL.IMMOB.NICE,MLHIN,Paris,MLHIN.PA,Action,Conso,,false
+HSBC EUROSTX50 ETF,50E,Paris,50E.PA,ETF,Finance,,false
+HSBC FTSE 100 ETF,UKX,Paris,UKX.PA,ETF,Finance,,false
+HSBC HSENG TCH ETF,HSTE,Paris,HSTE.PA,ETF,Finance,,false
+HSBC MSCI CANADA,HCAN,Paris,HCAN.PA,ETF,Finance,,false
+HSBC MSCI CHINA,CNY,Paris,CNY.PA,ETF,Finance,,false
+HSBC MSCI EMIS,HIES,Paris,HIES.PA,ETF,Finance,,false
+HSBC MSCI EU IS,HIPS,Paris,HIPS.PA,ETF,Finance,,false
+HSBC MSCI EUR ETF,HEU,Paris,HEU.PA,ETF,Finance,,false
+HSBC MSCI USA ETF,MUS,Paris,MUS.PA,ETF,Finance,,false
+HSBC MSCI USA IS,HIUS,Paris,HIUS.PA,ETF,Finance,,false
+HSBC MSCI WLD IS,HIWS,Paris,HIWS.PA,ETF,Finance,,false
+HSBC MSCI WORLD,WRD,Paris,WRD.PA,ETF,Finance,,false
+HSBC MSCIJAPAN ETF,MJP,Paris,MJP.PA,ETF,Finance,,false
+HSBC SP 500 ETF,HHH,Paris,HHH.PA,ETF,Finance,,false
+HSBC UK SUS EQ ETF,HSUK,Paris,HSUK.PA,ETF,Finance,,false
+HSBCJAPNSUSUSDDIST,HSJA,Paris,HSJA.PA,ETF,Finance,,false
+HSBCMSCICNAUSDACC,HCAS,Paris,HCAS.PA,ETF,Finance,,false
+HSBCMSCIEMUSDACC,HEMA,Paris,HEMA.PA,ETF,Finance,,false
+HSBCMSCIEUROEURACC,HMES,Paris,HMES.PA,ETF,Finance,,false
+HSBCMSCIJAPNUSDACC,HMJS,Paris,HMJS.PA,ETF,Finance,,false
+HSBCMSCIWLDSCAPESG,HWSS,Paris,HWSS.PA,ETF,Finance,,false
+HSBETFENGLIRXPAR,HINS,Paris,HINS.PA,ETF,Finance,,false
+HSBETFSBKUXPAR,HBKS,Paris,HBKS.PA,ETF,Autre,,false
+HUDDLESTOCK FINTEC,HUDL,Oslo,HUDL.OL,Action,Tech,,false
+HUDDLY,HDLY,Oslo,HDLY.OL,Action,Tech,,false
+HUNTER GROUP,HUNT,Oslo,HUNT.OL,Action,Ener,,false
+HUNYVERS,ALHUN,Paris,ALHUN.PA,Action,Conso,,false
+HYBRID SOFTWARE GR,HYSG,Brussels,HYSG.BR,Action,Tech,,false
+HYDRATEC,HYDRA,Amsterdam,HYDRA.AS,Action,Ind,,false
+HYDRAULIQUEHOLDING,MLHYD,Paris,MLHYD.PA,Action,Ind,,false
+HYDRO-EXPLOIT.,MLHYE,Paris,MLHYE.PA,Action,Ener,,false
+HYDROGEN REFUELING,ALHRS,Paris,ALHRS.PA,Action,Ener,,false
+HYDROGENPRO,HYPRO,Oslo,HYPRO.OL,Action,Ener,,false
+HYLORIS,HYL,Brussels,HYL.BR,Action,Santé,,false
+I GRANDI VIAGGI,IGV,Milan,IGV.MI,Action,Conso,,false
+i MSCI FE exJP $A,IFFI,Amsterdam,IFFI.AS,ETF,Finance,,false
+I.M.D.,IMD,Milan,IMD.MI,Action,Santé,,false
+I2S,ALI2S,Paris,ALI2S.PA,Action,Ind,,false
+IBA,IBAB,Brussels,IBAB.BR,Action,Santé,,false
+IBD Dec27 $ TR Dis,27IT,Amsterdam,27IT.AS,ETF,Finance,,false
+IBD Dec29 $ TR Dis,29IT,Amsterdam,29IT.AS,ETF,Finance,,false
+iBds D26 Term E Ac,B26A,Paris,B26A.PA,ETF,Finance,,false
+iBds D27 Term $ Ac,DI27,Paris,DI27.PA,ETF,Finance,,false
+iBds D27 Term E Ac,IB27,Paris,IB27.PA,ETF,Finance,,false
+iBds D28 Term E Ac,B28A,Paris,B28A.PA,ETF,Finance,,false
+"IBERSOL,SGPS",IBS,Lisbonne,IBS.LS,Action,Conso,,false
+ICADE,ICAD,Paris,ICAD.PA,Action,Finance,,false
+ICAPE HOLDING,ALICA,Paris,ALICA.PA,Action,Tech,,false
+ICELANDIC SALMON,ISLAX,Oslo,ISLAX.OL,Action,Conso,,false
+ICOP,ICOP,Milan,ICOP.MI,Action,Ind,,false
+ID LOGISTICS GROUP,IDL,Paris,IDL.PA,Action,Ind,,false
+IDEX BIOMETRICS,IDEX,Oslo,IDEX.OL,Action,Ind,,false
+IDI,IDIP,Paris,IDIP.PA,Action,Finance,,false
+IDNTT,IDNTT,Milan,IDNTT.MI,Action,Tech,,false
+IDS,MLIDS,Paris,MLIDS.PA,Action,Tech,,false
+IEVA GROUP,ALIEV,Paris,ALIEV.PA,Action,Conso,,false
+IGD,IGD,Milan,IGD.MI,Action,Finance,,false
+IKONISYS,ALIKO,Paris,ALIKO.PA,Action,Santé,,false
+ILPRA,ILP,Milan,ILP.MI,Action,Ind,,false
+IMALLIANCE,MLIML,Paris,MLIML.PA,Action,Conso,,false
+IMCD,IMCD,Amsterdam,IMCD.AS,Action,Ind,,false
+IMERYS,NK,Paris,NK.PA,Action,Ind,,false
+IMGACTDBMFEXPAR,DBMFE,Paris,DBMFE.PA,ETF,Autre,,false
+IMGACTDBMFXPAR,DBMF,Paris,DBMF.PA,ETF,Autre,,false
+IMGACTMFA8XPAR,MFA8,Paris,MFA8.PA,ETF,Autre,,false
+IMGActMFEHXPAR,MFEH,Paris,MFEH.PA,ETF,Autre,,false
+IMGActPEHYXPAR,PEHY,Paris,PEHY.PA,ETF,Autre,,false
+IMGActSARFXPAR,SARF,Paris,SARF.PA,ETF,Autre,,false
+IMM.PARIS.PERLE,MLIPP,Paris,MLIPP.PA,Action,Finance,,false
+IMMERSION,ALIMR,Paris,ALIMR.PA,Action,Tech,,false
+IMMO MCC,MCC,Brussels,MCC.BR,Action,Finance,,false
+IMMO MOURY,IMMOU,Brussels,IMMOU.BR,Action,Finance,,false
+IMMOB.DASSAULT,IMDA,Paris,IMDA.PA,Action,Finance,,false
+IMMOBEL,IMMO,Brussels,IMMO.BR,Action,Finance,,false
+IMMSI,IMS,Milan,IMS.MI,Action,Conso,,false
+IMPIANTI,MPT,Milan,MPT.MI,Action,Ind,,false
+IMPLANET,ALIMP,Paris,ALIMP.PA,Action,Santé,,false
+"IMPRESA,SGPS",IPR,Lisbonne,IPR.LS,Action,Conso,,false
+IMPRIMERIE CHIRAT,MLIMP,Paris,MLIMP.PA,Action,Conso,,false
+INCLUSIO SA/NV,INCLU,Brussels,INCLU.BR,Action,Finance,,false
+IND CHIMICHE FORES,ICF,Milan,ICF.MI,Action,Ind,,false
+INDActIEMIDXPAR,IEMID,Paris,IEMID.PA,ETF,Autre,,false
+INDActIFRAXPAR,IFRA,Paris,IFRA.PA,ETF,Autre,,false
+INDEL B,INDB,Milan,INDB.MI,Action,Ind,,false
+INDUCT,INDCT,Oslo,INDCT.OL,Action,Tech,,false
+INDUSTRIE DE NORA,DNR,Milan,DNR.MI,Action,Ind,,false
+INFOCLIP,MLIFC,Paris,MLIFC.PA,Action,Tech,,false
+INFOTEL,INF,Paris,INF.PA,Action,Tech,,false
+ING GROEP N.V.,INGA,Amsterdam,INGA.AS,Action,Finance,,false
+INIFY LABORATORIES,INIFY,Oslo,INIFY.OL,Action,Santé,,false
+ININ GROUP,ININ,Oslo,ININ.OL,Action,Ind,,false
+INIZIAT BRESCIANE,IB,Milan,IB.MI,Action,Ener,,false
+INMOLECULE,MLINA,Paris,MLINA.PA,Action,Conso,,false
+INNATE PHARMA,IPH,Paris,IPH.PA,Action,Santé,,false
+INNELEC MULTIMEDIA,ALINN,Paris,ALINN.PA,Action,Tech,,false
+INNOVATEC,INC,Milan,INC.MI,Action,Ener,,false
+INPOST,INPST,Amsterdam,INPST.AS,Action,Ind,,false
+INSTABANK,INSTA,Oslo,INSTA.OL,Action,Finance,,false
+INSTALLUX,ALLUX,Paris,ALLUX.PA,Action,Ind,,false
+INTEGRAGEN,ALINT,Paris,ALINT.PA,Action,Santé,,false
+INTEGRATED WIND SO,IWS,Oslo,IWS.OL,Action,Ener,,false
+INTERCOS,ICOS,Milan,ICOS.MI,Action,Conso,,false
+INTERNAT CARE COMP,ICC,Milan,ICC.MI,Action,Conso,,false
+INTEROIL EXPL PROD,IOX,Oslo,IOX.OL,Action,Ener,,false
+INTERPARFUMS,ITP,Paris,ITP.PA,Action,Conso,,false
+INTERPUMP GROUP,IP,Milan,IP.MI,Action,Ind,,false
+INTESA SANPAOLO,ISP,Milan,ISP.MI,Action,Finance,,false
+INTRASENSE,ALINS,Paris,ALINS.PA,Action,Santé,,false
+INTRED,ITD,Milan,ITD.MI,Action,Tech,,false
+Inve Phys Gold ETC,SGLD,Amsterdam,SGLD.AS,ETF,Finance,,false
+INVENTIVA,IVA,Paris,IVA.PA,Action,Santé,,false
+INVETFJPEIBRXAMS,BLNT,Amsterdam,BLNT.AS,ETF,Autre,,false
+INVETFJPEIBRXAMS,BLTN,Amsterdam,BLTN.AS,ETF,Autre,,false
+INVETFJPEIGBXAMC,BRGV,Amsterdam,BRGV.AS,ETF,Autre,,false
+INVIBES ADVERTSING,ALINV,Paris,ALINV.PA,Action,Conso,,false
+INWIT,INW,Milan,INW.MI,Action,Tech,,false
+IPSEN,IPN,Paris,IPN.PA,Action,Santé,,false
+IPSOS,IPS,Paris,IPS.PA,Action,Conso,,false
+IQ EUR CORP SRI,IQEC,Paris,IQEC.PA,ETF,Autre,,false
+IQ EUROPE SRI,IQEE,Paris,IQEE.PA,ETF,Autre,,false
+IQ JAPAN SRI,IQJP,Paris,IQJP.PA,ETF,Autre,,false
+IRCE,IRC,Milan,IRC.MI,Action,Ind,,false
+IREN,IRE,Milan,IRE.MI,Action,Ener,,false
+IRISH CONT. GP.,IR5B,Dublin,IR5B.IR,Action,Ind,,false
+IRISH RES. PROP.,IRES,Dublin,IRES.IR,Action,Finance,,false
+iS A&R Acc,RBOE,Amsterdam,RBOE.AS,ETF,Finance,,false
+IS AEX UCITS EUR A,IAEA,Amsterdam,IAEA.AS,ETF,Finance,,false
+iS China Bond Acc,CYEA,Paris,CYEA.PA,ETF,Finance,,false
+iS China T Acc,CTEC,Amsterdam,CTEC.AS,ETF,Finance,,false
+IS CHN BND USD DIS,CNYB,Amsterdam,CNYB.AS,ETF,Finance,,false
+iS CNY BD UCIT $A,CYBA,Amsterdam,CYBA.AS,ETF,Finance,,false
+iS Div Comm Swp DE,CMSE,Paris,CMSE.PA,ETF,Finance,,false
+IS EURO ULTRASHORT,ERNE,Amsterdam,ERNE.AS,ETF,Finance,,false
+iS Glo Semi Acc,SEME,Paris,SEME.PA,ETF,Finance,,false
+iS Glo Timber Acc,WOOE,Amsterdam,WOOE.AS,ETF,Finance,,false
+iS Gold Pro Acc,ISOE,Amsterdam,ISOE.AS,ETF,Finance,,false
+iS JP$ EM IG B $ A,IGAE,Amsterdam,IGAE.AS,ETF,Autre,,false
+IS MS WORLD FIN $D,WFNS,Amsterdam,WFNS.AS,ETF,Finance,,false
+IS MSC CY GV BD $D,CGBI,Amsterdam,CGBI.AS,ETF,Finance,,false
+iS MSCI ACWI Acc,SSAC,Amsterdam,SSAC.AS,ETF,Finance,,false
+iS MSCI Chn UCI $D,ICHD,Amsterdam,ICHD.AS,ETF,Finance,,false
+iS MSCI EM SRI Acc,SUSM,Amsterdam,SUSM.AS,ETF,Finance,,false
+iS MSCI EMXCH $ Ac,EXCH,Amsterdam,EXCH.AS,ETF,Finance,,false
+IS MSCI EUR SRI,IESE,Amsterdam,IESE.AS,ETF,Finance,,false
+iS MSCI India Acc,NDIA,Amsterdam,NDIA.AS,ETF,Finance,,false
+iS MSCI Jp SRI Acc,SUJP,Amsterdam,SUJP.AS,ETF,Finance,,false
+iS MSCI W QDV $A,WQDA,Amsterdam,WQDA.AS,ETF,Finance,,false
+IS S&P500 SWAP $A,I500,Amsterdam,I500.AS,ETF,Autre,,false
+IS SMRT CY IN ACC,CITY,Paris,CITY.PA,ETF,Finance,,false
+IS SP500 PAC $A,UPAB,Amsterdam,UPAB.AS,ETF,Finance,,false
+IS USD HEDGED CB,LQDH,Amsterdam,LQDH.AS,ETF,Finance,,false
+IS USD SHORT HY CB,SDHY,Amsterdam,SDHY.AS,ETF,Finance,,false
+IS USVAL ESG $A,IUVE,Amsterdam,IUVE.AS,ETF,Finance,,false
+iS Wor ESG En Acc,EWSA,Amsterdam,EWSA.AS,ETF,Finance,,false
+IS WORLD PAC $A,WPAB,Amsterdam,WPAB.AS,ETF,Finance,,false
+IS WORLD PAC $D,WPAD,Amsterdam,WPAD.AS,ETF,Finance,,false
+iSCB0-5USD Hdgd A,IS17,Amsterdam,IS17.AS,ETF,Finance,,false
+iSCB0-5USD Hdgd D,IS16,Amsterdam,IS16.AS,ETF,Finance,,false
+ISCC FINTECH,ISC,Milan,ISC.MI,Action,Finance,,false
+iSh $ Hyld CBd Dst,HYDP,Amsterdam,HYDP.AS,ETF,Finance,,false
+iSh $ Sukuk Dist,SKUK,Amsterdam,SKUK.AS,ETF,Finance,,false
+ISH $ TIPS 0-5 USD,TI5A,Amsterdam,TI5A.AS,ETF,Finance,,false
+iSh $TR BD 3-7yr,OM3M,Amsterdam,OM3M.AS,ETF,Finance,,false
+ISH ACWI USD DIS,SAWI,Amsterdam,SAWI.AS,ETF,Finance,,false
+ISH BLOCKCHAIN USD,BLKC,Amsterdam,BLKC.AS,ETF,Finance,,false
+ISH C EUR CB US H,IEAU,Amsterdam,IEAU.AS,ETF,Finance,,false
+ISH C GBP CB US H,SLXU,Amsterdam,SLXU.AS,ETF,Finance,,false
+Ish Cop Min US Acc,COPM,Amsterdam,COPM.AS,ETF,Finance,,false
+iSh Cor MSCI Wd US,IWDD,Amsterdam,IWDD.AS,ETF,Finance,,false
+ISH CORE UK GLT US,GLUH,Amsterdam,GLUH.AS,ETF,Finance,,false
+iSh Cr Glb Ag Bd,AGAC,Amsterdam,AGAC.AS,ETF,Finance,,false
+ISH DIG EN & ED US,DGGE,Paris,DGGE.PA,ETF,Finance,,false
+ISH DIG EN & ED US,PLAY,Amsterdam,PLAY.AS,ETF,Finance,,false
+ISH ESS MTL US ACC,METL,Amsterdam,METL.AS,ETF,Finance,,false
+iSh Ex-Chn US Dist,EXCD,Amsterdam,EXCD.AS,ETF,Finance,,false
+ISH FR GV BD US HD,IFRD,Amsterdam,IFRD.AS,ETF,Finance,,false
+ISH FR TREAS BD,IFRB,Amsterdam,IFRB.AS,ETF,Finance,,false
+ISH GB AG BD US HD,AGGD,Amsterdam,AGGD.AS,ETF,Finance,,false
+iSh iBd Dc27 E Dst,IBE7,Paris,IBE7.PA,ETF,Finance,,false
+iSh iBd Dc29 $ Dst,29ID,Amsterdam,29ID.AS,ETF,Finance,,false
+iSh iBd Dc30 $ Dst,30ID,Amsterdam,30ID.AS,ETF,Finance,,false
+iSh iBD26 US Ac PR,26ID,Paris,26ID.PA,ETF,Finance,,false
+iSh iBD28 US Ac PR,28ID,Paris,28ID.PA,ETF,Finance,,false
+iSh India INR Dis,INGB,Amsterdam,INGB.AS,ETF,Finance,,false
+ISH Lth Btt US ACC,LITM,Amsterdam,LITM.AS,ETF,Finance,,false
+ISH METAVERSE USD,MTAV,Amsterdam,MTAV.AS,ETF,Finance,,false
+ISH MSCI EXCHNA US,MTPI,Paris,MTPI.PA,ETF,Finance,,false
+ISH NLD BD HEDGED,IRCP,Amsterdam,IRCP.AS,ETF,Finance,,false
+iSh Rusl 1000 Gr A,R1GR,Amsterdam,R1GR.AS,ETF,Finance,,false
+iSh Rusl 1000 Vl A,R1VL,Amsterdam,R1VL.AS,ETF,Finance,,false
+ISH S&P 500 ESG US,ESPX,Amsterdam,ESPX.AS,ETF,Finance,,false
+ISH S&P 500 SWP US,I50D,Amsterdam,I50D.AS,ETF,Finance,,false
+ISH S&P EQ WGHT US,EWSP,Amsterdam,EWSP.AS,ETF,Finance,,false
+ISH STX 600 A&P EU,SAOT,Amsterdam,SAOT.AS,ETF,Autre,,false
+ISH STX 600 Tch EU,STEC,Amsterdam,STEC.AS,ETF,Autre,,false
+ISH US EQ HINC ACC,INCI,Amsterdam,INCI.AS,ETF,Finance,,false
+ISH US EQ HINC DIS,INCU,Amsterdam,INCU.AS,ETF,Finance,,false
+ISH USA SWAP ACC,MUSD,Amsterdam,MUSD.AS,ETF,Autre,,false
+ISH USA SWAP EUR,MUSA,Paris,MUSA.PA,ETF,Autre,,false
+ISH WD EQ HINC ACC,WINA,Amsterdam,WINA.AS,ETF,Finance,,false
+ISH WD EQ HINC DIS,WINC,Amsterdam,WINC.AS,ETF,Finance,,false
+ISH WLD QLT ESG US,IWQE,Amsterdam,IWQE.AS,ETF,Finance,,false
+iSh Wld Swp PEA EU,WPEA,Paris,WPEA.PA,ETF,Autre,,false
+ISHActAXEEXAMS,AXEE,Amsterdam,AXEE.AS,ETF,Finance,,false
+ISHActB1TAXAMS,B1TA,Amsterdam,B1TA.AS,ETF,Finance,,false
+ISHActB1UHXAMC,B1UH,Amsterdam,B1UH.AS,ETF,Finance,,false
+ISHACTCLORXPAR,CLOR,Paris,CLOR.PA,ETF,Finance,,false
+ISHActCLUHXAMC,CLUH,Amsterdam,CLUH.AS,ETF,Finance,,false
+ISHActDUEDXAMC,DUED,Amsterdam,DUED.AS,ETF,Finance,,false
+ISHActDUEEXAMS,DUEE,Amsterdam,DUEE.AS,ETF,Finance,,false
+ISHActECLUXAMS,ECLU,Amsterdam,ECLU.AS,ETF,Finance,,false
+ISHActEHEBXAMS,EHEB,Amsterdam,EHEB.AS,ETF,Finance,,false
+ISHActEMEEXAMS,EMEE,Amsterdam,EMEE.AS,ETF,Finance,,false
+ISHActEMMEXAMS,EMME,Amsterdam,EMME.AS,ETF,Finance,,false
+ISHActEUEEXAMS,EUEE,Amsterdam,EUEE.AS,ETF,Finance,,false
+ISHActFACTXAMS,FACT,Amsterdam,FACT.AS,ETF,Finance,,false
+ISHActHSOVXAMS,HSOV,Amsterdam,HSOV.AS,ETF,Finance,,false
+ISHActIARTXAMS,IART,Amsterdam,IART.AS,ETF,Finance,,false
+ISHActIARTXPAR,IART,Paris,IART.PA,ETF,Finance,,false
+ISHActIENCXAMS,IENC,Amsterdam,IENC.AS,ETF,Finance,,false
+ISHActIFLXXAMS,IFLX,Amsterdam,IFLX.AS,ETF,Finance,,false
+ISHActIFUHXAMC,IFUH,Amsterdam,IFUH.AS,ETF,Finance,,false
+ISHActIFXLXAMS,IFXL,Amsterdam,IFXL.AS,ETF,Finance,,false
+ISHActISOVXAMC,ISOV,Amsterdam,ISOV.AS,ETF,Finance,,false
+ISHActISVOXAMS,ISVO,Amsterdam,ISVO.AS,ETF,Finance,,false
+ISHActJAEEXAMC,JAEE,Amsterdam,JAEE.AS,ETF,Finance,,false
+ISHActMAXDXAMC,MAXD,Amsterdam,MAXD.AS,ETF,Autre,,false
+ISHActMAXJXAMC,MAXJ,Amsterdam,MAXJ.AS,ETF,Autre,,false
+ISHActMAXMXAMC,MAXM,Amsterdam,MAXM.AS,ETF,Autre,,false
+ISHACTMAXSXAMS,MAXS,Amsterdam,MAXS.AS,ETF,Autre,,false
+ISHActSTENXAMC,STEN,Amsterdam,STEN.AS,ETF,Autre,,false
+ISHActTENDXAMC,TEND,Amsterdam,TEND.AS,ETF,Autre,,false
+ISHActTENJXAMC,TENJ,Amsterdam,TENJ.AS,ETF,Autre,,false
+ISHActTENMXAMC,TENM,Amsterdam,TENM.AS,ETF,Autre,,false
+ISHActTHRWXAMC,THRW,Amsterdam,THRW.AS,ETF,Finance,,false
+ISHActUCBEXAMC,UCBE,Amsterdam,UCBE.AS,ETF,Finance,,false
+ISHActUHEBXAMC,UHEB,Amsterdam,UHEB.AS,ETF,Finance,,false
+ISHActUHEDXAMC,UHED,Amsterdam,UHED.AS,ETF,Finance,,false
+ISHActUSDBXAMS,USDB,Amsterdam,USDB.AS,ETF,Autre,,false
+ISHActUSEBXAMS,USEB,Amsterdam,USEB.AS,ETF,Finance,,false
+ISHActUSECXAMS,USEC,Amsterdam,USEC.AS,ETF,Finance,,false
+ISHActUSEEXAMS,USEE,Amsterdam,USEE.AS,ETF,Finance,,false
+ISHActUSHBXAMS,USHB,Amsterdam,USHB.AS,ETF,Finance,,false
+ISHActWOEEXAMS,WOEE,Amsterdam,WOEE.AS,ETF,Finance,,false
+ISHActYCSHXAMS,YCSH,Amsterdam,YCSH.AS,ETF,Finance,,false
+ISHARES $CPESG ACC,SUOA,Amsterdam,SUOA.AS,ETF,Finance,,false
+ISHARES $CPESG DST,SUOU,Amsterdam,SUOU.AS,ETF,Finance,,false
+ISHARES $USBE DIST,UEDD,Amsterdam,UEDD.AS,ETF,Finance,,false
+ISHARES AEX,IAEX,Amsterdam,IAEX.AS,ETF,Finance,,false
+ISHARES B E AGG,IEAG,Amsterdam,IEAG.AS,ETF,Finance,,false
+ISHARES B E CORP,IEAC,Amsterdam,IEAC.AS,ETF,Finance,,false
+ISHARES B E TR 0-1,IEGE,Amsterdam,IEGE.AS,ETF,Finance,,false
+ISHARES BIC 50,BRIC,Amsterdam,BRIC.AS,ETF,Finance,,false
+ISHARES BRAZIL,IBZL,Amsterdam,IBZL.AS,ETF,Finance,,false
+ISHARES CBUG,CBUG,Amsterdam,CBUG.AS,ETF,Finance,,false
+ISHARES CGAB UH DS,AGUG,Amsterdam,AGUG.AS,ETF,Finance,,false
+ISHARES CHINA 50,FXC,Amsterdam,FXC.AS,ETF,Finance,,false
+ISHARES CHINA U A,ICHN,Amsterdam,ICHN.AS,ETF,Finance,,false
+ISHARES CNY BD USH,CYBU,Amsterdam,CYBU.AS,ETF,Finance,,false
+ISHARES CNYB EHA,CYBE,Amsterdam,CYBE.AS,ETF,Finance,,false
+ISHARES CORAG E H,AGGH,Amsterdam,AGGH.AS,ETF,Finance,,false
+ISHARES DJ GLO SUS,IGSG,Amsterdam,IGSG.AS,ETF,Finance,,false
+ISHARES E CORP BD,IBCX,Amsterdam,IBCX.AS,ETF,Finance,,false
+ISHARES E COV BOND,ICOV,Amsterdam,ICOV.AS,ETF,Finance,,false
+ISHARES E GOV1-3,IBGS,Amsterdam,IBGS.AS,ETF,Finance,,false
+ISHARES E GOV15-30,IBGL,Amsterdam,IBGL.AS,ETF,Finance,,false
+ISHARES E GOV3-5,IBGX,Amsterdam,IBGX.AS,ETF,Finance,,false
+ISHARES E GOV7-10,IBGM,Amsterdam,IBGM.AS,ETF,Finance,,false
+ISHARES E INF-LINK,IBCI,Amsterdam,IBCI.AS,ETF,Finance,,false
+ISHARES EAST EX-JP,IFFF,Amsterdam,IFFF.AS,ETF,Finance,,false
+ISHARES ECP XFIN,IX5A,Amsterdam,IX5A.AS,ETF,Finance,,false
+ISHARES EG 10-15,IEGZ,Amsterdam,IEGZ.AS,ETF,Finance,,false
+ISHARES EG 5-7,IEGY,Amsterdam,IEGY.AS,ETF,Finance,,false
+ISHARES EHY ESG A,EHYA,Amsterdam,EHYA.AS,ETF,Finance,,false
+ISHARES EHY ESG D,EHYD,Amsterdam,EHYD.AS,ETF,Finance,,false
+ISHARES EM MARKETS,IEMM,Amsterdam,IEMM.AS,ETF,Finance,,false
+ISHARES EM SRI USD,SEMD,Amsterdam,SEMD.AS,ETF,Finance,,false
+ISHARES EMIM,EMIM,Amsterdam,EMIM.AS,ETF,Finance,,false
+ISHARES EMU USD H,CEUU,Amsterdam,CEUU.AS,ETF,Finance,,false
+ISHARES ESTOXX DIV,IDVY,Amsterdam,IDVY.AS,ETF,Finance,,false
+ISHARES ESTOXX GRO,IDJG,Amsterdam,IDJG.AS,ETF,Finance,,false
+ISHARES ESTOXX MID,DJMC,Amsterdam,DJMC.AS,ETF,Finance,,false
+ISHARES ESTOXX SML,DJSC,Amsterdam,DJSC.AS,ETF,Finance,,false
+ISHARES EURO STX50,EUEA,Amsterdam,EUEA.AS,ETF,Finance,,false
+ISHARES EUROP EXUK,IEUX,Amsterdam,IEUX.AS,ETF,Finance,,false
+ISHARES EUROPE,IMEU,Amsterdam,IMEU.AS,ETF,Finance,,false
+ISHARES EUROPE SRI,ISED,Amsterdam,ISED.AS,ETF,Finance,,false
+ISHARES EUSR ACC,SMUA,Amsterdam,SMUA.AS,ETF,Finance,,false
+ISHARES FTSE 100,ISFA,Amsterdam,ISFA.AS,ETF,Finance,,false
+ISHARES GBL GV EH,IGLE,Amsterdam,IGLE.AS,ETF,Finance,,false
+ISHARES GVT BOND $,SGLU,Amsterdam,SGLU.AS,ETF,Finance,,false
+ISHARES HCSE DIS,IUHE,Amsterdam,IUHE.AS,ETF,Finance,,false
+ISHARES IEGA,IEGA,Amsterdam,IEGA.AS,ETF,Finance,,false
+ISHARES INFRA GLO,INFR,Amsterdam,INFR.AS,ETF,Finance,,false
+ISHARES JAPAN,IJPN,Amsterdam,IJPN.AS,ETF,Finance,,false
+ISHARES JAPAN IMI,SJPD,Amsterdam,SJPD.AS,ETF,Finance,,false
+ISHARES JAPAN SRI,SUJD,Amsterdam,SUJD.AS,ETF,Finance,,false
+ISHARES JPMESG,EMSA,Amsterdam,EMSA.AS,ETF,Finance,,false
+ISHARES KOREA,IKRA,Amsterdam,IKRA.AS,ETF,Finance,,false
+ISHARES LATIN AM,LTAM,Amsterdam,LTAM.AS,ETF,Finance,,false
+ISHARES MES $ A,IDSE,Amsterdam,IDSE.AS,ETF,Finance,,false
+ISHARES MSCI EM A,IEMA,Amsterdam,IEMA.AS,ETF,Finance,,false
+ISHARES MSCI EUR A,IMAE,Amsterdam,IMAE.AS,ETF,Finance,,false
+ISHARES MSCI JAP A,IJPA,Amsterdam,IJPA.AS,ETF,Finance,,false
+ISHARES MSCI JAPEH,SJPE,Amsterdam,SJPE.AS,ETF,Finance,,false
+ISHARES MSCI WOR A,IWDA,Amsterdam,IWDA.AS,ETF,Finance,,false
+ISHARES N-AMERICA,INAA,Amsterdam,INAA.AS,ETF,Finance,,false
+ISHARES PRIVATE EQ,IPRV,Amsterdam,IPRV.AS,ETF,Finance,,false
+ISHARES PROP ASIA,IASP,Amsterdam,IASP.AS,ETF,Finance,,false
+ISHARES PROP EURO,IPRP,Amsterdam,IPRP.AS,ETF,Finance,,false
+ISHARES PROP GLO,IWDP,Amsterdam,IWDP.AS,ETF,Finance,,false
+ISHARES PROP US,IUSP,Amsterdam,IUSP.AS,ETF,Finance,,false
+ISHARES S&P 500,IUSA,Amsterdam,IUSA.AS,ETF,Finance,,false
+ISHARES SCYIF ACC,CITY,Amsterdam,CITY.AS,ETF,Finance,,false
+ISHARES SCYIF DIST,CT2B,Amsterdam,CT2B.AS,ETF,Finance,,false
+ISHARES SP B $ D,BNKT,Amsterdam,BNKT.AS,ETF,Finance,,false
+ISHARES TURKEY,ITKY,Amsterdam,ITKY.AS,ETF,Finance,,false
+ISHARES UDBB A,DDBB,Amsterdam,DDBB.AS,ETF,Finance,,false
+ISHARES UHY ESG A,DHYE,Amsterdam,DHYE.AS,ETF,Finance,,false
+ISHARES UHY ESG D,DHYD,Amsterdam,DHYD.AS,ETF,Finance,,false
+ISHARES UMDV USD A,UMDV,Amsterdam,UMDV.AS,ETF,Finance,,false
+ISHARES UMVE ACC,MVEA,Amsterdam,MVEA.AS,ETF,Autre,,false
+iSHARES US MBS A,IMBE,Amsterdam,IMBE.AS,ETF,Finance,,false
+ISHARES US T 1-3,IBTS,Amsterdam,IBTS.AS,ETF,Finance,,false
+ISHARES US T 7-10,BTMA,Amsterdam,BTMA.AS,ETF,Finance,,false
+ISHARES US TIPS,TPSA,Amsterdam,TPSA.AS,ETF,Finance,,false
+ISHARES USA SRI,SRIL,Amsterdam,SRIL.AS,ETF,Finance,,false
+ISHARES USD CRP BD,LQDA,Amsterdam,LQDA.AS,ETF,Finance,,false
+ISHARES USD GOV,GOVT,Amsterdam,GOVT.AS,ETF,Finance,,false
+ISHARES WCDS,WCDS,Amsterdam,WCDS.AS,ETF,Finance,,false
+ISHARES WCSS,WCSS,Amsterdam,WCSS.AS,ETF,Finance,,false
+ISHARES WENS,WENS,Amsterdam,WENS.AS,ETF,Finance,,false
+ISHARES WHCS,WHCS,Amsterdam,WHCS.AS,ETF,Finance,,false
+ISHARES WITS,WITS,Amsterdam,WITS.AS,ETF,Finance,,false
+ISHARES WMVE ACC,MVEW,Amsterdam,MVEW.AS,ETF,Autre,,false
+ISHARES WORLD,IWRD,Amsterdam,IWRD.AS,ETF,Finance,,false
+ISHARES WSRI $ H,SUWU,Amsterdam,SUWU.AS,ETF,Finance,,false
+iShETCXGDEIMXPAR,IGLD,Paris,IGLD.PA,ETF,Autre,,false
+iShETCXGDEIMXPAR,SLGN,Paris,SLGN.PA,ETF,Autre,,false
+iShETCXSLRIMXPAR,SSLN,Paris,SSLN.PA,ETF,Autre,,false
+ISHETF747668XAMS,WUTS,Amsterdam,WUTS.AS,ETF,Finance,,false
+ISHETF756290XAMS,WCTA,Amsterdam,WCTA.AS,ETF,Finance,,false
+ISHETF756290XAMS,WCTD,Amsterdam,WCTD.AS,ETF,Finance,,false
+ISHETF756292XAMS,UCTA,Amsterdam,UCTA.AS,ETF,Finance,,false
+ISHETF756292XAMS,UCTD,Amsterdam,UCTD.AS,ETF,Finance,,false
+ISHETF756294XAMS,JCTA,Amsterdam,JCTA.AS,ETF,Finance,,false
+ISHETF756294XAMS,JCTD,Amsterdam,JCTD.AS,ETF,Finance,,false
+ISHETFACWEIMXAMC,ACSW,Amsterdam,ACSW.AS,ETF,Autre,,false
+ISHETFACWEIMXAMS,ISDA,Amsterdam,ISDA.AS,ETF,Finance,,false
+ISHETFAWNT01XAMC,FTAW,Amsterdam,FTAW.AS,ETF,Finance,,false
+ISHETFAWNT01XAMC,FTSA,Amsterdam,FTSA.AS,ETF,Finance,,false
+ISHETFAWNT01XAMS,FTAE,Amsterdam,FTAE.AS,ETF,Finance,,false
+ISHETFAWNT01XAMS,FTAS,Amsterdam,FTAS.AS,ETF,Finance,,false
+ISHETFBLOCOMXPAR,ICOM,Paris,ICOM.PA,ETF,Autre,,false
+ISHETFCSUSIMXAMS,MSUD,Amsterdam,MSUD.AS,ETF,Autre,,false
+ISHETFDJAPSDXAMS,IAPU,Amsterdam,IAPU.AS,ETF,Finance,,false
+ISHETFDJJPSDXAMC,JPDV,Amsterdam,JPDV.AS,ETF,Finance,,false
+ISHETFFENGLCXAMS,GRET,Amsterdam,GRET.AS,ETF,Finance,,false
+ISHETFG27UXPAR,27IT,Paris,27IT.PA,ETF,Finance,,false
+ISHETFG29UXPAR,29IT,Paris,29IT.PA,ETF,Finance,,false
+ISHETFGBIE10XPAR,EMGA,Paris,EMGA.PA,ETF,Finance,,false
+ISHETFGEASIMXAMC,ESWP,Amsterdam,ESWP.AS,ETF,Autre,,false
+ISHETFGLMVEXXAMS,MVRS,Amsterdam,MVRS.AS,ETF,Finance,,false
+ISHETFGTBSXAMS,US03,Amsterdam,US03.AS,ETF,Finance,,false
+ISHETFHEC0XAMS,EH1H,Amsterdam,EH1H.AS,ETF,Finance,,false
+ISHETFHUC0XAMS,HYCB,Amsterdam,HYCB.AS,ETF,Finance,,false
+ISHETFHYLDIMXAMS,HYLH,Amsterdam,HYLH.AS,ETF,Finance,,false
+ISHETFI26UXPAR,26TP,Paris,26TP.PA,ETF,Finance,,false
+ISHETFI28UXPAR,28IY,Paris,28IY.PA,ETF,Finance,,false
+ISHETFI32561XAMS,CYUH,Amsterdam,CYUH.AS,ETF,Finance,,false
+ISHETFI37984XAMC,BD27,Amsterdam,BD27.AS,ETF,Finance,,false
+ISHETFI38292XAMS,JGBD,Amsterdam,JGBD.AS,ETF,Finance,,false
+ISHETFI38439XPAR,29ID,Paris,29ID.PA,ETF,Finance,,false
+ISHETFI38440XPAR,30ID,Paris,30ID.PA,ETF,Finance,,false
+ISHETFI38442XAMS,IG31,Amsterdam,IG31.AS,ETF,Finance,,false
+ISHETFI38443XAMS,35ID,Amsterdam,35ID.AS,ETF,Finance,,false
+ISHETFI38443XAMS,DI35,Amsterdam,DI35.AS,ETF,Finance,,false
+ISHETFI38443XPAR,30IG,Paris,30IG.PA,ETF,Finance,,false
+ISHETFI38444XPAR,29GI,Paris,29GI.PA,ETF,Finance,,false
+ISHETFI38466XAMS,31ID,Amsterdam,31ID.AS,ETF,Finance,,false
+ISHETFI38733XAMS,34ID,Amsterdam,34ID.AS,ETF,Finance,,false
+ISHETFI38734XAMS,33ID,Amsterdam,33ID.AS,ETF,Finance,,false
+ISHETFI38735XAMS,32ID,Amsterdam,32ID.AS,ETF,Finance,,false
+ISHETFI38741XAMS,IG34,Amsterdam,IG34.AS,ETF,Finance,,false
+ISHETFI38742XAMS,IG33,Amsterdam,IG33.AS,ETF,Finance,,false
+ISHETFI38743XAMS,IG32,Amsterdam,IG32.AS,ETF,Finance,,false
+ISHETFI39487XPAR,IX29,Paris,IX29.PA,ETF,Finance,,false
+ISHETFI39488XPAR,IX28,Paris,IX28.PA,ETF,Finance,,false
+ISHETFI40143XPAR,IG35,Paris,IG35.PA,ETF,Finance,,false
+ISHETFI40144XPAR,DI35,Paris,DI35.PA,ETF,Finance,,false
+ISHETFI40152XAMS,28IU,Amsterdam,28IU.AS,ETF,Finance,,false
+ISHETFI40152XAMS,IU28,Amsterdam,IU28.AS,ETF,Finance,,false
+ISHETFI40152XPAR,IU28,Paris,IU28.PA,ETF,Finance,,false
+ISHETFI40153XAMS,29IU,Amsterdam,29IU.AS,ETF,Finance,,false
+ISHETFI40153XAMS,IU29,Amsterdam,IU29.AS,ETF,Finance,,false
+ISHETFI40423XPAR,IB37,Paris,IB37.PA,ETF,Finance,,false
+ISHETFI40425XAMC,36ID,Amsterdam,36ID.AS,ETF,Finance,,false
+ISHETFI40425XAMC,ID36,Amsterdam,ID36.AS,ETF,Finance,,false
+ISHETFI40425XPAR,ID36,Paris,ID36.PA,ETF,Finance,,false
+ISHETFI40426XAMC,37ID,Amsterdam,37ID.AS,ETF,Finance,,false
+ISHETFI40426XAMC,ID37,Amsterdam,ID37.AS,ETF,Finance,,false
+ISHETFI40426XPAR,ID37,Paris,ID37.PA,ETF,Finance,,false
+ISHETFI40431XPAR,IB36,Paris,IB36.PA,ETF,Finance,,false
+ISHETFI40772XAMC,HCAM,Amsterdam,HCAM.AS,ETF,Finance,,false
+ISHETFI40772XAMC,HCEM,Amsterdam,HCEM.AS,ETF,Finance,,false
+ISHETFIBGLIMXAMS,IGBY,Amsterdam,IGBY.AS,ETF,Finance,,false
+ISHETFIDCOT1XAMS,I20T,Amsterdam,I20T.AS,ETF,Finance,,false
+ISHETFIDCOT2XAMS,DTEH,Amsterdam,DTEH.AS,ETF,Finance,,false
+ISHETFIDCOT3XAMS,CUEB,Amsterdam,CUEB.AS,ETF,Finance,,false
+ISHETFIDCOT7XAMS,IB7A,Amsterdam,IB7A.AS,ETF,Finance,,false
+ISHETFIGLTIMXAMS,IGLU,Amsterdam,IGLU.AS,ETF,Finance,,false
+ISHETFIHYGIMXAMS,HIGH,Amsterdam,HIGH.AS,ETF,Finance,,false
+ISHETFINAAIMXAMC,NOAM,Amsterdam,NOAM.AS,ETF,Autre,,false
+ISHETFISID25XPAR,IU29,Paris,IU29.PA,ETF,Finance,,false
+ISHETFIUSPIMXAMS,IUSI,Amsterdam,IUSI.AS,ETF,Finance,,false
+ISHETFLGTRTRXAMS,IGBD,Amsterdam,IGBD.AS,ETF,Finance,,false
+ISHETFLGTRTRXAMS,IGBG,Amsterdam,IGBG.AS,ETF,Finance,,false
+ISHETFLUICTRXAMS,ICEH,Amsterdam,ICEH.AS,ETF,Finance,,false
+ISHETFLUICTRXAMS,IDCB,Amsterdam,IDCB.AS,ETF,Finance,,false
+ISHETFM1CXNNXAMC,LAMT,Amsterdam,LAMT.AS,ETF,Finance,,false
+ISHETFM1WOUXAMC,XUES,Amsterdam,XUES.AS,ETF,Finance,,false
+ISHETFM1WOUXAMS,XSUE,Amsterdam,XSUE.AS,ETF,Finance,,false
+ISHETFM7EUSCXAMS,ESCE,Amsterdam,ESCE.AS,ETF,Finance,,false
+ISHETFMSCIWLXPAR,IWDS,Paris,IWDS.PA,ETF,Autre,,false
+ISHETFMSCUKXAMC,CSUK,Amsterdam,CSUK.AS,ETF,Finance,,false
+ISHETFMSDEWIXPAR,WPEH,Paris,WPEH.PA,ETF,Autre,,false
+ISHETFMXLA10XAMS,LATM,Amsterdam,LATM.AS,ETF,Finance,,false
+ISHETFNASDAQXAMS,NAQS,Amsterdam,NAQS.AS,ETF,Autre,,false
+ISHETFNASDAQXAMS,NASQ,Amsterdam,NASQ.AS,ETF,Autre,,false
+ISHETFNASDQXAMS,N1UD,Amsterdam,N1UD.AS,ETF,Autre,,false
+ISHETFNDDUWXXAMS,XUSE,Amsterdam,XUSE.AS,ETF,Finance,,false
+ISHETFNDX30UXAMS,QTOP,Amsterdam,QTOP.AS,ETF,Finance,,false
+ISHETFNDX30UXPAR,QTOP,Paris,QTOP.PA,ETF,Finance,,false
+ISHETFNDX70UXAMS,QNXT,Amsterdam,QNXT.AS,ETF,Finance,,false
+ISHETFNDX70UXPAR,QNXT,Paris,QNXT.PA,ETF,Finance,,false
+ISHETFNU7223XAMS,SAAI,Amsterdam,SAAI.AS,ETF,Finance,,false
+ISHETFNU7470XAMC,WSMT,Amsterdam,WSMT.AS,ETF,Finance,,false
+ISHETFNU7476XAMC,WMSC,Amsterdam,WMSC.AS,ETF,Finance,,false
+ISHETFNU7476XAMC,WNEN,Amsterdam,WNEN.AS,ETF,Finance,,false
+ISHETFNU7476XAMC,WNSF,Amsterdam,WNSF.AS,ETF,Finance,,false
+ISHETFNU7476XAMC,WSDC,Amsterdam,WSDC.AS,ETF,Finance,,false
+ISHETFNU7476XAMC,WSNI,Amsterdam,WSNI.AS,ETF,Finance,,false
+ISHETFNU7476XAMC,WSSC,Amsterdam,WSSC.AS,ETF,Finance,,false
+ISHETFNU7479XAMC,WSTI,Amsterdam,WSTI.AS,ETF,Finance,,false
+ISHETFNU7484XAMS,QDIA,Amsterdam,QDIA.AS,ETF,Finance,,false
+ISHETFNU7585XAMS,USLD,Amsterdam,USLD.AS,ETF,Finance,,false
+ISHETFNU7620XAMS,WEQW,Amsterdam,WEQW.AS,ETF,Finance,,false
+ISHETFRU2000XAMS,RU2K,Amsterdam,RU2K.AS,ETF,Autre,,false
+ISHETFSBG7UXAMC,SGLH,Amsterdam,SGLH.AS,ETF,Finance,,false
+ISHETFSEST85XAMS,ECSH,Amsterdam,ECSH.AS,ETF,Autre,,false
+ISHETFSEST85XPAR,EPEA,Paris,EPEA.PA,ETF,Autre,,false
+ISHETFSOLSFRXAMC,DCSH,Amsterdam,DCSH.AS,ETF,Autre,,false
+ISHETFSP500XAMS,I50E,Amsterdam,I50E.AS,ETF,Autre,,false
+ISHETFSP500XAMS,CSPEH,Amsterdam,CSPEH.AS,ETF,Finance,,false
+ISHETFSP500XPAR,SPEA,Paris,SPEA.PA,ETF,Autre,,false
+ISHETFSP9BKCXAMS,BNEH,Amsterdam,BNEH.AS,ETF,Finance,,false
+ISHETFSPDBADXPAR,DFND,Paris,DFND.PA,ETF,Finance,,false
+ISHETFSPXCW3XAMS,SP3C,Amsterdam,SP3C.AS,ETF,Finance,,false
+ISHETFSPXCW3XAMS,SPC3,Amsterdam,SPC3.AS,ETF,Finance,,false
+ISHETFSPXT2CXAMS,S2P0,Amsterdam,S2P0.AS,ETF,Finance,,false
+ISHETFSPXT2CXAMS,SP20,Amsterdam,SP20.AS,ETF,Finance,,false
+ISHETFSPXT2CXPAR,SP20,Paris,SP20.PA,ETF,Finance,,false
+ISHETFSPY4IMXAMS,SP4S,Amsterdam,SP4S.AS,ETF,Autre,,false
+ISHETFSTARXVXAMC,STAR,Amsterdam,STAR.AS,ETF,Finance,,false
+ISHETFSTARXVXPAR,STAR,Paris,STAR.PA,ETF,Finance,,false
+ISHETFSTXAIAXAMS,AIAA,Amsterdam,AIAA.AS,ETF,Finance,,false
+ISHETFSTXAIAXPAR,AIAA,Paris,AIAA.PA,ETF,Finance,,false
+ISHETFSTXAINXAMS,AINF,Amsterdam,AINF.AS,ETF,Finance,,false
+ISHETFSTXAINXPAR,AINF,Paris,AINF.PA,ETF,Finance,,false
+ISHETFSTXEGSXAMS,STOR,Amsterdam,STOR.AS,ETF,Finance,,false
+ISHETFSTXNEUXAMS,NUUR,Amsterdam,NUUR.AS,ETF,Finance,,false
+ISHETFSTXQNTXAMC,QANT,Amsterdam,QANT.AS,ETF,Finance,,false
+ISHETFSUOUIMXAMS,SUOD,Amsterdam,SUOD.AS,ETF,Finance,,false
+ISHETFSWEBRXAMC,BLDR,Amsterdam,BLDR.AS,ETF,Finance,,false
+ISHETFSWEBRXPAR,BLDR,Paris,BLDR.PA,ETF,Finance,,false
+ISHETFSWEUTDXAMS,DFEU,Amsterdam,DFEU.AS,ETF,Finance,,false
+ISHETFSXADOMXAMC,ADOM,Amsterdam,ADOM.AS,ETF,Finance,,false
+ISHETFSXAFORXAMC,APFO,Amsterdam,APFO.AS,ETF,Finance,,false
+ISHETFSXEDOMXAMS,EURP,Amsterdam,EURP.AS,ETF,Finance,,false
+ISHETFSXEFORXAMS,EUFG,Amsterdam,EUFG.AS,ETF,Finance,,false
+ISHETFVUCEIMXAMS,ICBD,Amsterdam,ICBD.AS,ETF,Finance,,false
+ISHETFXDEWIMXAMS,EWSD,Amsterdam,EWSD.AS,ETF,Finance,,false
+ISHETFXDEWIMXPAR,EWSP,Paris,EWSP.PA,ETF,Finance,,false
+ISHETNBRRXAMS,BTCN,Amsterdam,BTCN.AS,ETF,Autre,,false
+ISHETNBRRXPAR,IB1T,Paris,IB1T.PA,ETF,Autre,,false
+iSHR $ Gov 3-7A,CBU7,Amsterdam,CBU7.AS,ETF,Finance,,false
+iSHR Canada,CSCA,Amsterdam,CSCA.AS,ETF,Finance,,false
+iSHR E Gov 3-7A,CBE7,Amsterdam,CBE7.AS,ETF,Finance,,false
+iSHR ESTX50 B A,CSX5,Amsterdam,CSX5.AS,ETF,Finance,,false
+iSHR Japan A,CSJP,Amsterdam,CSJP.AS,ETF,Finance,,false
+iSHR Mexico Cap,CMEX,Amsterdam,CMEX.AS,ETF,Finance,,false
+iSHR MSCI EMUSC,CEMU,Amsterdam,CEMU.AS,ETF,Finance,,false
+iSHR MSCI USA,CSUS,Amsterdam,CSUS.AS,ETF,Finance,,false
+iSHR NASDAQ 100,CNDX,Amsterdam,CNDX.AS,ETF,Finance,,false
+iSHR Pac xJpn A,CPXJ,Amsterdam,CPXJ.AS,ETF,Finance,,false
+iSHR S&P500 B A,CSPX,Amsterdam,CSPX.AS,ETF,Finance,,false
+ISPD,ALISP,Paris,ALISP.PA,Action,Conso,,false
+IT LINK,ALITL,Paris,ALITL.PA,Action,Tech,,false
+IT WAY,ITW,Milan,ITW.MI,Action,Tech,,false
+ITALGAS,IG,Milan,IG.MI,Action,Ener,,false
+ITALIAN EXHIBITION,IEG,Milan,IEG.MI,Action,Conso,,false
+ITALIAN WINE BRAND,IWB,Milan,IWB.MI,Action,Conso,,false
+ITALMOBILIARE,ITM,Milan,ITM.MI,Action,Finance,,false
+ITERA,ITERA,Oslo,ITERA.OL,Action,Tech,,false
+IVECO GROUP,IVG,Milan,IVG.MI,Action,Ind,,false
+IVISION TECH,IVN,Milan,IVN.MI,Action,Santé,,false
+IVZ EQQQ,EQQQ,Paris,EQQQ.PA,ETF,Finance,,false
+IVZ EURMTS CASH 3M,PEU,Paris,PEU.PA,ETF,Finance,,false
+IVZ FTSE EM HDLV,EMHD,Paris,EMHD.PA,ETF,Finance,,false
+IVZ FTSE RAFI US,PFT,Paris,PFT.PA,ETF,Finance,,false
+IVZ NASDAQ BIOTECH,SBIO,Amsterdam,SBIO.AS,ETF,Finance,,false
+IVZ S&P 500,SPXS,Amsterdam,SPXS.AS,ETF,Finance,,false
+IVZ SP500 HDLV,HDLV,Paris,HDLV.PA,ETF,Finance,,false
+IVZ US HYFA,HYFA,Paris,HYFA.PA,ETF,Finance,,false
+"J.MARTINS,SGPS",JMT,Lisbonne,JMT.LS,Action,Conso,,false
+JACKTEL,JACK,Oslo,JACK.OL,Action,Ener,,false
+JACQUES BOGART,JBOG,Paris,JBOG.PA,Action,Conso,,false
+JACQUET METALS,JCQ,Paris,JCQ.PA,Action,Ind,,false
+JÆREN SPAREBANK,JAREN,Oslo,JAREN.OL,Action,Finance,,false
+JCDECAUX,DEC,Paris,DEC.PA,Action,Conso,,false
+JENSEN-GROUP,JEN,Brussels,JEN.BR,Action,Ind,,false
+JINHUI SHIPP TRANS,JIN,Oslo,JIN.OL,Action,Ind,,false
+JUVENTUS FC,JUVE,Milan,JUVE.MI,Action,Conso,,false
+KALDVIK,KLDVK,Oslo,KLDVK.OL,Action,Conso,,false
+KALEON,KLN,Milan,KLN.MI,Action,Conso,,false
+KALEON,ALKLN,Paris,ALKLN.PA,Action,Conso,,false
+KALRAY,ALKAL,Paris,ALKAL.PA,Action,Tech,,false
+KAUFMAN ET BROAD,KOF,Paris,KOF.PA,Action,Conso,,false
+KBC,KBC,Brussels,KBC.BR,Action,Finance,,false
+KBC ANCORA,KBCA,Brussels,KBCA.BR,Action,Finance,,false
+KENDRION,KENDR,Amsterdam,KENDR.AS,Action,Conso,,false
+KENMARE RESOURCES,KMR,Dublin,KMR.IR,Action,Ind,,false
+KERING,KER,Paris,KER.PA,Action,Conso,,false
+KERLINK,ALKLK,Paris,ALKLK.PA,Action,Tech,,false
+KERRY GROUP PLC,KRZ,Dublin,KRZ.IR,Action,Conso,,false
+KEYRUS,ALKEY,Paris,ALKEY.PA,Action,Tech,,false
+KID,KID,Oslo,KID.OL,Action,Conso,,false
+KINEPOLIS GROUP,KIN,Brussels,KIN.BR,Action,Conso,,false
+KINGSPAN GROUP PLC,KRX,Dublin,KRX.IR,Action,Ind,,false
+KITRON,KIT,Oslo,KIT.OL,Action,Ind,,false
+KKO INTERNATIONAL,ALKKO,Paris,ALKKO.PA,Action,Conso,,false
+KLARSEN,ALKLA,Paris,ALKLA.PA,Action,Conso,,false
+KLARSEN BSA O,KLBSO,Paris,KLBSO.PA,Action,Conso,,false
+KLAVENESS COMBINAT,KCC,Oslo,KCC.OL,Action,Ind,,false
+KLEA HOLDING,ALKLH,Paris,ALKLH.PA,Action,Santé,,false
+KLEPIERRE,LI,Paris,LI.PA,Action,Finance,,false
+KME GROUP,KME,Milan,KME.MI,Action,Ind,,false
+KME GROUP RSP,KMER,Milan,KMER.MI,Action,Ind,,false
+KOMPLETT,KOMPL,Oslo,KOMPL.OL,Action,Conso,,false
+KOMPUESTOS,ALKOM,Paris,ALKOM.PA,Action,Ind,,false
+KONGSBERG AUTOMOT,KOA,Oslo,KOA.OL,Action,Conso,,false
+KONGSBERG GRUPPEN,KOG,Oslo,KOG.OL,Action,Ind,,false
+KONGSBERG MARITIME,KMAR,Oslo,KMAR.OL,Action,Ind,,false
+KPN KON,KPN,Amsterdam,KPN.AS,Action,Tech,,false
+KRAFT BANK,KRAB,Oslo,KRAB.OL,Action,Finance,,false
+KRANE CSI INTERNET,KWEB,Amsterdam,KWEB.AS,ETF,Autre,,false
+KRUSO KAPITAL,KK,Milan,KK.MI,Action,Finance,,false
+KUMULUS VAPE,ALVAP,Paris,ALVAP.PA,Action,Conso,,false
+L'OREAL,OR,Paris,OR.PA,Action,Conso,,false
+L&G APAC x JP Eq.,LGAP,Amsterdam,LGAP.AS,ETF,Finance,,false
+L&G Core Japan Eq.,LGJP,Amsterdam,LGJP.AS,ETF,Finance,,false
+L&G Core US Eq.,LGUS,Amsterdam,LGUS.AS,ETF,Finance,,false
+L&G Cyber Security,ISPY,Amsterdam,ISPY.AS,ETF,Finance,,false
+L&G Ecommerce,ECOM,Amsterdam,ECOM.AS,ETF,Finance,,false
+L&G EU x UK Eq.,LGEU,Amsterdam,LGEU.AS,ETF,Finance,,false
+L&G Global Eq.,LGGL,Amsterdam,LGGL.AS,ETF,Finance,,false
+L&G Gold Mining,AUCO,Amsterdam,AUCO.AS,ETF,Finance,,false
+L&G Lg Dat Commod,COMF,Amsterdam,COMF.AS,ETF,Finance,,false
+L&G Pharma Breakth,BIOT,Amsterdam,BIOT.AS,ETF,Finance,,false
+L&G Robotics,ROBO,Amsterdam,ROBO.AS,ETF,Finance,,false
+L&G Russell 2000,RTWO,Amsterdam,RTWO.AS,ETF,Finance,,false
+LAB FARMACEUT ERFO,ERFO,Milan,ERFO.MI,Action,Santé,,false
+LABO EUROMEDIS,ALEMG,Paris,ALEMG.PA,Action,Santé,,false
+LACROIX GROUP,LACR,Paris,LACR.PA,Action,Ind,,false
+LAGARDERE SA,MMB,Paris,MMB.PA,Action,Conso,,false
+LAKEFRONT BIOTHER.,LKFT,Amsterdam,LKFT.AS,Action,Santé,,false
+LANDI RENZO,LNDR,Milan,LNDR.MI,Action,Conso,,false
+LANSON-BCC,ALLAN,Paris,ALLAN.PA,Action,Conso,,false
+LARGO,ALLGO,Paris,ALLGO.PA,Action,Tech,,false
+LATECOERE,LAT,Paris,LAT.PA,Action,Ind,,false
+LAURENT-PERRIER,LPE,Paris,LPE.PA,Action,Conso,,false
+LAVIDE HOLDING,LVIDE,Amsterdam,LVIDE.AS,Action,Finance,,false
+LDC,LOUP,Paris,LOUP.PA,Action,Conso,,false
+LE SLIP FRANCAIS,ALLSF,Paris,ALLSF.PA,Action,Conso,,false
+LEBON,ALBON,Paris,ALBON.PA,Action,Finance,,false
+LECTRA,LSS,Paris,LSS.PA,Action,Tech,,false
+LEMON SISTEMI,LS,Milan,LS.MI,Action,Ener,,false
+LEONE FILM GROUP,LFG,Milan,LFG.MI,Action,Conso,,false
+LEPERMISLIBRE,ALLPL,Paris,ALLPL.PA,Action,Conso,,false
+LERØY SEAFOOD GP,LSG,Oslo,LSG.OL,Action,Conso,,false
+LES HOTELS BAVEREZ,ALLHB,Paris,ALLHB.PA,Action,Conso,,false
+LEVETNAAPLXAMS,AAPY,Amsterdam,AAPY.AS,ETF,Autre,,false
+LEVETNADIXAMS,ADI3,Amsterdam,ADI3.AS,ETF,Autre,,false
+LEVETNADIXAMS,ADIY,Amsterdam,ADIY.AS,ETF,Autre,,false
+LEVETNAMATXAMS,AMAY,Amsterdam,AMAY.AS,ETF,Autre,,false
+LEVETNAMDXAMS,AMDY,Amsterdam,AMDY.AS,ETF,Autre,,false
+LEVETNAMZNXAMS,AMZY,Amsterdam,AMZY.AS,ETF,Autre,,false
+LEVETNARMHXAMS,YARM,Amsterdam,YARM.AS,ETF,Autre,,false
+LEVETNASMLXAMS,ASMY,Amsterdam,ASMY.AS,ETF,Autre,,false
+LEVETNAUMIXAMS,GLMY,Amsterdam,GLMY.AS,ETF,Autre,,false
+LEVETNAVGOXAMS,AVGY,Amsterdam,AVGY.AS,ETF,Autre,,false
+LEVETNBABAXAMS,BABY,Amsterdam,BABY.AS,ETF,Autre,,false
+LEVETNBERKSXAMS,BRKY,Amsterdam,BRKY.AS,ETF,Autre,,false
+LEVETNBMNR UXAMS,BMN3,Amsterdam,BMN3.AS,ETF,Autre,,false
+LEVETNBNMRXAMS,BMNY,Amsterdam,BMNY.AS,ETF,Autre,,false
+LEVETNBSKTXAMS,ARIY,Amsterdam,ARIY.AS,ETF,Autre,,false
+LEVETNBSKTXAMS,BLC3,Amsterdam,BLC3.AS,ETF,Autre,,false
+LEVETNBSKTXAMS,BLCY,Amsterdam,BLCY.AS,ETF,Autre,,false
+LEVETNBSKTXAMS,GRWY,Amsterdam,GRWY.AS,ETF,Autre,,false
+LEVETNBSKTXAMS,MLTY,Amsterdam,MLTY.AS,ETF,Autre,,false
+LEVETNBSKTXAMS,SEMY,Amsterdam,SEMY.AS,ETF,Autre,,false
+LEVETNCOINXAMS,COIY,Amsterdam,COIY.AS,ETF,Autre,,false
+LEVETNCPERXAMS,CPRS,Amsterdam,CPRS.AS,ETF,Autre,,false
+LEVETNCPERXAMS,CPRY,Amsterdam,CPRY.AS,ETF,Autre,,false
+LEVETNCPERXAMS,CUL3,Amsterdam,CUL3.AS,ETF,Autre,,false
+LEVETNCRCLXAMS,CRC3,Amsterdam,CRC3.AS,ETF,Autre,,false
+LEVETNCRCLXAMS,CRCY,Amsterdam,CRCY.AS,ETF,Autre,,false
+LEVETNCRWVXAMS,CRW3,Amsterdam,CRW3.AS,ETF,Autre,,false
+LEVETNCRWVXAMS,CRWY,Amsterdam,CRWY.AS,ETF,Autre,,false
+LEVETNCSSXXAMS,ESXY,Amsterdam,ESXY.AS,ETF,Autre,,false
+LEVETNDRAMXAMS,DRM3,Amsterdam,DRM3.AS,ETF,Autre,,false
+LEVETNDRAMXAMS,DRMS,Amsterdam,DRMS.AS,ETF,Autre,,false
+LEVETNDRAMXAMS,DRMY,Amsterdam,DRMY.AS,ETF,Autre,,false
+LEVETNE3LDQXAMS,QBT3,Amsterdam,QBT3.AS,ETF,Autre,,false
+LEVETNE3LJAXAMS,JOB3,Amsterdam,JOB3.AS,ETF,Autre,,false
+LEVETNE3LNPXAMS,SMR3,Amsterdam,SMR3.AS,ETF,Autre,,false
+LEVETNE3LOKXAMS,OKL3,Amsterdam,OKL3.AS,ETF,Autre,,false
+LEVETNE3LORXAMS,ORC3,Amsterdam,ORC3.AS,ETF,Autre,,false
+LEVETNE3LRCXAMS,RGT3,Amsterdam,RGT3.AS,ETF,Autre,,false
+LEVETNE3LRLXAMS,RKL3,Amsterdam,RKL3.AS,ETF,Autre,,false
+LEVETNFAANGTXAMS,FAN3,Amsterdam,FAN3.AS,ETF,Autre,,false
+LEVETNGLDXAMS,GLD5,Amsterdam,GLD5.AS,ETF,Autre,,false
+LEVETNGLXYXAMS,GLXY,Amsterdam,GLXY.AS,ETF,Autre,,false
+LEVETNGOOGXAMS,GOOY,Amsterdam,GOOY.AS,ETF,Autre,,false
+LEVETNHOODXAMS,HOOY,Amsterdam,HOOY.AS,ETF,Autre,,false
+LEVETNINTCXAMS,INTY,Amsterdam,INTY.AS,ETF,Autre,,false
+LEVETNINVQQQXAMS,SCLE,Amsterdam,SCLE.AS,ETF,Autre,,false
+LEVETNINXXAMS,ADPT,Amsterdam,ADPT.AS,ETF,Autre,,false
+LEVETNINXXAMS,SPYY,Amsterdam,SPYY.AS,ETF,Autre,,false
+LEVETNIONQXAMS,ION3,Amsterdam,ION3.AS,ETF,Autre,,false
+LEVETNIRENXAMS,IREY,Amsterdam,IREY.AS,ETF,Autre,,false
+LEVETNIRENXAMS,IRN3,Amsterdam,IRN3.AS,ETF,Autre,,false
+LEVETNKLACXAMS,KLA3,Amsterdam,KLA3.AS,ETF,Autre,,false
+LEVETNLRCXXAMS,LRCY,Amsterdam,LRCY.AS,ETF,Autre,,false
+LEVETNMAGSEVXAMS,MAGY,Amsterdam,MAGY.AS,ETF,Autre,,false
+LEVETNMARAXAMS,MARY,Amsterdam,MARY.AS,ETF,Autre,,false
+LEVETNMETAXAMS,METY,Amsterdam,METY.AS,ETF,Autre,,false
+LEVETNMICROXAMS,MUIY,Amsterdam,MUIY.AS,ETF,Autre,,false
+LEVETNMRVLXAMS,MRVY,Amsterdam,MRVY.AS,ETF,Autre,,false
+LEVETNMSFTXAMS,MSFY,Amsterdam,MSFY.AS,ETF,Autre,,false
+LEVETNMSTRXAMS,MSTI,Amsterdam,MSTI.AS,ETF,Autre,,false
+LEVETNNBISXAMS,NBI3,Amsterdam,NBI3.AS,ETF,Autre,,false
+LEVETNNDXXAMS,QQQY,Amsterdam,QQQY.AS,ETF,Autre,,false
+LEVETNNTFLXXAMS,NFLY,Amsterdam,NFLY.AS,ETF,Autre,,false
+LEVETNNVDAXAMS,NVDY,Amsterdam,NVDY.AS,ETF,Autre,,false
+LEVETNORACLXAMS,ORCY,Amsterdam,ORCY.AS,ETF,Autre,,false
+LEVETNPLTRXAMS,PLTY,Amsterdam,PLTY.AS,ETF,Autre,,false
+LEVETNQCOMXAMS,QCO3,Amsterdam,QCO3.AS,ETF,Autre,,false
+LEVETNQCOMXAMS,QCOY,Amsterdam,QCOY.AS,ETF,Autre,,false
+LEVETNRIOTXAMS,RIOY,Amsterdam,RIOY.AS,ETF,Autre,,false
+LEVETNSIL USXAMS,SLMS,Amsterdam,SLMS.AS,ETF,Autre,,false
+LEVETNSILUSXAMS,SLM3,Amsterdam,SLM3.AS,ETF,Autre,,false
+LEVETNSLVPXAMS,SLMY,Amsterdam,SLMY.AS,ETF,Autre,,false
+LEVETNSMCIXAMS,SMCY,Amsterdam,SMCY.AS,ETF,Autre,,false
+LEVETNSNDKXAMS,SND3,Amsterdam,SND3.AS,ETF,Autre,,false
+LEVETNSpaceXXAMS,ELNY,Amsterdam,ELNY.AS,ETF,Autre,,false
+LEVETNTLTXAMS,TLTY,Amsterdam,TLTY.AS,ETF,Autre,,false
+LEVETNTSLAXAMS,TSLY,Amsterdam,TSLY.AS,ETF,Autre,,false
+LEVETNTSMXAMS,TSMY,Amsterdam,TSMY.AS,ETF,Autre,,false
+LEVETNTXNXAMS,TXNY,Amsterdam,TXNY.AS,ETF,Autre,,false
+LEVETNUNGXAMS,NGL3,Amsterdam,NGL3.AS,ETF,Autre,,false
+LEVETNUNGXAMS,UNGS,Amsterdam,UNGS.AS,ETF,Autre,,false
+LEVETNUNITHXAMS,UNHY,Amsterdam,UNHY.AS,ETF,Autre,,false
+LEVETNURAUPXAMS,URNY,Amsterdam,URNY.AS,ETF,Autre,,false
+LEVETNUSOXAMS,WTI3,Amsterdam,WTI3.AS,ETF,Autre,,false
+LEVETNUSOXAMS,WTIY,Amsterdam,WTIY.AS,ETF,Autre,,false
+LEVETNUSOXAMS,WTOS,Amsterdam,WTOS.AS,ETF,Autre,,false
+LEVETNUX1XAMS,URA3,Amsterdam,URA3.AS,ETF,Autre,,false
+LEVETNUX1XAMS,URAS,Amsterdam,URAS.AS,ETF,Autre,,false
+LEVETNXAGUSDXAMS,SLVY,Amsterdam,SLVY.AS,ETF,Autre,,false
+LEVETNXAUUSDXAMS,GLDY,Amsterdam,GLDY.AS,ETF,Autre,,false
+LEXIBOOK LINGUIST.,ALLEX,Paris,ALLEX.PA,Action,Conso,,false
+LHYFE,ALHYF,Paris,ALHYF.PA,Action,Ener,,false
+LIFECARE,LIFE,Oslo,LIFE.OL,Action,Santé,,false
+LIGHTON,ALTAI,Paris,ALTAI.PA,Action,Tech,,false
+LINDBERGH,LDB,Milan,LDB.MI,Action,Ind,,false
+LINEDATA SERVICES,LIN,Paris,LIN.PA,Action,Tech,,false
+LINK MOBILITY GRP,LINK,Oslo,LINK.OL,Action,Tech,,false
+LISI,FII,Paris,FII.PA,Action,Ind,,false
+LITIX,LTX,Milan,LTX.MI,Action,Ind,,false
+LLEIDA,ALLLN,Paris,ALLLN.PA,Action,Tech,,false
+LNA SANTE,LNA,Paris,LNA.PA,Action,Santé,,false
+LOCASYSTEM INTL,MLLOI,Paris,MLLOI.PA,Action,Tech,,false
+LOGIC INSTRUMENT,ALLOG,Paris,ALLOG.PA,Action,Tech,,false
+LOKOTECH GROUP,LOKO,Oslo,LOKO.OL,Action,Tech,,false
+LOMBARD ET MEDOT,MLCAC,Paris,MLCAC.PA,Action,Conso,,false
+LONGINO&CARDENAL,LON,Milan,LON.MI,Action,Conso,,false
+LOTTOMATICA GROUP,LTMC,Milan,LTMC.MI,Action,Conso,,false
+LOTUS BAKERIES,LOTB,Brussels,LOTB.BR,Action,Conso,,false
+LOUIS HACHETTE,ALHG,Paris,ALHG.PA,Action,Conso,,false
+LS -1X AMD,SAMD,Amsterdam,SAMD.AS,ETF,Autre,,false
+LS -1X APPLE,SAPL,Amsterdam,SAPL.AS,ETF,Autre,,false
+LS -1X GOLDMAN,GSSS,Amsterdam,GSSS.AS,ETF,Autre,,false
+LS -1X NETFLIX,SNFL,Amsterdam,SNFL.AS,ETF,Autre,,false
+LS -1X NVIDIA,SNVD,Amsterdam,SNVD.AS,ETF,Autre,,false
+LS -1X PAYPAL,SPYP,Amsterdam,SPYP.AS,ETF,Autre,,false
+LS -1X SQUARE,SSQ,Amsterdam,SSQ.AS,ETF,Autre,,false
+LS -1X TESLA,STSL,Amsterdam,STSL.AS,ETF,Autre,,false
+LS -1X UBER,SUBR,Amsterdam,SUBR.AS,ETF,Autre,,false
+LS -2X TESLA,2STS,Amsterdam,2STS.AS,ETF,Autre,,false
+LS 2X ALIBABA,2BAB,Amsterdam,2BAB.AS,ETF,Autre,,false
+LS 2X ALPHABET,2GOO,Amsterdam,2GOO.AS,ETF,Autre,,false
+LS 2X AMAZON,2AMZ,Amsterdam,2AMZ.AS,ETF,Autre,,false
+LS 2X AMD,2AMD,Amsterdam,2AMD.AS,ETF,Autre,,false
+LS 2X APPLE,2AAP,Amsterdam,2AAP.AS,ETF,Autre,,false
+LS 2X FACEBOOK,2FB,Amsterdam,2FB.AS,ETF,Autre,,false
+LS 2X GOLDMAN,2GS,Amsterdam,2GS.AS,ETF,Autre,,false
+LS 2X MSFT,2MSF,Amsterdam,2MSF.AS,ETF,Autre,,false
+LS 2X NETFLIX,2NFL,Amsterdam,2NFL.AS,ETF,Autre,,false
+LS 2X NVIDIA,2NVD,Amsterdam,2NVD.AS,ETF,Autre,,false
+LS 2X TESLA,2TSL,Amsterdam,2TSL.AS,ETF,Autre,,false
+LS 2X VISA,2VIS,Amsterdam,2VIS.AS,ETF,Autre,,false
+LS 3X ALPHABET,3GOO,Amsterdam,3GOO.AS,ETF,Autre,,false
+LS 3X AMAZON,3AMZ,Amsterdam,3AMZ.AS,ETF,Autre,,false
+LS 3X BP,3BP,Amsterdam,3BP.AS,ETF,Autre,,false
+LS 3X CRM,3CRM,Amsterdam,3CRM.AS,ETF,Autre,,false
+LS 3X FACEBOOK,3FB,Amsterdam,3FB.AS,ETF,Autre,,false
+LS 3X MSFT,3MSF,Amsterdam,3MSF.AS,ETF,Autre,,false
+LS 3X NETFLIX,3NFL,Amsterdam,3NFL.AS,ETF,Autre,,false
+LS 3X NVIDIA,3NVD,Amsterdam,3NVD.AS,ETF,Autre,,false
+LS 3X PAYPAL,3PYP,Amsterdam,3PYP.AS,ETF,Autre,,false
+LS 3X SQUARE,3SQ,Amsterdam,3SQ.AS,ETF,Autre,,false
+LS 3X TESLA,3TSL,Amsterdam,3TSL.AS,ETF,Autre,,false
+Lstd Priv Eq USD A,IPRA,Amsterdam,IPRA.AS,ETF,Finance,,false
+LTCetc EUR,ELTC,Paris,ELTC.PA,ETF,Autre,,false
+LTCetc EUR,ELTC,Amsterdam,ELTC.AS,ETF,Autre,,false
+LUCIBEL,ALUCI,Paris,ALUCI.PA,Action,Ind,,false
+LUCISANO MEDIA G,LMG,Milan,LMG.MI,Action,Conso,,false
+LUMI EDUCATION GR,LUMI,Oslo,LUMI.OL,Action,Conso,,false
+LUMIBIRD,LBIRD,Paris,LBIRD.PA,Action,Santé,,false
+LUVE,LUVE,Milan,LUVE.MI,Action,Ind,,false
+LVMH,MC,Paris,MC.PA,Action,Conso,,false
+LYTIX BIOPHARMA,LYTIX,Oslo,LYTIX.OL,Action,Santé,,false
+LYXACTSMARTXPAR,CSH2,Paris,CSH2.PA,ETF,Finance,,false
+LYXETFUSHYIMXPAR,USHY,Paris,USHY.PA,ETF,Autre,,false
+Lyxor Core Japan,LCJP,Amsterdam,LCJP.AS,ETF,Finance,,false
+Lyxor Core Japan,LJPN,Amsterdam,LJPN.AS,ETF,Finance,,false
+LYXOR ETF DJ GT50,MGT,Paris,MGT.PA,ETF,Finance,,false
+LYXOR SP 500 VIX,LVX,Brussels,LVX.BR,ETF,Finance,,false
+M VEST WATER,MVW,Oslo,MVW.OL,Action,Ind,,false
+MAAT PHARMA,MAAT,Paris,MAAT.PA,Action,Santé,,false
+MACOMPTA.FR,ALCPA,Paris,ALCPA.PA,Action,Tech,,false
+MAGIS,MGS,Milan,MGS.MI,Action,Ind,,false
+MAGNORA,MGN,Oslo,MGN.OL,Action,Ener,,false
+MAGNORA DATA CENTE,MDATA,Oslo,MDATA.OL,Action,Finance,,false
+MAGNUM,MICC,Amsterdam,MICC.AS,Action,Conso,,false
+MAIRE,MAIRE,Milan,MAIRE.MI,Action,Ind,,false
+MAISON POMMERY,POMRY,Paris,POMRY.PA,Action,Conso,,false
+MAISONS DU MONDE,MDM,Paris,MDM.PA,Action,Conso,,false
+MAKING SCIENCE,ALMKS,Paris,ALMKS.PA,Action,Tech,,false
+MALIN CORP. PLC,MLC,Dublin,MLC.IR,Action,Santé,,false
+MALTERIES FCO-BEL.,MALT,Paris,MALT.PA,Action,Conso,,false
+MANITOU BF,MTU,Paris,MTU.PA,Action,Ind,,false
+MAPS,MAPS,Milan,MAPS.MI,Action,Tech,,false
+MARE ENGINEERING,MARE,Milan,MARE.MI,Action,Ind,,false
+MARE NOSTRUM,ALMAR,Paris,ALMAR.PA,Action,Ind,,false
+MARKBASS,MARK,Milan,MARK.MI,Action,Conso,,false
+MAROC TELECOM,IAM,Paris,IAM.PA,Action,Tech,,false
+MARR,MARR,Milan,MARR.MI,Action,Conso,,false
+MARTIFER,MAR,Lisbonne,MAR.LS,Action,Ind,,false
+MARZOCCHI POMPE,MARP,Milan,MARP.MI,Action,Ind,,false
+MASI AGRICOLA,MASI,Milan,MASI.MI,Action,Conso,,false
+MÅSØVAL,MAS,Oslo,MAS.OL,Action,Conso,,false
+MASTRAD,ALMAS,Paris,ALMAS.PA,Action,Conso,,false
+MATERIALISE,MTLS,Brussels,MTLS.BR,Action,Tech,,false
+MATICA FINTEC,MFT,Milan,MFT.MI,Action,Ind,,false
+MAUNA KEA BSA,MKTBS,Paris,MKTBS.PA,Action,Santé,,false
+MAUNA KEA TECH,ALMKT,Paris,ALMKT.PA,Action,Santé,,false
+MAUREL ET PROM,MAU,Paris,MAU.PA,Action,Ener,,false
+MBWS,MBWS,Paris,MBWS.PA,Action,Conso,,false
+MEDIA LAB,MLLAB,Paris,MLLAB.PA,Action,Tech,,false
+MEDIAN TECH BSA,MDTBS,Paris,MDTBS.PA,Action,Santé,,false
+MEDIANTECHNOLOGIES,ALMDT,Paris,ALMDT.PA,Action,Santé,,false
+MEDINCELL,MEDCL,Paris,MEDCL.PA,Action,Santé,,false
+MEDIOBANCA,MB,Milan,MB.MI,Action,Finance,,false
+MEDISTIM,MEDI,Oslo,MEDI.OL,Action,Santé,,false
+MELEXIS,MELE,Brussels,MELE.BR,Action,Tech,,false
+MELHUS SPAREBANK,MELG,Oslo,MELG.OL,Action,Finance,,false
+MEMSCAP REGPT,MEMS,Paris,MEMS.PA,Action,Tech,,false
+MERCIALYS,MERY,Paris,MERY.PA,Action,Finance,,false
+MERLIN PROPERTIES,MRL,Lisbonne,MRL.LS,Action,Finance,,false
+MERSEN,MRN,Paris,MRN.PA,Action,Ind,,false
+MET.EXTRA GROUP,MET,Milan,MET.MI,Action,Finance,,false
+METAVISIO,ALTHO,Paris,ALTHO.PA,Action,Tech,,false
+METAVRSE UCITS ETF,GIJO,Paris,GIJO.PA,ETF,Autre,,false
+METHANOR,ALMET,Paris,ALMET.PA,Action,Ener,,false
+METRIKS AI,MTK,Milan,MTK.MI,Action,Tech,,false
+METROPOLE TV,MMT,Paris,MMT.PA,Action,Conso,,false
+MEVIM,MEV,Milan,MEV.MI,Action,Finance,,false
+MEXEDIA,ALMEX,Paris,ALMEX.PA,Action,Tech,,false
+MFE A,MFEA,Milan,MFEA.MI,Action,Conso,,false
+MFE B,MFEB,Milan,MFEB.MI,Action,Conso,,false
+MG INTERNATIONAL,ALMGI,Paris,ALMGI.PA,Action,Conso,,false
+MGI DIGITAL GRAPHI,ALMDG,Paris,ALMDG.PA,Action,Ind,,false
+MICHELIN,ML,Paris,ML.PA,Action,Conso,,false
+MIGUET ET ASSOCIES,MLNMA,Paris,MLNMA.PA,Action,Conso,,false
+MIKO,MIKO,Brussels,MIKO.BR,Action,Conso,,false
+MILIBOO,ALMLB,Paris,ALMLB.PA,Action,Conso,,false
+MINCON GROUP PLC,MIO,Dublin,MIO.IR,Action,Ind,,false
+MINT,ALMIN,Paris,ALMIN.PA,Action,Ener,,false
+MISITANO STRACUZZI,MS,Milan,MS.MI,Action,Conso,,false
+MIT SIM,MTS,Milan,MTS.MI,Action,Finance,,false
+MKB Nedsense,NEDSE,Amsterdam,NEDSE.AS,Action,Tech,,false
+MOLTIPLY GROUP,MOL,Milan,MOL.MI,Action,Finance,,false
+MON COURTIER ENERG,ALMCE,Paris,ALMCE.PA,Action,Ind,,false
+MONCEY (FIN.) NOM.,FMONC,Paris,FMONC.PA,Action,Finance,,false
+MONCLER,MONC,Milan,MONC.MI,Action,Conso,,false
+MONDADORI EDIT,MN,Milan,MN.MI,Action,Conso,,false
+MONDO TV,MTV,Milan,MTV.MI,Action,Conso,,false
+MONDO TV FRANCE,MTVFR,Milan,MTVFR.MI,Action,Conso,,false
+MONNALISA,MNL,Milan,MNL.MI,Action,Conso,,false
+MONNI,MONNI,Brussels,MONNI.BR,Action,Tech,,false
+MONTEA,MONT,Brussels,MONT.BR,Action,Finance,,false
+MONTEPINO LOGISTIC,MLMTP,Paris,MLMTP.PA,Action,Finance,,false
+MOPOLI,MOP,Brussels,MOP.BR,Action,Finance,,false
+MOREFIELD GROUP,MORE,Amsterdam,MORE.AS,Action,Ind,,false
+MORELD,MORLD,Oslo,MORLD.OL,Action,Ind,,false
+MOSActBBLOKXPAR,BBLOK,Paris,BBLOK.PA,ETF,Autre,,false
+MOTA ENGIL,EGL,Lisbonne,EGL.LS,Action,Ind,,false
+MOTORK,MTRK,Amsterdam,MTRK.AS,Action,Tech,,false
+MOULINVEST,ALMOU,Paris,ALMOU.PA,Action,Ind,,false
+MOURY CONSTRUCT,MOUR,Brussels,MOUR.BR,Action,Ind,,false
+MOWI,MOWI,Oslo,MOWI.OL,Action,Conso,,false
+MPC CONTAINER SHIP,MPCC,Oslo,MPCC.OL,Action,Ind,,false
+MPC ENERGY SOLUTIO,MPCES,Oslo,MPCES.OL,Action,Ener,,false
+MR BRICOLAGE,ALMRB,Paris,ALMRB.PA,Action,Conso,,false
+MSCI China A Acc,CNYA,Amsterdam,CNYA.AS,ETF,Finance,,false
+MSCI E Prs-Alg A,EUPB,Amsterdam,EUPB.AS,ETF,Finance,,false
+MSCI E Prs-Alg D,EPAD,Amsterdam,EPAD.AS,ETF,Finance,,false
+MSCI EM CGrwth A,CEMG,Amsterdam,CEMG.AS,ETF,Finance,,false
+MSCI EMU Prs-Alg A,EMPA,Amsterdam,EMPA.AS,ETF,Finance,,false
+MSCI EMU Prs-Alg D,MPAB,Amsterdam,MPAB.AS,ETF,Finance,,false
+MSCI France Acc,IFRE,Amsterdam,IFRE.AS,ETF,Finance,,false
+MSCI Gb Tel US ACC,TLCO,Amsterdam,TLCO.AS,ETF,Finance,,false
+MSCI Glo Semi US A,SEMI,Amsterdam,SEMI.AS,ETF,Finance,,false
+MSCI JAP EH,IJPE,Amsterdam,IJPE.AS,ETF,Finance,,false
+MSCI US SRI Acc,SUAU,Amsterdam,SUAU.AS,ETF,Finance,,false
+MSCI W Climate PA,PABW,Paris,PABW.PA,ETF,Autre,,false
+MSCI W ESG B CTB S,LWCR,Paris,LWCR.PA,ETF,Autre,,false
+MSCI W SRI Acc,SUSW,Amsterdam,SUSW.AS,ETF,Finance,,false
+MSCI Wd Com ESG US,WCMS,Amsterdam,WCMS.AS,ETF,Finance,,false
+MSCI Wd Eng ESG US,WENE,Amsterdam,WENE.AS,ETF,Finance,,false
+MSCI Wd Ind ESG US,WINS,Amsterdam,WINS.AS,ETF,Finance,,false
+MSCI Wd Mat ESG US,WMTS,Amsterdam,WMTS.AS,ETF,Finance,,false
+MSCI Wld Mom USD A,IWME,Amsterdam,IWME.AS,ETF,Finance,,false
+MSCI Wld Swp US Ac,IWDS,Amsterdam,IWDS.AS,ETF,Autre,,false
+MSCI Wld Val USD A,IWVE,Amsterdam,IWVE.AS,ETF,Finance,,false
+MSCI WRD EH,IWDE,Amsterdam,IWDE.AS,ETF,Finance,,false
+MULETF500HITXPAR,SPHC,Paris,SPHC.PA,ETF,Finance,,false
+MULETFC40TRIXPAR,CA40,Paris,CA40.PA,ETF,Finance,,false
+MULETFEMXCIMXPAR,EMXC,Paris,EMXC.PA,ETF,Finance,,false
+MULETFEUSTAUXPAR,INDEP,Paris,INDEP.PA,ETF,Finance,,false
+MULETFMDAXNRXPAR,MDX,Paris,MDX.PA,ETF,Finance,,false
+MULETFSOLMUTXPMC,CSH2J,Paris,CSH2J.PA,ETF,Finance,,false
+MULETFSX5TXPAR,MSES,Paris,MSES.PA,ETF,Finance,,false
+MULETFUS37IMXPAR,US37C,Paris,US37C.PA,ETF,Finance,,false
+MULETFXCS6IMXPAR,LCCN,Paris,LCCN.PA,ETF,Finance,,false
+MULSTRM004USXPAR,DSP5,Paris,DSP5.PA,ETF,Finance,,false
+MULStrMXWOLDXPAR,LWLD,Paris,LWLD.PA,ETF,Finance,,false
+MULTI ETF BTP DDS,BTPS,Paris,BTPS.PA,ETF,Finance,,false
+MULTI Hwabao Chin,CNAA,Paris,CNAA.PA,ETF,Finance,,false
+MULTI MSCI WdHEUR,WLDHC,Paris,WLDHC.PA,ETF,Finance,,false
+MULTI US TREA 1-3Y,U13C,Amsterdam,U13C.AS,ETF,Finance,,false
+MULTI US-T 7-10Y,U710H,Paris,U710H.PA,ETF,Finance,,false
+MULTI UST 1-3Y,US13,Paris,US13.PA,ETF,Finance,,false
+MULTI UST 3-7Y,US37,Paris,US37.PA,ETF,Finance,,false
+MULTI USTreas 1-3Y,U13HK,Paris,U13HK.PA,ETF,Finance,,false
+MULTICONSULT,MULTI,Oslo,MULTI.OL,Action,Ind,,false
+MUNIC,ALMUN,Paris,ALMUN.PA,Action,Tech,,false
+MYHOTELMATCH,MHM,Paris,MHM.PA,Action,Conso,,false
+NABLA,NABLA,Milan,NABLA.MI,Action,Conso,,false
+NACON,NACON,Paris,NACON.PA,Action,Conso,,false
+NAI ORD SHARES,NAI,Amsterdam,NAI.AS,Action,Finance,,false
+NANOBIOTIX,NANO,Paris,NANO.PA,Action,Santé,,false
+NAPATECH,NAPA,Oslo,NAPA.OL,Action,Tech,,false
+NATO UCITS ETF,NATO,Paris,NATO.PA,ETF,Autre,,false
+NAVAMEDIC,NAVA,Oslo,NAVA.OL,Action,Santé,,false
+NEDAP,NEDAP,Amsterdam,NEDAP.AS,Action,Ind,,false
+NEKKAR,NKR,Oslo,NKR.OL,Action,Ind,,false
+NEL,NEL,Oslo,NEL.OL,Action,Ener,,false
+NEODECORTECH,NDT,Milan,NDT.MI,Action,Ind,,false
+NEOLIFE,ALNLF,Paris,ALNLF.PA,Action,Ind,,false
+NEOVACS,ALNEV,Paris,ALNEV.PA,Action,Santé,,false
+NEPI ROCKCASTLE,NRP,Amsterdam,NRP.AS,Action,Finance,,false
+NETGEM,ALNTG,Paris,ALNTG.PA,Action,Tech,,false
+NETMEDIA GROUP,ALNMG,Paris,ALNMG.PA,Action,Conso,,false
+NEURONES,NRO,Paris,NRO.PA,Action,Tech,,false
+NEUROSOFT,NRST,Milan,NRST.MI,Action,Tech,,false
+NEW SOURCES ENERGY,NSE,Amsterdam,NSE.AS,Action,Ener,,false
+NEWPRINCES,NWL,Milan,NWL.MI,Action,Conso,,false
+NEWTREE,NEWT,Brussels,NEWT.BR,Action,Conso,,false
+NEXI,NEXI,Milan,NEXI.MI,Action,Ind,,false
+NEXITY,NXI,Paris,NXI.PA,Action,Conso,,false
+NEXT BIOMETRICS GP,NEXT,Oslo,NEXT.OL,Action,Tech,,false
+NEXT GEOSOLUTIONS,NXT,Milan,NXT.MI,Action,Ind,,false
+NEXTEDIA,ALNXT,Paris,ALNXT.PA,Action,Tech,,false
+NEXTENSA,NEXTA,Brussels,NEXTA.BR,Action,Finance,,false
+NFL BIOSCIENCES,ALNFL,Paris,ALNFL.PA,Action,Santé,,false
+NICOX,ALCOX,Paris,ALCOX.PA,Action,Santé,,false
+NIDAROS SPAREBANK,NISB,Oslo,NISB.OL,Action,Finance,,false
+NN GROUP,NN,Amsterdam,NN.AS,Action,Finance,,false
+NORAM DRILLING,NORAM,Oslo,NORAM.OL,Action,Ener,,false
+NORBIT,NORBT,Oslo,NORBT.OL,Action,Ind,,false
+NORCOD,NCOD,Oslo,NCOD.OL,Action,Conso,,false
+NORCONSULT,NORCO,Oslo,NORCO.OL,Action,Ind,,false
+NORDHEALTH A-AKSJE,NORDH,Oslo,NORDH.OL,Action,Santé,,false
+NORDIC AQUA PART,NOAP,Oslo,NOAP.OL,Action,Conso,,false
+NORDIC FINANCIALS,NOFIN,Oslo,NOFIN.OL,Action,Finance,,false
+NORDIC HALIBUT,NOHAL,Oslo,NOHAL.OL,Action,Conso,,false
+NORDIC MINING,NOM,Oslo,NOM.OL,Action,Ind,,false
+NORDIC SEMICONDUC,NOD,Oslo,NOD.OL,Action,Tech,,false
+NORDIC TECHNOLOGY,NTG,Oslo,NTG.OL,Action,Ind,,false
+NORSE ATLANTIC,NORSE,Oslo,NORSE.OL,Action,Conso,,false
+NORSK HYDRO,NHY,Oslo,NHY.OL,Action,Ind,,false
+NORSK TITANIUM,NTI,Oslo,NTI.OL,Action,Ind,,false
+NORSKE SKOG,NSKOG,Oslo,NSKOG.OL,Action,Ind,,false
+North Atlantic En.,NAE,Paris,NAE.PA,Action,Ener,,false
+NORTH ENERGY,NORTH,Oslo,NORTH.OL,Action,Ener,,false
+NORTHERN OCEAN LTD,NOL,Oslo,NOL.OL,Action,Ener,,false
+NORWEGIAN AIR SHUT,NAS,Oslo,NAS.OL,Action,Conso,,false
+NORWEGIAN BLOCK EX,NBX,Oslo,NBX.OL,Action,Finance,,false
+NOS NOVA,NOSN,Oslo,NOSN.OL,Action,Ener,,false
+"NOS, SGPS",NOS,Lisbonne,NOS.LS,Action,Tech,,false
+NOTORIOUS PICTURES,NPI,Milan,NPI.MI,Action,Conso,,false
+"NOVABASE,SGPS",NBA,Lisbonne,NBA.LS,Action,Tech,,false
+NOVACYT,ALNOV,Paris,ALNOV.PA,Action,Santé,,false
+NOVAMARINE,NOVA,Milan,NOVA.MI,Action,Conso,,false
+NOVATECH IND.,MLNOV,Paris,MLNOV.PA,Action,Ind,,false
+NR21,NR21,Paris,NR21.PA,Action,Conso,,false
+NRC GROUP,NRC,Oslo,NRC.OL,Action,Ind,,false
+NRJ GROUP,NRG,Paris,NRG.PA,Action,Conso,,false
+NSC GROUPE,ALNSC,Paris,ALNSC.PA,Action,Ind,,false
+NSE,ALNSE,Paris,ALNSE.PA,Action,Ind,,false
+NSI N.V.,NSI,Amsterdam,NSI.AS,Action,Finance,,false
+NUSCO,NUS,Milan,NUS.MI,Action,Ind,,false
+NX FILTRATION,NXFIL,Amsterdam,NXFIL.AS,Action,Ind,,false
+NYKODE THERAPEUTIC,NYKD,Oslo,NYKD.OL,Action,Santé,,false
+NYRSTAR,NYR,Brussels,NYR.BR,Action,Ind,,false
+NYXOAH,NYXH,Brussels,NYXH.BR,Action,Santé,,false
+OBIZ,ALBIZ,Paris,ALBIZ.PA,Action,Conso,,false
+OBSERVE MEDICAL,OBSRV,Oslo,OBSRV.OL,Action,Santé,,false
+OBXEDNB,OBXD,Oslo,OBXD.OL,ETF,Finance,,false
+OCEAN GEOLOOP,OCEAN,Oslo,OCEAN.OL,Action,Ind,,false
+OCEAN SUN,OSUN,Oslo,OSUN.OL,Action,Ener,,false
+OCI,OCI,Amsterdam,OCI.AS,Action,Ind,,false
+OCTOPUS BIOSAFETY,MLOCT,Paris,MLOCT.PA,Action,Ind,,false
+ODFJELL DRILLING,ODL,Oslo,ODL.OL,Action,Ener,,false
+ODFJELL SER. A,ODF,Oslo,ODF.OL,Action,Ind,,false
+ODFJELL SER. B,ODFB,Oslo,ODFB.OL,Action,Ind,,false
+ODFJELL TECHNOLOGY,OTL,Oslo,OTL.OL,Action,Ener,,false
+ODIOT S.A.,MLODT,Paris,MLODT.PA,Action,Conso,,false
+ODYSSEE TECHNO,ALODY,Paris,ALODY.PA,Action,Ind,,false
+OENEO,SBT,Paris,SBT.PA,Action,Ind,,false
+OFFICINA STELLARE,OS,Milan,OS.MI,Action,Ind,,false
+OilGas Ex Prd A,IOGP,Amsterdam,IOGP.AS,ETF,Finance,,false
+OKEA,OKEA,Oslo,OKEA.OL,Action,Ener,,false
+OKEANIS ECO TANKER,OET,Oslo,OET.OL,Action,Ind,,false
+OLIDATA,OLI,Milan,OLI.MI,Action,Tech,,false
+OMC TANKERS,OMC,Oslo,OMC.OL,Action,Ind,,false
+OMDA,OMDA,Oslo,OMDA.OL,Action,Santé,,false
+OMER,OMER,Milan,OMER.MI,Action,Ind,,false
+OMER-DECUGIS & CIE,ALODC,Paris,ALODC.PA,Action,Conso,,false
+ONCODESIGN PM,ALOPM,Paris,ALOPM.PA,Action,Santé,,false
+ONCOINVENT,ONCIN,Oslo,ONCIN.OL,Action,Santé,,false
+ONE EXP BSA 2025 2,ONEBS,Paris,ONEBS.PA,Action,Ind,,false
+ONE EXPERIENCE,ALEXP,Paris,ALEXP.PA,Action,Ind,,false
+ONTEX GROUP,ONTEX,Brussels,ONTEX.BR,Action,Conso,,false
+ONWARD MEDICAL,ONWD,Brussels,ONWD.BR,Action,Santé,,false
+OPMOBILITY,OPM,Paris,OPM.PA,Action,Conso,,false
+OPT,OPTS,Milan,OPTS.MI,Action,Santé,,false
+OPTION,OPTI,Brussels,OPTI.BR,Action,Tech,,false
+ORANGE,ORA,Paris,ORA.PA,Action,Tech,,false
+ORANGE BELGIUM,OBEL,Brussels,OBEL.BR,Action,Tech,,false
+ORANGE MEDIA GROUP,OMG,Milan,OMG.MI,Action,Conso,,false
+ORDISSIMO,ALORD,Paris,ALORD.PA,Action,Tech,,false
+OREGE,OREGE,Paris,OREGE.PA,Action,Ener,,false
+ORIGIN ENT. PLC,OIZ,Dublin,OIZ.IR,Action,Conso,,false
+ORINOQUIA,MLORQ,Paris,MLORQ.PA,Action,Finance,,false
+ORKLA,ORK,Oslo,ORK.OL,Action,Conso,,false
+ORSERO,ORS,Milan,ORS.MI,Action,Conso,,false
+Os BLM (EUR),OP2E,Paris,OP2E.PA,ETF,Autre,,false
+Os BLM ASIA P(EUR),OP6E,Paris,OP6E.PA,ETF,Autre,,false
+Os BLM EX (EUR),OP4E,Paris,OP4E.PA,ETF,Autre,,false
+Os BLM JAP (Eur),OP5E,Paris,OP5E.PA,ETF,Autre,,false
+Os BLM JAP (HDG),OP5H,Paris,OP5H.PA,ETF,Autre,,false
+Os Blm US (Eur),OP7E,Paris,OP7E.PA,ETF,Autre,,false
+Os Blm US (HGD),OP7H,Paris,OP7H.PA,ETF,Autre,,false
+OSE IMMUNO,OSE,Paris,OSE.PA,Action,Santé,,false
+OSSActGLOBXPAR,GLOB,Paris,GLOB.PA,ETF,Autre,,false
+OSSETFBXIITIXPAR,SHTE,Paris,SHTE.PA,ETF,Autre,,false
+OSSETFCACNRXPAR,0CAC,Paris,0CAC.PA,ETF,Autre,,false
+OSSETFCAPUIMXPAR,CAPH,Paris,CAPH.PA,ETF,Autre,,false
+OSSETFDMPABNXPAR,OP9E,Paris,OP9E.PA,ETF,Autre,,false
+OSSETFMSDEE1XPAR,MEUR,Paris,MEUR.PA,ETF,Autre,,false
+OSSETFMSTRUSXPAR,0SWE,Paris,0SWE.PA,ETF,Autre,,false
+OSSETFNDDLCAXPAR,0UCA,Paris,0UCA.PA,ETF,Autre,,false
+OSSETFSEMUIMXPAR,0EMU,Paris,0EMU.PA,ETF,Autre,,false
+OSSETFSP500XPAR,0USE,Paris,0USE.PA,ETF,Autre,,false
+OSSIAM 5OGE ETF,5OGE,Paris,5OGE.PA,ETF,Autre,,false
+OSSIAM 5OGU ETF,5OGU,Paris,5OGU.PA,ETF,Autre,,false
+OSSIAM ETF CAPE EU,CAPE,Paris,CAPE.PA,ETF,Autre,,false
+OSSIAM ETF CAPE US,CAPU,Paris,CAPU.PA,ETF,Autre,,false
+OSSIAM EURP EQUI W,S6EW,Paris,S6EW.PA,ETF,Autre,,false
+OTELLO CORPORATION,OTEC,Oslo,OTEC.OL,Action,Tech,,false
+OTOFARMA,OTO,Milan,OTO.MI,Action,Santé,,false
+OTOVO,OTOVO,Oslo,OTOVO.OL,Action,Ener,,false
+OTT HERITAGE HOSP,MLOTT,Paris,MLOTT.PA,Action,Finance,,false
+OUTLET GROUP HOLD,OUTLT,Oslo,OUTLT.OL,Action,Conso,,false
+OVH,OVH,Paris,OVH.PA,Action,Tech,,false
+OVS,OVS,Milan,OVS.MI,Action,Conso,,false
+OXURION,OXUR,Brussels,OXUR.BR,Action,Santé,,false
+PACETFCALFNTXAMS,CALF,Amsterdam,CALF.AS,ETF,Autre,,false
+PACTE NOVATION,MLPAC,Paris,MLPAC.PA,Action,Tech,,false
+PANORO ENERGY,PEN,Oslo,PEN.OL,Action,Ener,,false
+PARATUS ENERGY SER,PLSV,Oslo,PLSV.OL,Action,Ener,,false
+PAREF,PAR,Paris,PAR.PA,Action,Finance,,false
+PARETO BANK,PARB,Oslo,PARB.OL,Action,Finance,,false
+PARROT,PARRO,Paris,PARRO.PA,Action,Tech,,false
+PARX MATERIALS NV,MLPRX,Paris,MLPRX.PA,Action,Santé,,false
+PASQUARELLI AUTO,PSQ,Milan,PSQ.MI,Action,Conso,,false
+PASSAT,ALPAS,Paris,ALPAS.PA,Action,Conso,,false
+PATRIMOINE ET COMM,PAT,Paris,PAT.PA,Action,Finance,,false
+PATTERN,PTR,Milan,PTR.MI,Action,Conso,,false
+PAULIC MEUNERIE,ALPAU,Paris,ALPAU.PA,Action,Conso,,false
+PAYTON PLANAR,PAY,Brussels,PAY.BR,Action,Ind,,false
+PB HOLDING,PBH,Amsterdam,PBH.AS,Action,Finance,,false
+PCR COWZ UCITS ETF,COWZ,Amsterdam,COWZ.AS,ETF,Autre,,false
+PCR GCOW UCITS ETF,GCOW,Amsterdam,GCOW.AS,ETF,Autre,,false
+PCR ICOW UCITS ETF,ICOW,Amsterdam,ICOW.AS,ETF,Autre,,false
+PELAGIC CREDIT,PLGC,Oslo,PLGC.OL,Action,Ind,,false
+PELICAN AQUA HLDNG,PLCAN,Oslo,PLCAN.OL,Action,Ind,,false
+PERM. TSB GP. HOLD,PTSB,Dublin,PTSB.IR,Action,Finance,,false
+PERNOD RICARD,RI,Paris,RI.PA,Action,Conso,,false
+PERRIER (GERARD),ALPER,Paris,ALPER.PA,Action,Tech,,false
+PET SERVICE,ALPET,Paris,ALPET.PA,Action,Conso,,false
+PETROLIA,PSE,Oslo,PSE.OL,Action,Ener,,false
+PETRONOR E&P,PNOR,Oslo,PNOR.OL,Action,Ener,,false
+PEUGEOT INVEST,PEUG,Paris,PEUG.PA,Action,Finance,,false
+PEXIP HOLDING,PEXIP,Oslo,PEXIP.OL,Action,Tech,,false
+PHARMANUTRA,PHN,Milan,PHN.MI,Action,Santé,,false
+PHARMING GROUP,PHARM,Amsterdam,PHARM.AS,Action,Santé,,false
+PHAROL,PHR,Lisbonne,PHR.LS,Action,Tech,,false
+PHILIPS KON,PHIA,Amsterdam,PHIA.AS,Action,Santé,,false
+PHILOGEN,PHIL,Milan,PHIL.MI,Action,Santé,,false
+PHONE WEB,MLPHW,Paris,MLPHW.PA,Action,Ind,,false
+PHOTOCURE,PHO,Oslo,PHO.OL,Action,Santé,,false
+PHOTONIKE CAPITAL,MLPHO,Paris,MLPHO.PA,Action,Finance,,false
+PIAGGIO,PIA,Milan,PIA.MI,Action,Conso,,false
+PIERRE VAC BSA ACT,VACBS,Paris,VACBS.PA,Action,Conso,,false
+PIERRE VAC BSA CRE,VACBT,Paris,VACBT.PA,Action,Conso,,false
+PIERRE VACANCES,VAC,Paris,VAC.PA,Action,Conso,,false
+PININFARINA SPA,PINF,Milan,PINF.MI,Action,Conso,,false
+PIONEER PROPERTY,PPG,Oslo,PPG.OL,Action,Finance,,false
+PIQUADRO,PQ,Milan,PQ.MI,Action,Conso,,false
+PIRELLI & C,PIRC,Milan,PIRC.MI,Action,Conso,,false
+PISCINES DESJOYAUX,ALPDX,Paris,ALPDX.PA,Action,Conso,,false
+Piu' Medical,PMED,Milan,PMED.MI,Action,Conso,,false
+PLANETEL,PLN,Milan,PLN.MI,Action,Tech,,false
+PLANISWARE,PLNW,Paris,PLNW.PA,Action,Tech,,false
+PLANT ADVANCED,ALPAT,Paris,ALPAT.PA,Action,Santé,,false
+PLAST. VAL LOIRE,ALPVL,Paris,ALPVL.PA,Action,Ind,,false
+PLC,PLC,Milan,PLC.MI,Action,Ind,,false
+PLUXEE,PLX,Paris,PLX.PA,Action,Ind,,false
+POLAR RESOURCES,POLAR,Oslo,POLAR.OL,Action,Ind,,false
+POLARIS MEDIA,POL,Oslo,POL.OL,Action,Conso,,false
+POLIGHT,PLT,Oslo,PLT.OL,Action,Tech,,false
+POLIGRAF PRINTING,POPR,Milan,POPR.MI,Action,Conso,,false
+PORCELEYNE FLES,PORF,Amsterdam,PORF.AS,Action,Conso,,false
+PORTO AVIATION,PAG,Milan,PAG.MI,Action,Ind,,false
+PORTOBELLO,POR,Milan,POR.MI,Action,Conso,,false
+POSTE ITALIANE,PST,Milan,PST.MI,Action,Finance,,false
+POSTNL,PNL,Amsterdam,PNL.AS,Action,Ind,,false
+POUJOULAT,ALPJT,Paris,ALPJT.PA,Action,Ind,,false
+POWERSOFT,PWS,Milan,PWS.MI,Action,Conso,,false
+POXEL,POXEL,Paris,POXEL.PA,Action,Santé,,false
+POZZI MILANO,POZ,Milan,POZ.MI,Action,Conso,,false
+PPI PUBLIC PROP,PUBLI,Oslo,PUBLI.OL,Action,Finance,,false
+Praexidia,PRXD,Milan,PRXD.MI,Action,Finance,,false
+PRECIA,ALPM,Paris,ALPM.PA,Action,Ind,,false
+PREDICT,PRE,Milan,PRE.MI,Action,Santé,,false
+PREDILIFE,ALPRE,Paris,ALPRE.PA,Action,Santé,,false
+PREMIA FINANCE,PFI,Milan,PFI.MI,Action,Finance,,false
+PRISMAFLEX INTL,ALPRI,Paris,ALPRI.PA,Action,Conso,,false
+PROACTIS SA,PROAC,Paris,PROAC.PA,Action,Tech,,false
+PRODWAYS GROUP,ALPWG,Paris,ALPWG.PA,Action,Ind,,false
+PROLOGUE,ALPRG,Paris,ALPRG.PA,Action,Tech,,false
+PROMOTICA,PMT,Milan,PMT.MI,Action,Conso,,false
+PROP.IMMEUBLES,MLPRI,Paris,MLPRI.PA,Action,Finance,,false
+PROSAFE,PRS,Oslo,PRS.OL,Action,Ener,,false
+PROSUS,PRX,Amsterdam,PRX.AS,Action,Tech,,false
+PROTECTOR FORSIKRG,PROT,Oslo,PROT.OL,Action,Finance,,false
+PROXIMAR SEAFOOD,PROXI,Oslo,PROXI.OL,Action,Conso,,false
+PROXIMUS,PROX,Brussels,PROX.BR,Action,Tech,,false
+PUBLICIS GROUPE SA,PUB,Paris,PUB.PA,Action,Conso,,false
+PULLUP ENTERTAIN,ALPUL,Paris,ALPUL.PA,Action,Conso,,false
+PYRATZ CORP.,MLPTZ,Paris,MLPTZ.PA,Action,Tech,,false
+PYRUM INNOVATIONS,PYRUM,Oslo,PYRUM.OL,Action,Ener,,false
+QRF,QRF,Brussels,QRF.BR,Action,Finance,,false
+QUADIENT,QDT,Paris,QDT.PA,Action,Tech,,false
+QUESTERRE EN PREF,QGAS,Oslo,QGAS.OL,Action,Ener,,false
+QUESTERRE ENERGY,QEC,Oslo,QEC.OL,Action,Ener,,false
+QUESTFOR GR-PRICAF,QFG,Brussels,QFG.BR,Action,Finance,,false
+QWAMPLIFY,ALQWA,Paris,ALQWA.PA,Action,Conso,,false
+RACING FORCE,RFG,Milan,RFG.MI,Action,Conso,,false
+RACING FORCE,ALRFG,Paris,ALRFG.PA,Action,Conso,,false
+RADICI,RAD,Milan,RAD.MI,Action,Ind,,false
+RAI WAY,RWAY,Milan,RWAY.MI,Action,Tech,,false
+RAIZE,MLRZE,Lisbonne,MLRZE.LS,Action,Finance,,false
+RAMADA,RAM,Lisbonne,RAM.LS,Action,Ind,,false
+RAMSAY GEN SANTE,GDS,Paris,GDS.PA,Action,Santé,,false
+RANDSTAD NV,RAND,Amsterdam,RAND.AS,Action,Ind,,false
+RAPID NUTRITION,ALRPD,Paris,ALRPD.PA,Action,Conso,,false
+RATTI,RAT,Milan,RAT.MI,Action,Ind,,false
+RCS MEDIAGROUP,RCS,Milan,RCS.MI,Action,Conso,,false
+REACH SUBSEA,REACH,Oslo,REACH.OL,Action,Ener,,false
+REALCO,REAL,Brussels,REAL.BR,Action,Conso,,false
+RECORDATI ORD,REC,Milan,REC.MI,Action,Santé,,false
+RECTICEL,RECT,Brussels,RECT.BR,Action,Ind,,false
+REDELFI,RDF,Milan,RDF.MI,Action,Ind,,false
+REDFISH,RFLTC,Milan,RFLTC.MI,Action,Finance,,false
+REED,ALREE,Paris,ALREE.PA,Action,Finance,,false
+REFUELS,REFL,Oslo,REFL.OL,Action,Ener,,false
+REINET INVESTMENTS,REINA,Amsterdam,REINA.AS,Action,Finance,,false
+RELX,REN,Amsterdam,REN.AS,Action,Tech,,false
+REMY COINTREAU,RCO,Paris,RCO.PA,Action,Conso,,false
+REN,RENE,Lisbonne,RENE.LS,Action,Ener,,false
+RENAULT,RNO,Paris,RNO.PA,Action,Conso,,false
+RENOVALO,RNV,Milan,RNV.MI,Action,Ind,,false
+REPLY,REY,Milan,REY.MI,Action,Tech,,false
+RES,RES,Milan,RES.MI,Action,Ener,,false
+RETAIL ESTATES,RET,Brussels,RET.BR,Action,Finance,,false
+RETI,RETI,Milan,RETI.MI,Action,Tech,,false
+REVO INSURANCE,REVO,Milan,REVO.MI,Action,Finance,,false
+REWAY GROUP,RWY,Milan,RWY.MI,Action,Ind,,false
+REXEL,RXL,Paris,RXL.PA,Action,Ind,,false
+RIBER,ALRIB,Paris,ALRIB.PA,Action,Tech,,false
+RINO PETINO,RPTN,Milan,RPTN.MI,Action,Conso,,false
+RISANAMENTO,RN,Milan,RN.MI,Action,Finance,,false
+RISING STONE,ALRIS,Paris,ALRIS.PA,Action,Conso,,false
+RIZETFCYBRIMXAMS,CYBR,Amsterdam,CYBR.AS,ETF,Autre,,false
+RIZETFFOODIMXAMS,FOOD,Amsterdam,FOOD.AS,ETF,Autre,,false
+ROBActRCEGXAMS,RCEG,Amsterdam,RCEG.AS,ETF,Autre,,false
+ROBERTET,RBT,Paris,RBT.PA,Action,Ind,,false
+ROBERTET CI,CBE,Paris,CBE.PA,Action,Ind,,false
+ROCHE BOBOIS,RBO,Paris,RBO.PA,Action,Conso,,false
+ROCKET SHARING C,RKT,Milan,RKT.MI,Action,Ener,,false
+ROCTOOL,ALROC,Paris,ALROC.PA,Action,Ind,,false
+ROGALAND SPAREBANK,ROGS,Oslo,ROGS.OL,Action,Finance,,false
+ROMERIKE SPAREBK,ROMER,Oslo,ROMER.OL,Action,Autre,,false
+ROMREAL,ROM,Oslo,ROM.OL,Action,Finance,,false
+ROSETTI MARINO,YRM,Milan,YRM.MI,Action,Ener,,false
+ROTH MIONS,MLROT,Paris,MLROT.PA,Action,Ind,,false
+ROUGIER S.A.,ALRGR,Paris,ALRGR.PA,Action,Ind,,false
+ROULARTA,ROU,Brussels,ROU.BR,Action,Conso,,false
+RT&L,RTL,Milan,RTL.MI,Action,Ind,,false
+RUBIS,RUI,Paris,RUI.PA,Action,Conso,,false
+RYANAIR HOLD. PLC,RYA,Dublin,RYA.IR,Action,Conso,,false
+S.CLUBE BRAGA,SCB,Lisbonne,SCB.LS,Action,Conso,,false
+S.D. STANDARD ETC,SDSD,Oslo,SDSD.OL,Action,Ener,,false
+S.E.B.,SK,Paris,SK.PA,Action,Conso,,false
+S.S. LAZIO,SSL,Milan,SSL.MI,Action,Conso,,false
+SABAF,SAB,Milan,SAB.MI,Action,Tech,,false
+SACCHERIA F. FRANC,SAC,Milan,SAC.MI,Action,Ind,,false
+SAFILO GROUP,SFL,Milan,SFL.MI,Action,Conso,,false
+SAFRAN,SAF,Paris,SAF.PA,Action,Ind,,false
+SAGA PURE,SAGA,Oslo,SAGA.OL,Action,Finance,,false
+SAINT GOBAIN,SGO,Paris,SGO.PA,Action,Ind,,false
+SAINT JEAN GROUPE,SABE,Paris,SABE.PA,Action,Conso,,false
+SAIPEM,SPM,Milan,SPM.MI,Action,Ener,,false
+SALMAR,SALM,Oslo,SALM.OL,Action,Conso,,false
+SALMON EVOLUTION,SALME,Oslo,SALME.OL,Action,Conso,,false
+SALV FERRAGAMO,SFER,Milan,SFER.MI,Action,Conso,,false
+SAMBA DIGITAL,ALSMB,Lisbonne,ALSMB.LS,Action,Conso,,false
+SAMSE,SAMS,Paris,SAMS.PA,Action,Conso,,false
+SANLORENZO,SL,Milan,SL.MI,Action,Conso,,false
+SANOFI,SAN,Paris,SAN.PA,Action,Santé,,false
+SAPMER,ALMER,Paris,ALMER.PA,Action,Conso,,false
+SARTORIUS STED BIO,DIM,Paris,DIM.PA,Action,Santé,,false
+SATS,SATS,Oslo,SATS.OL,Action,Conso,,false
+SAVENCIA,SAVE,Paris,SAVE.PA,Action,Conso,,false
+SAVONNERIE NYONS,MLSDN,Paris,MLSDN.PA,Action,Conso,,false
+SBE-VARVIT,VARV,Milan,VARV.MI,Action,Ind,,false
+SBM OFFSHORE,SBMO,Amsterdam,SBMO.AS,Action,Ener,,false
+SCANA,SCANA,Oslo,SCANA.OL,Action,Ener,,false
+SCATEC,SCATC,Oslo,SCATC.OL,Action,Ener,,false
+SCBSM,CBSM,Paris,CBSM.PA,Action,Finance,,false
+SCITY,SCITY,Amsterdam,SCITY.AS,ETF,Autre,,false
+SCOR SE,SCR,Paris,SCR.PA,Action,Finance,,false
+Sea1 Offshore,SEA1,Oslo,SEA1.OL,Action,Ener,,false
+SEBA BTC ETP,SBTCU,Paris,SBTCU.PA,ETF,Autre,,false
+SEBA BTC ETP,SBTCU,Amsterdam,SBTCU.AS,ETF,Autre,,false
+SEBA DOT ETP,SDOT,Paris,SDOT.PA,ETF,Autre,,false
+SEBA DOT ETP,SDOT,Amsterdam,SDOT.AS,ETF,Autre,,false
+SEBA ETH ETP,SETH,Paris,SETH.PA,ETF,Autre,,false
+SEBA ETH ETP,SETH,Amsterdam,SETH.AS,ETF,Autre,,false
+SECHE ENVIRONNEM.,SCHP,Paris,SCHP.PA,Action,Ener,,false
+SECO,IOT,Milan,IOT.MI,Action,Tech,,false
+SED ENERGY HOLDING,ENH,Oslo,ENH.OL,Action,Ener,,false
+SELECTIRENTE,SELER,Paris,SELER.PA,Action,Finance,,false
+SELVAAG BOLIG,SBO,Oslo,SBO.OL,Action,Conso,,false
+SEMAPA,SEM,Lisbonne,SEM.LS,Action,Ind,,false
+SEMCO TECHNOLOGIES,ALSEM,Paris,ALSEM.PA,Action,Tech,,false
+SENSORION,ALSEN,Paris,ALSEN.PA,Action,Santé,,false
+SENTIA,SNTIA,Oslo,SNTIA.OL,Action,Ind,,false
+SERGEFERRARI GROUP,ALFER,Paris,ALFER.PA,Action,Ind,,false
+SERI INDUSTRIAL,SERI,Milan,SERI.MI,Action,Ind,,false
+SES,SESG,Paris,SESG.PA,Action,Tech,,false
+SESA,SES,Milan,SES.MI,Action,Tech,,false
+SG COMPANY,SGC,Milan,SGC.MI,Action,Conso,,false
+SHAMARAN PETROLEUM,SNM,Oslo,SNM.OL,Action,Ener,,false
+SHELL PLC,SHELL,Amsterdam,SHELL.AS,Action,Ener,,false
+SHOWROOMPRIVE,SRP,Paris,SRP.PA,Action,Conso,,false
+SHURGARD,SHUR,Brussels,SHUR.BR,Action,Finance,,false
+SIAV,SIAV,Milan,SIAV.MI,Action,Tech,,false
+SICILY BY CAR,SBC,Milan,SBC.MI,Action,Conso,,false
+SIDETRADE,ALBFR,Paris,ALBFR.PA,Action,Tech,,false
+SIF HOLDING,SIFG,Amsterdam,SIFG.AS,Action,Ener,,false
+SIGNAUX GIROD,ALGIR,Paris,ALGIR.PA,Action,Ind,,false
+SIGNIFY NV,LIGHT,Amsterdam,LIGHT.AS,Action,Ind,,false
+SIMONE,SMN,Milan,SMN.MI,Action,Conso,,false
+SIPEF,SIP,Brussels,SIP.BR,Action,Conso,,false
+SIRIUS MEDIA,ALSRS,Paris,ALSRS.PA,Action,Conso,,false
+SIT,SIT,Milan,SIT.MI,Action,Ind,,false
+SKANDIA GREENPOWER,SKAND,Oslo,SKAND.OL,Action,Ener,,false
+SKUE SPAREBANK,SKUE,Oslo,SKUE.OL,Action,Finance,,false
+SLIGRO FOOD GROUP,SLIGR,Amsterdam,SLIGR.AS,Action,Conso,,false
+SMAIO,ALSMA,Paris,ALSMA.PA,Action,Santé,,false
+SMALTO,MLSML,Paris,MLSML.PA,Action,Finance,,false
+SMART CAPITAL,SMCAP,Milan,SMCAP.MI,Action,Finance,,false
+SMARTOPTICS GROUP,SMOP,Oslo,SMOP.OL,Action,Tech,,false
+SMCP,SMCP,Paris,SMCP.PA,Action,Conso,,false
+SMTPC,ALTPC,Paris,ALTPC.PA,Action,Ind,,false
+SNAM,SRG,Milan,SRG.MI,Action,Ener,,false
+SOC EDIT IL FATTO,SEIF,Milan,SEIF.MI,Action,Conso,,false
+SOC FRANC CASINOS,SFCA,Paris,SFCA.PA,Action,Conso,,false
+SOCIETE GENERALE,GLE,Paris,GLE.PA,Action,Finance,,false
+SODEXO,SW,Paris,SW.PA,Action,Conso,,false
+SODITECH,ALSEC,Paris,ALSEC.PA,Action,Ind,,false
+SOFINA,SOF,Brussels,SOF.BR,Action,Finance,,false
+SOFTIMAT,SOFT,Brussels,SOFT.BR,Action,Tech,,false
+SOFTLAB,SFT,Milan,SFT.MI,Action,Tech,,false
+SOFTOX SOLUTIONS,SOFTX,Oslo,SOFTX.OL,Action,Santé,,false
+SOFTWAREONE HOLD,SWON,Oslo,SWON.OL,Action,Tech,,false
+SOGECLAIR,ALSOG,Paris,ALSOG.PA,Action,Ind,,false
+SOGEFI,SGF,Milan,SGF.MI,Action,Conso,,false
+SOGES GROUP,SOGES,Milan,SOGES.MI,Action,Conso,,false
+SOGN SPAREBANK,SOGN,Oslo,SOGN.OL,Action,Finance,,false
+SOILTECH,STECH,Oslo,STECH.OL,Action,Ener,,false
+SOITEC,SOI,Paris,SOI.PA,Action,Tech,,false
+SOL,SOL,Milan,SOL.MI,Action,Ind,,false
+SOLID WORLD GROUP,S3D,Milan,S3D.MI,Action,Tech,,false
+SOLOCAL GROUP,LOCAL,Paris,LOCAL.PA,Action,Conso,,false
+SOLSTAD MARITIME,SOMA,Oslo,SOMA.OL,Action,Ener,,false
+SOLSTAD OFFSHORE,SOFF,Oslo,SOFF.OL,Action,Ener,,false
+SOLUTIONS 30 SE,S30,Paris,S30.PA,Action,Tech,,false
+SOLVAC,SOLV,Brussels,SOLV.BR,Action,Ind,,false
+SOLVAY,SOLB,Brussels,SOLB.BR,Action,Ind,,false
+SOMEC,SOM,Milan,SOM.MI,Action,Ind,,false
+SONAE,SON,Lisbonne,SON.LS,Action,Conso,,false
+"SONAECOM,SGPS",SNC,Lisbonne,SNC.LS,Action,Tech,,false
+SONAGI,SNG,Lisbonne,SNG.LS,Action,Finance,,false
+SOPRA STERIA GROUP,SOP,Paris,SOP.PA,Action,Tech,,false
+SOSTRAVEL.COM,SOS,Milan,SOS.MI,Action,Conso,,false
+SP 500 EH,IUES,Amsterdam,IUES.AS,ETF,Finance,,false
+SPADEL,SPA,Brussels,SPA.BR,Action,Conso,,false
+SPARBNK 68 GR NORD,SB68,Oslo,SB68.OL,Action,Finance,,false
+SPAREBANK 1 SMN,MING,Oslo,MING.OL,Action,Finance,,false
+SPAREBANK 1 SØR-N,SB1NO,Oslo,SB1NO.OL,Action,Finance,,false
+SPAREBANKEN MØRE,MORG,Oslo,MORG.OL,Action,Finance,,false
+SPAREBANKEN NORGE,SBNOR,Oslo,SBNOR.OL,Action,Finance,,false
+SPAREBANKEN ØST,SPOG,Oslo,SPOG.OL,Action,Finance,,false
+SPARTOO,ALSPT,Paris,ALSPT.PA,Action,Conso,,false
+SPBK 1 NORDMØRE,SNOR,Oslo,SNOR.OL,Action,Finance,,false
+SPBK 1 ØSTLANDET,SPOL,Oslo,SPOL.OL,Action,Finance,,false
+SPBK1 HELGELAND,HELG,Oslo,HELG.OL,Action,Finance,,false
+SPBK1 NORD-NORGE,NONG,Oslo,NONG.OL,Action,Finance,,false
+SPBK1 ØSTFOLD AKE,SOAG,Oslo,SOAG.OL,Action,Finance,,false
+SPBK1 RINGERIKE,RING,Oslo,RING.OL,Action,Finance,,false
+SPDR ACWI,ACWE,Paris,ACWE.PA,ETF,Autre,,false
+SPDR ACWI IMI,IMIE,Paris,IMIE.PA,ETF,Autre,,false
+SPDR BB SB USCorEH,USCE,Amsterdam,USCE.AS,ETF,Autre,,false
+SPDR DJIA TRUST,DIA,Amsterdam,DIA.AS,ETF,Finance,,false
+SPDR EU SM.CAP,SMC,Paris,SMC.PA,ETF,Autre,,false
+SPDR EUR DIV ARIST,EUDV,Paris,EUDV.PA,ETF,Autre,,false
+SPDR MSCI CO.DI,STR,Paris,STR.PA,ETF,Autre,,false
+SPDR MSCI CO.ST,STS,Paris,STS.PA,ETF,Autre,,false
+SPDR MSCI COMM,STT,Paris,STT.PA,ETF,Autre,,false
+SPDR MSCI ENERGY,STN,Paris,STN.PA,ETF,Autre,,false
+SPDR MSCI EUROPE,ERO,Paris,ERO.PA,ETF,Autre,,false
+SPDR MSCI FINANC,STZ,Paris,STZ.PA,ETF,Autre,,false
+SPDR MSCI HLT,STW,Paris,STW.PA,ETF,Autre,,false
+SPDR MSCI INDUST,STQ,Paris,STQ.PA,ETF,Autre,,false
+SPDR MSCI JapanETF,JPJY,Paris,JPJY.PA,ETF,Autre,,false
+SPDR MSCI MAT,STP,Paris,STP.PA,ETF,Autre,,false
+SPDR MSCI TECHNO,STK,Paris,STK.PA,ETF,Autre,,false
+SPDR MSCI UTIL,STU,Paris,STU.PA,ETF,Autre,,false
+SPDR MSCI W C DIS,WCOD,Amsterdam,WCOD.AS,ETF,Autre,,false
+SPDR MSCI W COMM,WTEL,Amsterdam,WTEL.AS,ETF,Autre,,false
+SPDR MSCI W ENERGY,WNRG,Amsterdam,WNRG.AS,ETF,Autre,,false
+SPDR MSCI W FINCLS,WFIN,Amsterdam,WFIN.AS,ETF,Autre,,false
+SPDR MSCI W HEALTH,WHEA,Amsterdam,WHEA.AS,ETF,Autre,,false
+SPDR MSCI W INDUST,WIND,Amsterdam,WIND.AS,ETF,Autre,,false
+SPDR MSCI W MTRL,WMAT,Amsterdam,WMAT.AS,ETF,Autre,,false
+SPDR MSCI W TECH,WTCH,Amsterdam,WTCH.AS,ETF,Autre,,false
+SPDR MSCI W UTIL,WUTI,Amsterdam,WUTI.AS,ETF,Autre,,false
+SPDR MSCI WLD VAL,WVAL,Amsterdam,WVAL.AS,ETF,Autre,,false
+SPDR RUSSELL 2K,R2US,Paris,R2US.PA,ETF,Autre,,false
+SPDR S&P 400 MID,SPY4,Paris,SPY4.PA,ETF,Autre,,false
+SPDR S&P 500,SPY5,Paris,SPY5.PA,ETF,Autre,,false
+SPDR S&P 500 UCITS,SPYL,Amsterdam,SPYL.AS,ETF,Autre,,false
+SPDR SP 500 Acc,500X,Amsterdam,500X.AS,ETF,Autre,,false
+SPDR SP EU ArESG,EEDV,Amsterdam,EEDV.AS,ETF,Autre,,false
+SPDR STOXX ESG,600X,Amsterdam,600X.AS,ETF,Autre,,false
+SPDR US COMMS,SXLC,Amsterdam,SXLC.AS,ETF,Autre,,false
+SPDR US CONS DIS,SXLY,Amsterdam,SXLY.AS,ETF,Autre,,false
+SPDR US CONS STAP,SXLP,Amsterdam,SXLP.AS,ETF,Autre,,false
+SPDR US ENERGY,SXLE,Amsterdam,SXLE.AS,ETF,Autre,,false
+SPDR US FINAN,SXLF,Amsterdam,SXLF.AS,ETF,Autre,,false
+SPDR US HEALTH,SXLV,Amsterdam,SXLV.AS,ETF,Autre,,false
+SPDR US INDUST,SXLI,Amsterdam,SXLI.AS,ETF,Autre,,false
+SPDR US ITILIT,SXLU,Amsterdam,SXLU.AS,ETF,Autre,,false
+SPDR US MATERIAL,SXLB,Amsterdam,SXLB.AS,ETF,Autre,,false
+SPDR US TECH,SXLK,Amsterdam,SXLK.AS,ETF,Autre,,false
+SPDR WORLD,SWRD,Amsterdam,SWRD.AS,ETF,Autre,,false
+SPEED RABBIT PIZZA,MLSRP,Paris,MLSRP.PA,Action,Conso,,false
+SPINEGUARD,ALSGD,Paris,ALSGD.PA,Action,Santé,,false
+SPINEWAY,ALSPW,Paris,ALSPW.PA,Action,Santé,,false
+SPORTING,SCP,Lisbonne,SCP.LS,Action,Conso,,false
+SSGETFJNKEIMXPAR,JNKA,Paris,JNKA.PA,ETF,Autre,,false
+SSGETFR2NHEUXPAR,R2EH,Paris,R2EH.PA,ETF,Autre,,false
+SSGETFSPMESLXAMS,400X,Amsterdam,400X.AS,ETF,Autre,,false
+SSGETFSPY4IMXAMC,US4D,Amsterdam,US4D.AS,ETF,Autre,,false
+ST DUPONT,DPT,Paris,DPT.PA,Action,Conso,,false
+STAINLESS TANKERS,STST,Oslo,STST.OL,Action,Ind,,false
+STEF,STF,Paris,STF.PA,Action,Ind,,false
+STELLANTIS,STLAM,Milan,STLAM.MI,Action,Conso,,false
+STELLANTIS NV,STLAP,Paris,STLAP.PA,Action,Conso,,false
+STIF,ALSTI,Paris,ALSTI.PA,Action,Ind,,false
+STMICROELECTRONICS,STMMI,Milan,STMMI.MI,Action,Tech,,false
+STMICROELECTRONICS,STMPA,Paris,STMPA.PA,Action,Tech,,false
+STOLT-NIELSEN,SNI,Oslo,SNI.OL,Action,Ind,,false
+STOREBRAND,STB,Oslo,STB.OL,Action,Finance,,false
+STRADIM ESPAC.FIN,ALSAS,Paris,ALSAS.PA,Action,Finance,,false
+STREAMWIDE,ALSTW,Paris,ALSTW.PA,Action,Tech,,false
+STREIT MECANIQUE,MLSTR,Paris,MLSTR.PA,Action,Conso,,false
+STRONGPOINT,STRO,Oslo,STRO.OL,Action,Tech,,false
+SUBSEA 7,SUBC,Oslo,SUBC.OL,Action,Ener,,false
+SVAS BIOSANA,SVS,Milan,SVS.MI,Action,Santé,,false
+SWI CAPITAL,SWICH,Amsterdam,SWICH.AS,Action,Finance,,false
+SWORD GROUP,SWP,Paris,SWP.PA,Action,Tech,,false
+SYENSQO,SYENS,Brussels,SYENS.BR,Action,Ind,,false
+SYNERGIE,SDG,Paris,SDG.PA,Action,Ind,,false
+SYS-DAT,SYS,Milan,SYS.MI,Action,Tech,,false
+TAMBURI,TIP,Milan,TIP.MI,Action,Finance,,false
+TBSO,TBSO,Paris,TBSO.PA,Action,Ind,,false
+TD BSA 2025-2,TDBS2,Paris,TDBS2.PA,Action,Ind,,false
+TD BSA 2025-3,TDBS3,Paris,TDBS3.PA,Action,Ind,,false
+TECHNOGYM,TGYM,Milan,TGYM.MI,Action,Conso,,false
+TECHNOPROBE,TPRO,Milan,TPRO.MI,Action,Tech,,false
+TECHSTEP,TECH,Oslo,TECH.OL,Action,Tech,,false
+TECMA SOLUTIONS,TCM,Milan,TCM.MI,Action,Finance,,false
+TECNO,TCG,Milan,TCG.MI,Action,Ind,,false
+TEIXEIRA DUARTE,TDSA,Lisbonne,TDSA.LS,Action,Ind,,false
+TEKNA HOLDING,TEKNA,Oslo,TEKNA.OL,Action,Ind,,false
+TELECOM ITALIA,TIT,Milan,TIT.MI,Action,Tech,,false
+TELENOR,TEL,Oslo,TEL.OL,Action,Tech,,false
+TELEPERFORMANCE,TEP,Paris,TEP.PA,Action,Ind,,false
+TELESIA,TLS,Milan,TLS.MI,Action,Tech,,false
+TELEVERBIER,TVRB,Paris,TVRB.PA,Action,Conso,,false
+TELMES,TLM,Milan,TLM.MI,Action,Ind,,false
+TENARIS,TEN,Milan,TEN.MI,Action,Ener,,false
+TENAX INTERNAT,TNX,Milan,TNX.MI,Action,Ind,,false
+TERNA,TRN,Milan,TRN.MI,Action,Ener,,false
+TESMEC,TES,Milan,TES.MI,Action,Ind,,false
+TESSELLIS,TSL,Milan,TSL.MI,Action,Tech,,false
+TESSENDERLO,TESB,Brussels,TESB.BR,Action,Ind,,false
+TETRAGON FIN GRP,TFG,Amsterdam,TFG.AS,Action,Finance,,false
+TEXAF,TEXF,Brussels,TEXF.BR,Action,Finance,,false
+TF1,TFI,Paris,TFI.PA,Action,Conso,,false
+TFF GROUP,TFF,Paris,TFF.PA,Action,Ind,,false
+TGS,TGS,Oslo,TGS.OL,Action,Ener,,false
+THE AZUR SELECTION,MLAZR,Paris,MLAZR.PA,Action,Finance,,false
+THE ITALIAN SEA G,TISG,Milan,TISG.MI,Action,Conso,,false
+THE KINGFISH COMP,KING,Oslo,KING.OL,Action,Conso,,false
+THE NAVIGATOR COMP,NVG,Lisbonne,NVG.LS,Action,Ind,,false
+THEON INTERNAT,THEON,Amsterdam,THEON.AS,Action,Ind,,false
+THERACLION,ALTHE,Paris,ALTHE.PA,Action,Santé,,false
+THERACLION BSA,THEBS,Paris,THEBS.PA,Action,Santé,,false
+THERMADOR GROUPE,THEP,Paris,THEP.PA,Action,Ind,,false
+THOR MEDICAL,TRMED,Oslo,TRMED.OL,Action,Santé,,false
+THX PHARMA,ALTHX,Paris,ALTHX.PA,Action,Santé,,false
+TIKEHAU CAPITAL,TKO,Paris,TKO.PA,Action,Finance,,false
+TINC,TINC,Brussels,TINC.BR,Action,Finance,,false
+TINDE SPAREBANK,TINDE,Oslo,TINDE.OL,Action,Finance,,false
+TITAN S.A.,TITC,Brussels,TITC.BR,Action,Ind,,false
+TKH GROUP,TWEKA,Amsterdam,TWEKA.AS,Action,Ind,,false
+TME PHARMA,ALTME,Paris,ALTME.PA,Action,Santé,,false
+TMP GROUP,TMP,Milan,TMP.MI,Action,Conso,,false
+TOMRA SYSTEMS,TOM,Oslo,TOM.OL,Action,Ind,,false
+TOMTOM,TOM2,Amsterdam,TOM2.AS,Action,Tech,,false
+TONNER DRONES,ALTD,Paris,ALTD.PA,Action,Ind,,false
+TONNER DRONES BSA,TDBS,Paris,TDBS.PA,Action,Ind,,false
+TOOSLA,ALTOO,Paris,ALTOO.PA,Action,Conso,,false
+TOSCANA AEROPORTI,TYA,Milan,TYA.MI,Action,Ind,,false
+TOTALENERGIES,TTE,Paris,TTE.PA,Action,Ener,,false
+TotalEnergiesGabon,EC,Paris,EC.PA,Action,Ener,,false
+TOUAX,ALTOU,Paris,ALTOU.PA,Action,Ind,,false
+TOYOTA CAETANO,SCT,Lisbonne,SCT.LS,Action,Conso,,false
+TPS,TPS,Milan,TPS.MI,Action,Ind,,false
+TRACTIAL,ALTRA,Paris,ALTRA.PA,Action,Tech,,false
+TRADELAB,TRAI,Milan,TRAI.MI,Action,Ind,,false
+TRANSGENE,TNG,Paris,TNG.PA,Action,Santé,,false
+TRAWELL CO,TWL,Milan,TWL.MI,Action,Conso,,false
+TREVI FIN IND,TFIN,Milan,TFIN.MI,Action,Ind,,false
+TRIBOO,TB,Milan,TB.MI,Action,Conso,,false
+TRIGANO,TRI,Paris,TRI.PA,Action,Conso,,false
+TRILOGIQ,ALTRI,Paris,ALTRI.PA,Action,Ind,,false
+TRIODOS BANK,TRIO,Amsterdam,TRIO.AS,Action,Finance,,false
+TRM Phys Gold ETC,RMAU,Paris,RMAU.PA,ETF,Autre,,false
+TRØNDELAG SPBK,TRSB,Oslo,TRSB.OL,Action,Finance,,false
+TUBIZE-FIN,TUB,Brussels,TUB.BR,Action,Santé,,false
+TXCOM,ALTXC,Paris,ALTXC.PA,Action,Tech,,false
+TXT E-SOLUTIONS,TXT,Milan,TXT.MI,Action,Tech,,false
+U10 CORP,ALU10,Paris,ALU10.PA,Action,Conso,,false
+U500,U500,Amsterdam,U500.AS,ETF,Autre,,false
+UBALDI COSTRUZIONI,UBA,Milan,UBA.MI,Action,Ind,,false
+UBISOFT ENTERTAIN,UBI,Paris,UBI.PA,Action,Conso,,false
+UBS ETF ASRUSA,UIMP,Amsterdam,UIMP.AS,ETF,Finance,,false
+UBS ETF AWSR,AWSR,Amsterdam,AWSR.AS,ETF,Finance,,false
+UBS ETF CAHEUA,U1FA,Amsterdam,U1FA.AS,ETF,Finance,,false
+UBS ETF CANCDA,UIM9,Amsterdam,UIM9.AS,ETF,Finance,,false
+UBS ETF CBEU5,UEF6,Amsterdam,UEF6.AS,ETF,Finance,,false
+UBS ETF CBSE,CBSE,Amsterdam,CBSE.AS,ETF,Finance,,false
+UBS ETF CBSUS,UE25,Amsterdam,UE25.AS,ETF,Finance,,false
+UBS ETF CBSUSE,UE27,Amsterdam,UE27.AS,ETF,Finance,,false
+UBS ETF CBUS,UEF9,Amsterdam,UEF9.AS,ETF,Finance,,false
+UBS ETF CBUS5,UEF7,Amsterdam,UEF7.AS,ETF,Finance,,false
+UBS ETF CBUS5E,UEF8,Amsterdam,UEF8.AS,ETF,Finance,,false
+UBS ETF CBUSE,UEF0,Amsterdam,UEF0.AS,ETF,Finance,,false
+UBS ETF E50EUA,UIM1,Amsterdam,UIM1.AS,ETF,Finance,,false
+UBS ETF ELOVD,UIMY,Amsterdam,UIMY.AS,ETF,Finance,,false
+UBS ETF EMMUSA,UIMI,Amsterdam,UIMI.AS,ETF,Finance,,false
+UBS ETF EMUEUA,UIM4,Amsterdam,UIM4.AS,ETF,Finance,,false
+UBS ETF EPVLD,UIMZ,Amsterdam,UIMZ.AS,ETF,Finance,,false
+UBS ETF EQLTD,UIM2,Amsterdam,UIM2.AS,ETF,Finance,,false
+UBS ETF ESCEUA,UEFD,Amsterdam,UEFD.AS,ETF,Finance,,false
+UBS ETF ESREUA,UIMR,Amsterdam,UIMR.AS,ETF,Finance,,false
+UBS ETF EUREUA,UIMA,Amsterdam,UIMA.AS,ETF,Finance,,false
+UBS ETF HKDU,HKDE,Amsterdam,HKDE.AS,ETF,Finance,,false
+UBS ETF JPNJPA,UIM5,Amsterdam,UIM5.AS,ETF,Finance,,false
+UBS ETF JPSR,JPSR,Amsterdam,JPSR.AS,ETF,Finance,,false
+UBS ETF MSRUSA,UEF5,Amsterdam,UEF5.AS,ETF,Finance,,false
+UBS ETF PACUSA,UIMD,Amsterdam,UIMD.AS,ETF,Finance,,false
+UBS ETF PSRUSA,UIMT,Amsterdam,UIMT.AS,ETF,Finance,,false
+UBS ETF SGPDU,UE24,Amsterdam,UE24.AS,ETF,Finance,,false
+UBS ETF USSRF,UE33,Amsterdam,UE33.AS,ETF,Finance,,false
+UBS ETF UT1USA,UEFF,Amsterdam,UEFF.AS,ETF,Finance,,false
+UBS ETF UT7USA,UEFI,Amsterdam,UEFI.AS,ETF,Finance,,false
+UBS ETF WSRUSA,UIMM,Amsterdam,UIMM.AS,ETF,Finance,,false
+UBS IRL AUHEUA,UE28,Amsterdam,UE28.AS,ETF,Finance,,false
+UBS IRL GLDVD,UBUM,Amsterdam,UBUM.AS,ETF,Finance,,false
+UBS IRL SP5USY,UBU9,Amsterdam,UBU9.AS,ETF,Finance,,false
+UBS IRL UKSR,UKSR,Amsterdam,UKSR.AS,ETF,Finance,,false
+UBS IRL ULOVD,UBUR,Amsterdam,UBUR.AS,ETF,Finance,,false
+UBS IRL ULOVE,UBUV,Amsterdam,UBUV.AS,ETF,Finance,,false
+UBS IRL UPVLD,UBUS,Amsterdam,UBUS.AS,ETF,Finance,,false
+UBS IRL UPVLE,UBUW,Amsterdam,UBUW.AS,ETF,Finance,,false
+UBS IRL UQLTD,UBUT,Amsterdam,UBUT.AS,ETF,Finance,,false
+UBS IRL UQLTE,UBUX,Amsterdam,UBUX.AS,ETF,Finance,,false
+UBS IRL USAUSY,UBU3,Amsterdam,UBU3.AS,ETF,Finance,,false
+UBS IRL USEUYH,UE31,Amsterdam,UE31.AS,ETF,Finance,,false
+UBS IRL WRDUSY,UBU7,Amsterdam,UBU7.AS,ETF,Finance,,false
+UCAPITAL24,U24,Milan,U24.MI,Action,Finance,,false
+UCB,UCB,Brussels,UCB.BR,Action,Santé,,false
+UMALIS GROUP,MLUMG,Paris,MLUMG.PA,Action,Ind,,false
+UMG,UMG,Amsterdam,UMG.AS,Action,Conso,,false
+UMICORE,UMI,Brussels,UMI.BR,Action,Ind,,false
+UNIBAIL-RODAMCO-WE,URW,Paris,URW.PA,Action,Finance,,false
+UNICREDIT,UCG,Milan,UCG.MI,Action,Finance,,false
+UNIDATA,UD,Milan,UD.MI,Action,Tech,,false
+UNIFY GROUP,ALUNI,Paris,ALUNI.PA,Action,Tech,,false
+UNILEVER,UNA,Amsterdam,UNA.AS,Action,Conso,,false
+UNION TECH.INFOR.,FPG,Paris,FPG.PA,Action,Tech,,false
+UNIPHAR PLC,UPR,Dublin,UPR.IR,Action,Conso,,false
+UNIPOL,UNI,Milan,UNI.MI,Action,Finance,,false
+UNIPOL AXA,UNIAXA,Milan,UNIAXA.MI,Action,Finance,,false
+UNITI,ALUNT,Paris,ALUNT.PA,Action,Finance,,false
+UPERGY,ALUPG,Paris,ALUPG.PA,Action,Conso,,false
+UTI ISB UCITS ETF,UIGB,Amsterdam,UIGB.AS,ETF,Autre,,false
+UTIETFSBINFAXAMC,UIGBH,Amsterdam,UIGBH.AS,ETF,Autre,,false
+UV GERMI,ALUVI,Paris,ALUVI.PA,Action,Ind,,false
+V LANSCHOT KEMPEN,VLK,Amsterdam,VLK.AS,Action,Finance,,false
+VALBIOTIS,ALVAL,Paris,ALVAL.PA,Action,Santé,,false
+VALEO,FR,Paris,FR.PA,Action,Conso,,false
+VALERIO TX,ALVIO,Paris,ALVIO.PA,Action,Santé,,false
+VALETNHBARXAMS,HBAR,Amsterdam,HBAR.AS,ETF,Autre,,false
+VALICA,VLC,Milan,VLC.MI,Action,Tech,,false
+VALLOUREC,VK,Paris,VK.PA,Action,Ener,,false
+VALNEVA,VLA,Paris,VLA.PA,Action,Santé,,false
+VALOUR BTC ZERO,BTC0E,Paris,BTC0E.PA,ETF,Autre,,false
+VALOUR BTC ZERO,BTC0E,Amsterdam,BTC0E.AS,ETF,Autre,,false
+VALOUR CARDANO,ADAVE,Paris,ADAVE.PA,ETF,Autre,,false
+VALOUR CARDANO,ADAVE,Amsterdam,ADAVE.AS,ETF,Autre,,false
+VALOUR ETH ZERO,ETH0E,Paris,ETH0E.PA,ETF,Autre,,false
+VALOUR ETH ZERO,ETH0E,Amsterdam,ETH0E.AS,ETF,Autre,,false
+VALOUR POLKADOT,DOTVE,Paris,DOTVE.PA,ETF,Autre,,false
+VALOUR POLKADOT,DOTVE,Amsterdam,DOTVE.AS,ETF,Autre,,false
+VALOUR SOLANA,SOLVE,Paris,SOLVE.PA,ETF,Autre,,false
+VALOUR SOLANA,SOLVE,Amsterdam,SOLVE.AS,ETF,Autre,,false
+VALSOIA,VLS,Milan,VLS.MI,Action,Conso,,false
+VALTECNE,VLT,Milan,VLT.MI,Action,Ind,,false
+VALUE8,VALUE,Amsterdam,VALUE.AS,Action,Finance,,false
+VALUE8 CUM PREF,PREVA,Amsterdam,PREVA.AS,Action,Finance,,false
+VAN DE VELDE,VAN,Brussels,VAN.BR,Action,Conso,,false
+VANActVCASHXAMS,VCASH,Amsterdam,VCASH.AS,ETF,Finance,,false
+VANActVCSHAXAMS,VCSHA,Amsterdam,VCSHA.AS,ETF,Finance,,false
+VanEck Bitcoin,VBTC,Amsterdam,VBTC.AS,ETF,Autre,,false
+VanEck Ethereum,VETH,Amsterdam,VETH.AS,ETF,Autre,,false
+VanEck Polkadot,VDOT,Amsterdam,VDOT.AS,ETF,Autre,,false
+VanEck Solana,VSOL,Amsterdam,VSOL.AS,ETF,Autre,,false
+VanEck Sust EU EW,TEET,Amsterdam,TEET.AS,ETF,Finance,,false
+VanEck TRON,VTRX,Amsterdam,VTRX.AS,ETF,Autre,,false
+VANETF1EUAITXAMS,VUDS,Amsterdam,VUDS.AS,ETF,Finance,,false
+VANETF1EUAITXAMS,VUDY,Amsterdam,VUDY.AS,ETF,Finance,,false
+VANETFACGNXAMS,VALL,Amsterdam,VALL.AS,ETF,Finance,,false
+VANETFACGNXAMS,VALLD,Amsterdam,VALLD.AS,ETF,Finance,,false
+VANETFAWNT07XAMS,VEZI,Amsterdam,VEZI.AS,ETF,Finance,,false
+VANETFAWNT07XAMS,VEZU,Amsterdam,VEZU.AS,ETF,Finance,,false
+VANETFAWXUSNXAMS,VXUD,Amsterdam,VXUD.AS,ETF,Finance,,false
+VANETFAWXUSNXAMS,VXUS,Amsterdam,VXUS.AS,ETF,Finance,,false
+VANETFDAPPIMXPAR,DAPP,Paris,DAPP.PA,ETF,Finance,,false
+VANETFEMLCIMXPAR,EMLC,Paris,EMLC.PA,ETF,Finance,,false
+VANETFGDXIMXPAR,GDX,Paris,GDX.PA,ETF,Finance,,false
+VANETFGDXJIMXPAR,GDXJ,Paris,GDXJ.PA,ETF,Finance,,false
+VANETFGOATIMXPAR,GOAT,Paris,GOAT.PA,ETF,Finance,,false
+VANETFGOVSIMXAMS,VSGE,Amsterdam,VSGE.AS,ETF,Finance,,false
+VANETFGOVSIMXAMS,VSGF,Amsterdam,VSGF.AS,ETF,Finance,,false
+VANETFH00055XAMS,VUDE,Amsterdam,VUDE.AS,ETF,Finance,,false
+VANETFH00055XAMS,VUDP,Amsterdam,VUDP.AS,ETF,Finance,,false
+VANETFH0CFXPAR,USFA,Paris,USFA.PA,ETF,Finance,,false
+VANETFH38855XAMS,VGGE,Amsterdam,VGGE.AS,ETF,Finance,,false
+VANETFH38855XAMS,VGGF,Amsterdam,VGGF.AS,ETF,Finance,,false
+VANETFHWCFXPAR,GFA,Paris,GFA.PA,ETF,Finance,,false
+VANETFHYEMIMXPAR,HYEM,Paris,HYEM.PA,ETF,Finance,,false
+VANETFI40477XAMS,VUYA,Amsterdam,VUYA.AS,ETF,Finance,,false
+VANETFI40477XAMS,VUYD,Amsterdam,VUYD.AS,ETF,Finance,,false
+VANETFJEDIIMXPAR,JEDI,Paris,JEDI.PA,ETF,Finance,,false
+VANETFLE50TRXAMS,VSCE,Amsterdam,VSCE.AS,ETF,Finance,,false
+VANETFLE50TRXAMS,VSCF,Amsterdam,VSCF.AS,ETF,Finance,,false
+VANETFMOATIMXPAR,MOAT,Paris,MOAT.PA,ETF,Finance,,false
+VANETFMSUMMFXPAR,SMOT,Paris,SMOT.PA,ETF,Finance,,false
+VANETFMVESPGXPAR,ESPO,Paris,ESPO.PA,ETF,Finance,,false
+VANETFMVKGDFXPAR,DFNS,Paris,DFNS.PA,ETF,Finance,,false
+VANETFMVKO10XPAR,OIHV,Paris,OIHV.PA,ETF,Finance,,false
+VANETFMWMFNXPAR,MOTU,Paris,MOTU.PA,ETF,Finance,,false
+VANETFREMXIMXPAR,REMX,Paris,REMX.PA,ETF,Finance,,false
+VANETFRU1GN3XAMS,VRGU,Amsterdam,VRGU.AS,ETF,Finance,,false
+VANETFRU1VN3XAMS,VRVA,Amsterdam,VRVA.AS,ETF,Finance,,false
+VANETFRU2000XAMS,VRSA,Amsterdam,VRSA.AS,ETF,Finance,,false
+VANETFRUMCN3XAMS,VRMA,Amsterdam,VRMA.AS,ETF,Finance,,false
+VANETFSCDEUNXAMS,VESC,Amsterdam,VESC.AS,ETF,Finance,,false
+VANETFSCDEUNXAMS,VESD,Amsterdam,VESD.AS,ETF,Finance,,false
+VANETFSCGNXAMS,VSML,Amsterdam,VSML.AS,ETF,Finance,,false
+VANETFSCGNXAMS,VSMLD,Amsterdam,VSMLD.AS,ETF,Finance,,false
+VANETFSMHIMXPAR,SMH,Paris,SMH.PA,ETF,Finance,,false
+VANETFSMINUSXPAR,GDIG,Paris,GDIG.PA,ETF,Finance,,false
+VANETFTDIVIMXPAR,TDIV,Paris,TDIV.PA,ETF,Finance,,false
+VANETFTRSXIMXAMS,VLDP,Amsterdam,VLDP.AS,ETF,Finance,,false
+VANETFTRSXIMXAMS,VLDS,Amsterdam,VLDS.AS,ETF,Finance,,false
+VANETFUS37IMXAMS,VITD,Amsterdam,VITD.AS,ETF,Finance,,false
+VANETFUS37IMXAMS,VITS,Amsterdam,VITS.AS,ETF,Finance,,false
+VANETNMVPYTHXAMS,VPYT,Amsterdam,VPYT.AS,ETF,Autre,,false
+VANETNMVPYTHXPAR,VPYT,Paris,VPYT.PA,ETF,Autre,,false
+VANETNMVSUIVXAMS,VSUI,Amsterdam,VSUI.AS,ETF,Autre,,false
+VANETNMVSUIVXPAR,VSUI,Paris,VSUI.PA,ETF,Autre,,false
+VANETNMVTIAVXAMS,VTIA,Amsterdam,VTIA.AS,ETF,Autre,,false
+VANETNMVTIAVXPAR,VTIA,Paris,VTIA.PA,ETF,Autre,,false
+Vanguard ESG GCACC,V3GF,Amsterdam,V3GF.AS,ETF,Finance,,false
+Vanguard ESG GCDIS,V3GE,Amsterdam,V3GE.AS,ETF,Finance,,false
+Vanguard ESGDAACC,V3PA,Amsterdam,V3PA.AS,ETF,Finance,,false
+Vanguard ESGDADIS,V3PL,Amsterdam,V3PL.AS,ETF,Finance,,false
+Vanguard ESGDEACC,V3EA,Amsterdam,V3EA.AS,ETF,Finance,,false
+Vanguard ESGDEDIS,V3EL,Amsterdam,V3EL.AS,ETF,Finance,,false
+Vanguard ESGECBACC,V3RE,Amsterdam,V3RE.AS,ETF,Finance,,false
+Vanguard ESGECBDIS,V3RF,Amsterdam,V3RF.AS,ETF,Finance,,false
+Vanguard ESGEMACC,V3MA,Amsterdam,V3MA.AS,ETF,Finance,,false
+Vanguard ESGEMDIS,V3ML,Amsterdam,V3ML.AS,ETF,Finance,,false
+Vanguard ESGGAACC,V3AA,Amsterdam,V3AA.AS,ETF,Finance,,false
+Vanguard ESGGADIS,V3AL,Amsterdam,V3AL.AS,ETF,Finance,,false
+Vanguard ESGNAACC,V3NA,Amsterdam,V3NA.AS,ETF,Finance,,false
+Vanguard ESGNADIS,V3NL,Amsterdam,V3NL.AS,ETF,Finance,,false
+VANGUARD EURCORPBD,VECP,Amsterdam,VECP.AS,ETF,Finance,,false
+VANGUARD EURGVBD,VETY,Amsterdam,VETY.AS,ETF,Finance,,false
+VANGUARD FTSE APXJ,VAPX,Amsterdam,VAPX.AS,ETF,Finance,,false
+VANGUARD FTSE AW,VWRL,Amsterdam,VWRL.AS,ETF,Finance,,false
+VANGUARD FTSE DE,VERX,Amsterdam,VERX.AS,ETF,Finance,,false
+VANGUARD FTSE DW,VEVE,Amsterdam,VEVE.AS,ETF,Finance,,false
+VANGUARD FTSE EM,VFEM,Amsterdam,VFEM.AS,ETF,Finance,,false
+VANGUARD FTSE EUR,VEUR,Amsterdam,VEUR.AS,ETF,Finance,,false
+VANGUARD FTSE HDY,VHYL,Amsterdam,VHYL.AS,ETF,Finance,,false
+VANGUARD FTSE JPN,VJPN,Amsterdam,VJPN.AS,ETF,Finance,,false
+VANGUARD FTSE NA,VNRT,Amsterdam,VNRT.AS,ETF,Finance,,false
+VANGUARD LS20EQACC,V20A,Amsterdam,V20A.AS,ETF,Finance,,false
+VANGUARD LS20EQDIS,V20D,Amsterdam,V20D.AS,ETF,Finance,,false
+VANGUARD LS40EQACC,V40A,Amsterdam,V40A.AS,ETF,Finance,,false
+VANGUARD LS40EQDIS,V40D,Amsterdam,V40D.AS,ETF,Finance,,false
+VANGUARD LS60EQACC,V60A,Amsterdam,V60A.AS,ETF,Finance,,false
+VANGUARD LS60EQDIS,V60D,Amsterdam,V60D.AS,ETF,Finance,,false
+VANGUARD LS80EQACC,V80A,Amsterdam,V80A.AS,ETF,Finance,,false
+VANGUARD LS80EQDIS,V80D,Amsterdam,V80D.AS,ETF,Finance,,false
+VANGUARD S&P500,VUSA,Amsterdam,VUSA.AS,ETF,Finance,,false
+VANGUARD USDCORPBD,VUCP,Amsterdam,VUCP.AS,ETF,Finance,,false
+VANGUARD USDEMGVBN,VEMT,Amsterdam,VEMT.AS,ETF,Finance,,false
+VANGUARD USDTRBOND,VUTY,Amsterdam,VUTY.AS,ETF,Finance,,false
+VanguardFAWACC,VWCE,Amsterdam,VWCE.AS,ETF,Finance,,false
+VanguardFAWHDYACC,VGWE,Amsterdam,VGWE.AS,ETF,Finance,,false
+VanguardFDEACC,VWCG,Amsterdam,VWCG.AS,ETF,Finance,,false
+VANTEA SMART,VNT,Milan,VNT.MI,Action,Tech,,false
+VANTIVA,VANTI,Paris,VANTI.PA,Action,Tech,,false
+VÅR ENERGI,VAR,Oslo,VAR.OL,Action,Ener,,false
+VASTNED,VASTB,Brussels,VASTB.BR,Action,Finance,,false
+VAZIVA,ALVAZ,Paris,ALVAZ.PA,Action,Ind,,false
+VE AEX,TDT,Amsterdam,TDT.AS,ETF,Finance,,false
+VE Balanced,NTM,Amsterdam,NTM.AS,ETF,Finance,,false
+VE Bitcoin,VBTC,Paris,VBTC.PA,ETF,Autre,,false
+VE Conservative,DTM,Amsterdam,DTM.AS,ETF,Finance,,false
+VE Corp Bond,TCBT,Amsterdam,TCBT.AS,ETF,Finance,,false
+VE ESG EQ World,TSWE,Amsterdam,TSWE.AS,ETF,Finance,,false
+VE Ethereum,VETH,Paris,VETH.PA,ETF,Autre,,false
+VE Gov AAA Bond,TAT,Amsterdam,TAT.AS,ETF,Finance,,false
+VE Gov Bond,TGBT,Amsterdam,TGBT.AS,ETF,Finance,,false
+VE Growth,TOF,Amsterdam,TOF.AS,ETF,Finance,,false
+VE High Div,TDIV,Amsterdam,TDIV.AS,ETF,Finance,,false
+VE Polkadot,VDOT,Paris,VDOT.PA,ETF,Autre,,false
+VE Real Estate,TRET,Amsterdam,TRET.AS,ETF,Finance,,false
+VE Solana,VSOL,Paris,VSOL.PA,ETF,Autre,,false
+VE TRON,VTRX,Paris,VTRX.PA,ETF,Autre,,false
+VEIDEKKE,VEI,Oslo,VEI.OL,Action,Ind,,false
+VEND MARKETPLACES,VEND,Oslo,VEND.OL,Action,Tech,,false
+VENTE UNIQUE.COM,ALVU,Paris,ALVU.PA,Action,Conso,,false
+VENTURA OFFSHORE,VTURA,Oslo,VTURA.OL,Action,Ener,,false
+VEOLIA ENVIRON.,VIE,Paris,VIE.PA,Action,Ener,,false
+VERALLIA,VRLA,Paris,VRLA.PA,Action,Ind,,false
+VERIMATRIX,VMX,Paris,VMX.PA,Action,Tech,,false
+VETOQUINOL,VETO,Paris,VETO.PA,Action,Santé,,false
+VGP,VGP,Brussels,VGP.BR,Action,Finance,,false
+VICAT,VCT,Paris,VCT.PA,Action,Ind,,false
+VIEL ET COMPAGNIE,VIL,Paris,VIL.PA,Action,Finance,,false
+VIMI FASTENERS,VIM,Milan,VIM.MI,Action,Ind,,false
+VINCI,DG,Paris,DG.PA,Action,Ind,,false
+VINEXT,VNXT,Milan,VNXT.MI,Action,Ind,,false
+VINPAI,ALVIN,Paris,ALVIN.PA,Action,Conso,,false
+VIOHALCO,VIO,Brussels,VIO.BR,Action,Ind,,false
+VIRBAC,VIRP,Paris,VIRP.PA,Action,Santé,,false
+VIRETNCOIN50XAMS,VRTC,Amsterdam,VRTC.AS,ETF,Autre,,false
+VIRETNCOIN50XPAR,VRTC,Paris,VRTC.PA,ETF,Autre,,false
+VIRETNSOLXAMS,VRTS,Amsterdam,VRTS.AS,ETF,Autre,,false
+VIRETNSOLXPAR,VRTS,Paris,VRTS.PA,ETF,Autre,,false
+VIRETNSUIXPAR,VRTU,Paris,VRTU.PA,ETF,Autre,,false
+VIRIDIEN,VIRI,Paris,VIRI.PA,Action,Ener,,false
+VIRTUALWARE,ALVIR,Paris,ALVIR.PA,Action,Tech,,false
+VISTIN PHARMA,VISTN,Oslo,VISTN.OL,Action,Santé,,false
+VITURA,VTR,Paris,VTR.PA,Action,Finance,,false
+VIVENDA GROUP,VVG,Milan,VVG.MI,Action,Conso,,false
+VIVENDI SE,VIV,Paris,VIV.PA,Action,Conso,,false
+VIVORYON,VVY,Amsterdam,VVY.AS,Action,Santé,,false
+VNE,VNE,Milan,VNE.MI,Action,Ind,,false
+VOGO,ALVGO,Paris,ALVGO.PA,Action,Tech,,false
+VOIM,VOIM,Oslo,VOIM.OL,Action,Ener,,false
+VOLARE SHIPPING,VLCC,Oslo,VLCC.OL,Action,Ind,,false
+VOLTA FINANCE,VTA,Amsterdam,VTA.AS,Action,Finance,,false
+VOLTALIA,VLTSA,Paris,VLTSA.PA,Action,Ener,,false
+VOPAK,VPK,Amsterdam,VPK.AS,Action,Ener,,false
+VOSS VEKSEL OGLAND,VVL,Oslo,VVL.OL,Action,Finance,,false
+VOW,VOW,Oslo,VOW.OL,Action,Ind,,false
+VOYAGEURS DU MONDE,ALVDM,Paris,ALVDM.PA,Action,Conso,,false
+Vusion,VU,Paris,VU.PA,Action,Ind,,false
+W AATECH 23-28,WAAT28,Milan,WAAT28.MI,Action,Tech,,false
+W DEXELANCE 26-29,DEX29,Milan,DEX29.MI,Action,Conso,,false
+W FIN TECH 21-26,WFTC26,Milan,WFTC26.MI,Action,Finance,,false
+W G.M. LEATH 22-27,WGML27,Milan,WGML27.MI,Action,Conso,,false
+W HAIKI+ 25-26,WHIK26,Milan,WHIK26.MI,Action,Ener,,false
+W HELYX 21-26,WHLX26,Milan,WHLX26.MI,Action,Santé,,false
+W MARKBASS 25-27,WMARK,Milan,WMARK.MI,Action,Conso,,false
+W SG COMPANY 26-31,WSGC31,Milan,WSGC31.MI,Action,Conso,,false
+W SOST.COM 21-26,WSOS26,Milan,WSOS26.MI,Action,Conso,,false
+W TRAWELL CO 21-26,WTWL26,Milan,WTWL26.MI,Action,Conso,,false
+WAGA ENERGY,WAGA,Paris,WAGA.PA,Action,Ener,,false
+WALLENIUS WILHELMS,WAWI,Oslo,WAWI.OL,Action,Ind,,false
+WALLIX,ALLIX,Paris,ALLIX.PA,Action,Tech,,false
+WAREHOUSES ESTATES,WEB,Brussels,WEB.BR,Action,Finance,,false
+WARR DHH 25-28,WDHH28,Milan,WDHH28.MI,Action,Tech,,false
+WARR EHI,WEHI,Milan,WEHI.MI,Action,Finance,,false
+WARR ETI 26-29,WETI29,Milan,WETI29.MI,Action,Ener,,false
+WARR FRIENDS 26-28,WAMI28,Milan,WAMI28.MI,Action,Finance,,false
+WARR GEOX 25-26,WGEO26,Milan,WGEO26.MI,Action,Conso,,false
+WARR NABLA 26-30,WNABLA,Milan,WNABLA.MI,Action,Conso,,false
+WARR OMG 26-29,WOMG29,Milan,WOMG29.MI,Action,Conso,,false
+WARR TELMES 25-28,WTLM28,Milan,WTLM28.MI,Action,Ind,,false
+WATERA,ALWTR,Paris,ALWTR.PA,Action,Ener,,false
+WAVESTONE,WAVE,Paris,WAVE.PA,Action,Tech,,false
+WDP,WDP,Brussels,WDP.BR,Action,Finance,,false
+WE.CONNECT,ALWEC,Paris,ALWEC.PA,Action,Conso,,false
+WEACCESS GROUP,MLWEA,Paris,MLWEA.PA,Action,Tech,,false
+WEBSOLUTE,WBS,Milan,WBS.MI,Action,Tech,,false
+WEBSTEP,WSTEP,Oslo,WSTEP.OL,Action,Tech,,false
+WEBUILD,WBD,Milan,WBD.MI,Action,Ind,,false
+WEBUILD RSP,WBDR,Milan,WBDR.MI,Action,Ind,,false
+WENDEL,MF,Paris,MF.PA,Action,Finance,,false
+WERELDHAVE,WHA,Amsterdam,WHA.AS,Action,Finance,,false
+WERELDHAVE BELGIUM,WEHB,Brussels,WEHB.BR,Action,Finance,,false
+WESTERN BULK CHART,WEST,Oslo,WEST.OL,Action,Ind,,false
+WEYA,MLWEY,Paris,MLWEY.PA,Action,Ener,,false
+WHITESTONE GROUP,ROCK,Brussels,ROCK.BR,Action,Ind,,false
+WIIT,WIIT,Milan,WIIT.MI,Action,Tech,,false
+WILH. WILHELMSEN A,WWI,Oslo,WWI.OL,Action,Ind,,false
+WILH. WILHELMSEN B,WWIB,Oslo,WWIB.OL,Action,Ind,,false
+WINAMP GROUP,ALWIN,Paris,ALWIN.PA,Action,Conso,,false
+WINFARM,ALWF,Paris,ALWF.PA,Action,Conso,,false
+WisdomTree Bitcoin,BTCW,Amsterdam,BTCW.AS,ETF,Autre,,false
+WisdomTree Bitcoin,WBTC,Paris,WBTC.PA,ETF,Autre,,false
+WisdomTree Cardano,ADAW,Paris,ADAW.PA,ETF,Autre,,false
+WisdomTree Cardano,WADA,Amsterdam,WADA.AS,ETF,Autre,,false
+WisdomTree DOT,DOTW,Paris,DOTW.PA,ETF,Autre,,false
+WisdomTree DOT,WDOT,Amsterdam,WDOT.AS,ETF,Autre,,false
+WisdomTree Ether.,ETHW,Amsterdam,ETHW.AS,ETF,Autre,,false
+WisdomTree Ether.,WETH,Paris,WETH.PA,ETF,Autre,,false
+WisdomTree Solana,SOLW,Paris,SOLW.PA,ETF,Autre,,false
+WisdomTree Solana,WSOL,Amsterdam,WSOL.AS,ETF,Autre,,false
+WISETFBLOCOMXPAR,PCOM,Paris,PCOM.PA,ETF,Finance,,false
+WISETFEEIAIMXPAR,EEI,Paris,EEI.PA,ETF,Finance,,false
+WISETFWBLKIMXPAR,WBLK,Paris,WBLK.PA,ETF,Finance,,false
+WISETFWSMGDXXPAR,WMGT,Paris,WMGT.PA,ETF,Finance,,false
+WISETFWTADEFXPAR,WDAF,Paris,WDAF.PA,ETF,Finance,,false
+WISETFWTETMUXPAR,WENU,Paris,WENU.PA,ETF,Finance,,false
+WISETFWTEUBLXPAR,WBLD,Paris,WBLD.PA,ETF,Finance,,false
+WISETFWTEUDEXPAR,WDEF,Paris,WDEF.PA,ETF,Finance,,false
+WISETFWTGDEFXPAR,WDGF,Paris,WDGF.PA,ETF,Finance,,false
+WISETFWTGXUDXPAR,XUSA,Paris,XUSA.PA,ETF,Finance,,false
+WISETFWTMRARXPAR,RARE,Paris,RARE.PA,ETF,Finance,,false
+WISETFWTNCLRXPAR,NCLR,Paris,NCLR.PA,ETF,Finance,,false
+WISETFWTNTSGXPAR,NTSG,Paris,NTSG.PA,ETF,Finance,,false
+WISETFWTNTSZXPAR,NTSZ,Paris,NTSZ.PA,ETF,Finance,,false
+WISETFWTPAIUXPAR,WPAI,Paris,WPAI.PA,ETF,Finance,,false
+WISETFWTQTNMXPAR,WQTM,Paris,WQTM.PA,ETF,Finance,,false
+WISETFWTSPCUXPAR,WSPC,Paris,WSPC.PA,ETF,Finance,,false
+WISETFWTTMTUXPAR,TMGT,Paris,TMGT.PA,ETF,Finance,,false
+WISETFWTTRUEXPAR,WEM,Paris,WEM.PA,ETF,Finance,,false
+WISETNCCRIXRXAMS,XRPW,Amsterdam,XRPW.AS,ETF,Autre,,false
+WISETNCCRIXRXPAR,WXRP,Paris,WXRP.PA,ETF,Autre,,false
+WISETNCD20XXAMS,WCRP,Amsterdam,WCRP.AS,ETF,Autre,,false
+WISETNCD20XXPAR,WCRX,Paris,WCRX.PA,ETF,Autre,,false
+WISETNCSTEEVXAMC,LIST,Amsterdam,LIST.AS,ETF,Autre,,false
+WISETNCSTEEVXPAR,LSTE,Paris,LSTE.PA,ETF,Autre,,false
+WISETNCXLMRVXAMS,XLMW,Amsterdam,XLMW.AS,ETF,Autre,,false
+WISETNCXLMRVXPAR,WXLM,Paris,WXLM.PA,ETF,Autre,,false
+WITBE,ALWIT,Paris,ALWIT.PA,Action,Tech,,false
+WOLTERS KLUWER,WKL,Amsterdam,WKL.AS,Action,Ind,,false
+WORLDLINE,WLN,Paris,WLN.PA,Action,Ind,,false
+WT 3 L JPY S EUR,EJP3,Amsterdam,EJP3.AS,ETF,Finance,,false
+WT 3 L USD S EUR,EUS3,Amsterdam,EUS3.AS,ETF,Finance,,false
+WT 3 S JPY L EUR,JPE3,Amsterdam,JPE3.AS,ETF,Finance,,false
+WT 3 S USD L EUR,USE3,Amsterdam,USE3.AS,ETF,Finance,,false
+WT AGRICULTURE,AIGAP,Paris,AIGAP.PA,ETF,Autre,,false
+WT AI - USD Acc,WTAI,Paris,WTAI.PA,ETF,Finance,,false
+WT ALL COMMODIT.,AIGCP,Paris,AIGCP.PA,ETF,Autre,,false
+WT Battery-USD Acc,VOLT,Paris,VOLT.PA,ETF,Finance,,false
+WT Brent Crude Oil,BRNT,Paris,BRNT.PA,ETF,Autre,,false
+WT CAC 40 3x DL,3CAC,Paris,3CAC.PA,ETF,Autre,,false
+WT CAC 40 3x DS,3CAS,Paris,3CAS.PA,ETF,Autre,,false
+WT Carbon,CARB,Paris,CARB.PA,ETF,Autre,,false
+WT Cloud - USD Acc,WCLD,Paris,WCLD.PA,ETF,Finance,,false
+WT COPPER,COPAP,Paris,COPAP.PA,ETF,Autre,,false
+WT Core Phys Gold,WGLD,Paris,WGLD.PA,ETF,Finance,,false
+WT CRUDE OIL,CRUDP,Paris,CRUDP.PA,ETF,Autre,,false
+WT Crypto Altcoins,ALTC,Paris,ALTC.PA,ETF,Autre,,false
+WT Crypto Altcoins,ALTC,Amsterdam,ALTC.AS,ETF,Autre,,false
+WT Crypto Market,BLOC,Paris,BLOC.PA,ETF,Autre,,false
+WT Crypto Market,BLOC,Amsterdam,BLOC.AS,ETF,Autre,,false
+WT Crypto Mega Cap,MEGA,Paris,MEGA.PA,ETF,Autre,,false
+WT Crypto Mega Cap,MEGA,Amsterdam,MEGA.AS,ETF,Autre,,false
+WT Cyb-USD Acc,WCBR,Paris,WCBR.PA,ETF,Finance,,false
+WT DAILY LG2 GLD,LBUL,Amsterdam,LBUL.AS,ETF,Autre,,false
+WT DAILY LG2 SLV,LSIL,Amsterdam,LSIL.AS,ETF,Autre,,false
+WT DAILY SH1 GLD,SBUL,Amsterdam,SBUL.AS,ETF,Autre,,false
+WT DAILY SH1 SLV,SSIL,Amsterdam,SSIL.AS,ETF,Autre,,false
+WT EngyTrns Metals,WENT,Paris,WENT.PA,ETF,Autre,,false
+WT ESTOXX 50 3x DL,3EUL,Paris,3EUL.PA,ETF,Autre,,false
+WT ESTOXX 50 3x DS,3EUS,Paris,3EUS.PA,ETF,Autre,,false
+WT EZ QDG-EUR Acc,EGRA,Paris,EGRA.PA,ETF,Finance,,false
+WT Gl QDG-USD INST,GGRI,Paris,GGRI.PA,ETF,Finance,,false
+WT GOLD,BULLP,Paris,BULLP.PA,ETF,Autre,,false
+WT Indust Metals,AIGI,Paris,AIGI.PA,ETF,Autre,,false
+WT LG JPY SH EUR,EUJP,Amsterdam,EUJP.AS,ETF,Finance,,false
+WT NASDAQ 3x DL,QQQ3,Paris,QQQ3.PA,ETF,Autre,,false
+WT NASDAQ 3x DS,QQQS,Paris,QQQS.PA,ETF,Autre,,false
+WT NATURAL GAS,NGASP,Paris,NGASP.PA,ETF,Autre,,false
+WT PGold EUR Hdg,GBSE,Paris,GBSE.PA,ETF,Autre,,false
+WT PHYS SW GLD,SGBS,Amsterdam,SGBS.AS,ETF,Finance,,false
+WT PHYSICAL GOLD,PHAU,Amsterdam,PHAU.AS,ETF,Finance,,false
+WT PHYSICAL SILVER,PHAG,Amsterdam,PHAG.AS,ETF,Finance,,false
+WT PHYSIPLATINUM,PHPT,Amsterdam,PHPT.AS,ETF,Finance,,false
+WT PHYSPALLADIUM,PHPD,Amsterdam,PHPD.AS,ETF,Finance,,false
+WT PHYSPM BASKET,PHPM,Amsterdam,PHPM.AS,ETF,Finance,,false
+WT PRECIOUS MET.,AIGPP,Paris,AIGPP.PA,ETF,Autre,,false
+WT S&P 500 3x DL,3USL,Paris,3USL.PA,ETF,Autre,,false
+WT S&P 500 3x DS,3USS,Paris,3USS.PA,ETF,Autre,,false
+WT SH JPY LG EUR,JPEU,Amsterdam,JPEU.AS,ETF,Finance,,false
+WT SILVER,SLVRP,Paris,SLVRP.PA,ETF,Autre,,false
+WT US GQDG-USD Acc,GGRA,Paris,GGRA.PA,ETF,Finance,,false
+WT US QDG-USD Acc,DGRA,Paris,DGRA.PA,ETF,Finance,,false
+WT VIX 2.25x DL,VIXL,Paris,VIXL.PA,ETF,Autre,,false
+WT WHEAT,WEATP,Paris,WEATP.PA,ETF,Autre,,false
+WT WTI Crude 2x DL,LOIL,Paris,LOIL.PA,ETF,Autre,,false
+X-FAB,XFAB,Paris,XFAB.PA,Action,Tech,,false
+XENIA,XHS,Milan,XHS.MI,Action,Conso,,false
+XILAM ANIMATION,ALXIL,Paris,ALXIL.PA,Action,Conso,,false
+XIOR,XIOR,Brussels,XIOR.BR,Action,Finance,,false
+XPLORA TECHNOLOGIE,XPLRA,Oslo,XPLRA.OL,Action,Conso,,false
+YAKKYO,YKY,Milan,YKY.MI,Action,Tech,,false
+YARA INTERNATIONAL,YAR,Oslo,YAR.OL,Action,Ind,,false
+YOLO GROUP,YOLO,Milan,YOLO.MI,Action,Finance,,false
+YOUNITED FINANCIAL,YOUNI,Paris,YOUNI.PA,Action,Finance,,false
+ZALARIS,ZAL,Oslo,ZAL.OL,Action,Tech,,false
+ZAPTEC,ZAP,Oslo,ZAP.OL,Action,Ind,,false
+ZCCM,MLZAM,Paris,MLZAM.PA,Action,Ind,,false
+ZELLUNA,ZLNA,Oslo,ZLNA.OL,Action,Santé,,false
+ZENITH ENERGY,ZENA,Oslo,ZENA.OL,Action,Ener,,false
+ZENOBE GRAMME CERT,ZEN,Brussels,ZEN.BR,Action,Finance,,false
+ZEST,ZEST,Milan,ZEST.MI,Action,Finance,,false
+ZIGNAGO VETRO,ZV,Milan,ZV.MI,Action,Ind,,false
+ZUCCHI,ZUC,Milan,ZUC.MI,Action,Ind,,false

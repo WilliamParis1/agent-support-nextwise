@@ -4,6 +4,12 @@ on:
     # GitHub uses UTC. The script selects 02:00 Europe/Paris (DST included).
     - cron: '0 0,1 * * *'
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - data/**
+      - automation/**
+      - .github/workflows/daily-brief.yml
 permissions:
   contents: write
 concurrency:
@@ -12,7 +18,7 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -24,7 +30,6 @@ jobs:
       - run: python -m unittest discover -s tests -v
       - name: Générer le brouillon de la veille
         env:
-          SHEET_CSV_URL: ${{ secrets.SHEET_CSV_URL }}
           EVENT_NAME: ${{ github.event_name }}
         run: |
           if [ "$EVENT_NAME" = "schedule" ]; then
@@ -41,8 +46,8 @@ jobs:
         run: |
           git add reports/
           if ! git diff --cached --quiet; then
-            git config user.name 'synapse-brief[bot]'
-            git config user.email 'synapse-brief[bot]@users.noreply.github.com'
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
             git commit -m 'Préparer le point qualitatif quotidien'
             git push
           fi
