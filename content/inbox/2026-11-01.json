@@ -1,0 +1,63 @@
+{
+  "publication_date": "2026-11-01",
+  "date": "2026-10-31",
+  "title": "OPEP+ : statu quo envisagé sur la production, TotalEnergies et Eni exposées",
+  "text": "Selon Reuters, des producteurs de l’OPEP+ envisagent de maintenir leurs objectifs de production en décembre. TotalEnergies et Eni restent exposées aux prix du pétrole. À surveiller : la décision officielle, les volumes réellement exportés et la réaction du Brent.",
+  "assets": [
+    "TTE.PA",
+    "ENI.MI"
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "OPEC+ set to keep production targets unchanged in December, source says",
+      "publisher": "Reuters",
+      "url": "https://www.aol.com/articles/opec-set-keep-production-targets-164032000.html",
+      "published_at": "2026-10-31T17:40:32+01:00"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Les faits",
+      "text": "Le 31 octobre, Reuters rapporte, en citant une source au fait des discussions, que sept producteurs de l’OPEP+ appelés à se réunir le lendemain disposent d’un accord de principe pour maintenir leurs objectifs de production de décembre. Il s’agit d’une information attribuée à une source, pas d’une décision officielle. TotalEnergies et Eni figurent dans l’univers autorisé et produisent des hydrocarbures : leurs activités sont exposées aux conditions du marché pétrolier. L’information porte sur les objectifs collectifs des producteurs, non sur une modification annoncée de la production de ces deux entreprises.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "title": "Le mécanisme économique",
+      "text": "Si des objectifs de production contraignaient effectivement l’offre disponible, un marché plus tendu pourrait soutenir les prix du brut et les revenus tirés de la production de pétrole. À l’inverse, une offre effective supérieure aux attentes ou une demande plus faible pourrait peser sur les prix. Pour TotalEnergies et Eni, l’effet sur les résultats dépendrait aussi des volumes vendus, des contrats, des coûts, des impôts et des autres activités, notamment le gaz et le raffinage. Ce canal est une hypothèse économique ; l’annonce ne permet pas de chiffrer son effet sur les bénéfices.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "title": "Ce qui renforcerait cette lecture",
+      "text": "Une confirmation officielle du maintien des objectifs, combinée à des données montrant une offre effective limitée et une demande résiliente, rendrait plus plausible la perspective d’un marché tendu. Il faudrait ensuite observer les prix réalisés par les entreprises et les résultats de leurs activités de production. Une évolution du Brent cohérente avec ces facteurs serait un indice, mais ne prouverait pas à elle seule un lien de causalité.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "title": "Ce qui pourrait la contredire",
+      "text": "Les objectifs ne sont pas les volumes effectivement produits : des écarts de respect des quotas, le retour d’exportations ou une offre accrue hors OPEP+ peuvent modifier l’équilibre. Le statu quo pourrait aussi être déjà anticipé. Un ralentissement de la demande, une désescalade géopolitique ou une baisse des marges de raffinage pourraient atténuer ou inverser les effets attendus pour les entreprises. Leurs profils intégrés ne garantissent pas une réaction identique.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "title": "Points à surveiller",
+      "text": "La réunion du 1er novembre doit d’abord confirmer ou infirmer l’information de Reuters. Suivre ensuite les objectifs officiels, la production et les exportations effectives, les stocks et les perspectives de demande, puis les publications de TotalEnergies et d’Eni. Les marchés concernés étaient fermés le samedi 31 octobre ; aucune clôture des deux actions n’est fournie ici faute de vérification indépendante de deux séances consécutives. La réaction à la réouverture reste inconnue.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "diagram": [
+    "Objectifs OPEP+ envisagés",
+    "Offre effective et demande",
+    "Prix du brut et marges",
+    "Résultats des producteurs"
+  ],
+  "quotes": []
+}
