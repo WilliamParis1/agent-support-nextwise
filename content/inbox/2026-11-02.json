@@ -1,0 +1,75 @@
+{
+  "publication_date": "2026-11-02",
+  "date": "2026-11-01",
+  "title": "OPEP+ maintient ses objectifs, Lisbonne étudie son rôle chez Galp",
+  "text": "Sept pays de l’OPEP+ maintiennent leurs objectifs pétroliers pour décembre. Le Portugal envisage d’augmenter sa participation dans Galp. Pour Galp et TotalEnergies, surveiller les volumes réellement exportés, les prix du brut et toute décision de Lisbonne.",
+  "assets": [
+    "GALP.LS",
+    "TTE.PA"
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "OPEC+ keeps December oil output targets steady ahead of tougher call for 2027",
+      "publisher": "Reuters",
+      "url": "https://www.marketscreener.com/news/opec-keeps-december-oil-output-targets-steady-ahead-of-tougher-call-for-2027-ce785fd8dd88f424",
+      "published_at": "2026-11-01T13:36:00+00:00"
+    },
+    {
+      "id": "s2",
+      "title": "Portugal weighing bigger Galp stake after Moeve merger collapse, minister says",
+      "publisher": "Reuters",
+      "url": "https://www.marketscreener.com/news/portugal-weighing-bigger-galp-stake-after-moeve-merger-collapse-minister-says-ce785fd8dd88f72d",
+      "published_at": "2026-11-01T13:02:00+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Les faits",
+      "text": "Le 1er novembre, sept pays de l’OPEP+ ont décidé de maintenir pour décembre les niveaux de production requis de septembre. Leur communiqué confirme la décision et fixe une prochaine réunion au 29 novembre. Reuters précise que plusieurs producteurs restent en dessous de leurs objectifs dans un contexte de perturbations des exportations. Le même jour, le ministre portugais de l’Économie a indiqué que son gouvernement continuait d’évaluer une éventuelle augmentation de sa participation de 8 % dans Galp, après l’arrêt des discussions de rapprochement d’actifs avec Moeve. Aucun achat ni montant n’a été annoncé.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Pourquoi Galp et TotalEnergies ?",
+      "text": "Galp et TotalEnergies produisent et commercialisent des hydrocarbures : l’équilibre mondial de l’offre et de la demande peut influencer leurs prix de vente et leurs résultats. Un maintien des objectifs ne signifie toutefois pas que l’offre physique restera inchangée. Pour Galp, une éventuelle opération de l’État ajouterait une question propre à l’entreprise : son effet dépendrait du prix payé, du volume acquis et des intentions de l’actionnaire. Ces effets sont des mécanismes possibles, pas des conséquences établies des annonces.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Éléments de confirmation",
+      "text": "Une offre effectivement limitée et une demande résistante pourraient soutenir le brut et les revenus de production. Il conviendrait de suivre les exportations, les stocks et les prix réalisés, puis les résultats opérationnels des deux groupes. Pour Galp, seule une annonce officielle précisant une transaction permettrait d’évaluer concrètement la portée financière d’une hausse de la participation publique. Le communiqué du ministre indique une option à l’étude, pas une opération conclue.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Limites et arguments contraires",
+      "text": "Le statu quo de l’OPEP+ était attendu : une décision conforme aux attentes ne provoque pas nécessairement une hausse du pétrole. Un retour des exportations, une augmentation de l’offre hors OPEP+ ou une demande plus faible pourraient au contraire peser sur les prix. Galp et TotalEnergies exercent aussi d’autres activités, dont le raffinage et le gaz, qui peuvent réagir différemment. L’issue de l’examen portugais est inconnue ; aucune variation boursière ne peut être attribuée avec certitude aux déclarations.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "À surveiller",
+      "text": "La réunion de l’OPEP+ du 29 novembre et le cadre de production pour 2027 seront les prochaines étapes importantes. Suivre les volumes réellement expédiés, l’évolution de la demande et les communications de Lisbonne et de Galp sur l’actionnariat. Les places de Lisbonne et de Paris étaient fermées le dimanche 1er novembre ; aucune clôture des deux titres n’est reprise faute de vérification indépendante de deux séances consécutives.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "diagram": [
+    "Objectifs OPEP+ et décision de Lisbonne",
+    "Offre réelle et actionnariat",
+    "Prix du brut et activités",
+    "Résultats à confirmer"
+  ],
+  "quotes": []
+}
