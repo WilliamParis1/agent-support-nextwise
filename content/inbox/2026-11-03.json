@@ -1,0 +1,83 @@
+{
+  "publication_date": "2026-11-03",
+  "date": "2026-11-02",
+  "title": "Alstom abaisse ses objectifs, Forvia confirme les siens",
+  "text": "Alstom prévoit désormais une marge annuelle d’environ 1 % et une sortie de trésorerie de 1,5 milliard d’euros. Forvia confirme ses objectifs après un trimestre presque stable. À surveiller : les livraisons ferroviaires et la cession des activités Intérieurs.",
+  "assets": [
+    "ALO.PA",
+    "FRVIA.PA"
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Alstom’s preliminary first half 2026/27 results",
+      "publisher": "Alstom",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/alstom-alstom-preliminary-first-half-063000550.html",
+      "published_at": "2026-11-02T06:30:00+00:00"
+    },
+    {
+      "id": "s2",
+      "title": "Sales broadly stable in Q3, interiors divestiture on track for Q4 closing, FY 2026 guidance confirmed",
+      "publisher": "Forvia",
+      "url": "https://rss.globenewswire.com/news-release/2026/11/02/3392821/0/en/sales-broadly-stable-in-q3-interiors-divestiture-on-track-for-q4-closing-fy-2026-guidance-confirmed.html",
+      "published_at": "2026-11-02T06:00:00+00:00"
+    },
+    {
+      "id": "s3",
+      "title": "Forvia quarterly revenue broadly stable despite auto market weakness",
+      "publisher": "Reuters",
+      "url": "https://live.euronext.com/en/financial-news/forvia-quarterly-revenue-broadly-stable-despite-auto-market-weakness",
+      "published_at": "2026-11-02T07:09:00+01:00"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Les faits",
+      "text": "Alstom a publié des résultats semestriels préliminaires non audités : chiffre d’affaires de 9,3 milliards d’euros, marge d’EBIT ajusté d’environ -4 % et flux de trésorerie disponible de -1,248 milliard. Pour 2026/27, le groupe prévoit désormais une marge proche de 1 %, contre environ 6,5 % auparavant, et un flux de trésorerie de -1,5 milliard, contre une prévision positive. Il évoque notamment des difficultés d’industrialisation et des délais d’homologation de Coradia Max. Forvia annonce 5,08 milliards d’euros de ventes au troisième trimestre, en recul organique de 0,6 %, et confirme ses objectifs annuels. La cession des activités Intérieurs est attendue au quatrième trimestre.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "title": "Les mécanismes économiques",
+      "text": "Chez Alstom, des homologations et mises en service plus tardives peuvent décaler des paiements liés aux étapes contractuelles, tandis que les difficultés d’exécution pèsent sur les coûts et les marges. La trésorerie et la dette deviennent donc des points centraux. Pour Forvia, la cession annoncée pourrait réduire l’endettement et renforcer sa flexibilité financière ; l’entreprise prévoit une réduction de dette nette supérieure à un milliard d’euros. Ces effets restent conditionnels à l’exécution, et le produit de la cession ne constitue pas en lui-même une amélioration récurrente des ventes.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Éléments de confirmation",
+      "text": "Une progression des homologations, des livraisons et des paiements contractuels, associée à un rebond de la marge au second semestre, renforcerait le scénario de redressement d’Alstom. La nouvelle prévision annuelle implique une marge ajustée d’environ 6,5 % au second semestre. Pour Forvia, la finalisation de la cession, la baisse effective de dette et le maintien de la génération de trésorerie aideraient à confirmer l’amélioration du profil financier recherchée.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Risques et lecture contraire",
+      "text": "De nouveaux retards, des surcoûts ou une reprise de marge inférieure aux attentes pourraient fragiliser les objectifs d’Alstom. Les paiements décalés ne sont pas nécessairement perdus, mais leur calendrier reste incertain. Chez Forvia, la faiblesse de la production automobile, l’inflation des coûts et les performances variables selon les régions peuvent peser sur les résultats. La confirmation de prévisions ne garantit ni leur réalisation ni le prix de marché futur des actions.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "À surveiller",
+      "text": "Suivre les résultats semestriels définitifs et les informations sur Coradia Max, la liquidité et le désendettement d’Alstom. Pour Forvia, surveiller la clôture effective de la cession au quatrième trimestre, l’évolution de la dette et les résultats annuels. Les clôtures des 30 octobre et 2 novembre n’ont pas été retenues : les données consultées ne permettaient pas une vérification cohérente pour les deux actifs.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "diagram": [
+    "Retards et ventes trimestrielles",
+    "Livraisons et cession",
+    "Marges, trésorerie et dette",
+    "Exécution à confirmer"
+  ],
+  "quotes": []
+}
