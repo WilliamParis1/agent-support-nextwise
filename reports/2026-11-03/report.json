@@ -1,0 +1,116 @@
+{
+  "schema_version": 2,
+  "origin": "chatgpt",
+  "input_sha256": "3e922d16275cfee857dbcb73765b69e4ca57143c84e8138161666d871f7c72d6",
+  "ingest_version": 1,
+  "publication_date": "2026-11-04",
+  "date": "2026-11-03",
+  "generated_at": "2026-11-04T08:45:46.191574+00:00",
+  "timezone": "Europe/Paris",
+  "status": "draft",
+  "text": "Ferrari relève sa prévision d’EBITDA après un trimestre porté par les modèles haut de gamme et les personnalisations. Intesa Sanpaolo rehausse sa prévision de bénéfice annuel. À surveiller : les livraisons de Ferrari, le coût du risque bancaire et les distributions.",
+  "word_count": 41,
+  "news": [
+    {
+      "id": "s1",
+      "title": "Strong mix and personalizations sustain Q3 growth and further 2026 guidance upgrade",
+      "source": "Ferrari",
+      "url": "https://www.globenewswire.com/news-release/2026/11/03/3394014/0/en/strong-mix-and-personalizations-sustain-q3-growth-and-further-2026-guidance-upgrade.html",
+      "published_at": "2026-11-03T11:30:00+00:00"
+    },
+    {
+      "id": "s2",
+      "title": "Intesa Sanpaolo: risultati consolidati al 30 settembre 2026",
+      "source": "Intesa Sanpaolo",
+      "url": "https://financialfilings.com/filings/intesa-sanpaolo/earnings-release/2026/75427057/",
+      "published_at": "2026-11-03T12:53:22+01:00"
+    }
+  ],
+  "prices": [
+    {
+      "name": "FERRARI",
+      "ticker": "RACE",
+      "market": "Milan",
+      "asset_class": "Action",
+      "sector": "Conso",
+      "symbol": "RACE.MI",
+      "date": "2026-11-03",
+      "close": 375,
+      "previous_close": 358.95,
+      "previous_date": "2026-11-02",
+      "status": "available",
+      "change_pct": 4.47,
+      "source_url": "https://markets.ft.markitdigital.com/data/equities/tearsheet/historical?s=RACE%3AMIL",
+      "currency": "EUR"
+    },
+    {
+      "name": "INTESA SANPAOLO",
+      "ticker": "ISP",
+      "market": "Milan",
+      "asset_class": "Action",
+      "sector": "Finance",
+      "symbol": "ISP.MI",
+      "date": "2026-11-03",
+      "status": "unavailable",
+      "reason": "not_provided"
+    }
+  ],
+  "analysis": null,
+  "universe": {
+    "source": "data/universe.csv",
+    "total": 3382,
+    "tracked": 2,
+    "scope": "news-selected"
+  },
+  "authored_analysis": {
+    "title": "Ferrari et Intesa Sanpaolo relèvent leurs perspectives",
+    "sections": [
+      {
+        "title": "Les faits",
+        "text": "Ferrari publie des résultats préliminaires non audités : au troisième trimestre, son chiffre d’affaires atteint 1,896 milliard d’euros, en hausse de 7 % sur un an, et son EBITDA 753 millions. Les livraisons s’élèvent à 3 368 véhicules. Le constructeur relève sa prévision d’EBITDA 2026 à au moins 3 milliards d’euros, contre au moins 2,97 milliards auparavant. Intesa Sanpaolo enregistre 8,199 milliards d’euros de bénéfice net sur neuf mois, soit une hausse de 8,1 %, et vise désormais un résultat annuel nettement supérieur à 10 milliards. Son ratio de fonds propres CET1 atteint 13,1 % après prise en compte des sommes provisionnées pour distribution.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "title": "Les mécanismes économiques",
+        "text": "Chez Ferrari, une proportion accrue de modèles plus chers et les options de personnalisation peuvent augmenter le revenu et la marge par voiture, même si les volumes évoluent moins vite. La demande, les coûts et les taux de change déterminent la pérennité de cet effet. Pour Intesa, les revenus d’intérêts, commissions et assurances soutiennent le résultat ; les pertes sur prêts, les coûts et la fiscalité peuvent le réduire. La capacité à distribuer du capital dépend aussi du maintien des ratios prudentiels et des autorisations applicables.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "title": "Ce qui renforcerait cette lecture",
+        "text": "La poursuite des livraisons prévues, une demande robuste de personnalisation et une marge soutenue conforteraient les perspectives de Ferrari. Pour Intesa, une croissance des commissions, une qualité de crédit stable et un CET1 solide après distributions renforceraient la thèse d’une rentabilité durable. L’atteinte des nouvelles prévisions doit encore être vérifiée dans les résultats annuels.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "title": "Ce qui pourrait la contredire",
+        "text": "Une demande de luxe plus faible, un mix moins favorable ou des coûts et droits de douane plus élevés pourraient peser sur Ferrari. Les résultats annoncés restent préliminaires. Pour la banque, une hausse des défauts, une pression sur les revenus d’intérêts ou des charges fiscales et réglementaires plus fortes pourraient réduire le bénéfice. Une bonne publication ne garantit pas une progression du cours : les attentes déjà intégrées dans les prix comptent aussi.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "title": "À surveiller",
+        "text": "Suivre les livraisons et marges de Ferrari au quatrième trimestre, ainsi que ses résultats annuels. Pour Intesa, surveiller le coût du risque, le CET1 et l’acompte sur dividende annoncé pour le 25 novembre 2026. À Milan, Ferrari a clôturé à 358,95 euros le 2 novembre puis à 375,00 euros le 3 novembre. Les clôtures d’Intesa ne sont pas reprises car les sources consultées divergent. Aucun lien causal certain entre annonce et cours n’est établi.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      }
+    ],
+    "diagram": [
+      "Résultats et prévisions relevées",
+      "Mix produit et revenus bancaires",
+      "Marges, bénéfices et capital",
+      "Exécution et risques à vérifier"
+    ]
+  }
+}
