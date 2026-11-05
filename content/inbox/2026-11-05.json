@@ -1,0 +1,94 @@
+{
+  "publication_date": "2026-11-05",
+  "date": "2026-11-04",
+  "title": "Solvay sous pression opérationnelle, Wolters Kluwer confirme sa trajectoire",
+  "text": "Solvay subit encore l’arrêt de Jubail et la faiblesse de la soude, malgré ses économies. Wolters Kluwer confirme ses objectifs après 6 % de croissance organique sur neuf mois. À surveiller : Jubail, la demande de soude et l’exécution des investissements logiciels.",
+  "assets": [
+    "SOLB.BR",
+    "WKL.AS"
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Solvay third quarter 2026 results",
+      "publisher": "Solvay",
+      "url": "https://www.solvay.com/en/press-release/solvay-third-quarter-2026-results",
+      "published_at": "2026-11-04T07:00:00+01:00"
+    },
+    {
+      "id": "s2",
+      "title": "Wolters Kluwer 2026 Nine-Month Trading Update",
+      "publisher": "Wolters Kluwer",
+      "url": "https://www.wolterskluwer.com/en/news/wolters-kluwer-2026-nine-month-trading-update",
+      "published_at": "2026-11-04T08:00:00+01:00"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Les faits",
+      "text": "Solvay a publié un chiffre d’affaires sous-jacent de 1,031 milliard d’euros au troisième trimestre 2026, en baisse de 3,3 % en organique sur un an. L’EBITDA sous-jacent atteint 173 millions d’euros, soit une marge de 16,8 %, en recul de 5,4 points. Le groupe attribue notamment la baisse à l’impact du conflit au Moyen-Orient et à la faiblesse de la soude. L’arrêt prolongé de l’usine de peroxydes de Jubail a pesé environ 15 millions d’euros sur l’EBITDA trimestriel. Solvay maintient l’objectif, révisé en octobre, d’un EBITDA 2026 entre 720 et 740 millions d’euros et d’un flux de trésorerie disponible entre 120 et 150 millions d’euros. Wolters Kluwer annonce pour les neuf premiers mois une croissance organique de 6 %, des revenus en hausse de 4 % à changes constants et confirme ses objectifs annuels.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Le mécanisme économique",
+      "text": "Pour Solvay, un arrêt industriel réduit les volumes et peut absorber des coûts fixes, tandis que la pression sur les prix de la soude limite la capacité à compenser par le chiffre d’affaires. Les économies structurelles, 283 millions d’euros cumulés depuis le début du programme, peuvent protéger une partie de la marge mais ne remplacent pas un redémarrage durable de Jubail. Pour Wolters Kluwer, la hausse de 7 % des revenus récurrents et de 15 % des logiciels cloud récurrents peut améliorer la visibilité et soutenir le levier opérationnel. Cet effet dépend toutefois du maintien des renouvellements, de l’adoption des produits et du contrôle des dépenses de développement, annoncées plus élevées au quatrième trimestre.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Ce qui renforcerait cette lecture",
+      "text": "Le redémarrage de Jubail, une stabilisation des volumes de soude et l’atteinte de la cible d’économies de 300 millions d’euros fin 2026 renforceraient l’interprétation d’une pression temporaire chez Solvay. Chez Wolters Kluwer, la poursuite de la croissance récurrente, une bonne conversion en trésorerie et une progression des produits cloud conforteraient le maintien des objectifs. Les cours ont clôturé le 4 novembre à 24,26 euros pour Solvay, contre 23,46 euros le 3 novembre, et à 91,16 euros pour Wolters Kluwer, contre 85,44 euros. Ces mouvements sont constatés, pas attribués avec certitude aux annonces.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Ce qui pourrait la contredire",
+      "text": "Chez Solvay, une prolongation de l’arrêt ou une demande de soude plus faible ferait peser un risque supplémentaire sur les volumes et le flux de trésorerie. La hausse des coûts variables et un environnement géopolitique instable peuvent aussi différer le redressement. Pour Wolters Kluwer, l’effet devise, les dépenses de développement concentrées au quatrième trimestre, le rythme d’adoption des produits d’intelligence artificielle et la concurrence peuvent réduire la conversion de la croissance en résultat. Le fait de confirmer des objectifs ne garantit ni leur réalisation ni une évolution donnée du cours.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "title": "Les prochaines échéances",
+      "text": "Solvay publiera ses résultats du quatrième trimestre et de l’exercice 2026 le 4 mars 2027. Il faudra suivre toute information sur Jubail, la demande de soude et le flux de trésorerie. Wolters Kluwer publiera ses résultats 2026 le 24 février 2027, puis son rapport annuel le 10 mars 2027. D’ici là, le niveau des revenus récurrents, l’évolution des dépenses de développement et l’exécution des acquisitions annoncées seront les principaux points de contrôle.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "diagram": [
+    "Annonce et données opérationnelles",
+    "Volumes, prix et revenus récurrents",
+    "Marges, trésorerie et objectifs",
+    "Exécution à confirmer au quatrième trimestre"
+  ],
+  "quotes": [
+    {
+      "symbol": "SOLB.BR",
+      "date": "2026-11-04",
+      "close": 24.26,
+      "previous_date": "2026-11-03",
+      "previous_close": 23.46,
+      "currency": "EUR",
+      "source_url": "https://stockanalysis.com/quote/ebr/SOLB/history/"
+    },
+    {
+      "symbol": "WKL.AS",
+      "date": "2026-11-04",
+      "close": 91.16,
+      "previous_date": "2026-11-03",
+      "previous_close": 85.44,
+      "currency": "EUR",
+      "source_url": "https://stockanalysis.com/quote/ams/WKL/history/"
+    }
+  ]
+}
