@@ -1,0 +1,116 @@
+{
+  "schema_version": 2,
+  "origin": "chatgpt",
+  "input_sha256": "3354894f397a1db13c96e8b0a5e44035ee76a2ef5b605e06309cdfd74384cff9",
+  "ingest_version": 1,
+  "publication_date": "2026-11-06",
+  "date": "2026-11-05",
+  "generated_at": "2026-11-06T01:05:16.228784+00:00",
+  "timezone": "Europe/Paris",
+  "status": "draft",
+  "text": "Euronext publie un trimestre record et annonce 350 millions d’euros de rachat d’actions. Bekaert signe l’acquisition de Dextra pour 140 millions d’euros. À surveiller : volumes de marché, discipline de coûts, autorisations réglementaires et intégration de Dextra.",
+  "word_count": 37,
+  "news": [
+    {
+      "id": "s1",
+      "title": "Euronext publishes Q3 2026 results and announces a share repurchase programme",
+      "source": "Euronext",
+      "url": "https://www.euronext.com/en/about/media/euronext-press-releases/euronext-publishes-q3-2026-results-and-announces-share",
+      "published_at": "2026-11-05T17:45:00+01:00"
+    },
+    {
+      "id": "s2",
+      "title": "Bekaert to acquire Dextra, a leading provider of sustainable construction reinforcement solutions",
+      "source": "Bekaert",
+      "url": "https://www.bekaert.com/en/about-us/news-room/news/2026/bekaert-to-acquire-dextra-a-leading-provider-of-sustainable-construction-reinforcement-solutions",
+      "published_at": "2026-11-05T07:00:00+01:00"
+    }
+  ],
+  "prices": [
+    {
+      "name": "EURONEXT",
+      "ticker": "ENX",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Finance",
+      "symbol": "ENX.PA",
+      "date": "2026-11-05",
+      "close": 174.3,
+      "previous_close": 170.5,
+      "previous_date": "2026-11-04",
+      "status": "available",
+      "change_pct": 2.23,
+      "source_url": "https://stockanalysis.com/quote/epa/ENX/history/",
+      "currency": "EUR"
+    },
+    {
+      "name": "BEKAERT",
+      "ticker": "BEKB",
+      "market": "Brussels",
+      "asset_class": "Action",
+      "sector": "Ind",
+      "symbol": "BEKB.BR",
+      "date": "2026-11-05",
+      "status": "unavailable",
+      "reason": "not_provided"
+    }
+  ],
+  "analysis": null,
+  "universe": {
+    "source": "data/universe.csv",
+    "total": 3382,
+    "tracked": 2,
+    "scope": "news-selected"
+  },
+  "authored_analysis": {
+    "title": "Euronext accélère et Bekaert cible Dextra",
+    "sections": [
+      {
+        "title": "Les faits",
+        "text": "Euronext a publié au troisième trimestre 2026 un revenu et produit de 547,4 millions d’euros, en hausse de 24,9 % sur un an. L’EBITDA ajusté progresse de 31,6 % à 364,2 millions d’euros, pour une marge de 66,5 %, et le résultat net publié attribuable aux actionnaires atteint 194,9 millions d’euros, en hausse de 30,2 %. Le groupe a aussi annoncé un programme de rachat d’actions de 350 millions d’euros, soit environ 2 % du capital, dont le lancement est prévu le 9 novembre. Bekaert a signé un accord pour acquérir Dextra, spécialiste des solutions de renforcement pour la construction durable, sur une valeur d’entreprise de 140 millions d’euros. La finalisation est attendue au premier semestre 2027, sous réserve des autorisations réglementaires et conditions usuelles.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "title": "Le mécanisme économique",
+        "text": "Chez Euronext, une activité plus soutenue en actions, obligations, matières premières et dérivés peut accroître les commissions de négociation et de compensation. La croissance des services de données, de règlement-livraison et de technologie peut, elle, diversifier les revenus au-delà des volumes de marché. Un rachat d’actions réduit potentiellement le nombre de titres en circulation et matérialise une décision d’allocation du capital, sans garantir un rendement futur. Pour Bekaert, Dextra peut élargir l’offre de construction durable avec des solutions complémentaires. La valeur dépendra du prix payé, de l’intégration, du financement et de la capacité à dégager les synergies attendues.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "title": "Ce qui renforcerait cette lecture",
+        "text": "Pour Euronext, la poursuite de la demande de données, de services post-marché et une activité de marché suffisante soutiendraient les revenus diversifiés. Le maintien de la discipline sur les coûts est également central : le groupe a relevé son objectif annuel de dépenses opérationnelles sous-jacentes hors amortissements à 760 millions d’euros, contre 770 millions auparavant. La clôture d’Euronext est passée de 170,50 euros le 4 novembre à 174,30 euros le 5 novembre. Cette variation est constatée, mais la publication des résultats ayant eu lieu après la clôture, elle ne peut pas être présentée comme sa conséquence. Pour Bekaert, l’obtention des autorisations et la réalisation dans le calendrier annoncé apporteraient une première confirmation.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "title": "Ce qui pourrait la contredire",
+        "text": "L’activité d’Euronext reste partiellement sensible aux volumes, à la volatilité et aux niveaux de taux. Une normalisation de ces facteurs, une hausse des dépenses d’intégration ou un ralentissement de l’activité de marché pourraient peser sur les marges. Le flux de trésorerie opérationnel a aussi été affecté au trimestre par les variations de besoin en fonds de roulement liées aux contreparties centrales et par des impôts plus élevés. Chez Bekaert, une opération signée n’est pas encore réalisée : les autorisations, les conditions de clôture, le coût d’intégration et la conjoncture de construction peuvent retarder ou limiter la création de valeur.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "title": "Les prochaines échéances",
+        "text": "Le lancement du programme de rachat d’Euronext est prévu le 9 novembre 2026. Il faudra suivre l’évolution des activités de négociation et des services non liés aux volumes, ainsi que les dépenses opérationnelles. Pour Bekaert, les jalons immédiats sont l’avancement des autorisations et les informations d’intégration ; la société vise une clôture au premier semestre 2027. Les prochaines publications financières de chaque groupe permettront de vérifier si la dynamique opérationnelle d’Euronext et la logique stratégique de l’acquisition se traduisent dans les données.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      }
+    ],
+    "diagram": [
+      "Résultats et opération stratégique",
+      "Volumes, services et intégration",
+      "Revenus, marges et capital",
+      "Hypothèses à contrôler"
+    ]
+  }
+}
