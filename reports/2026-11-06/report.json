@@ -1,0 +1,121 @@
+{
+  "schema_version": 2,
+  "origin": "chatgpt",
+  "input_sha256": "996d9a88a425ffa2332a436eae346ae5e7a9273fcf012869765991268397af74",
+  "ingest_version": 1,
+  "publication_date": "2026-11-07",
+  "date": "2026-11-06",
+  "generated_at": "2026-11-07T01:00:54.883164+00:00",
+  "timezone": "Europe/Paris",
+  "status": "draft",
+  "text": "APERAM publie un troisième trimestre plus faible, malgré une trésorerie positive, tandis que BRUNEL voit son chiffre d’affaires quasi stable et ses performances régionales diverger. Les deux clôtures reculent le 6 novembre. À surveiller : demande européenne, coûts et lancement des projets énergie.",
+  "word_count": 43,
+  "news": [
+    {
+      "id": "s1",
+      "title": "Aperam - Third quarter 2026 results: Transformation drives the best third quarter performance in four years",
+      "source": "Aperam S.A.",
+      "url": "https://www.afm.nl/en/sector/registers/meldingenregisters/openbaarmaking-voorwetenschap/details?id=C2611-00381",
+      "published_at": "2026-11-06T06:58:00+01:00"
+    },
+    {
+      "id": "s2",
+      "title": "Brunel 3Q26 results: Strong performance in DACH, with softer results in the Netherlands and Asia",
+      "source": "Brunel International N.V.",
+      "url": "https://www.afm.nl/en/sector/registers/meldingenregisters/openbaarmaking-voorwetenschap/details?id=C2611-00384",
+      "published_at": "2026-11-06T07:30:00+01:00"
+    }
+  ],
+  "prices": [
+    {
+      "name": "APERAM",
+      "ticker": "APAM",
+      "market": "Amsterdam",
+      "asset_class": "Action",
+      "sector": "Ind",
+      "symbol": "APAM.AS",
+      "date": "2026-11-06",
+      "close": 33.0,
+      "previous_close": 34.32,
+      "previous_date": "2026-11-05",
+      "status": "available",
+      "change_pct": -3.85,
+      "source_url": "https://stockanalysis.com/quote/ams/APAM/history/",
+      "currency": "EUR"
+    },
+    {
+      "name": "BRUNEL INTERNAT",
+      "ticker": "BRNL",
+      "market": "Amsterdam",
+      "asset_class": "Action",
+      "sector": "Ind",
+      "symbol": "BRNL.AS",
+      "date": "2026-11-06",
+      "close": 7.01,
+      "previous_close": 7.53,
+      "previous_date": "2026-11-05",
+      "status": "available",
+      "change_pct": -6.91,
+      "source_url": "https://stockanalysis.com/quote/ams/BRNL/history/",
+      "currency": "EUR"
+    }
+  ],
+  "analysis": null,
+  "universe": {
+    "source": "data/universe.csv",
+    "total": 3382,
+    "tracked": 2,
+    "scope": "news-selected"
+  },
+  "authored_analysis": {
+    "title": "Aperam et Brunel : demande européenne et exécution opérationnelle sous surveillance",
+    "sections": [
+      {
+        "title": "Les faits vérifiés",
+        "text": "Aperam a publié ses résultats du troisième trimestre 2026 avant l’ouverture. Les expéditions ont atteint 540 milliers de tonnes, contre 606 milliers au trimestre précédent. L’EBITDA ajusté ressort à 105 millions d’euros, contre 130 millions au deuxième trimestre, et le résultat net à 7 millions, contre 116 millions. Le flux de trésorerie disponible avant dividende atteint néanmoins 68 millions d’euros et la dette financière nette recule à 980 millions. Brunel a publié un chiffre d’affaires trimestriel de 301,2 millions d’euros, en baisse de 1 % sur un an, un profit brut stable à 56,6 millions et un EBIT sous-jacent de 11,4 millions, en recul de 5 %. Son EBIT publié progresse à 8,9 millions, aidé par des coûts non récurrents ramenés à 2,4 millions.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "title": "Le mécanisme économique possible",
+        "text": "Chez Aperam, la baisse séquentielle des volumes et de l’EBITDA illustre l’exposition de l’acier inoxydable à la demande européenne, aux prix et au rythme saisonnier. Une reprise des volumes, des prix ou des gains de transformation pourrait relever l’absorption des coûts fixes et la génération de trésorerie ; l’inverse pèserait sur les marges. Chez Brunel, le résultat dépend du volume d’activité de recrutement et de projets, mais aussi du mix de prestations. La croissance observée dans la région DACH, en Australasia et dans les Amériques peut améliorer le levier opérationnel, alors que les Pays-Bas, le Moyen-Orient, l’Inde et l’Asie restent des freins. Ce sont des mécanismes possibles, non une prévision de résultat.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "title": "Éléments qui soutiendraient cette lecture",
+        "text": "Pour Aperam, le désendettement entre juin et septembre et le flux de trésorerie positif constituent des points de résistance malgré le recul opérationnel. Les gains annoncés de la phase 6 du programme Leadership Journey, 18 millions d’euros au trimestre et 56 millions sur neuf mois, peuvent aussi aider si leur réalisation se poursuit. Pour Brunel, DACH a signé son troisième trimestre consécutif de croissance organique, selon la société, et les activités à plus forte valeur ajoutée en Australasia ainsi que les nouveaux clients dans les Amériques ont soutenu la marge. Les clôtures vérifiées du 6 novembre sont de 33,00 euros pour APAM après 34,32 euros le 5 novembre, et de 7,01 euros pour BRNL après 7,53 euros. Ces constats de marché ne prouvent pas une causalité unique avec les annonces.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "title": "Ce qui pourrait contredire ou limiter l’interprétation",
+        "text": "La communication d’Aperam qualifie ce troisième trimestre de meilleur troisième trimestre depuis quatre ans, ce qui rappelle qu’une comparaison séquentielle ne résume pas toute la performance. La demande européenne, les importations, les coûts d’énergie et les prix peuvent évoluer rapidement. Chez Brunel, l’amélioration de l’EBIT publié tient en partie à des coûts non récurrents plus faibles ; elle ne suffit donc pas à démontrer une amélioration structurelle de l’EBIT sous-jacent. Les mises en chantier de projets énergie et miniers, les conditions géopolitiques et le calendrier des projets en Asie peuvent différer de ce qui est envisagé. Les variations de cours constatées peuvent aussi refléter d’autres informations ou le contexte de marché.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "title": "Prochaines échéances à surveiller",
+        "text": "Aperam indique que la demande, les livraisons, les prix et la conversion de trésorerie devront être suivis lors de sa prochaine publication, de même que la trajectoire de dette et les économies de transformation. Brunel mentionne des démarrages de projets énergie attendus au premier semestre 2027, tandis que l’activité renouvelable est plutôt attendue en seconde partie de 2027. Les prochains jalons utiles seront donc les informations de commandes, l’évolution de DACH et du redressement Pays-Bas–Belgique, le démarrage effectif des projets et les prochaines données de marge. Aucune de ces échéances ne garantit la matérialisation du scénario favorable.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      }
+    ],
+    "diagram": [
+      "Annonces de résultats vérifiées",
+      "Volumes, mix et coûts",
+      "Marges, trésorerie et dette",
+      "Hypothèses à contrôler"
+    ]
+  }
+}
