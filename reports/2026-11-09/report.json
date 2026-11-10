@@ -1,0 +1,121 @@
+{
+  "schema_version": 2,
+  "origin": "chatgpt",
+  "input_sha256": "0b40d3ff364131f5887070f6424e165590fbb09b5f2b57bc61284ad6dc964e10",
+  "ingest_version": 1,
+  "publication_date": "2026-11-10",
+  "date": "2026-11-09",
+  "generated_at": "2026-11-10T01:01:25.025523+00:00",
+  "timezone": "Europe/Paris",
+  "status": "draft",
+  "text": "UniCredit relève son ambition de bénéfice après un T3 à 3,3 Md€, tandis qu’argenx rachète Unnatural Products pour jusqu’à 1,15 Md$. Les deux actions clôturent en hausse le 9 novembre. À surveiller : autorisations, intégration et capacité de financement.",
+  "word_count": 39,
+  "news": [
+    {
+      "id": "s1",
+      "title": "3Q26 AND 9M26 GROUP RESULTS",
+      "source": "UniCredit S.p.A.",
+      "url": "https://www.unicreditgroup.eu/en/press-media/press-releases-price-sensitive/2026/november/3q26-and-9m26-group-results-.html",
+      "published_at": "2026-11-09T07:00:00+01:00"
+    },
+    {
+      "id": "s2",
+      "title": "argenx to Acquire Unnatural Products, Inc., Adding Peptide Discovery Engine to Broaden Immunology Capabilities",
+      "source": "argenx SE",
+      "url": "https://argenx.com/news/2026/press-release-3398049",
+      "published_at": "2026-11-09T07:00:00+01:00"
+    }
+  ],
+  "prices": [
+    {
+      "name": "UNICREDIT",
+      "ticker": "UCG",
+      "market": "Milan",
+      "asset_class": "Action",
+      "sector": "Finance",
+      "symbol": "UCG.MI",
+      "date": "2026-11-09",
+      "close": 81.62,
+      "previous_close": 76.8,
+      "previous_date": "2026-11-06",
+      "status": "available",
+      "change_pct": 6.28,
+      "source_url": "https://stockanalysis.com/quote/bit/UCG/history/",
+      "currency": "EUR"
+    },
+    {
+      "name": "ARGENX SE",
+      "ticker": "ARGX",
+      "market": "Brussels",
+      "asset_class": "Action",
+      "sector": "Santé",
+      "symbol": "ARGX.BR",
+      "date": "2026-11-09",
+      "close": 853.8,
+      "previous_close": 815.8,
+      "previous_date": "2026-11-06",
+      "status": "available",
+      "change_pct": 4.66,
+      "source_url": "https://stockanalysis.com/quote/ebr/ARGX/history/",
+      "currency": "EUR"
+    }
+  ],
+  "analysis": null,
+  "universe": {
+    "source": "data/universe.csv",
+    "total": 3382,
+    "tracked": 2,
+    "scope": "news-selected"
+  },
+  "authored_analysis": {
+    "title": "UniCredit relève son ambition et argenx investit dans les peptides",
+    "sections": [
+      {
+        "title": "Les faits vérifiés",
+        "text": "UniCredit a publié un bénéfice net de 3,3 milliards d’euros au troisième trimestre, en hausse de 24 % sur un an, pour un rendement des fonds propres tangibles de 25,5 %. Les revenus atteignent 6,9 milliards, en hausse de 12 %, et le ratio CET1 ressort à 15,0 %. La banque relève son ambition de bénéfice net 2026 à plus de 11,5 milliards d’euros avant éléments extraordinaires et prévoit un dividende intérimaire de 4,5 milliards. argenx a signé un accord définitif pour acquérir Unnatural Products. Le prix comprend 550 millions de dollars au comptant et jusqu’à 595 millions liés à des étapes de développement et réglementaires, soit jusqu’à 1,15 milliard ; la clôture est visée avant fin 2026.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "title": "Le mécanisme économique possible",
+        "text": "Chez UniCredit, la croissance des revenus, le contrôle des coûts et la génération organique de capital peuvent soutenir distributions et capacité à financer la stratégie, dont Commerzbank reste une composante. Les effets dépendront des taux, du coût du risque et des autorisations restantes. Pour argenx, la plateforme de peptides macrocycliques d’Unnatural Products peut compléter l’ingénierie d’anticorps et ouvrir des programmes oraux ou à longue durée d’action. La valeur économique dépendra toutefois de la découverte, du développement clinique, des autorisations et de l’intégration.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "title": "Éléments qui renforceraient cette lecture",
+        "text": "Pour UniCredit, le ratio CET1 de 15,0 %, la génération de capital de 8,2 milliards sur neuf mois et le relèvement de l’objectif annuel donnent des points de contrôle concrets. La clôture est passée de 76,80 euros le 6 novembre à 81,62 euros le 9 novembre. Chez argenx, les conseils des deux sociétés ont approuvé l’opération et la société possède déjà une participation minoritaire dans Unnatural Products ; la clôture ARGX est passée de 815,80 à 853,80 euros. Ces variations constatées ne démontrent pas une causalité unique avec les annonces.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "title": "Ce qui pourrait la contredire",
+        "text": "Le résultat de UniCredit peut être affecté par l’évolution du coût du risque, la concurrence sur les dépôts, les taux et le calendrier de Commerzbank. L’ambition 2026 n’est pas un résultat réalisé. Pour argenx, les 595 millions conditionnels ne seront dus que si les jalons sont atteints. La transaction reste soumise aux conditions usuelles, et l’intégration comme la productivité clinique de la plateforme ne sont pas garanties. Les cours ont pu réagir à d’autres informations et au marché général.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "title": "Prochaines échéances à surveiller",
+        "text": "Pour UniCredit, les dates annoncées du dividende intérimaire sont le détachement le 23 novembre, l’enregistrement le 24 et le paiement le 25 novembre. Le groupe attend aussi les dernières autorisations liées à Commerzbank d’ici fin novembre. Pour argenx, la première échéance est la clôture attendue avant fin 2026, puis les premiers programmes et jalons de la plateforme. Les prochaines publications financières devront confirmer la trajectoire de capital de UniCredit et l’allocation de trésorerie d’argenx.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      }
+    ],
+    "diagram": [
+      "Résultats et acquisition annoncés",
+      "Capital, intégration et développement",
+      "Rentabilité, portefeuille et distributions",
+      "Jalons à vérifier"
+    ]
+  }
+}
