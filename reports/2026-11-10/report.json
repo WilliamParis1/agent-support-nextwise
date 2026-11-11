@@ -1,0 +1,116 @@
+{
+  "schema_version": 2,
+  "origin": "chatgpt",
+  "input_sha256": "d6839fd89ca492aaee5a8d556f93511c35f4923734172367f9bf47ced9a32cfb",
+  "ingest_version": 1,
+  "publication_date": "2026-11-11",
+  "date": "2026-11-10",
+  "generated_at": "2026-11-11T01:03:30.136220+00:00",
+  "timezone": "Europe/Paris",
+  "status": "draft",
+  "text": "TKH Group confirme sa trajectoire 2026 après un T3 porté par l’électrification et la vision. Kendrion améliore ses marges malgré le recul de Mobility. À surveiller : le carnet de commandes de TKH, les retards de production et la conversion en trésorerie de Kendrion.",
+  "word_count": 44,
+  "news": [
+    {
+      "id": "s1",
+      "title": "Market Update Q3 2026",
+      "source": "TKH Group N.V.",
+      "url": "https://www.tkhgroup.com/news/q3-2026-market-update",
+      "published_at": "2026-11-10T07:00:00+01:00"
+    },
+    {
+      "id": "s2",
+      "title": "Q3 2026 results",
+      "source": "Kendrion N.V.",
+      "url": "https://www.kendrion.com/en/newsroom/detail/news/q3-2026-results",
+      "published_at": "2026-11-10T07:30:00+01:00"
+    }
+  ],
+  "prices": [
+    {
+      "name": "TKH GROUP",
+      "ticker": "TWEKA",
+      "market": "Amsterdam",
+      "asset_class": "Action",
+      "sector": "Ind",
+      "symbol": "TWEKA.AS",
+      "date": "2026-11-10",
+      "status": "unavailable",
+      "reason": "not_provided"
+    },
+    {
+      "name": "KENDRION",
+      "ticker": "KENDR",
+      "market": "Amsterdam",
+      "asset_class": "Action",
+      "sector": "Conso",
+      "symbol": "KENDR.AS",
+      "date": "2026-11-10",
+      "close": 17.3,
+      "previous_close": 19.24,
+      "previous_date": "2026-11-09",
+      "status": "available",
+      "change_pct": -10.08,
+      "source_url": "https://bourse.lavenir.net/cours/KENDRION/KENDR/NL/",
+      "currency": "EUR"
+    }
+  ],
+  "analysis": null,
+  "universe": {
+    "source": "data/universe.csv",
+    "total": 3382,
+    "tracked": 2,
+    "scope": "news-selected"
+  },
+  "authored_analysis": {
+    "title": "TKH confirme sa trajectoire, Kendrion améliore ses marges",
+    "sections": [
+      {
+        "title": "Les faits vérifiés",
+        "text": "TKH Group a publié un chiffre d’affaires trimestriel de 501,3 millions d’euros, en hausse organique de 20,3 %, et un EBITA ajusté de 63,3 millions, en hausse organique de 61,0 %. La marge ROS atteint 12,6 %, contre 9,2 % un an plus tôt. Le groupe maintient son objectif de croissance organique du chiffre d’affaires et de l’EBITA ajusté sur 2026. Kendrion a enregistré 61,2 millions d’euros de chiffre d’affaires au troisième trimestre, soit +1 %, avec +7 % dans l’Industriel et -28 % dans Mobility. Son EBITDA normalisé progresse de 12 %, à 10,5 millions, et sa marge atteint 17,2 %. La clôture KENDR du 10 novembre, vérifiée auprès de deux diffuseurs de marché, est de 17,30 euros, contre 19,24 euros le 9 novembre.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "title": "Le mécanisme économique possible",
+        "text": "Chez TKH, la hausse de l’activité dans la vision industrielle et l’électrification peut accroître l’absorption des coûts fixes et soutenir la rentabilité. La demande des opérateurs néerlandais de réseaux et l’augmentation de la production de câbles offshore sont les moteurs explicitement cités par le groupe. Chez Kendrion, la progression de l’Industriel, l’amélioration du mix et les économies de coûts peuvent soutenir les marges. Ces mécanismes sont des interprétations économiques : ils n’établissent pas que la variation de KENDR résulte uniquement de la publication.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "title": "Ce qui renforcerait cette lecture",
+        "text": "Pour TKH, la transformation de la croissance en commandes et en livraisons dans Machine Vision, Security Vision et Electrification confirmerait la qualité de la trajectoire. Le maintien de l’objectif annuel fournit aussi un point de contrôle concret. Pour Kendrion, la hausse de 12 % de l’EBITDA normalisé, la baisse de la dette nette à 44,2 millions d’euros et le ratio de levier de 1,0 vont dans le sens d’une structure financière renforcée. La conversion du carnet de projets Industriels en chiffre d’affaires et en trésorerie sera déterminante.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "title": "Ce qui pourrait la contredire",
+        "text": "TKH indique déjà qu’il anticipe un EBITA ajusté inférieur au quatrième trimestre 2026 à celui du quatrième trimestre 2025, en raison d’un carnet de commandes plus faible dans Automated Machinery et d’une base de comparaison élevée. Les commandes améliorées dans cette activité ne se traduiraient pas immédiatement en production, compte tenu du temps d’ingénierie. Chez Kendrion, la baisse de 28 % de Mobility reflète des appels de livraison plus faibles d’une plateforme client majeure. Le groupe mentionne aussi une visibilité macroéconomique limitée et des risques géopolitiques et commerciaux. Le repli boursier constaté peut avoir plusieurs causes.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "title": "Prochaines échéances à surveiller",
+        "text": "La prochaine publication de résultats annuels de TKH est prévue le 4 mars 2027. D’ici là, l’évolution du carnet, la contribution de l’usine d’Eemshaven et la faiblesse annoncée d’Automated Machinery seront les indicateurs à suivre. Kendrion vise la finalisation des conditions essentielles d’une ligne de crédit renouvelable de 70 millions d’euros dans les prochaines semaines, afin de refinancer une facilité arrivant à échéance en avril 2027. Les prochaines mises à jour devront confirmer la conversion de la croissance Industrielle en trésorerie et la trajectoire de retrait de Mobility.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      }
+    ],
+    "diagram": [
+      "Résultats trimestriels vérifiés",
+      "Commandes, mix et capacité productive",
+      "Marges et génération de trésorerie",
+      "Objectifs et risques à contrôler"
+    ]
+  }
+}
