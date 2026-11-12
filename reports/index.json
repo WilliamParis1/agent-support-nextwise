@@ -1,82 +1,88 @@
 {
   "editions": [
     {
+      "publication_date": "2026-11-12",
+      "date": "2026-11-11",
+      "path": "reports/2026-11-11",
+      "generated_at": "2026-11-12T15:23:44.821197+00:00"
+    },
+    {
       "publication_date": "2026-11-11",
       "date": "2026-11-10",
-      "generated_at": "2026-11-11T01:03:30.136220+00:00",
-      "path": "reports/2026-11-10"
+      "path": "reports/2026-11-10",
+      "generated_at": "2026-11-11T01:03:30.136220+00:00"
     },
     {
       "publication_date": "2026-11-10",
       "date": "2026-11-09",
-      "generated_at": "2026-11-10T01:01:25.025523+00:00",
-      "path": "reports/2026-11-09"
+      "path": "reports/2026-11-09",
+      "generated_at": "2026-11-10T01:01:25.025523+00:00"
     },
     {
       "publication_date": "2026-11-09",
       "date": "2026-11-08",
-      "generated_at": "2026-11-09T16:32:03.964636+00:00",
-      "path": "reports/2026-11-08"
+      "path": "reports/2026-11-08",
+      "generated_at": "2026-11-09T16:32:03.964636+00:00"
     },
     {
       "publication_date": "2026-11-08",
       "date": "2026-11-07",
-      "generated_at": "2026-11-08T01:02:16.174694+00:00",
-      "path": "reports/2026-11-07"
+      "path": "reports/2026-11-07",
+      "generated_at": "2026-11-08T01:02:16.174694+00:00"
     },
     {
       "publication_date": "2026-11-07",
       "date": "2026-11-06",
-      "generated_at": "2026-11-07T01:00:54.883164+00:00",
-      "path": "reports/2026-11-06"
+      "path": "reports/2026-11-06",
+      "generated_at": "2026-11-07T01:00:54.883164+00:00"
     },
     {
       "publication_date": "2026-11-06",
       "date": "2026-11-05",
-      "generated_at": "2026-11-06T01:05:16.228784+00:00",
-      "path": "reports/2026-11-05"
+      "path": "reports/2026-11-05",
+      "generated_at": "2026-11-06T01:05:16.228784+00:00"
     },
     {
       "publication_date": "2026-11-05",
       "date": "2026-11-04",
-      "generated_at": "2026-11-05T01:02:40.151205+00:00",
-      "path": "reports/2026-11-04"
+      "path": "reports/2026-11-04",
+      "generated_at": "2026-11-05T01:02:40.151205+00:00"
     },
     {
       "publication_date": "2026-11-04",
       "date": "2026-11-03",
-      "generated_at": "2026-11-04T08:45:46.191574+00:00",
-      "path": "reports/2026-11-03"
+      "path": "reports/2026-11-03",
+      "generated_at": "2026-11-04T08:45:46.191574+00:00"
     },
     {
       "publication_date": "2026-11-03",
       "date": "2026-11-02",
-      "generated_at": "2026-11-03T01:02:21.918341+00:00",
-      "path": "reports/2026-11-02"
+      "path": "reports/2026-11-02",
+      "generated_at": "2026-11-03T01:02:21.918341+00:00"
     },
     {
       "publication_date": "2026-11-02",
       "date": "2026-11-01",
-      "generated_at": "2026-11-02T01:04:19.804041+00:00",
-      "path": "reports/2026-11-01"
+      "path": "reports/2026-11-01",
+      "generated_at": "2026-11-02T01:04:19.804041+00:00"
     },
     {
       "publication_date": "2026-11-01",
       "date": "2026-10-31",
-      "generated_at": "2026-11-01T00:58:42.584354+00:00",
-      "path": "reports/2026-10-31"
+      "path": "reports/2026-10-31",
+      "generated_at": "2026-11-01T00:58:42.584354+00:00"
     },
     {
       "publication_date": "2026-10-31",
       "date": "2026-10-30",
-      "generated_at": "2026-10-31T19:03:49.645490+00:00",
-      "path": "reports/2026-10-30"
+      "path": "reports/2026-10-30",
+      "generated_at": "2026-10-31T19:03:49.645490+00:00"
     },
     {
       "publication_date": "2026-10-30",
       "date": "2026-10-29",
-      "generated_at": "2026-10-31T18:02:23.306285+00:00",
-      "path": "reports/2026-10-29"
+      "path": "reports/2026-10-29",
+      "generated_at": "2026-10-31T18:02:23.306285+00:00"
     }
   ]
 }
