@@ -1,0 +1,263 @@
+{
+  "schema_version": 2,
+  "publication_date": "2026-11-13",
+  "date": "2026-11-12",
+  "generated_at": "2026-11-13T14:41:00.829071+00:00",
+  "timezone": "Europe/Paris",
+  "status": "draft",
+  "universe": {
+    "source": "data/universe.csv",
+    "total": 3382,
+    "tracked": 8,
+    "scope": "quick"
+  },
+  "news": [
+    {
+      "title": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261112a.htm",
+      "source": "Federal Reserve",
+      "published_at": "2026-11-12T18:30:00+00:00",
+      "summary": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services"
+    },
+    {
+      "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
+      "source": "Federal Reserve",
+      "published_at": "2026-11-12T17:45:00+00:00",
+      "summary": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027"
+    },
+    {
+      "title": "Federal Reserve Board issues enforcement action with former employee of United Community Bank",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261112a.htm",
+      "source": "Federal Reserve",
+      "published_at": "2026-11-12T16:00:00+00:00",
+      "summary": "Federal Reserve Board issues enforcement action with former employee of United Community Bank"
+    },
+    {
+      "title": "Faisal Islam: Why the UK economy is surprisingly resilient",
+      "url": "https://www.bbc.co.uk/news/articles/cj62p32k90wyo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
+      "published_at": "2026-11-12T13:27:09+00:00",
+      "summary": "The UK is seeing impressive growth, but will it last?"
+    },
+    {
+      "title": "UK economy grows at fastest rate for more than two years",
+      "url": "https://www.bbc.co.uk/news/articles/ck3rgd429zd5o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
+      "published_at": "2026-11-12T11:20:25+00:00",
+      "summary": "﻿The UK economy grew by 0.7% in the three months to September, according to official figures."
+    }
+  ],
+  "prices": [
+    {
+      "symbol": "ASML.AS",
+      "status": "available",
+      "date": "2026-11-12",
+      "close": 1376.800049,
+      "currency": "EUR",
+      "previous_date": "2026-11-11",
+      "previous_close": 1403.800049,
+      "change_pct": -1.92,
+      "source_url": "https://finance.yahoo.com/quote/ASML.AS/history/",
+      "name": "ASML HOLDING",
+      "ticker": "ASML",
+      "market": "Amsterdam",
+      "asset_class": "Action",
+      "sector": "Tech"
+    },
+    {
+      "symbol": "LDO.MI",
+      "status": "available",
+      "date": "2026-11-12",
+      "close": 49.865002,
+      "currency": "EUR",
+      "previous_date": "2026-11-11",
+      "previous_close": 50.619999,
+      "change_pct": -1.49,
+      "source_url": "https://finance.yahoo.com/quote/LDO.MI/history/",
+      "name": "LEONARDO",
+      "ticker": "LDO",
+      "market": "Milan",
+      "asset_class": "Action",
+      "sector": "Ind"
+    },
+    {
+      "symbol": "AI.PA",
+      "status": "available",
+      "date": "2026-11-12",
+      "close": 192.839996,
+      "currency": "EUR",
+      "previous_date": "2026-11-11",
+      "previous_close": 192.160004,
+      "change_pct": 0.35,
+      "source_url": "https://finance.yahoo.com/quote/AI.PA/history/",
+      "name": "AIR LIQUIDE",
+      "ticker": "AI",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Ind"
+    },
+    {
+      "symbol": "BNP.PA",
+      "status": "available",
+      "date": "2026-11-12",
+      "close": 95.68,
+      "currency": "EUR",
+      "previous_date": "2026-11-11",
+      "previous_close": 95.769997,
+      "change_pct": -0.09,
+      "source_url": "https://finance.yahoo.com/quote/BNP.PA/history/",
+      "name": "BNP PARIBAS ACT.A",
+      "ticker": "BNP",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Finance"
+    },
+    {
+      "symbol": "HO.PA",
+      "status": "available",
+      "date": "2026-11-12",
+      "close": 227.399994,
+      "currency": "EUR",
+      "previous_date": "2026-11-11",
+      "previous_close": 230.399994,
+      "change_pct": -1.3,
+      "source_url": "https://finance.yahoo.com/quote/HO.PA/history/",
+      "name": "THALES",
+      "ticker": "HO",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Ind"
+    },
+    {
+      "symbol": "OR.PA",
+      "status": "available",
+      "date": "2026-11-12",
+      "close": 446.850006,
+      "currency": "EUR",
+      "previous_date": "2026-11-11",
+      "previous_close": 446.649994,
+      "change_pct": 0.04,
+      "source_url": "https://finance.yahoo.com/quote/OR.PA/history/",
+      "name": "L'OREAL",
+      "ticker": "OR",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Conso"
+    },
+    {
+      "symbol": "SAN.PA",
+      "status": "available",
+      "date": "2026-11-12",
+      "close": 87.980003,
+      "currency": "EUR",
+      "previous_date": "2026-11-11",
+      "previous_close": 86.610001,
+      "change_pct": 1.58,
+      "source_url": "https://finance.yahoo.com/quote/SAN.PA/history/",
+      "name": "SANOFI",
+      "ticker": "SAN",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Santé"
+    },
+    {
+      "symbol": "TTE.PA",
+      "status": "available",
+      "date": "2026-11-12",
+      "close": 80.629997,
+      "currency": "EUR",
+      "previous_date": "2026-11-11",
+      "previous_close": 79.370003,
+      "change_pct": 1.59,
+      "source_url": "https://finance.yahoo.com/quote/TTE.PA/history/",
+      "name": "TOTALENERGIES",
+      "ticker": "TTE",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Ener"
+    }
+  ],
+  "feed_errors": [],
+  "text": "Le 12/11, « Faisal Islam: Why the UK economy is surprisingly… » retient notre attention [1]. Variations : LDO (-1,49%) ; HO (-1,30%). Vigilance sur la demande et les bénéfices. Le lien avec l’annonce reste une hypothèse.",
+  "word_count": 37,
+  "analysis": {
+    "theme": {
+      "key": "growth",
+      "label": "la croissance et la demande",
+      "sectors": [
+        "Ind",
+        "Conso",
+        "Finance"
+      ],
+      "watch": "la demande et les bénéfices",
+      "channel": [
+        "Indicateur d’activité",
+        "Demande attendue",
+        "Chiffre d’affaires",
+        "Bénéfices et valorisation"
+      ],
+      "hypothesis": "Un indicateur d’activité peut modifier les attentes de demande et de bénéfices. Son effet dépend surtout de l’écart aux anticipations, de la composition sectorielle et du caractère provisoire ou révisé du chiffre. Une économie plus solide peut aussi modifier les attentes de taux.",
+      "confirm": "Comparer valeurs cycliques et défensives, vérifier les composantes de l’indicateur et sa surprise par rapport au consensus. Une réaction partagée par plusieurs titres serait plus informative.",
+      "challenge": "Un chiffre déjà anticipé, une révision statistique ou des annonces d’entreprises simultanées peuvent limiter cette lecture. La séance ne permet pas d’isoler ces facteurs."
+    },
+    "focus": {
+      "title": "Faisal Islam: Why the UK economy is surprisingly resilient",
+      "url": "https://www.bbc.co.uk/news/articles/cj62p32k90wyo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
+      "published_at": "2026-11-12T13:27:09+00:00",
+      "summary": "The UK is seeing impressive growth, but will it last?"
+    },
+    "featured": [
+      {
+        "symbol": "LDO.MI",
+        "status": "available",
+        "date": "2026-11-12",
+        "close": 49.865002,
+        "currency": "EUR",
+        "previous_date": "2026-11-11",
+        "previous_close": 50.619999,
+        "change_pct": -1.49,
+        "source_url": "https://finance.yahoo.com/quote/LDO.MI/history/",
+        "name": "LEONARDO",
+        "ticker": "LDO",
+        "market": "Milan",
+        "asset_class": "Action",
+        "sector": "Ind"
+      },
+      {
+        "symbol": "HO.PA",
+        "status": "available",
+        "date": "2026-11-12",
+        "close": 227.399994,
+        "currency": "EUR",
+        "previous_date": "2026-11-11",
+        "previous_close": 230.399994,
+        "change_pct": -1.3,
+        "source_url": "https://finance.yahoo.com/quote/HO.PA/history/",
+        "name": "THALES",
+        "ticker": "HO",
+        "market": "Paris",
+        "asset_class": "Action",
+        "sector": "Ind"
+      },
+      {
+        "symbol": "AI.PA",
+        "status": "available",
+        "date": "2026-11-12",
+        "close": 192.839996,
+        "currency": "EUR",
+        "previous_date": "2026-11-11",
+        "previous_close": 192.160004,
+        "change_pct": 0.35,
+        "source_url": "https://finance.yahoo.com/quote/AI.PA/history/",
+        "name": "AIR LIQUIDE",
+        "ticker": "AI",
+        "market": "Paris",
+        "asset_class": "Action",
+        "sector": "Ind"
+      }
+    ],
+    "selection": "Exemples de variations marquées dans les secteurs associés au thème, sans pondération de portefeuille."
+  }
+}
