@@ -1,0 +1,260 @@
+{
+  "schema_version": 2,
+  "publication_date": "2026-11-19",
+  "date": "2026-11-18",
+  "generated_at": "2026-11-19T15:51:41.278021+00:00",
+  "timezone": "Europe/Paris",
+  "status": "draft",
+  "universe": {
+    "source": "data/universe.csv",
+    "total": 3382,
+    "tracked": 8,
+    "scope": "quick"
+  },
+  "news": [
+    {
+      "title": "How high is UK inflation and how will you be affected?",
+      "url": "https://www.bbc.co.uk/news/videos/cxp80q5pv4q5o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
+      "published_at": "2026-11-18T19:37:27+00:00",
+      "summary": "Prices rose 3.6% in the year to October, mainly because of higher petrol and diesel prices, official figures show."
+    },
+    {
+      "title": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm",
+      "source": "Federal Reserve",
+      "published_at": "2026-11-18T19:00:00+00:00",
+      "summary": "Minutes of the Federal Open Market Committee, October 27-28, 2026"
+    },
+    {
+      "title": "Typical energy bill forecast to go up by £443 a year from January as inflation rate rises again",
+      "url": "https://www.bbc.co.uk/news/articles/cmy498kdkx3xo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
+      "published_at": "2026-11-18T13:17:06+00:00",
+      "summary": "Energy bills are expected to jump by 26% a year for a typical household as UK inflation hits its highest rate for a year."
+    },
+    {
+      "title": "Heating bills, chocolate and cat food: What the inflation figures mean for you",
+      "url": "https://www.bbc.co.uk/news/articles/ckq6eg55n221o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
+      "published_at": "2026-11-18T13:10:01+00:00",
+      "summary": "Prices are rising at their fastest pace for a year in the UK, and higher energy costs are on the way."
+    },
+    {
+      "title": "Boris Vujčić: Financial Stability Review - November 2026",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261118~86f1e8147e.en.pdf",
+      "source": "BCE",
+      "published_at": "2026-11-18T10:00:00+01:00",
+      "summary": ""
+    },
+    {
+      "title": "Risks from AI valuations, fiscal imbalances and geoeconomic tensions weigh on financial stability outlook",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html",
+      "source": "BCE",
+      "published_at": "2026-11-18T10:00:00+01:00",
+      "summary": ""
+    },
+    {
+      "title": "How important are Nvidia and Jensen Huang to the US economy?",
+      "url": "https://www.bbc.co.uk/news/articles/c68798vdprwpo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
+      "published_at": "2026-11-18T06:04:21+00:00",
+      "summary": "The former Nvidia chief executive has been at the centre of the artificial intelligence boom."
+    }
+  ],
+  "prices": [
+    {
+      "symbol": "ASML.AS",
+      "status": "available",
+      "date": "2026-11-18",
+      "close": 1260.800049,
+      "currency": "EUR",
+      "previous_date": "2026-11-17",
+      "previous_close": 1236.800049,
+      "change_pct": 1.94,
+      "source_url": "https://finance.yahoo.com/quote/ASML.AS/history/",
+      "name": "ASML HOLDING",
+      "ticker": "ASML",
+      "market": "Amsterdam",
+      "asset_class": "Action",
+      "sector": "Tech"
+    },
+    {
+      "symbol": "LDO.MI",
+      "status": "available",
+      "date": "2026-11-18",
+      "close": 48.555,
+      "currency": "EUR",
+      "previous_date": "2026-11-17",
+      "previous_close": 50.619999,
+      "change_pct": -4.08,
+      "source_url": "https://finance.yahoo.com/quote/LDO.MI/history/",
+      "name": "LEONARDO",
+      "ticker": "LDO",
+      "market": "Milan",
+      "asset_class": "Action",
+      "sector": "Ind"
+    },
+    {
+      "symbol": "AI.PA",
+      "status": "available",
+      "date": "2026-11-18",
+      "close": 189.740005,
+      "currency": "EUR",
+      "previous_date": "2026-11-17",
+      "previous_close": 190.940002,
+      "change_pct": -0.63,
+      "source_url": "https://finance.yahoo.com/quote/AI.PA/history/",
+      "name": "AIR LIQUIDE",
+      "ticker": "AI",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Ind"
+    },
+    {
+      "symbol": "BNP.PA",
+      "status": "available",
+      "date": "2026-11-18",
+      "close": 92.0,
+      "currency": "EUR",
+      "previous_date": "2026-11-17",
+      "previous_close": 93.82,
+      "change_pct": -1.94,
+      "source_url": "https://finance.yahoo.com/quote/BNP.PA/history/",
+      "name": "BNP PARIBAS ACT.A",
+      "ticker": "BNP",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Finance"
+    },
+    {
+      "symbol": "HO.PA",
+      "status": "available",
+      "date": "2026-11-18",
+      "close": 226.100006,
+      "currency": "EUR",
+      "previous_date": "2026-11-17",
+      "previous_close": 226.899994,
+      "change_pct": -0.35,
+      "source_url": "https://finance.yahoo.com/quote/HO.PA/history/",
+      "name": "THALES",
+      "ticker": "HO",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Ind"
+    },
+    {
+      "symbol": "OR.PA",
+      "status": "available",
+      "date": "2026-11-18",
+      "close": 443.049988,
+      "currency": "EUR",
+      "previous_date": "2026-11-17",
+      "previous_close": 446.350006,
+      "change_pct": -0.74,
+      "source_url": "https://finance.yahoo.com/quote/OR.PA/history/",
+      "name": "L'OREAL",
+      "ticker": "OR",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Conso"
+    },
+    {
+      "symbol": "SAN.PA",
+      "status": "available",
+      "date": "2026-11-18",
+      "close": 86.25,
+      "currency": "EUR",
+      "previous_date": "2026-11-17",
+      "previous_close": 86.559998,
+      "change_pct": -0.36,
+      "source_url": "https://finance.yahoo.com/quote/SAN.PA/history/",
+      "name": "SANOFI",
+      "ticker": "SAN",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Santé"
+    },
+    {
+      "symbol": "TTE.PA",
+      "status": "available",
+      "date": "2026-11-18",
+      "close": 79.809998,
+      "currency": "EUR",
+      "previous_date": "2026-11-17",
+      "previous_close": 81.980003,
+      "change_pct": -2.65,
+      "source_url": "https://finance.yahoo.com/quote/TTE.PA/history/",
+      "name": "TOTALENERGIES",
+      "ticker": "TTE",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Ener"
+    }
+  ],
+  "feed_errors": [],
+  "text": "Le 18/11, « How high is UK inflation and how will… » retient notre attention [1]. Variations : ASML (+1,94%) ; BNP (-1,94%). Vigilance sur le coût du financement. Le lien avec l’annonce reste une hypothèse.",
+  "word_count": 36,
+  "analysis": {
+    "theme": {
+      "key": "rates",
+      "label": "les taux et l’inflation",
+      "sectors": [
+        "Tech",
+        "Finance"
+      ],
+      "watch": "le coût du financement",
+      "channel": [
+        "Publication macro",
+        "Anticipations de taux",
+        "Coût du capital",
+        "Valorisation des actifs"
+      ],
+      "hypothesis": "Une évolution des anticipations de taux peut modifier le coût de financement et la valeur actualisée des bénéfices futurs. La sensibilité dépend de la dette, de la durée des flux et du pouvoir de fixation des prix. La réaction des banques peut différer de celle des valeurs de croissance.",
+      "confirm": "Une réaction cohérente des rendements obligataires et de plusieurs valeurs sensibles aux taux renforcerait cette piste. Comparer la direction du mouvement à la surprise contenue dans la publication.",
+      "challenge": "Une nouvelle propre à une entreprise, un mouvement de devise ou une hausse déjà anticipée peut expliquer les cours sans lien direct avec la publication macro."
+    },
+    "focus": {
+      "title": "How high is UK inflation and how will you be affected?",
+      "url": "https://www.bbc.co.uk/news/videos/cxp80q5pv4q5o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
+      "published_at": "2026-11-18T19:37:27+00:00",
+      "summary": "Prices rose 3.6% in the year to October, mainly because of higher petrol and diesel prices, official figures show."
+    },
+    "featured": [
+      {
+        "symbol": "ASML.AS",
+        "status": "available",
+        "date": "2026-11-18",
+        "close": 1260.800049,
+        "currency": "EUR",
+        "previous_date": "2026-11-17",
+        "previous_close": 1236.800049,
+        "change_pct": 1.94,
+        "source_url": "https://finance.yahoo.com/quote/ASML.AS/history/",
+        "name": "ASML HOLDING",
+        "ticker": "ASML",
+        "market": "Amsterdam",
+        "asset_class": "Action",
+        "sector": "Tech"
+      },
+      {
+        "symbol": "BNP.PA",
+        "status": "available",
+        "date": "2026-11-18",
+        "close": 92.0,
+        "currency": "EUR",
+        "previous_date": "2026-11-17",
+        "previous_close": 93.82,
+        "change_pct": -1.94,
+        "source_url": "https://finance.yahoo.com/quote/BNP.PA/history/",
+        "name": "BNP PARIBAS ACT.A",
+        "ticker": "BNP",
+        "market": "Paris",
+        "asset_class": "Action",
+        "sector": "Finance"
+      }
+    ],
+    "selection": "Exemples de variations marquées dans les secteurs associés au thème, sans pondération de portefeuille."
+  }
+}
