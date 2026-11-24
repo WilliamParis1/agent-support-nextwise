@@ -1,0 +1,256 @@
+{
+  "schema_version": 2,
+  "publication_date": "2026-11-24",
+  "date": "2026-11-23",
+  "generated_at": "2026-11-24T17:53:24.991199+00:00",
+  "timezone": "Europe/Paris",
+  "status": "draft",
+  "universe": {
+    "source": "data/universe.csv",
+    "total": 3382,
+    "tracked": 8,
+    "scope": "quick"
+  },
+  "news": [
+    {
+      "title": "'Biggest U-turn in economic history': Experts react to Jensen Huang's return to Nvidia",
+      "url": "https://www.bbc.co.uk/news/videos/cq8r7e35mkzlo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
+      "published_at": "2026-11-23T18:43:00+00:00",
+      "summary": "The Nvidia CEO was reinstated after weeks of controversy over his affair with an alleged Chinese spy."
+    },
+    {
+      "title": "How important are Nvidia and Jensen Huang to the US economy?",
+      "url": "https://www.bbc.co.uk/news/articles/c68798vdprwpo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
+      "published_at": "2026-11-23T16:12:35+00:00",
+      "summary": "The Nvidia chief executive has been at the centre of the artificial intelligence boom."
+    },
+    {
+      "title": "Philip R. Lane: Climate change and monetary policy",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261123~b5816801a0.en.pdf",
+      "source": "BCE",
+      "published_at": "2026-11-23T15:30:00+01:00",
+      "summary": ""
+    },
+    {
+      "title": "ECB expands acceptance of DLT-based assets as eligible Eurosystem collateral",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
+      "source": "BCE",
+      "published_at": "2026-11-23T11:00:00+01:00",
+      "summary": ""
+    }
+  ],
+  "prices": [
+    {
+      "symbol": "ASML.AS",
+      "status": "available",
+      "date": "2026-11-23",
+      "close": 1272.199951,
+      "currency": "EUR",
+      "previous_date": "2026-11-20",
+      "previous_close": 1168.0,
+      "change_pct": 8.92,
+      "source_url": "https://finance.yahoo.com/quote/ASML.AS/history/",
+      "name": "ASML HOLDING",
+      "ticker": "ASML",
+      "market": "Amsterdam",
+      "asset_class": "Action",
+      "sector": "Tech"
+    },
+    {
+      "symbol": "LDO.MI",
+      "status": "available",
+      "date": "2026-11-23",
+      "close": 48.505001,
+      "currency": "EUR",
+      "previous_date": "2026-11-20",
+      "previous_close": 47.830002,
+      "change_pct": 1.41,
+      "source_url": "https://finance.yahoo.com/quote/LDO.MI/history/",
+      "name": "LEONARDO",
+      "ticker": "LDO",
+      "market": "Milan",
+      "asset_class": "Action",
+      "sector": "Ind"
+    },
+    {
+      "symbol": "AI.PA",
+      "status": "available",
+      "date": "2026-11-23",
+      "close": 187.660004,
+      "currency": "EUR",
+      "previous_date": "2026-11-20",
+      "previous_close": 187.580002,
+      "change_pct": 0.04,
+      "source_url": "https://finance.yahoo.com/quote/AI.PA/history/",
+      "name": "AIR LIQUIDE",
+      "ticker": "AI",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Ind"
+    },
+    {
+      "symbol": "BNP.PA",
+      "status": "available",
+      "date": "2026-11-23",
+      "close": 91.480003,
+      "currency": "EUR",
+      "previous_date": "2026-11-20",
+      "previous_close": 89.550003,
+      "change_pct": 2.16,
+      "source_url": "https://finance.yahoo.com/quote/BNP.PA/history/",
+      "name": "BNP PARIBAS ACT.A",
+      "ticker": "BNP",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Finance"
+    },
+    {
+      "symbol": "HO.PA",
+      "status": "available",
+      "date": "2026-11-23",
+      "close": 226.800003,
+      "currency": "EUR",
+      "previous_date": "2026-11-20",
+      "previous_close": 223.399994,
+      "change_pct": 1.52,
+      "source_url": "https://finance.yahoo.com/quote/HO.PA/history/",
+      "name": "THALES",
+      "ticker": "HO",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Ind"
+    },
+    {
+      "symbol": "OR.PA",
+      "status": "available",
+      "date": "2026-11-23",
+      "close": 438.25,
+      "currency": "EUR",
+      "previous_date": "2026-11-20",
+      "previous_close": 435.0,
+      "change_pct": 0.75,
+      "source_url": "https://finance.yahoo.com/quote/OR.PA/history/",
+      "name": "L'OREAL",
+      "ticker": "OR",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Conso"
+    },
+    {
+      "symbol": "SAN.PA",
+      "status": "available",
+      "date": "2026-11-23",
+      "close": 85.260002,
+      "currency": "EUR",
+      "previous_date": "2026-11-20",
+      "previous_close": 84.919998,
+      "change_pct": 0.4,
+      "source_url": "https://finance.yahoo.com/quote/SAN.PA/history/",
+      "name": "SANOFI",
+      "ticker": "SAN",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Santé"
+    },
+    {
+      "symbol": "TTE.PA",
+      "status": "available",
+      "date": "2026-11-23",
+      "close": 77.489998,
+      "currency": "EUR",
+      "previous_date": "2026-11-20",
+      "previous_close": 78.190002,
+      "change_pct": -0.9,
+      "source_url": "https://finance.yahoo.com/quote/TTE.PA/history/",
+      "name": "TOTALENERGIES",
+      "ticker": "TTE",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Ener"
+    }
+  ],
+  "feed_errors": [],
+  "text": "Le 23/11, « 'Biggest U-turn in economic history': Experts react to… » retient notre attention [1]. Variations : BNP (+2,16%) ; HO (+1,52%). Vigilance sur la demande et les bénéfices. Le lien avec l’annonce reste une hypothèse.",
+  "word_count": 37,
+  "analysis": {
+    "theme": {
+      "key": "growth",
+      "label": "la croissance et la demande",
+      "sectors": [
+        "Ind",
+        "Conso",
+        "Finance"
+      ],
+      "watch": "la demande et les bénéfices",
+      "channel": [
+        "Indicateur d’activité",
+        "Demande attendue",
+        "Chiffre d’affaires",
+        "Bénéfices et valorisation"
+      ],
+      "hypothesis": "Un indicateur d’activité peut modifier les attentes de demande et de bénéfices. Son effet dépend surtout de l’écart aux anticipations, de la composition sectorielle et du caractère provisoire ou révisé du chiffre. Une économie plus solide peut aussi modifier les attentes de taux.",
+      "confirm": "Comparer valeurs cycliques et défensives, vérifier les composantes de l’indicateur et sa surprise par rapport au consensus. Une réaction partagée par plusieurs titres serait plus informative.",
+      "challenge": "Un chiffre déjà anticipé, une révision statistique ou des annonces d’entreprises simultanées peuvent limiter cette lecture. La séance ne permet pas d’isoler ces facteurs."
+    },
+    "focus": {
+      "title": "'Biggest U-turn in economic history': Experts react to Jensen Huang's return to Nvidia",
+      "url": "https://www.bbc.co.uk/news/videos/cq8r7e35mkzlo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
+      "published_at": "2026-11-23T18:43:00+00:00",
+      "summary": "The Nvidia CEO was reinstated after weeks of controversy over his affair with an alleged Chinese spy."
+    },
+    "featured": [
+      {
+        "symbol": "BNP.PA",
+        "status": "available",
+        "date": "2026-11-23",
+        "close": 91.480003,
+        "currency": "EUR",
+        "previous_date": "2026-11-20",
+        "previous_close": 89.550003,
+        "change_pct": 2.16,
+        "source_url": "https://finance.yahoo.com/quote/BNP.PA/history/",
+        "name": "BNP PARIBAS ACT.A",
+        "ticker": "BNP",
+        "market": "Paris",
+        "asset_class": "Action",
+        "sector": "Finance"
+      },
+      {
+        "symbol": "HO.PA",
+        "status": "available",
+        "date": "2026-11-23",
+        "close": 226.800003,
+        "currency": "EUR",
+        "previous_date": "2026-11-20",
+        "previous_close": 223.399994,
+        "change_pct": 1.52,
+        "source_url": "https://finance.yahoo.com/quote/HO.PA/history/",
+        "name": "THALES",
+        "ticker": "HO",
+        "market": "Paris",
+        "asset_class": "Action",
+        "sector": "Ind"
+      },
+      {
+        "symbol": "LDO.MI",
+        "status": "available",
+        "date": "2026-11-23",
+        "close": 48.505001,
+        "currency": "EUR",
+        "previous_date": "2026-11-20",
+        "previous_close": 47.830002,
+        "change_pct": 1.41,
+        "source_url": "https://finance.yahoo.com/quote/LDO.MI/history/",
+        "name": "LEONARDO",
+        "ticker": "LDO",
+        "market": "Milan",
+        "asset_class": "Action",
+        "sector": "Ind"
+      }
+    ],
+    "selection": "Exemples de variations marquées dans les secteurs associés au thème, sans pondération de portefeuille."
+  }
+}
