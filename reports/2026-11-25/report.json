@@ -1,0 +1,270 @@
+{
+  "schema_version": 2,
+  "publication_date": "2026-11-26",
+  "date": "2026-11-25",
+  "generated_at": "2026-11-26T17:01:07.786713+00:00",
+  "timezone": "Europe/Paris",
+  "status": "draft",
+  "universe": {
+    "source": "data/universe.csv",
+    "total": 3382,
+    "tracked": 8,
+    "scope": "quick"
+  },
+  "news": [
+    {
+      "title": "Agencies announce dollar thresholds for applicability of truth in lending and consumer leasing rules for consumer credit and lease transactions",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125b.htm",
+      "source": "Federal Reserve",
+      "published_at": "2026-11-25T20:00:00+00:00",
+      "summary": "Agencies announce dollar thresholds for applicability of truth in lending and consumer leasing rules for consumer credit and lease transactions"
+    },
+    {
+      "title": "Agencies announce dollar thresholds for smaller loan exemption from appraisal requirements for higher-priced mortgage loans",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125a.htm",
+      "source": "Federal Reserve",
+      "published_at": "2026-11-25T20:00:00+00:00",
+      "summary": "Agencies announce dollar thresholds for smaller loan exemption from appraisal requirements for higher-priced mortgage loans"
+    },
+    {
+      "title": "What we know about Trump's Thanksgiving tariffs",
+      "url": "https://www.bbc.co.uk/news/videos/c3x29v11ed1xo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
+      "published_at": "2026-11-25T19:38:05+00:00",
+      "summary": "Donald Trump is targeting China, the European Union and 12 other jurisdictions in a new round of tariffs."
+    },
+    {
+      "title": "ECB and Sveriges Riksbank conclude agreement for Sweden to join T2",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261125_1~6333a90f3a.en.html",
+      "source": "BCE",
+      "published_at": "2026-11-25T18:30:00+01:00",
+      "summary": ""
+    },
+    {
+      "title": "Card payments edge past cash in shops; euro area consumers want both",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261125~26d1ade228.en.html",
+      "source": "BCE",
+      "published_at": "2026-11-25T11:00:00+01:00",
+      "summary": ""
+    },
+    {
+      "title": "Interest rate affect on Guernsey's housing market",
+      "url": "https://www.bbc.co.uk/news/videos/c6x29vne7lnko?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
+      "published_at": "2026-11-25T09:56:33+00:00",
+      "summary": "As interest rates rise, we look at the impact this could have on Guernsey's housing market."
+    }
+  ],
+  "prices": [
+    {
+      "symbol": "ASML.AS",
+      "status": "available",
+      "date": "2026-11-25",
+      "close": 1131.599976,
+      "currency": "EUR",
+      "previous_date": "2026-11-24",
+      "previous_close": 1201.199951,
+      "change_pct": -5.79,
+      "source_url": "https://finance.yahoo.com/quote/ASML.AS/history/",
+      "name": "ASML HOLDING",
+      "ticker": "ASML",
+      "market": "Amsterdam",
+      "asset_class": "Action",
+      "sector": "Tech"
+    },
+    {
+      "symbol": "LDO.MI",
+      "status": "available",
+      "date": "2026-11-25",
+      "close": 48.959999,
+      "currency": "EUR",
+      "previous_date": "2026-11-24",
+      "previous_close": 49.200001,
+      "change_pct": -0.49,
+      "source_url": "https://finance.yahoo.com/quote/LDO.MI/history/",
+      "name": "LEONARDO",
+      "ticker": "LDO",
+      "market": "Milan",
+      "asset_class": "Action",
+      "sector": "Ind"
+    },
+    {
+      "symbol": "AI.PA",
+      "status": "available",
+      "date": "2026-11-25",
+      "close": 188.460007,
+      "currency": "EUR",
+      "previous_date": "2026-11-24",
+      "previous_close": 188.119995,
+      "change_pct": 0.18,
+      "source_url": "https://finance.yahoo.com/quote/AI.PA/history/",
+      "name": "AIR LIQUIDE",
+      "ticker": "AI",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Ind"
+    },
+    {
+      "symbol": "BNP.PA",
+      "status": "available",
+      "date": "2026-11-25",
+      "close": 88.220001,
+      "currency": "EUR",
+      "previous_date": "2026-11-24",
+      "previous_close": 90.279999,
+      "change_pct": -2.28,
+      "source_url": "https://finance.yahoo.com/quote/BNP.PA/history/",
+      "name": "BNP PARIBAS ACT.A",
+      "ticker": "BNP",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Finance"
+    },
+    {
+      "symbol": "HO.PA",
+      "status": "available",
+      "date": "2026-11-25",
+      "close": 227.600006,
+      "currency": "EUR",
+      "previous_date": "2026-11-24",
+      "previous_close": 229.699997,
+      "change_pct": -0.91,
+      "source_url": "https://finance.yahoo.com/quote/HO.PA/history/",
+      "name": "THALES",
+      "ticker": "HO",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Ind"
+    },
+    {
+      "symbol": "OR.PA",
+      "status": "available",
+      "date": "2026-11-25",
+      "close": 442.0,
+      "currency": "EUR",
+      "previous_date": "2026-11-24",
+      "previous_close": 440.899994,
+      "change_pct": 0.25,
+      "source_url": "https://finance.yahoo.com/quote/OR.PA/history/",
+      "name": "L'OREAL",
+      "ticker": "OR",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Conso"
+    },
+    {
+      "symbol": "SAN.PA",
+      "status": "available",
+      "date": "2026-11-25",
+      "close": 98.160004,
+      "currency": "EUR",
+      "previous_date": "2026-11-24",
+      "previous_close": 93.580002,
+      "change_pct": 4.89,
+      "source_url": "https://finance.yahoo.com/quote/SAN.PA/history/",
+      "name": "SANOFI",
+      "ticker": "SAN",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Santé"
+    },
+    {
+      "symbol": "TTE.PA",
+      "status": "available",
+      "date": "2026-11-25",
+      "close": 77.279999,
+      "currency": "EUR",
+      "previous_date": "2026-11-24",
+      "previous_close": 77.68,
+      "change_pct": -0.51,
+      "source_url": "https://finance.yahoo.com/quote/TTE.PA/history/",
+      "name": "TOTALENERGIES",
+      "ticker": "TTE",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Ener"
+    }
+  ],
+  "feed_errors": [],
+  "text": "Le 25/11, « Agencies announce dollar thresholds for applicability of truth… » retient notre attention [1]. Variations : BNP (-2,28%) ; HO (-0,91%). Vigilance sur la demande et les bénéfices. Le lien avec l’annonce reste une hypothèse.",
+  "word_count": 37,
+  "analysis": {
+    "theme": {
+      "key": "growth",
+      "label": "la croissance et la demande",
+      "sectors": [
+        "Ind",
+        "Conso",
+        "Finance"
+      ],
+      "watch": "la demande et les bénéfices",
+      "channel": [
+        "Indicateur d’activité",
+        "Demande attendue",
+        "Chiffre d’affaires",
+        "Bénéfices et valorisation"
+      ],
+      "hypothesis": "Un indicateur d’activité peut modifier les attentes de demande et de bénéfices. Son effet dépend surtout de l’écart aux anticipations, de la composition sectorielle et du caractère provisoire ou révisé du chiffre. Une économie plus solide peut aussi modifier les attentes de taux.",
+      "confirm": "Comparer valeurs cycliques et défensives, vérifier les composantes de l’indicateur et sa surprise par rapport au consensus. Une réaction partagée par plusieurs titres serait plus informative.",
+      "challenge": "Un chiffre déjà anticipé, une révision statistique ou des annonces d’entreprises simultanées peuvent limiter cette lecture. La séance ne permet pas d’isoler ces facteurs."
+    },
+    "focus": {
+      "title": "Agencies announce dollar thresholds for applicability of truth in lending and consumer leasing rules for consumer credit and lease transactions",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125b.htm",
+      "source": "Federal Reserve",
+      "published_at": "2026-11-25T20:00:00+00:00",
+      "summary": "Agencies announce dollar thresholds for applicability of truth in lending and consumer leasing rules for consumer credit and lease transactions"
+    },
+    "featured": [
+      {
+        "symbol": "BNP.PA",
+        "status": "available",
+        "date": "2026-11-25",
+        "close": 88.220001,
+        "currency": "EUR",
+        "previous_date": "2026-11-24",
+        "previous_close": 90.279999,
+        "change_pct": -2.28,
+        "source_url": "https://finance.yahoo.com/quote/BNP.PA/history/",
+        "name": "BNP PARIBAS ACT.A",
+        "ticker": "BNP",
+        "market": "Paris",
+        "asset_class": "Action",
+        "sector": "Finance"
+      },
+      {
+        "symbol": "HO.PA",
+        "status": "available",
+        "date": "2026-11-25",
+        "close": 227.600006,
+        "currency": "EUR",
+        "previous_date": "2026-11-24",
+        "previous_close": 229.699997,
+        "change_pct": -0.91,
+        "source_url": "https://finance.yahoo.com/quote/HO.PA/history/",
+        "name": "THALES",
+        "ticker": "HO",
+        "market": "Paris",
+        "asset_class": "Action",
+        "sector": "Ind"
+      },
+      {
+        "symbol": "LDO.MI",
+        "status": "available",
+        "date": "2026-11-25",
+        "close": 48.959999,
+        "currency": "EUR",
+        "previous_date": "2026-11-24",
+        "previous_close": 49.200001,
+        "change_pct": -0.49,
+        "source_url": "https://finance.yahoo.com/quote/LDO.MI/history/",
+        "name": "LEONARDO",
+        "ticker": "LDO",
+        "market": "Milan",
+        "asset_class": "Action",
+        "sector": "Ind"
+      }
+    ],
+    "selection": "Exemples de variations marquées dans les secteurs associés au thème, sans pondération de portefeuille."
+  }
+}
