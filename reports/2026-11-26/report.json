@@ -1,0 +1,249 @@
+{
+  "schema_version": 2,
+  "publication_date": "2026-11-27",
+  "date": "2026-11-26",
+  "generated_at": "2026-11-27T16:47:01.482997+00:00",
+  "timezone": "Europe/Paris",
+  "status": "draft",
+  "universe": {
+    "source": "data/universe.csv",
+    "total": 3382,
+    "tracked": 8,
+    "scope": "quick"
+  },
+  "news": [
+    {
+      "title": "Faisal Islam: Why Trump's new tariffs are less of a threat",
+      "url": "https://www.bbc.co.uk/news/articles/c6r7g4e3yep1o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
+      "published_at": "2026-11-26T19:55:58+00:00",
+      "summary": "Other countries have rerouted trade in response to his first tariff salvo, now they are looking beyond Trump's tenure."
+    },
+    {
+      "title": "Meeting of 28-29 October 2026",
+      "url": "https://www.ecb.europa.eu//press/accounts/2026/html/ecb.mg261126~ccf28c8071.en.html",
+      "source": "BCE",
+      "published_at": "2026-11-26T13:30:00+01:00",
+      "summary": ""
+    },
+    {
+      "title": "US announces new tariffs on host of countries including China",
+      "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
+      "published_at": "2026-11-26T04:10:58+00:00",
+      "summary": "The new levies would hit many of America's biggest trading partners, including China and the EU."
+    }
+  ],
+  "prices": [
+    {
+      "symbol": "ASML.AS",
+      "status": "available",
+      "date": "2026-11-26",
+      "close": 1168.199951,
+      "currency": "EUR",
+      "previous_date": "2026-11-25",
+      "previous_close": 1131.599976,
+      "change_pct": 3.23,
+      "source_url": "https://finance.yahoo.com/quote/ASML.AS/history/",
+      "name": "ASML HOLDING",
+      "ticker": "ASML",
+      "market": "Amsterdam",
+      "asset_class": "Action",
+      "sector": "Tech"
+    },
+    {
+      "symbol": "LDO.MI",
+      "status": "available",
+      "date": "2026-11-26",
+      "close": 50.669998,
+      "currency": "EUR",
+      "previous_date": "2026-11-25",
+      "previous_close": 48.959999,
+      "change_pct": 3.49,
+      "source_url": "https://finance.yahoo.com/quote/LDO.MI/history/",
+      "name": "LEONARDO",
+      "ticker": "LDO",
+      "market": "Milan",
+      "asset_class": "Action",
+      "sector": "Ind"
+    },
+    {
+      "symbol": "AI.PA",
+      "status": "available",
+      "date": "2026-11-26",
+      "close": 190.320007,
+      "currency": "EUR",
+      "previous_date": "2026-11-25",
+      "previous_close": 188.460007,
+      "change_pct": 0.99,
+      "source_url": "https://finance.yahoo.com/quote/AI.PA/history/",
+      "name": "AIR LIQUIDE",
+      "ticker": "AI",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Ind"
+    },
+    {
+      "symbol": "BNP.PA",
+      "status": "available",
+      "date": "2026-11-26",
+      "close": 90.639999,
+      "currency": "EUR",
+      "previous_date": "2026-11-25",
+      "previous_close": 88.220001,
+      "change_pct": 2.74,
+      "source_url": "https://finance.yahoo.com/quote/BNP.PA/history/",
+      "name": "BNP PARIBAS ACT.A",
+      "ticker": "BNP",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Finance"
+    },
+    {
+      "symbol": "HO.PA",
+      "status": "available",
+      "date": "2026-11-26",
+      "close": 233.800003,
+      "currency": "EUR",
+      "previous_date": "2026-11-25",
+      "previous_close": 227.600006,
+      "change_pct": 2.72,
+      "source_url": "https://finance.yahoo.com/quote/HO.PA/history/",
+      "name": "THALES",
+      "ticker": "HO",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Ind"
+    },
+    {
+      "symbol": "OR.PA",
+      "status": "available",
+      "date": "2026-11-26",
+      "close": 445.149994,
+      "currency": "EUR",
+      "previous_date": "2026-11-25",
+      "previous_close": 442.0,
+      "change_pct": 0.71,
+      "source_url": "https://finance.yahoo.com/quote/OR.PA/history/",
+      "name": "L'OREAL",
+      "ticker": "OR",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Conso"
+    },
+    {
+      "symbol": "SAN.PA",
+      "status": "available",
+      "date": "2026-11-26",
+      "close": 98.830002,
+      "currency": "EUR",
+      "previous_date": "2026-11-25",
+      "previous_close": 98.160004,
+      "change_pct": 0.68,
+      "source_url": "https://finance.yahoo.com/quote/SAN.PA/history/",
+      "name": "SANOFI",
+      "ticker": "SAN",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Santé"
+    },
+    {
+      "symbol": "TTE.PA",
+      "status": "available",
+      "date": "2026-11-26",
+      "close": 78.360001,
+      "currency": "EUR",
+      "previous_date": "2026-11-25",
+      "previous_close": 77.279999,
+      "change_pct": 1.4,
+      "source_url": "https://finance.yahoo.com/quote/TTE.PA/history/",
+      "name": "TOTALENERGIES",
+      "ticker": "TTE",
+      "market": "Paris",
+      "asset_class": "Action",
+      "sector": "Ener"
+    }
+  ],
+  "feed_errors": [],
+  "text": "Le 26/11, « Faisal Islam: Why Trump's new tariffs are less… » retient notre attention [1]. Variations : LDO (+3,49%) ; ASML (+3,23%). Vigilance sur les chaînes d’approvisionnement. Le lien avec l’annonce reste une hypothèse.",
+  "word_count": 35,
+  "analysis": {
+    "theme": {
+      "key": "trade",
+      "label": "le commerce international",
+      "sectors": [
+        "Ind",
+        "Tech",
+        "Conso"
+      ],
+      "watch": "les chaînes d’approvisionnement",
+      "channel": [
+        "Annonce commerciale",
+        "Flux et droits de douane",
+        "Coûts / débouchés",
+        "Résultats attendus"
+      ],
+      "hypothesis": "Une modification des échanges peut changer les coûts d’approvisionnement et l’accès aux marchés. La localisation des ventes et de la production importe davantage que la seule place de cotation. Les effets peuvent se compenser pour une entreprise présente dans plusieurs régions.",
+      "confirm": "Vérifier les zones réellement exposées, les dates d’application et la réaction d’entreprises comparables. Distinguer une annonce politique d’une mesure entrée en vigueur.",
+      "challenge": "Des exemptions, une production locale ou une évolution de change peuvent atténuer le choc. Sans données géographiques, l’exposition d’un titre reste à confirmer."
+    },
+    "focus": {
+      "title": "Faisal Islam: Why Trump's new tariffs are less of a threat",
+      "url": "https://www.bbc.co.uk/news/articles/c6r7g4e3yep1o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
+      "published_at": "2026-11-26T19:55:58+00:00",
+      "summary": "Other countries have rerouted trade in response to his first tariff salvo, now they are looking beyond Trump's tenure."
+    },
+    "featured": [
+      {
+        "symbol": "LDO.MI",
+        "status": "available",
+        "date": "2026-11-26",
+        "close": 50.669998,
+        "currency": "EUR",
+        "previous_date": "2026-11-25",
+        "previous_close": 48.959999,
+        "change_pct": 3.49,
+        "source_url": "https://finance.yahoo.com/quote/LDO.MI/history/",
+        "name": "LEONARDO",
+        "ticker": "LDO",
+        "market": "Milan",
+        "asset_class": "Action",
+        "sector": "Ind"
+      },
+      {
+        "symbol": "ASML.AS",
+        "status": "available",
+        "date": "2026-11-26",
+        "close": 1168.199951,
+        "currency": "EUR",
+        "previous_date": "2026-11-25",
+        "previous_close": 1131.599976,
+        "change_pct": 3.23,
+        "source_url": "https://finance.yahoo.com/quote/ASML.AS/history/",
+        "name": "ASML HOLDING",
+        "ticker": "ASML",
+        "market": "Amsterdam",
+        "asset_class": "Action",
+        "sector": "Tech"
+      },
+      {
+        "symbol": "HO.PA",
+        "status": "available",
+        "date": "2026-11-26",
+        "close": 233.800003,
+        "currency": "EUR",
+        "previous_date": "2026-11-25",
+        "previous_close": 227.600006,
+        "change_pct": 2.72,
+        "source_url": "https://finance.yahoo.com/quote/HO.PA/history/",
+        "name": "THALES",
+        "ticker": "HO",
+        "market": "Paris",
+        "asset_class": "Action",
+        "sector": "Ind"
+      }
+    ],
+    "selection": "Exemples de variations marquées dans les secteurs associés au thème, sans pondération de portefeuille."
+  }
+}
