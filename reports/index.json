@@ -1,6 +1,12 @@
 {
   "editions": [
     {
+      "publication_date": "2026-11-28",
+      "date": "2026-11-27",
+      "path": "reports/2026-11-27",
+      "generated_at": "2026-11-28T15:38:45.098335+00:00"
+    },
+    {
       "publication_date": "2026-11-27",
       "date": "2026-11-26",
       "path": "reports/2026-11-26",
